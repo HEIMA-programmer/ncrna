@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>py2flowchart</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.18.0/flowchart.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <pre id="code" style="display:none"></pre>
+        <script>
+            code= `
+start=>start: start
+operation1=>operation: import numpy as np
+operation2=>operation: from utils import *
+operation3=>operation: import torch
+operation4=>operation: from model_multi_layers import *
+operation5=>operation: from sklearn.preprocessing import PolynomialFeatures
+operation6=>operation: import pandas as pd
+operation7=>operation: import pickle
+operation8=>operation: import matplotlib
+operation9=>operation: import os
+operation10=>operation: matplotlib.use("TkAgg")
+operation11=>operation: import matplotlib.pyplot as plt
+subroutine12=>subroutine: seed_everything(42)
+operation13=>operation: device = torch.device("cuda")
+operation14=>operation: path = "scores/"
+condition15=>condition: if not os.path.exists(path)
+operation16=>operation: os.makedirs(path)
+operation17=>operation: pass
+operation18=>operation: adj_np = pd.read_csv(r"ncrna-drug_split.csv", index_col=0).values
+operation19=>operation: adj_with_sens_np = pd.read_csv(r"adj_with_sens.csv", index_col=0).values
+operation20=>operation: self_sim = np.load('self_sim.npy', allow_pickle=True).flat[0]
+operation21=>operation: feat_dm = np.load('feat_dm.npy', allow_pickle=True).flat[0]
+operation22=>operation:     fold_info = pickle.load(f)
+operation23=>operation:     rn_ij_list = pickle.load(f)
+operation24=>operation: rna_self_sim_np = self_sim['rna_self_sim']
+operation25=>operation: drug_self_sim_np = self_sim['drug_self_sim']
+operation26=>operation: lnc_dmap_np = feat_dm['lnc_dmap']
+operation27=>operation: mi_dmap_np = feat_dm['mi_dmap']
+operation28=>operation: drug_dmap_np = feat_dm['drug_dmap']
+operation29=>operation: lnc_dmap_np = PolynomialFeatures(4).fit_transform(lnc_dmap_np)
+operation30=>operation: mi_dmap_np = PolynomialFeatures(1).fit_transform(mi_dmap_np)
+operation31=>operation: drug_dmap_np = PolynomialFeatures(2).fit_transform(drug_dmap_np)
+operation32=>operation: n_lnc = len(lnc_dmap_np)
+operation33=>operation: n_mi = len(mi_dmap_np)
+operation34=>operation: n_rna = n_lnc + n_mi
+operation35=>operation: n_drug = len(drug_self_sim_np)
+operation36=>operation: diag_mask = rna_self_sim_np!=0
+operation37=>operation: pos_train_ij_list = fold_info["pos_train_ij_list"]
+operation38=>operation: pos_test_ij_list = fold_info["pos_test_ij_list"]
+operation39=>operation: unlabelled_train_ij_list = fold_info["unlabelled_train_ij_list"]
+operation40=>operation: unlabelled_test_ij_list = fold_info["unlabelled_test_ij_list"]
+operation41=>operation: p_gip_list = fold_info["p_gip_list"]
+operation42=>operation: d_gip_list = fold_info["d_gip_list"]
+operation43=>operation: sens_ij_list = np.argwhere(adj_with_sens_np == -1)
+operation44=>operation: sens_ij_df = pd.DataFrame(sens_ij_list)
+operation45=>operation: lnc_dmap = torch.FloatTensor(lnc_dmap_np).to(device)
+operation46=>operation: mi_dmap = torch.FloatTensor(mi_dmap_np).to(device)
+operation47=>operation: drug_dmap = torch.FloatTensor(drug_dmap_np).to(device)
+operation48=>operation: adj = torch.FloatTensor(adj_np).to(device)
+operation49=>operation: adj_with_sens = torch.FloatTensor(adj_with_sens_np).to(device)
+operation50=>operation: n_heads = 2
+operation51=>operation: linear_out_size = gcn_in_dim = 512
+operation52=>operation: gcn_out_dim = gat_in_dim = 512
+operation53=>operation: gat_hid_dim = 512
+operation54=>operation: gat_out_dim = 512
+operation55=>operation: dropout = 0.
+operation56=>operation: pred_hid_size = 1024
+operation57=>operation: lr, num_epochs = 0.005, 200
+output58=>output:     def forward(self, new_p_feat, new_d_feat, adj, train_mask, test_mask):
+        self.reduction = "none"
+        cosine_sim = F.cosine_similarity(new_p_feat.unsqueeze(1), new_d_feat.unsqueeze(0), dim=2)
+        cosine_sim_exp = torch.exp(cosine_sim / 0.5)
+        sim_num = adj * cosine_sim_exp * train_mask
+        sim_diff = cosine_sim_exp * (1 - adj) * train_mask
+        sim_diff_sum = torch.sum(sim_diff, dim=1)
+        sim_diff_sum_expend = sim_diff_sum.repeat(new_d_feat.shape[0], 1).T
+        sim_den = sim_num + sim_diff_sum_expend
+        loss = torch.div(sim_num, sim_den)
+        loss1 = torch.clamp(1 - adj+1-train_mask, max=1) + loss
+        # loss1 = 1 - adj + loss
+        loss_log = -torch.log(loss1)  # 求-log
+        loss_c = loss_log.sum()# / (len(torch.nonzero(loss_log)))
+
+        pred = F.sigmoid(new_p_feat.mm(new_d_feat.t()))
+        unmasked_loss = super(MaskedBCELoss, self).forward(pred, adj)
+        loss_b = (unmasked_loss * train_mask).sum()
+        # print(loss_b.item())
+        train_loss = loss_b + loss_c
+        # train_loss = loss_c
+        test_loss = (unmasked_loss * test_mask).sum()
+        return train_loss, test_loss
+condition59=>condition: if isinstance(net, nn.Module)
+operation60=>operation: params = [p for p in net.parameters() if p.requires_grad]
+operation61=>operation: params = net.params
+operation62=>operation: norm = torch.sqrt(sum(torch.sum((p.grad**2)) for p in params))
+condition63=>condition: if norm > theta
+condition64=>condition: for param in params|past
+operation65=>operation: param.grad[:] *= theta / norm
+operation66=>operation: pass
+condition67=>condition: if type(m) == nn.Linear
+operation68=>operation: nn.init.xavier_uniform_(m.weight)
+operation69=>operation: pass
+operation70=>operation: model.apply(xavier_init_weights)
+operation71=>operation: optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+operation72=>operation: loss = MaskedBCELoss()
+operation73=>operation: train_idx = torch.argwhere(train_mask == 1)
+operation74=>operation: test_idx = torch.argwhere(test_mask == 1)
+condition75=>condition: for epoch in range(num_epochs)|past
+operation76=>operation: model.train()
+operation77=>operation: optimizer.zero_grad()
+operation78=>operation: new_p_feat, new_d_feat = model(lnc_emb, mi_emb, drug_emb, rna_sim, drug_sim, adj_full)
+operation79=>operation: train_loss, test_loss = loss(new_p_feat, new_d_feat, adj, train_mask, test_mask)
+operation80=>operation: train_loss.backward()
+operation81=>operation: optimizer.step()
+operation82=>operation: model.eval()
+operation83=>operation: new_p_feat, new_d_feat = model(lnc_emb, mi_emb, drug_emb, rna_sim, drug_sim, adj_full)
+operation84=>operation: pred = F.sigmoid(new_p_feat.mm(new_d_feat.T))
+operation85=>operation: scores = pred[tuple(list(test_idx.T))].cpu().detach().numpy()
+operation86=>operation:             fold_cnt, epoch, adj, pred, test_idx, train_loss.item(),
+            test_loss.item(), pos_test_ij, unlabelled_test_ij
+        )
+operation87=>operation: return 0
+operation88=>operation: logger = Logger(5)
+condition89=>condition: for i in range(5)|past
+output90=>output: print(f"fold {i}")
+operation91=>operation: pos_train_ij = pos_train_ij_list[i]
+operation92=>operation: pos_test_ij = pos_test_ij_list[i]
+operation93=>operation: unlabelled_train_ij = unlabelled_train_ij_list[i]
+operation94=>operation: unlabelled_test_ij = unlabelled_test_ij_list[i]
+operation95=>operation: np.random.shuffle(unlabelled_test_ij)
+operation96=>operation: rn_ij = rn_ij_list[i]
+operation97=>operation: train_mask_np = np.zeros_like(adj_np)
+operation98=>operation: train_mask_np[tuple(list(pos_train_ij.T))] = 1
+operation99=>operation: train_mask_np[tuple(list(unlabelled_train_ij.T))] = 1
+operation100=>operation: train_mask_np[tuple(list(sens_ij_list.T))] = 1
+operation101=>operation: train_mask_np[tuple(list(rn_ij.T))] = 1
+operation102=>operation: train_label_np = train_mask_np * adj_np
+operation103=>operation: test_mask_np = np.zeros_like(adj_np)
+operation104=>operation: test_mask_np[tuple(list(pos_test_ij.T))] = 1
+operation105=>operation: test_mask_np[tuple(list(unlabelled_test_ij.T))] = 1
+operation106=>operation: test_label_np = test_mask_np*adj_np
+operation107=>operation: rna_sim_np = p_gip_list[i]+rna_self_sim_np-p_gip_list[i]*diag_mask*0.5
+operation108=>operation: np.fill_diagonal(rna_sim_np, 1)
+operation109=>operation: drug_sim_np = d_gip_list[i]+drug_self_sim_np
+operation110=>operation: np.fill_diagonal(drug_sim_np, 1)
+operation111=>operation:         (
+            np.concatenate((np.eye(len(rna_sim_np)), train_label_np), axis=1),
+            np.concatenate((train_label_np.T, np.eye(len(drug_sim_np))), axis=1),
+        ),
+        axis=0,
+    )
+operation112=>operation: rna_sim = torch.FloatTensor(rna_sim_np).to(device)
+operation113=>operation: drug_sim = torch.FloatTensor(drug_sim_np).to(device)
+operation114=>operation: adj_full = torch.FloatTensor(adj_full_np).to(device)
+operation115=>operation: train_mask = torch.FloatTensor(train_mask_np).to(device)
+operation116=>operation: test_mask = torch.FloatTensor(test_mask_np).to(device)
+operation117=>operation: pos_test_ij_tensor = torch.IntTensor(pos_test_ij).to(device)
+operation118=>operation: unlabelled_test_ij_tensor = torch.IntTensor(unlabelled_test_ij).to(device)
+operation119=>operation: torch.cuda.empty_cache()
+operation120=>operation:         lnc_dmap, mi_dmap, drug_dmap, linear_out_size
+    ).to(device)
+operation121=>operation:         in_dim=gcn_in_dim,
+        out_dim=gcn_out_dim,
+        adj=rna_sim
+    ).to(device) for _ in range(2)]
+operation122=>operation:         in_dim=gcn_in_dim,
+        out_dim=gcn_out_dim,
+        adj=drug_sim
+    ).to(device) for _ in range(2)]
+operation123=>operation:         in_dim=linear_out_size,
+        hid_dim=gat_hid_dim,
+        out_dim=gat_out_dim,
+        adj_full=adj_full,
+        dropout=dropout,
+        alpha=0.1,
+        nheads=n_heads
+    ).to(device) for _ in range(4)]
+operation124=>operation: predictor = Predictor(gcn_out_dim, pred_hid_size).to(device)
+operation125=>operation: model = PUTransGCN(linear_layer, r_gcn_list, d_gcn_list, gat_list, predictor).to(device)
+operation126=>operation:         i,
+        model,
+        adj,
+        rna_sim,
+        drug_sim,
+        adj_full,
+        lnc_dmap, mi_dmap, drug_dmap,
+        train_mask,
+        test_mask,
+        lr,
+        num_epochs,
+        pos_test_ij_tensor,
+        unlabelled_test_ij_tensor,
+    )
+operation127=>operation: max_allocated_memory = torch.cuda.max_memory_allocated()
+output128=>output: print(f"最大已分配内存量: {max_allocated_memory / 1024 ** 2} MB")
+operation129=>operation: logger.save("DMGAT")
+end=>end: end
+start->operation1
+operation1->operation2
+operation2->operation3
+operation3->operation4
+operation4->operation5
+operation5->operation6
+operation6->operation7
+operation7->operation8
+operation8->operation9
+operation9->operation10
+operation10->operation11
+operation11->subroutine12
+subroutine12->operation13
+operation13->operation14
+operation14->condition15
+condition15(yes)->operation16
+condition15(no)->operation17
+operation16->operation18
+operation17->operation18
+operation18->operation19
+operation19->operation20
+operation20->operation21
+operation21->operation22
+operation22->operation23
+operation23->operation24
+operation24->operation25
+operation25->operation26
+operation26->operation27
+operation27->operation28
+operation28->operation29
+operation29->operation30
+operation30->operation31
+operation31->operation32
+operation32->operation33
+operation33->operation34
+operation34->operation35
+operation35->operation36
+operation36->operation37
+operation37->operation38
+operation38->operation39
+operation39->operation40
+operation40->operation41
+operation41->operation42
+operation42->operation43
+operation43->operation44
+operation44->operation45
+operation45->operation46
+operation46->operation47
+operation47->operation48
+operation48->operation49
+operation49->operation50
+operation50->operation51
+operation51->operation52
+operation52->operation53
+operation53->operation54
+operation54->operation55
+operation55->operation56
+operation56->operation57
+operation57->output58
+output58->condition59
+condition59(yes)->operation60
+condition59(no)->operation61
+operation60->operation62
+operation61->operation62
+operation62->condition63
+condition63(yes)->condition64
+condition64(yes)->operation65
+operation65(left)->condition64
+condition63(no)->operation66
+condition64(no)->condition67
+operation66->condition67
+condition67(yes)->operation68
+condition67(no)->operation69
+operation68->operation70
+operation69->operation70
+operation70->operation71
+operation71->operation72
+operation72->operation73
+operation73->operation74
+operation74->condition75
+condition75(yes)->operation76
+operation76->operation77
+operation77->operation78
+operation78->operation79
+operation79->operation80
+operation80->operation81
+operation81->operation82
+operation82->operation83
+operation83->operation84
+operation84->operation85
+operation85->operation86
+operation86(left)->condition75
+condition75(no)->operation87
+operation87->operation88
+operation88->condition89
+condition89(yes)->output90
+output90->operation91
+operation91->operation92
+operation92->operation93
+operation93->operation94
+operation94->operation95
+operation95->operation96
+operation96->operation97
+operation97->operation98
+operation98->operation99
+operation99->operation100
+operation100->operation101
+operation101->operation102
+operation102->operation103
+operation103->operation104
+operation104->operation105
+operation105->operation106
+operation106->operation107
+operation107->operation108
+operation108->operation109
+operation109->operation110
+operation110->operation111
+operation111->operation112
+operation112->operation113
+operation113->operation114
+operation114->operation115
+operation115->operation116
+operation116->operation117
+operation117->operation118
+operation118->operation119
+operation119->operation120
+operation120->operation121
+operation121->operation122
+operation122->operation123
+operation123->operation124
+operation124->operation125
+operation125->operation126
+operation126->operation127
+operation127->output128
+output128(left)->condition89
+condition89(no)->operation129
+operation129->end
+
+`;
+            chart = flowchart.parse(code);
+            chart.drawSVG('canvas', {"line-width": 2});
+			console.log(code);
+			var code_pre = code.replaceAll("&", "&amp;").replaceAll("<", "&lt;");
+            document.getElementById("code").innerHTML = code_pre;
+        </script>
+		<script>
+		// double click to copy svg to clipboard
+		document.ondblclick = async () => {
+			var svg = document.getElementsByTagName('svg')[0];
+			await navigator.clipboard.writeText(svg.outerHTML);
+		}
+		</script>
+		<!-- see https://github.com/dstang2000/py2flowchart -->
+    </body>
+</html>
