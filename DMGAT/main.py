@@ -189,6 +189,8 @@ def fit(
         # 2. 总是先计算所有损失分量
         pred_logits = new_p_feat.mm(new_d_feat.T)
         unmasked_bce_loss = bce_loss_func(pred_logits, adj)
+
+
         train_bce_loss = (unmasked_bce_loss * train_mask).sum() / train_mask.sum()
         
         contrastive_loss_rna = contrastive_loss_func(rna_local, rna_global)
