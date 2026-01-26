@@ -3,8 +3,8 @@ import torch.nn as nn
 from torch_geometric.nn import GCNConv, SAGEConv, to_hetero, global_mean_pool
 
 
-# --- 药物结构编码器 (GCN) ---
-# 这个模型负责从药物的SMILES分子图（自身信息）中提取特征
+# 药物结构编码器 (GCN)
+# 负责从药物的SMILES分子图（自身信息）中提取特征
 class DrugStructureEncoder(nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels):
         super().__init__()
@@ -26,9 +26,9 @@ class DrugStructureEncoder(nn.Module):
         return global_mean_pool(x, batch)
 
 
-# --- 关联图编码器 (异构GNN) ---
+# 关联图编码器 (异构GNN)
 # 在统一的药物-RNA关联图上进行信息传播，
-# 动态地学习每个药物和RNA节点的“关联视图”嵌入
+# 动态地学习每个药物和RNA节点的关联视图嵌入
 class InteractionGNN(nn.Module):
     def __init__(self, hidden_channels, out_channels):
         super().__init__()
@@ -47,7 +47,6 @@ class InteractionGNN(nn.Module):
         return x
 
 
-# 这个模型整合了所有部分：药物结构编码器、关联图编码器、以及用于预测的分类器
 class UnifiedModel(torch.nn.Module):
     def __init__(self, drug_initial_dim, rna_feature_dim, rna_sim_feature_dim, hidden_channels, out_channels, metadata,
                  full_rna_features):
@@ -61,8 +60,8 @@ class UnifiedModel(torch.nn.Module):
         self.drug_lin = nn.Linear(drug_initial_dim, hidden_channels)
         self.rna_lin = nn.Linear(rna_sim_feature_dim, hidden_channels)
 
-        # 2. 缺失数据的替身 (Learnable Embeddings)
-        # 如果某个样本没有结构图或序列，我们不能填0，而是填入这个可学习的向量
+        # 2. 缺失数据 (Learnable Embeddings)
+        # 如果某个样本没有结构图或序列，填入这个可学习的向量
         # 形状是 [1, out_channels]，会自动广播
         self.missing_drug_struct_emb = nn.Parameter(torch.randn(1, out_channels))
         self.missing_rna_seq_emb = nn.Parameter(torch.randn(1, out_channels))
@@ -72,7 +71,7 @@ class UnifiedModel(torch.nn.Module):
 
         # 3. RNA 序列特征提取器 (DNN)
         # 结构：Linear -> LayerNorm -> ReLU -> Dropout -> ...
-        # 这里改用了 LayerNorm，这比 BatchNorm 更适合这种变长/小Batch的任务
+        # 改用了 LayerNorm，这比 BatchNorm 更适合这种变长/小Batch的任务
         self.rna_seq_dnn = nn.Sequential(
             nn.Linear(rna_feature_dim, dnn_hidden_dim),
 
@@ -91,7 +90,7 @@ class UnifiedModel(torch.nn.Module):
 
         # 4. 注册全量 RNA 特征
         # register_buffer 意味着这个张量是模型状态的一部分（会被保存），但不是可训练的参数（没有梯度）
-        # 这样我们在 forward 里可以通过索引直接查表获取 RNA 的 Doc2Vec 特征
+        # 在 forward 里可以通过索引直接查表获取 RNA 的 Doc2Vec 特征
         self.register_buffer('full_rna_features', full_rna_features)
 
         # 关联图编码器 (GNN)，并使用 to_hetero 将其转换为能在异构图上运行的模型
@@ -147,7 +146,7 @@ class UnifiedModel(torch.nn.Module):
         }
 
         # 2. 放入异构图神经网络
-        # 注意：这里输入的是整个 batch 的大图（包含所有节点）
+        # 这里输入的是整个 batch 的大图（包含所有节点）
         # 返回的是更新后的节点嵌入
         return self.interaction_gnn(x_dict, data.edge_index_dict)
 
