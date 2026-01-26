@@ -1,8 +1,3 @@
-"""
-统计 DR_Curated.xlsx 中 resistant 记录与项目数据集的重叠情况
-使用方法: python analyze_overlap.py [DR_Curated.xlsx的路径]
-"""
-
 import pandas as pd
 import numpy as np
 import sys
@@ -45,8 +40,7 @@ def main():
         print(f"错误: 无法读取Excel文件 - {e}")
         sys.exit(1)
 
-    # 查找相关列名 (可能有不同的命名方式)
-    # 从截图看，列名包括: ncRNA_Name, Drug_Name, Effect
+    # 查找相关列名
     rna_col = None
     drug_col = None
     effect_col = None
