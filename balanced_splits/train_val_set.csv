@@ -1,0 +1,5227 @@
+drug_id,rna_id,drug_name,rna_name,label
+84,237,Mitomycin C,miR-22,1
+0,152,Cisplatin,miR-181,1
+19,49,Etoposide,miR-106b-25,1
+13,246,Oxaliplatin,miR-224,1
+0,335,Cisplatin,miR-3621,1
+10,206,Paclitaxel,miR-200a,1
+14,328,Carboplatin,miR-34a-5p,1
+52,47,5-Fluorouracil,miR-106a,1
+18,77,Vincristine,miR-126*,1
+29,593,Verapamil,miR-876,1
+29,550,Verapamil,miR-633,1
+26,59,Bortezomib,miR-122,1
+51,314,platinum-based doublet chemotherapy ,miR-328,1
+29,557,Verapamil,miR-651,1
+52,256,5-Fluorouracil,miR-26b,1
+84,147,Mitomycin C,miR-16,1
+1,439,Gemcitabine,miR-4713,1
+16,137,Docetaxel,miR-151,1
+5,454,Doxorubicin,miR-485,1
+13,176,Oxaliplatin,miR-191,1
+1,576,Gemcitabine,miR-708,1
+7,141,Tamoxifen,miR-155,1
+52,381,5-Fluorouracil,miR-424*,1
+13,147,Oxaliplatin,miR-16,1
+5,93,Doxorubicin,miR-129,1
+14,282,Carboplatin,miR-30b,1
+9,203,Fluorouracil,miR-19b,1
+7,185,Tamoxifen,miR-193b,1
+29,157,Verapamil,miR-181d,1
+3,137,Imatinib,miR-151,1
+52,533,5-Fluorouracil,miR-593,1
+5,608,Doxorubicin,miR-93,1
+52,263,5-Fluorouracil,miR-296,1
+10,553,Paclitaxel,miR-640,1
+52,542,5-Fluorouracil,miR-615,1
+5,191,Doxorubicin,miR-196b,1
+1,424,Gemcitabine,miR-4640,1
+52,344,5-Fluorouracil,miR-3676,1
+42,245,Erlotinib,miR-223,1
+10,271,Paclitaxel,miR-29c,1
+7,315,Tamoxifen,miR-330,1
+7,241,Tamoxifen,miR-221,1
+39,112,Taxol,miR-137,1
+5,602,Doxorubicin,miR-922,1
+0,254,Cisplatin,miR-26a,1
+52,398,5-Fluorouracil,miR-4465,1
+5,28,Doxorubicin,linc-VLDLR,1
+29,562,Verapamil,miR-660,1
+50,32,PLX4720,let-7a,1
+1,47,Gemcitabine,miR-106a,1
+13,183,Oxaliplatin,miR-193a,1
+10,220,Paclitaxel,miR-21,1
+18,369,Vincristine,miR-383,1
+9,336,Fluorouracil,miR-363,1
+5,109,Doxorubicin,miR-135a,1
+18,70,Vincristine,miR-1247,1
+5,105,Doxorubicin,miR-133a,1
+52,195,5-Fluorouracil,miR-1976,1
+54,42,L-asparaginase,miR-100,1
+1,299,Gemcitabine,miR-3178,1
+1,471,Gemcitabine,miR-503,1
+1,399,Gemcitabine,miR-4466,1
+0,151,Cisplatin,miR-17-92,1
+13,41,Oxaliplatin,miR-1,1
+1,209,Gemcitabine,miR-200c*,1
+7,319,Tamoxifen,miR-339,1
+9,500,Fluorouracil,miR-520g,1
+1,408,Gemcitabine,miR-4497,1
+3,330,Imatinib,miR-34c,1
+34,103,Sorafenib,miR-130b,1
+1,344,Gemcitabine,miR-3676,1
+10,218,Paclitaxel,miR-20b,1
+51,463,platinum-based doublet chemotherapy ,miR-497,1
+118,268,Ethanol,miR-29b,1
+52,230,5-Fluorouracil,miR-216,1
+53,211,Daunorubicin,miR-203,1
+5,156,Doxorubicin,miR-181c,1
+29,464,Verapamil,miR-499,1
+53,42,Daunorubicin,miR-100,1
+29,137,Verapamil,miR-151,1
+1,339,Gemcitabine,miR-365,1
+1,397,Gemcitabine,miR-4463,1
+13,332,Oxaliplatin,miR-361,1
+5,600,Doxorubicin,miR-9,1
+13,137,Oxaliplatin,miR-151,1
+16,44,Docetaxel,miR-101,1
+5,348,Doxorubicin,miR-370,1
+5,347,Doxorubicin,miR-369,1
+23,44,Sirolimus,miR-101,1
+7,547,Tamoxifen,miR-628,1
+10,49,Paclitaxel,miR-106b-25,1
+14,260,Carboplatin,miR-27b ,1
+31,356,Chemotherapy,miR-375,1
+13,51,Oxaliplatin,miR-107,1
+7,614,Tamoxifen,miR-96,1
+1,443,Gemcitabine,miR-4723,1
+26,57,Bortezomib,miR-1202,1
+13,234,Oxaliplatin,miR-218,1
+1,444,Gemcitabine,miR-4725,1
+18,112,Vincristine,miR-137,1
+32,613,TRAIL therapy,miR-942,1
+52,411,5-Fluorouracil,miR-450a,1
+34,460,Sorafenib,miR-494,1
+17,317,Adriamycin,miR-335,1
+13,243,Oxaliplatin,miR-222,1
+84,175,Mitomycin C,miR-1908,1
+82,284,Cyclopamine,miR-30c,1
+5,142,Doxorubicin,miR-155-5p,1
+56,391,10-Hydroxycamptothecin,miR-429,1
+7,502,Tamoxifen,miR-522,1
+5,76,Doxorubicin,miR-126,1
+55,76,Prednisolone,miR-126,1
+5,456,Doxorubicin,miR-487b,1
+1,90,Gemcitabine,miR-1285,1
+27,208,Methotrexate,miR-200c,1
+19,315,Etoposide,miR-330,1
+26,582,Bortezomib,miR-762,1
+0,145,Cisplatin,miR-15b,1
+52,258,5-Fluorouracil,miR-27a,1
+9,184,Fluorouracil,miR-193a-3p,1
+3,314,Imatinib,miR-328,1
+5,322,Doxorubicin,miR-33b,1
+0,535,Cisplatin,miR-598,1
+29,376,Verapamil,miR-412,1
+31,116,Chemotherapy,miR-140,1
+10,330,Paclitaxel,miR-34c,1
+13,166,Oxaliplatin,miR-186*,1
+7,219,Tamoxifen,miR-20b*,1
+1,116,Gemcitabine,miR-140,1
+29,316,Verapamil,miR-331,1
+0,206,Cisplatin,miR-200a,1
+57,280,FOLFOX Chemotherapy,miR-30a,1
+5,34,Doxorubicin,let-7c,1
+29,208,Verapamil,miR-200c,1
+51,254,platinum-based doublet chemotherapy ,miR-26a,1
+0,310,Cisplatin,miR-320a,1
+0,320,Cisplatin,miR-33a,1
+10,595,Paclitaxel,miR-885,1
+52,318,5-Fluorouracil,miR-338,1
+0,118,Cisplatin,miR-141,1
+10,343,Paclitaxel,miR-367,1
+29,271,Verapamil,miR-29c,1
+1,430,Gemcitabine,miR-4675,1
+17,129,Adriamycin,miR-146a,1
+19,136,Etoposide,miR-150,1
+22,25,Rapamycin,UCA1,1
+1,410,Gemcitabine,miR-4508,1
+75,197,Sunitinib,miR-199a,1
+18,58,Vincristine,miR-1207,1
+75,181,Sunitinib,miR-192,1
+29,581,Verapamil,miR-760,1
+1,309,Gemcitabine,miR-3200,1
+5,240,Doxorubicin,miR-220,1
+5,117,Doxorubicin,miR-140-3p,1
+13,99,Oxaliplatin,miR-130,1
+57,412,FOLFOX Chemotherapy,miR-451,1
+18,584,Vincristine,miR-766,1
+5,403,Doxorubicin,miR-448,1
+1,95,Gemcitabine,miR-1290,1
+5,504,Doxorubicin,miR-526b*,1
+5,472,Doxorubicin,miR-505,1
+9,110,Fluorouracil,miR-135b,1
+3,189,Imatinib,miR-196a,1
+75,289,Sunitinib,miR-31,1
+5,87,Doxorubicin,miR-128,1
+6,584,Gefitinib,miR-766,1
+7,118,Tamoxifen,miR-141,1
+38,149,Cetuximab,miR-17*,1
+1,170,Gemcitabine,miR-18a,1
+1,460,Gemcitabine,miR-494,1
+1,212,Gemcitabine,miR-204,1
+13,98,Oxaliplatin,miR-1299,1
+111,473,10-hydroxycamptothecin,miR-506,1
+5,548,Doxorubicin,miR-629,1
+5,165,Doxorubicin,miR-186,1
+16,323,Docetaxel,miR-340,1
+75,547,Sunitinib,miR-628,1
+13,208,Oxaliplatin,miR-200c,1
+0,188,Cisplatin,miR-195,1
+44,26,PCI-24781,XIST,1
+0,97,Cisplatin,miR-1297,1
+17,241,Adriamycin,miR-221,1
+0,496,Cisplatin,miR-520b,1
+19,192,Etoposide,miR-197,1
+52,203,5-Fluorouracil,miR-19b,1
+52,164,5-Fluorouracil,miR-185,1
+52,271,5-Fluorouracil,miR-29c,1
+5,416,Doxorubicin,miR-453,1
+1,76,Gemcitabine,miR-126,1
+5,517,Doxorubicin,miR-569,1
+38,241,Cetuximab,miR-221,1
+0,135,Cisplatin,miR-149*,1
+65,618,Prednisone,miR-99a-5p,1
+1,438,Gemcitabine,miR-4711,1
+18,259,Vincristine,miR-27b,1
+8,241,Trastuzumab,miR-221,1
+6,220,Gefitinib,miR-21,1
+1,386,Gemcitabine,miR-4261,1
+5,40,Doxorubicin,let-7i,1
+50,282,PLX4720,miR-30b,1
+52,362,5-Fluorouracil,miR-378d,1
+6,456,Gefitinib,miR-487b,1
+16,421,Docetaxel,miR-455,1
+29,159,Verapamil,miR-182*,1
+48,359,Epirubicin,miR-378,1
+10,226,Paclitaxel,miR-213,1
+5,585,Doxorubicin,miR-767,1
+5,65,Doxorubicin,miR-1234,1
+0,87,Cisplatin,miR-128,1
+9,158,Fluorouracil,miR-182,1
+19,249,Etoposide,miR-23b,1
+0,506,Cisplatin,miR-539,1
+2,292,Dasatinib,miR-3127,1
+1,330,Gemcitabine,miR-34c,1
+1,57,Gemcitabine,miR-1202,1
+3,282,Imatinib,miR-30b,1
+7,619,Tamoxifen,miR-99b,1
+57,319,FOLFOX Chemotherapy,miR-339,1
+19,50,Etoposide,miR-106~25,1
+13,136,Oxaliplatin,miR-150,1
+57,373,FOLFOX Chemotherapy,miR-409,1
+1,290,Gemcitabine,miR-31*,1
+5,44,Doxorubicin,miR-101,1
+28,570,Pirarubicin,miR-6825-5p,1
+1,378,Gemcitabine,miR-422a,1
+1,477,Gemcitabine,miR-513a,1
+52,425,5-Fluorouracil,miR-4646,1
+29,454,Verapamil,miR-485,1
+17,246,Adriamycin,miR-224,1
+13,230,Oxaliplatin,miR-216,1
+1,238,Gemcitabine,miR-22*,1
+13,453,Oxaliplatin,miR-483,1
+29,563,Verapamil,miR-662,1
+52,452,5-Fluorouracil,miR-4787,1
+57,241,FOLFOX Chemotherapy,miR-221,1
+13,289,Oxaliplatin,miR-31,1
+5,474,Doxorubicin,miR-509,1
+52,85,5-Fluorouracil,miR-1275,1
+29,412,Verapamil,miR-451,1
+1,103,Gemcitabine,miR-130b,1
+31,248,Chemotherapy,miR-23a,1
+5,216,Doxorubicin,miR-20a,1
+29,147,Verapamil,miR-16,1
+7,382,Tamoxifen,miR-425,1
+16,256,Docetaxel,miR-26b,1
+52,487,5-Fluorouracil,miR-518f*,1
+5,325,Doxorubicin,miR-345,1
+17,193,Adriamycin,miR-197-3p,1
+0,55,Cisplatin,miR-10b,1
+0,559,Cisplatin,miR-654-5p,1
+5,207,Doxorubicin,miR-200b,1
+34,325,Sorafenib,miR-345,1
+52,300,5-Fluorouracil,miR-3180,1
+7,491,Tamoxifen,miR-519c,1
+0,214,Cisplatin,miR-205,1
+31,104,Chemotherapy,miR-132,1
+1,113,Gemcitabine,miR-138,1
+92,199,histone deacetylase inhibitor,miR-199a-5p,1
+29,274,Verapamil,miR-301b,1
+38,197,Cetuximab,miR-199a,1
+50,220,PLX4720,miR-21,1
+5,83,Doxorubicin,miR-127,1
+64,53,Vinorelbine,miR-10a ,1
+54,617,L-asparaginase,miR-99a,1
+5,395,Doxorubicin,miR-4430,1
+1,433,Gemcitabine,miR-4687,1
+16,129,Docetaxel,miR-146a,1
+52,274,5-Fluorouracil,miR-301b,1
+13,540,Oxaliplatin,miR-613,1
+49,270,Capecitabine,miR-29b-2*,1
+66,383,Paroxetine,miR-425*,1
+1,70,Gemcitabine,miR-1247,1
+57,74,FOLFOX Chemotherapy,miR-125b,1
+1,533,Gemcitabine,miR-593,1
+10,86,Paclitaxel,miR-1277,1
+13,59,Oxaliplatin,miR-122,1
+29,308,Verapamil,miR-320,1
+18,93,Vincristine,miR-129,1
+13,570,Oxaliplatin,miR-6825-5p,1
+29,587,Verapamil,miR-769,1
+82,148,Cyclopamine,miR-17,1
+52,396,5-Fluorouracil,miR-4454,1
+3,92,Imatinib,miR-128a,1
+0,199,Cisplatin,miR-199a-5p,1
+64,485,Vinorelbine,miR-518e*,1
+52,348,5-Fluorouracil,miR-370,1
+13,313,Oxaliplatin,miR-324,1
+5,130,Doxorubicin,miR-146b,1
+52,526,5-Fluorouracil,miR-587,1
+1,440,Gemcitabine,miR-4716,1
+78,121,Valproate,miR-142,1
+0,259,Cisplatin,miR-27b,1
+10,477,Paclitaxel,miR-513a,1
+50,562,PLX4720,miR-660,1
+3,23,Imatinib,SNHG5,1
+27,246,Methotrexate,miR-224,1
+19,264,Etoposide,miR-298,1
+13,207,Oxaliplatin,miR-200b,1
+104,220,Dibenziodolium,miR-21,1
+82,249,Cyclopamine,miR-23b,1
+14,198,Carboplatin,miR-199a-3p,1
+0,271,Cisplatin,miR-29c,1
+5,584,Doxorubicin,miR-766,1
+52,134,5-Fluorouracil,miR-149,1
+0,369,Cisplatin,miR-383,1
+10,74,Paclitaxel,miR-125b,1
+52,269,5-Fluorouracil,miR-29b-1*,1
+1,387,Gemcitabine,miR-4279,1
+9,88,Fluorouracil,miR-128-2,1
+5,518,Doxorubicin,miR-571,1
+1,89,Gemcitabine,miR-1280,1
+6,132,Gefitinib,miR-148a,1
+57,562,FOLFOX Chemotherapy,miR-660,1
+5,356,Doxorubicin,miR-375,1
+1,134,Gemcitabine,miR-149,1
+1,122,Gemcitabine,miR-143,1
+5,263,Doxorubicin,miR-296,1
+5,352,Doxorubicin,miR-373*,1
+52,386,5-Fluorouracil,miR-4261,1
+52,157,5-Fluorouracil,miR-181d,1
+5,589,Doxorubicin,miR-802,1
+6,353,Gefitinib,miR-374a,1
+5,211,Doxorubicin,miR-203,1
+64,356,Vinorelbine,miR-375,1
+13,617,Oxaliplatin,miR-99a,1
+3,273,Imatinib,miR-301a,1
+7,243,Tamoxifen,miR-222,1
+1,584,Gemcitabine,miR-766,1
+16,176,Docetaxel,miR-191,1
+61,43,Lorlatinib,miR-100-5p,1
+5,310,Doxorubicin,miR-320a,1
+107,229,Raltitrexed,miR-215,1
+5,270,Doxorubicin,miR-29b-2*,1
+1,505,Gemcitabine,miR-532,1
+51,329,platinum-based doublet chemotherapy ,miR-34b,1
+6,55,Gefitinib,miR-10b,1
+10,261,Paclitaxel,miR-28,1
+66,337,Paroxetine,miR-363*,1
+1,40,Gemcitabine,let-7i,1
+50,248,PLX4720,miR-23a,1
+0,337,Cisplatin,miR-363*,1
+88,148,Selumetinib,miR-17,1
+10,106,Paclitaxel,miR-133b,1
+80,170,pegIFN/RBV therapy,miR-18a,1
+5,88,Doxorubicin,miR-128-2,1
+84,143,Mitomycin C,miR-15a,1
+10,356,Paclitaxel,miR-375,1
+5,619,Doxorubicin,miR-99b,1
+119,317,chemotherapy,miR-335,1
+54,548,L-asparaginase,miR-629,1
+21,6,Nutlin-3a,GAS5,1
+5,495,Doxorubicin,miR-520a,1
+1,404,Gemcitabine,miR-4484,1
+5,271,Doxorubicin,miR-29c,1
+18,475,Vincristine,miR-5096,1
+29,165,Verapamil,miR-186,1
+18,607,Vincristine,miR-92b,1
+13,324,Oxaliplatin,miR-342,1
+6,109,Gefitinib,miR-135a,1
+26,75,Bortezomib,miR-125b-5p,1
+18,542,Vincristine,miR-615,1
+13,101,Oxaliplatin,miR-130a,1
+57,39,FOLFOX Chemotherapy,let-7g,1
+1,384,Gemcitabine,miR-4257,1
+13,109,Oxaliplatin,miR-135a,1
+1,227,Gemcitabine,miR-214,1
+50,34,PLX4720,let-7c,1
+0,229,Cisplatin,miR-215,1
+16,535,Docetaxel,miR-598,1
+6,237,Gefitinib,miR-22,1
+34,129,Sorafenib,miR-146a,1
+0,455,Cisplatin,miR-486,1
+29,343,Verapamil,miR-367,1
+56,339,10-Hydroxycamptothecin,miR-365,1
+13,615,Oxaliplatin,miR-96-5p,1
+5,275,Doxorubicin,miR-302a,1
+29,132,Verapamil,miR-148a,1
+10,156,Paclitaxel,miR-181c,1
+16,619,Docetaxel,miR-99b,1
+5,354,Doxorubicin,miR-374a*,1
+1,434,Gemcitabine,miR-4689,1
+3,246,Imatinib,miR-224,1
+13,206,Oxaliplatin,miR-200a,1
+52,229,5-Fluorouracil,miR-215,1
+5,459,Doxorubicin,miR-491,1
+29,275,Verapamil,miR-302a,1
+10,193,Paclitaxel,miR-197-3p,1
+3,185,Imatinib,miR-193b,1
+1,262,Gemcitabine,miR-2861,1
+29,255,Verapamil,miR-26a-MM1,1
+1,91,Gemcitabine,miR-1288,1
+9,222,Fluorouracil,miR-21-5p,1
+57,164,FOLFOX Chemotherapy,miR-185,1
+26,175,Bortezomib,miR-1908,1
+29,204,Verapamil,miR-19b-1*,1
+52,616,5-Fluorouracil,miR-98,1
+67,259,Cyclophosphamide,miR-27b,1
+3,130,Imatinib,miR-146b,1
+5,73,Doxorubicin,miR-125a,1
+52,548,5-Fluorouracil,miR-629,1
+19,9,Etoposide,HOTAIR,1
+57,47,FOLFOX Chemotherapy,miR-106a,1
+89,151,Staurosporine,miR-17-92,1
+13,619,Oxaliplatin,miR-99b,1
+87,148,Irinotecan,miR-17,1
+38,200,Cetuximab,miR-199b,1
+10,307,Paclitaxel,miR-32,1
+52,382,5-Fluorouracil,miR-425,1
+18,256,Vincristine,miR-26b,1
+1,327,Gemcitabine,miR-34a,1
+13,95,Oxaliplatin,miR-1290,1
+28,571,Pirarubicin,miR-6845-5p,1
+52,445,5-Fluorouracil,miR-4732,1
+49,32,Capecitabine,let-7a,1
+6,33,Gefitinib,let-7b,1
+66,465,Paroxetine,miR-500,1
+0,208,Cisplatin,miR-200c,1
+1,338,Gemcitabine,miR-3647,1
+5,527,Doxorubicin,miR-588,1
+1,243,Gemcitabine,miR-222,1
+57,287,FOLFOX Chemotherapy,miR-30e,1
+1,466,Gemcitabine,miR-500a,1
+16,356,Docetaxel,miR-375,1
+64,522,Vinorelbine,miR-582,1
+57,558,FOLFOX Chemotherapy,miR-652,1
+14,233,Carboplatin,miR-217,1
+13,241,Oxaliplatin,miR-221,1
+19,289,Etoposide,miR-31,1
+57,132,FOLFOX Chemotherapy,miR-148a,1
+16,243,Docetaxel,miR-222,1
+65,228,Prednisone,miR-214*,1
+17,530,Adriamycin,miR-590-5p,1
+52,148,5-Fluorouracil,miR-17,1
+0,593,Cisplatin,miR-876,1
+51,547,platinum-based doublet chemotherapy ,miR-628,1
+0,454,Cisplatin,miR-485,1
+52,418,5-Fluorouracil,miR-4532,1
+34,130,Sorafenib,miR-146b,1
+29,197,Verapamil,miR-199a,1
+103,220,Carmustine,miR-21,1
+13,175,Oxaliplatin,miR-1908,1
+7,339,Tamoxifen,miR-365,1
+10,219,Paclitaxel,miR-20b*,1
+0,184,Cisplatin,miR-193a-3p,1
+5,163,Doxorubicin,miR-184,1
+52,66,5-Fluorouracil,miR-1236,1
+10,48,Paclitaxel,miR-106b,1
+46,258,Vinblastine,miR-27a,1
+50,331,PLX4720,miR-3607,1
+17,203,Adriamycin,miR-19b,1
+18,258,Vincristine,miR-27a,1
+10,393,Paclitaxel,miR-433,1
+18,114,Vincristine,miR-138-1*,1
+29,534,Verapamil,miR-593*,1
+1,298,Gemcitabine,miR-3177,1
+19,74,Etoposide,miR-125b,1
+38,199,Cetuximab,miR-199a-5p,1
+20,314,Mitoxantrone,miR-328,1
+67,220,Cyclophosphamide,miR-21,1
+10,327,Paclitaxel,miR-34a,1
+5,587,Doxorubicin,miR-769,1
+5,332,Doxorubicin,miR-361,1
+3,116,Imatinib,miR-140,1
+34,243,Sorafenib,miR-222,1
+7,316,Tamoxifen,miR-331,1
+52,133,5-Fluorouracil,miR-148b,1
+52,297,5-Fluorouracil,miR-3173,1
+5,286,Doxorubicin,miR-30d*,1
+5,166,Doxorubicin,miR-186*,1
+5,267,Doxorubicin,miR-29a*,1
+0,312,Cisplatin,miR-320d,1
+5,378,Doxorubicin,miR-422a,1
+0,266,Cisplatin,miR-29a,1
+109,233,Lapatinib,miR-217,1
+32,42,TRAIL therapy,miR-100,1
+91,266,Fludarabine,miR-29a,1
+1,453,Gemcitabine,miR-483,1
+70,75,Rituximab,miR-125b-5p,1
+29,608,Verapamil,miR-93,1
+18,74,Vincristine,miR-125b,1
+57,307,FOLFOX Chemotherapy,miR-32,1
+52,372,5-Fluorouracil,miR-3960,1
+5,618,Doxorubicin,miR-99a-5p,1
+5,288,Doxorubicin,miR-30e*,1
+112,241,AGRO100,miR-221,1
+67,167,Cyclophosphamide,miR-187,1
+52,191,5-Fluorouracil,miR-196b,1
+0,352,Cisplatin,miR-373*,1
+0,239,Cisplatin,miR-22-3p,1
+6,604,Gefitinib,miR-92a,1
+1,582,Gemcitabine,miR-762,1
+5,558,Doxorubicin,miR-652,1
+52,597,5-Fluorouracil,miR-887,1
+5,388,Doxorubicin,miR-4284,1
+5,368,Doxorubicin,miR-382,1
+10,501,Paclitaxel,miR-520h,1
+23,151,Sirolimus,miR-17-92,1
+26,306,Bortezomib,miR-3196,1
+34,540,Sorafenib,miR-613,1
+29,140,Verapamil,miR-154*,1
+0,102,Cisplatin,miR-130a-3p,1
+57,143,FOLFOX Chemotherapy,miR-15a,1
+1,562,Gemcitabine,miR-660,1
+1,237,Gemcitabine,miR-22,1
+1,333,Gemcitabine,miR-3619,1
+74,92,Letrozole,miR-128a,1
+16,216,Docetaxel,miR-20a,1
+52,180,5-Fluorouracil,miR-1915,1
+17,259,Adriamycin,miR-27b,1
+13,350,Oxaliplatin,miR-372,1
+27,229,Methotrexate,miR-215,1
+29,411,Verapamil,miR-450a,1
+19,268,Etoposide,miR-29b,1
+77,431,Levetiracetam,miR-468,1
+0,497,Cisplatin,miR-520c,1
+65,71,Prednisone,miR-1256,1
+18,621,Vincristine,miR-Plus-A1031,1
+0,501,Cisplatin,miR-520h,1
+1,564,Gemcitabine,miR-663,1
+5,278,Doxorubicin,miR-302c*,1
+1,419,Gemcitabine,miR-4535,1
+5,528,Doxorubicin,miR-589*,1
+16,324,Docetaxel,miR-342,1
+52,296,5-Fluorouracil,miR-3154,1
+50,316,PLX4720,miR-331,1
+52,543,5-Fluorouracil,miR-618,1
+56,616,10-Hydroxycamptothecin,miR-98,1
+10,194,Paclitaxel,miR-1973,1
+0,155,Cisplatin,miR-181b,1
+13,58,Oxaliplatin,miR-1207,1
+18,130,Vincristine,miR-146b,1
+5,157,Doxorubicin,miR-181d,1
+29,391,Verapamil,miR-429,1
+5,537,Doxorubicin,miR-605,1
+9,220,Fluorouracil,miR-21,1
+18,220,Vincristine,miR-21,1
+37,104,Temozolomide,miR-132,1
+0,339,Cisplatin,miR-365,1
+5,464,Doxorubicin,miR-499,1
+6,579,Gefitinib,miR-744,1
+76,153,Platinum,miR-181a,1
+75,103,Sunitinib,miR-130b,1
+51,188,platinum-based doublet chemotherapy ,miR-195,1
+69,74,Retinoic Acid,miR-125b,1
+13,148,Oxaliplatin,miR-17,1
+5,478,Doxorubicin,miR-514,1
+93,505,intensive induction chemotherapy based on cytarabine and idarubicine,miR-532,1
+5,468,Doxorubicin,miR-501,1
+5,328,Doxorubicin,miR-34a-5p,1
+29,202,Verapamil,miR-19a,1
+13,56,Oxaliplatin,miR-1183,1
+5,215,Doxorubicin,miR-206,1
+52,380,5-Fluorouracil,miR-424,1
+5,510,Doxorubicin,miR-545,1
+9,327,Fluorouracil,miR-34a,1
+0,234,Cisplatin,miR-218,1
+55,617,Prednisolone,miR-99a,1
+82,170,Cyclopamine,miR-18a,1
+63,50,Cyclosporin A,miR-106~25,1
+5,277,Doxorubicin,miR-302c,1
+52,371,5-Fluorouracil,miR-3940,1
+16,420,Docetaxel,miR-454,1
+45,28,Camptothecin,linc-VLDLR,1
+52,417,5-Fluorouracil,miR-4530,1
+16,287,Docetaxel,miR-30e,1
+7,133,Tamoxifen,miR-148b,1
+18,141,Vincristine,miR-155,1
+5,183,Doxorubicin,miR-193a,1
+82,327,Cyclopamine,miR-34a,1
+19,109,Etoposide,miR-135a,1
+1,401,Gemcitabine,miR-4476,1
+52,448,5-Fluorouracil,miR-4749,1
+91,153,Fludarabine,miR-181a,1
+101,220,Arsenic Trioxide,miR-21,1
+65,621,Prednisone,miR-Plus-A1031,1
+7,208,Tamoxifen,miR-200c,1
+0,198,Cisplatin,miR-199a-3p,1
+5,69,Doxorubicin,miR-1246,1
+0,113,Cisplatin,miR-138,1
+13,150,Oxaliplatin,miR-17-5p,1
+1,164,Gemcitabine,miR-185,1
+5,455,Doxorubicin,miR-486,1
+0,596,Cisplatin,miR-886,1
+3,40,Imatinib,let-7i,1
+66,282,Paroxetine,miR-30b,1
+5,112,Doxorubicin,miR-137,1
+0,277,Cisplatin,miR-302c,1
+43,25,Curcumin,UCA1,1
+5,556,Doxorubicin,miR-649,1
+16,155,Docetaxel,miR-181b,1
+10,258,Paclitaxel,miR-27a,1
+26,180,Bortezomib,miR-1915,1
+34,220,Sorafenib,miR-21,1
+52,313,5-Fluorouracil,miR-324,1
+47,30,Interferon-gamma,Let-7a,1
+46,412,Vinblastine,miR-451,1
+29,254,Verapamil,miR-26a,1
+50,340,PLX4720,miR-3651,1
+1,79,Gemcitabine,miR-1260b,1
+1,607,Gemcitabine,miR-92b,1
+34,42,Sorafenib,miR-100,1
+14,606,Carboplatin,miR-92a-2*,1
+1,578,Gemcitabine,miR-720,1
+51,279,platinum-based doublet chemotherapy ,miR-3065,1
+52,289,5-Fluorouracil,miR-31,1
+55,548,Prednisolone,miR-629,1
+6,126,Gefitinib,miR-145,1
+52,383,5-Fluorouracil,miR-425*,1
+1,435,Gemcitabine,miR-4695,1
+9,74,Fluorouracil,miR-125b,1
+26,69,Bortezomib,miR-1246,1
+79,558,Ribavirin,miR-652,1
+10,81,Paclitaxel,miR-1265,1
+5,123,Doxorubicin,miR-143*,1
+0,237,Cisplatin,miR-22,1
+5,320,Doxorubicin,miR-33a,1
+5,204,Doxorubicin,miR-19b-1*,1
+1,361,Gemcitabine,miR-378c,1
+29,141,Verapamil,miR-155,1
+37,183,Temozolomide,miR-193a,1
+98,202,Leucovorin,miR-19a,1
+0,500,Cisplatin,miR-520g,1
+53,600,Daunorubicin,miR-9,1
+13,232,Oxaliplatin,miR-216b,1
+16,130,Docetaxel,miR-146b,1
+5,208,Doxorubicin,miR-200c,1
+1,355,Gemcitabine,miR-374b,1
+3,252,Imatinib,miR-25,1
+31,336,Chemotherapy,miR-363,1
+5,243,Doxorubicin,miR-222,1
+0,246,Cisplatin,miR-224,1
+116,248,5-fluorouracil,miR-23a,1
+29,281,Verapamil,miR-30a*,1
+38,236,Cetuximab,miR-219-2,1
+29,501,Verapamil,miR-520h,1
+1,351,Gemcitabine,miR-373,1
+18,360,Vincristine,miR-378a,1
+5,254,Doxorubicin,miR-26a,1
+14,237,Carboplatin,miR-22,1
+1,427,Gemcitabine,miR-4665,1
+5,482,Doxorubicin,miR-517c,1
+17,266,Adriamycin,miR-29a,1
+52,33,5-Fluorouracil,let-7b,1
+52,332,5-Fluorouracil,miR-361,1
+10,236,Paclitaxel,miR-219-2,1
+18,166,Vincristine,miR-186*,1
+7,482,Tamoxifen,miR-517c,1
+5,247,Doxorubicin,miR-2277,1
+13,611,Oxaliplatin,miR-939,1
+1,291,Gemcitabine,miR-3126,1
+0,157,Cisplatin,miR-181d,1
+52,394,5-Fluorouracil,miR-4428,1
+7,73,Tamoxifen,miR-125a,1
+34,241,Sorafenib,miR-221,1
+5,494,Doxorubicin,miR-520,1
+17,45,Adriamycin,miR-103,1
+31,252,Chemotherapy,miR-25,1
+7,157,Tamoxifen,miR-181d,1
+0,126,Cisplatin,miR-145,1
+6,243,Gefitinib,miR-222,1
+0,317,Cisplatin,miR-335,1
+5,581,Doxorubicin,miR-760,1
+29,288,Verapamil,miR-30e*,1
+37,470,Temozolomide,miR-502,1
+1,32,Gemcitabine,let-7a,1
+0,250,Cisplatin,miR-23b-3p,1
+52,39,5-Fluorouracil,let-7g,1
+5,538,Doxorubicin,miR-606,1
+7,197,Tamoxifen,miR-199a,1
+29,515,Verapamil,miR-563,1
+13,284,Oxaliplatin,miR-30c,1
+5,516,Doxorubicin,miR-568,1
+14,166,Carboplatin,miR-186*,1
+0,230,Cisplatin,miR-216,1
+52,61,5-Fluorouracil,miR-1228,1
+6,104,Gefitinib,miR-132,1
+28,572,Pirarubicin,miR-6886-3p,1
+5,554,Doxorubicin,miR-643,1
+51,251,platinum-based doublet chemotherapy ,miR-24,1
+5,36,Doxorubicin,let-7e,1
+50,336,PLX4720,miR-363,1
+1,295,Gemcitabine,miR-3147,1
+13,87,Oxaliplatin,miR-128,1
+10,155,Paclitaxel,miR-181b,1
+16,184,Docetaxel,miR-193a-3p,1
+7,233,Tamoxifen,miR-217,1
+52,387,5-Fluorouracil,miR-4279,1
+13,202,Oxaliplatin,miR-19a,1
+29,170,Verapamil,miR-18a,1
+3,52,Imatinib,miR-10a,1
+52,214,5-Fluorouracil,miR-205,1
+19,151,Etoposide,miR-17-92,1
+37,74,Temozolomide,miR-125b,1
+13,54,Oxaliplatin,miR-10a*,1
+5,560,Doxorubicin,miR-655,1
+10,147,Paclitaxel,miR-16,1
+0,579,Cisplatin,miR-744,1
+52,455,5-Fluorouracil,miR-486,1
+13,32,Oxaliplatin,let-7a,1
+34,59,Sorafenib,miR-122,1
+1,544,Gemcitabine,miR-624*,1
+14,256,Carboplatin,miR-26b,1
+57,203,FOLFOX Chemotherapy,miR-19b,1
+10,500,Paclitaxel,miR-520g,1
+5,574,Doxorubicin,miR-7-1*,1
+0,6,Cisplatin,GAS5,1
+29,203,Verapamil,miR-19b,1
+48,261,Epirubicin,miR-28,1
+1,429,Gemcitabine,miR-4674,1
+5,523,Doxorubicin,miR-584,1
+1,347,Gemcitabine,miR-369,1
+82,351,Cyclopamine,miR-373,1
+5,104,Doxorubicin,miR-132,1
+29,307,Verapamil,miR-32,1
+84,131,Mitomycin C,miR-146b-5p,1
+52,420,5-Fluorouracil,miR-454,1
+1,391,Gemcitabine,miR-429,1
+1,156,Gemcitabine,miR-181c,1
+10,587,Paclitaxel,miR-769,1
+1,157,Gemcitabine,miR-181d,1
+84,260,Mitomycin C,miR-27b ,1
+1,529,Gemcitabine,miR-590,1
+64,184,Vinorelbine,miR-193a-3p,1
+64,482,Vinorelbine,miR-517c,1
+16,189,Docetaxel,miR-196a,1
+52,91,5-Fluorouracil,miR-1288,1
+5,227,Doxorubicin,miR-214,1
+29,235,Verapamil,miR-219,1
+13,83,Oxaliplatin,miR-127,1
+52,434,5-Fluorouracil,miR-4689,1
+100,220,Teniposide,miR-21,1
+1,191,Gemcitabine,miR-196b,1
+9,571,Fluorouracil,miR-6845-5p,1
+5,508,Doxorubicin,miR-542,1
+27,131,Methotrexate,miR-146b-5p,1
+5,129,Doxorubicin,miR-146a,1
+5,550,Doxorubicin,miR-633,1
+77,121,Levetiracetam,miR-142,1
+52,359,5-Fluorouracil,miR-378,1
+52,404,5-Fluorouracil,miR-4484,1
+5,319,Doxorubicin,miR-339,1
+3,225,Imatinib,miR-212,1
+7,259,Tamoxifen,miR-27b,1
+52,541,5-Fluorouracil,miR-614,1
+13,549,Oxaliplatin,miR-630,1
+31,280,Chemotherapy,miR-30a,1
+40,21,Dexamethasone,ROR1-AS1,1
+0,503,Cisplatin,miR-523,1
+9,156,Fluorouracil,miR-181c,1
+18,237,Vincristine,miR-22,1
+29,139,Verapamil,miR-153,1
+52,451,5-Fluorouracil,miR-4783,1
+18,382,Vincristine,miR-425,1
+3,73,Imatinib,miR-125a,1
+5,181,Doxorubicin,miR-192,1
+52,243,5-Fluorouracil,miR-222,1
+10,50,Paclitaxel,miR-106~25,1
+1,348,Gemcitabine,miR-370,1
+1,128,Gemcitabine,miR-1469,1
+42,116,Erlotinib,miR-140,1
+1,617,Gemcitabine,miR-99a,1
+19,469,Etoposide,miR-501-5P,1
+7,51,Tamoxifen,miR-107,1
+17,239,Adriamycin,miR-22-3p,1
+29,118,Verapamil,miR-141,1
+52,153,5-Fluorouracil,miR-181a,1
+10,188,Paclitaxel,miR-195,1
+0,388,Cisplatin,miR-4284,1
+0,62,Cisplatin,miR-1228*,1
+1,137,Gemcitabine,miR-151,1
+19,210,Etoposide,miR-202,1
+10,233,Paclitaxel,miR-217,1
+34,181,Sorafenib,miR-192,1
+16,349,Docetaxel,miR-371,1
+13,76,Oxaliplatin,miR-126,1
+16,616,Docetaxel,miR-98,1
+19,87,Etoposide,miR-128,1
+0,549,Cisplatin,miR-630,1
+7,324,Tamoxifen,miR-342,1
+10,167,Paclitaxel,miR-187,1
+29,189,Verapamil,miR-196a,1
+1,359,Gemcitabine,miR-378,1
+71,307,Cytarabine,miR-32,1
+87,150,Irinotecan,miR-17-5p,1
+5,153,Doxorubicin,miR-181a,1
+29,215,Verapamil,miR-206,1
+13,153,Oxaliplatin,miR-181a,1
+1,541,Gemcitabine,miR-614,1
+71,76,Cytarabine,miR-126,1
+5,155,Doxorubicin,miR-181b,1
+42,150,Erlotinib,miR-17-5p,1
+1,423,Gemcitabine,miR-4638,1
+0,604,Cisplatin,miR-92a,1
+53,220,Daunorubicin,miR-21,1
+0,227,Cisplatin,miR-214,1
+0,100,Cisplatin,miR-1307,1
+75,136,Sunitinib,miR-150,1
+32,241,TRAIL therapy,miR-221,1
+5,252,Doxorubicin,miR-25,1
+38,225,Cetuximab,miR-212,1
+37,223,Temozolomide,miR-210,1
+52,424,5-Fluorouracil,miR-4640,1
+1,385,Gemcitabine,miR-4258,1
+16,225,Docetaxel,miR-212,1
+19,328,Etoposide,miR-34a-5p,1
+0,594,Cisplatin,miR-877,1
+31,202,Chemotherapy,miR-19a,1
+3,334,Imatinib,miR-362,1
+10,148,Paclitaxel,miR-17,1
+1,161,Gemcitabine,miR-1826,1
+7,189,Tamoxifen,miR-196a,1
+1,67,Gemcitabine,miR-1237,1
+37,188,Temozolomide,miR-195,1
+10,184,Paclitaxel,miR-193a-3p,1
+52,103,5-Fluorouracil,miR-130b,1
+31,545,Chemotherapy,miR-625,1
+5,180,Doxorubicin,miR-1915,1
+39,258,Taxol,miR-27a,1
+0,193,Cisplatin,miR-197-3p,1
+13,369,Oxaliplatin,miR-383,1
+1,100,Gemcitabine,miR-1307,1
+5,139,Doxorubicin,miR-153,1
+96,184,Epirubicin hydrochloride,miR-193a-3p,1
+37,148,Temozolomide,miR-17,1
+0,93,Cisplatin,miR-129,1
+5,583,Doxorubicin,miR-765,1
+19,271,Etoposide,miR-29c,1
+53,317,Daunorubicin,miR-335,1
+50,33,PLX4720,let-7b,1
+29,604,Verapamil,miR-92a,1
+52,407,5-Fluorouracil,miR-4492,1
+1,554,Gemcitabine,miR-643,1
+13,57,Oxaliplatin,miR-1202,1
+52,208,5-Fluorouracil,miR-200c,1
+5,52,Doxorubicin,miR-10a,1
+52,326,5-Fluorouracil,miR-346,1
+14,259,Carboplatin,miR-27b,1
+29,536,Verapamil,miR-601,1
+52,471,5-Fluorouracil,miR-503,1
+66,548,Paroxetine,miR-629,1
+62,50,Colchicine,miR-106~25,1
+5,287,Doxorubicin,miR-30e,1
+38,586,Cetuximab,miR-768,1
+0,134,Cisplatin,miR-149,1
+52,78,5-Fluorouracil,miR-1260,1
+57,106,FOLFOX Chemotherapy,miR-133b,1
+16,254,Docetaxel,miR-26a,1
+0,617,Cisplatin,miR-99a,1
+11,0,Propofol,ANRIL,1
+29,214,Verapamil,miR-205,1
+0,340,Cisplatin,miR-3651,1
+45,153,Camptothecin,miR-181a,1
+5,596,Doxorubicin,miR-886,1
+16,319,Docetaxel,miR-339,1
+14,175,Carboplatin,miR-1908,1
+3,211,Imatinib,miR-203,1
+18,246,Vincristine,miR-224,1
+48,252,Epirubicin,miR-25,1
+5,113,Doxorubicin,miR-138,1
+43,206,Curcumin,miR-200a,1
+19,266,Etoposide,miR-29a,1
+16,69,Docetaxel,miR-1246,1
+5,131,Doxorubicin,miR-146b-5p,1
+5,189,Doxorubicin,miR-196a,1
+51,124,platinum-based doublet chemotherapy ,miR-144,1
+114,245,DAPT,miR-223,1
+1,66,Gemcitabine,miR-1236,1
+10,115,Paclitaxel,miR-139,1
+0,327,Cisplatin,miR-34a,1
+27,472,Methotrexate,miR-505,1
+1,242,Gemcitabine,miR-221*,1
+86,141,Arsenic trioxide,miR-155,1
+29,583,Verapamil,miR-765,1
+20,173,Mitoxantrone,miR-19,1
+52,505,5-Fluorouracil,miR-532,1
+80,126,pegIFN/RBV therapy,miR-145,1
+117,412,Hydroxyurea,miR-451,1
+0,162,Cisplatin,miR-183,1
+86,220,Arsenic trioxide,miR-21,1
+18,186,Vincristine,miR-193b*,1
+14,208,Carboplatin,miR-200c,1
+7,220,Tamoxifen,miR-21,1
+38,73,Cetuximab,miR-125a,1
+37,463,Temozolomide,miR-497,1
+16,564,Docetaxel,miR-663,1
+5,172,Doxorubicin,miR-18b,1
+13,531,Oxaliplatin,miR-591,1
+1,38,Gemcitabine,let-7f-1*,1
+5,498,Doxorubicin,miR-520d,1
+1,167,Gemcitabine,miR-187,1
+52,128,5-Fluorouracil,miR-1469,1
+0,200,Cisplatin,miR-199b,1
+0,268,Cisplatin,miR-29b,1
+52,90,5-Fluorouracil,miR-1285,1
+1,334,Gemcitabine,miR-362,1
+90,151,Topotecan,miR-17-92,1
+75,125,Sunitinib,miR-144-3p,1
+19,234,Etoposide,miR-218,1
+52,419,5-Fluorouracil,miR-4535,1
+52,561,5-Fluorouracil,miR-658,1
+32,284,TRAIL therapy,miR-30c,1
+52,442,5-Fluorouracil,miR-4722,1
+51,284,platinum-based doublet chemotherapy ,miR-30c,1
+51,156,platinum-based doublet chemotherapy ,miR-181c,1
+52,176,5-Fluorouracil,miR-191,1
+13,604,Oxaliplatin,miR-92a,1
+0,605,Cisplatin,miR-92a-1,1
+29,121,Verapamil,miR-142,1
+16,367,Docetaxel,miR-381,1
+1,202,Gemcitabine,miR-19a,1
+52,499,5-Fluorouracil,miR-520d*,1
+29,267,Verapamil,miR-29a*,1
+5,540,Doxorubicin,miR-613,1
+52,582,5-Fluorouracil,miR-762,1
+17,4,Adriamycin,CRNDE,1
+29,329,Verapamil,miR-34b,1
+29,617,Verapamil,miR-99a,1
+1,366,Gemcitabine,miR-378i,1
+14,180,Carboplatin,miR-1915,1
+29,506,Verapamil,miR-539,1
+5,140,Doxorubicin,miR-154*,1
+5,357,Doxorubicin,miR-376c,1
+52,234,5-Fluorouracil,miR-218,1
+52,432,5-Fluorouracil,miR-4685,1
+50,332,PLX4720,miR-361,1
+7,587,Tamoxifen,miR-769,1
+34,153,Sorafenib,miR-181a,1
+35,241,Melphalan,miR-221,1
+10,32,Paclitaxel,let-7a,1
+6,379,Gefitinib,miR-423,1
+5,141,Doxorubicin,miR-155,1
+8,6,Trastuzumab,GAS5,1
+0,375,Cisplatin,miR-411,1
+17,131,Adriamycin,miR-146b-5p,1
+29,472,Verapamil,miR-505,1
+17,453,Adriamycin,miR-483,1
+16,289,Docetaxel,miR-31,1
+5,604,Doxorubicin,miR-92a,1
+0,248,Cisplatin,miR-23a,1
+29,510,Verapamil,miR-545,1
+91,241,Fludarabine,miR-221,1
+0,479,Cisplatin,miR-515,1
+16,465,Docetaxel,miR-500,1
+52,578,5-Fluorouracil,miR-720,1
+16,280,Docetaxel,miR-30a,1
+57,170,FOLFOX Chemotherapy,miR-18a,1
+3,453,Imatinib,miR-483,1
+0,606,Cisplatin,miR-92a-2*,1
+71,317,Cytarabine,miR-335,1
+5,188,Doxorubicin,miR-195,1
+5,617,Doxorubicin,miR-99a,1
+1,74,Gemcitabine,miR-125b,1
+29,278,Verapamil,miR-302c*,1
+52,429,5-Fluorouracil,miR-4674,1
+43,220,Curcumin,miR-21,1
+5,231,Doxorubicin,miR-216a,1
+5,529,Doxorubicin,miR-590,1
+0,176,Cisplatin,miR-191,1
+18,505,Vincristine,miR-532,1
+1,216,Gemcitabine,miR-20a,1
+48,412,Epirubicin,miR-451,1
+0,181,Cisplatin,miR-192,1
+29,525,Verapamil,miR-586,1
+13,268,Oxaliplatin,miR-29b,1
+10,173,Paclitaxel,miR-19,1
+1,415,Gemcitabine,miR-4521,1
+52,100,5-Fluorouracil,miR-1307,1
+3,110,Imatinib,miR-135b,1
+57,202,FOLFOX Chemotherapy,miR-19a,1
+1,486,Gemcitabine,miR-518f,1
+66,68,Paroxetine,miR-124,1
+34,453,Sorafenib,miR-483,1
+7,205,Tamoxifen,miR-200,1
+1,175,Gemcitabine,miR-1908,1
+10,234,Paclitaxel,miR-218,1
+8,245,Trastuzumab,miR-223,1
+52,566,5-Fluorouracil,miR-665,1
+27,134,Methotrexate,miR-149,1
+0,414,Cisplatin,miR-452,1
+51,33,platinum-based doublet chemotherapy ,let-7b,1
+5,462,Doxorubicin,miR-496,1
+75,263,Sunitinib,miR-296,1
+16,392,Docetaxel,miR-431,1
+3,268,Imatinib,miR-29b,1
+52,402,5-Fluorouracil,miR-4478,1
+10,107,Paclitaxel,miR-134,1
+49,229,Capecitabine,miR-215,1
+1,428,Gemcitabine,miR-4669,1
+29,556,Verapamil,miR-649,1
+31,55,Chemotherapy,miR-10b,1
+18,391,Vincristine,miR-429,1
+29,538,Verapamil,miR-606,1
+14,187,Carboplatin,miR-194,1
+9,259,Fluorouracil,miR-27b,1
+52,391,5-Fluorouracil,miR-429,1
+13,551,Oxaliplatin,miR-638,1
+52,209,5-Fluorouracil,miR-200c*,1
+5,511,Doxorubicin,miR-548a,1
+7,512,Tamoxifen,miR-550,1
+57,237,FOLFOX Chemotherapy,miR-22,1
+29,327,Verapamil,miR-34a,1
+16,259,Docetaxel,miR-27b,1
+84,129,Mitomycin C,miR-146a,1
+36,16,Oxymatrine,MALAT1,1
+0,47,Cisplatin,miR-106a,1
+64,486,Vinorelbine,miR-518f,1
+6,56,Gefitinib,miR-1183,1
+29,585,Verapamil,miR-767,1
+0,481,Cisplatin,miR-517b,1
+5,228,Doxorubicin,miR-214*,1
+0,190,Cisplatin,miR-196a-5p,1
+67,618,Cyclophosphamide,miR-99a-5p,1
+0,72,Cisplatin,miR-1258,1
+0,218,Cisplatin,miR-20b,1
+1,455,Gemcitabine,miR-486,1
+0,194,Cisplatin,miR-1973,1
+10,185,Paclitaxel,miR-193b,1
+29,283,Verapamil,miR-30b*,1
+57,44,FOLFOX Chemotherapy,miR-101,1
+62,49,Colchicine,miR-106b-25,1
+10,134,Paclitaxel,miR-149,1
+0,468,Cisplatin,miR-501,1
+1,448,Gemcitabine,miR-4749,1
+1,190,Gemcitabine,miR-196a-5p,1
+52,446,5-Fluorouracil,miR-4739,1
+1,362,Gemcitabine,miR-378d,1
+18,395,Vincristine,miR-4430,1
+3,45,Imatinib,miR-103,1
+13,356,Oxaliplatin,miR-375,1
+52,400,5-Fluorouracil,miR-4467,1
+1,154,Gemcitabine,miR-181a*,1
+57,181,FOLFOX Chemotherapy,miR-192,1
+10,171,Paclitaxel,miR-18a*,1
+1,169,Gemcitabine,miR-188,1
+54,74,L-asparaginase,miR-125b,1
+5,276,Doxorubicin,miR-302b,1
+1,160,Gemcitabine,miR-1825,1
+10,183,Paclitaxel,miR-193a,1
+1,304,Gemcitabine,miR-3193,1
+10,390,Paclitaxel,miR-4288,1
+0,132,Cisplatin,miR-148a,1
+76,101,Platinum,miR-130a,1
+13,382,Oxaliplatin,miR-425,1
+52,168,5-Fluorouracil,miR-187*,1
+1,143,Gemcitabine,miR-15a,1
+23,6,Sirolimus,GAS5,1
+52,565,5-Fluorouracil,miR-663a,1
+6,202,Gefitinib,miR-19a,1
+5,329,Doxorubicin,miR-34b,1
+0,33,Cisplatin,let-7b,1
+13,608,Oxaliplatin,miR-93,1
+29,513,Verapamil,miR-555,1
+39,266,Taxol,miR-29a,1
+0,499,Cisplatin,miR-520d*,1
+3,227,Imatinib,miR-214,1
+1,69,Gemcitabine,miR-1246,1
+29,614,Verapamil,miR-96,1
+0,412,Cisplatin,miR-451,1
+10,208,Paclitaxel,miR-200c,1
+0,258,Cisplatin,miR-27a,1
+57,229,FOLFOX Chemotherapy,miR-215,1
+29,119,Verapamil,miR-141*,1
+51,271,platinum-based doublet chemotherapy ,miR-29c,1
+19,203,Etoposide,miR-19b,1
+10,284,Paclitaxel,miR-30c,1
+3,284,Imatinib,miR-30c,1
+0,502,Cisplatin,miR-522,1
+0,359,Cisplatin,miR-378,1
+26,128,Bortezomib,miR-1469,1
+59,74,Vemurafenib,miR-125b,1
+13,573,Oxaliplatin,miR-7,1
+6,83,Gefitinib,miR-127,1
+52,388,5-Fluorouracil,miR-4284,1
+1,133,Gemcitabine,miR-148b,1
+41,21,Ibrutinib,ROR1-AS1,1
+5,203,Doxorubicin,miR-19b,1
+0,287,Cisplatin,miR-30e,1
+27,368,Methotrexate,miR-382,1
+56,104,10-Hydroxycamptothecin,miR-132,1
+0,212,Cisplatin,miR-204,1
+27,339,Methotrexate,miR-365,1
+50,42,PLX4720,miR-100,1
+5,522,Doxorubicin,miR-582,1
+29,287,Verapamil,miR-30e,1
+0,36,Cisplatin,let-7e,1
+18,234,Vincristine,miR-218,1
+17,157,Adriamycin,miR-181d,1
+51,466,platinum-based doublet chemotherapy ,miR-500a,1
+5,382,Doxorubicin,miR-425,1
+9,243,Fluorouracil,miR-222,1
+65,246,Prednisone,miR-224,1
+31,153,Chemotherapy,miR-181a,1
+10,42,Paclitaxel,miR-100,1
+5,503,Doxorubicin,miR-523,1
+0,495,Cisplatin,miR-520a,1
+56,350,10-Hydroxycamptothecin,miR-372,1
+0,523,Cisplatin,miR-584,1
+16,251,Docetaxel,miR-24,1
+0,32,Cisplatin,let-7a,1
+10,249,Paclitaxel,miR-23b,1
+10,214,Paclitaxel,miR-205,1
+47,32,Interferon-gamma,let-7a,1
+0,573,Cisplatin,miR-7,1
+7,486,Tamoxifen,miR-518f,1
+43,207,Curcumin,miR-200b,1
+10,142,Paclitaxel,miR-155-5p,1
+52,450,5-Fluorouracil,miR-4758,1
+1,568,Gemcitabine,miR-675,1
+0,106,Cisplatin,miR-133b,1
+0,381,Cisplatin,miR-424*,1
+10,169,Paclitaxel,miR-188,1
+10,186,Paclitaxel,miR-193b*,1
+10,375,Paclitaxel,miR-411,1
+0,52,Cisplatin,miR-10a,1
+0,505,Cisplatin,miR-532,1
+6,289,Gefitinib,miR-31,1
+39,218,Taxol,miR-20b,1
+18,381,Vincristine,miR-424*,1
+52,93,5-Fluorouracil,miR-129,1
+19,148,Etoposide,miR-17,1
+79,126,Ribavirin,miR-145,1
+34,231,Sorafenib,miR-216a,1
+13,47,Oxaliplatin,miR-106a,1
+66,545,Paroxetine,miR-625,1
+29,496,Verapamil,miR-520b,1
+1,294,Gemcitabine,miR-3141,1
+38,203,Cetuximab,miR-19b,1
+7,9,Tamoxifen,HOTAIR,1
+5,599,Doxorubicin,miR-892b,1
+34,101,Sorafenib,miR-130a,1
+0,103,Cisplatin,miR-130b,1
+1,296,Gemcitabine,miR-3154,1
+8,74,Trastuzumab,miR-125b,1
+5,259,Doxorubicin,miR-27b,1
+52,149,5-Fluorouracil,miR-17*,1
+3,223,Imatinib,miR-210,1
+97,241,Fulvestrant,miR-221,1
+18,594,Vincristine,miR-877,1
+19,93,Etoposide,miR-129,1
+13,329,Oxaliplatin,miR-34b,1
+52,57,5-Fluorouracil,miR-1202,1
+53,201,Daunorubicin,miR-199b*,1
+5,169,Doxorubicin,miR-188,1
+7,409,Tamoxifen,miR-449a,1
+6,582,Gefitinib,miR-762,1
+9,69,Fluorouracil,miR-1246,1
+1,218,Gemcitabine,miR-20b,1
+3,32,Imatinib,let-7a,1
+1,620,Gemcitabine,miR-99b*,1
+32,243,TRAIL therapy,miR-222,1
+5,39,Doxorubicin,let-7g,1
+75,154,Sunitinib,miR-181a*,1
+13,81,Oxaliplatin,miR-1265,1
+16,388,Docetaxel,miR-4284,1
+5,563,Doxorubicin,miR-662,1
+29,231,Verapamil,miR-216a,1
+75,160,Sunitinib,miR-1825,1
+68,74,Mafosfamide,miR-125b,1
+1,203,Gemcitabine,miR-19b,1
+5,532,Doxorubicin,miR-592,1
+1,195,Gemcitabine,miR-1976,1
+7,332,Tamoxifen,miR-361,1
+5,506,Doxorubicin,miR-539,1
+3,103,Imatinib,miR-130b,1
+18,66,Vincristine,miR-1236,1
+0,551,Cisplatin,miR-638,1
+29,580,Verapamil,miR-758,1
+52,126,5-Fluorouracil,miR-145,1
+18,187,Vincristine,miR-194,1
+93,153,intensive induction chemotherapy based on cytarabine and idarubicine,miR-181a,1
+52,363,5-Fluorouracil,miR-378e,1
+26,322,Bortezomib,miR-33b,1
+16,208,Docetaxel,miR-200c,1
+5,525,Doxorubicin,miR-586,1
+27,165,Methotrexate,miR-186,1
+1,82,Gemcitabine,miR-1268,1
+28,10,Pirarubicin,HULC,1
+32,220,TRAIL therapy,miR-21,1
+5,391,Doxorubicin,miR-429,1
+19,216,Etoposide,miR-20a,1
+40,147,Dexamethasone,miR-16,1
+16,258,Docetaxel,miR-27a,1
+5,367,Doxorubicin,miR-381,1
+0,42,Cisplatin,miR-100,1
+50,181,PLX4720,miR-192,1
+1,447,Gemcitabine,miR-4745,1
+79,170,Ribavirin,miR-18a,1
+29,529,Verapamil,miR-590,1
+13,158,Oxaliplatin,miR-182,1
+8,223,Trastuzumab,miR-210,1
+52,430,5-Fluorouracil,miR-4675,1
+29,232,Verapamil,miR-216b,1
+7,492,Tamoxifen,miR-519d,1
+37,600,Temozolomide,miR-9,1
+0,223,Cisplatin,miR-210,1
+5,62,Doxorubicin,miR-1228*,1
+7,162,Tamoxifen,miR-183,1
+5,343,Doxorubicin,miR-367,1
+5,453,Doxorubicin,miR-483,1
+10,101,Paclitaxel,miR-130a,1
+3,36,Imatinib,let-7e,1
+0,550,Cisplatin,miR-633,1
+0,104,Cisplatin,miR-132,1
+1,129,Gemcitabine,miR-146a,1
+52,378,5-Fluorouracil,miR-422a,1
+52,426,5-Fluorouracil,miR-4655,1
+84,187,Mitomycin C,miR-194,1
+13,266,Oxaliplatin,miR-29a,1
+1,186,Gemcitabine,miR-193b*,1
+1,452,Gemcitabine,miR-4787,1
+10,110,Paclitaxel,miR-135b,1
+50,605,PLX4720,miR-92a-1,1
+52,51,5-Fluorouracil,miR-107,1
+52,315,5-Fluorouracil,miR-330,1
+1,567,Gemcitabine,miR-671,1
+91,454,Fludarabine,miR-485,1
+13,252,Oxaliplatin,miR-25,1
+52,185,5-Fluorouracil,miR-193b,1
+6,356,Gefitinib,miR-375,1
+29,144,Verapamil,miR-15a*,1
+0,35,Cisplatin,let-7d,1
+13,220,Oxaliplatin,miR-21,1
+64,493,Vinorelbine,miR-519e*,1
+5,119,Doxorubicin,miR-141*,1
+10,458,Paclitaxel,miR-490,1
+5,6,Doxorubicin,GAS5,1
+1,405,Gemcitabine,miR-4485,1
+75,613,Sunitinib,miR-942,1
+52,384,5-Fluorouracil,miR-4257,1
+31,322,Chemotherapy,miR-33b,1
+0,197,Cisplatin,miR-199a,1
+5,351,Doxorubicin,miR-373,1
+30,30,epirubicin,Let-7a,1
+29,500,Verapamil,miR-520g,1
+1,274,Gemcitabine,miR-301b,1
+13,368,Oxaliplatin,miR-382,1
+18,460,Vincristine,miR-494,1
+29,532,Verapamil,miR-592,1
+52,302,5-Fluorouracil,miR-3186,1
+80,122,pegIFN/RBV therapy,miR-143,1
+7,356,Tamoxifen,miR-375,1
+5,253,Doxorubicin,miR-25*,1
+6,107,Gefitinib,miR-134,1
+5,42,Doxorubicin,miR-100,1
+66,454,Paroxetine,miR-485,1
+52,291,5-Fluorouracil,miR-3126,1
+5,170,Doxorubicin,miR-18a,1
+52,389,5-Fluorouracil,miR-4286,1
+18,167,Vincristine,miR-187,1
+1,573,Gemcitabine,miR-7,1
+5,562,Doxorubicin,miR-660,1
+10,145,Paclitaxel,miR-15b,1
+75,115,Sunitinib,miR-139,1
+29,416,Verapamil,miR-453,1
+1,78,Gemcitabine,miR-1260,1
+52,562,5-Fluorouracil,miR-660,1
+5,497,Doxorubicin,miR-520c,1
+10,336,Paclitaxel,miR-363,1
+7,476,Tamoxifen,miR-512,1
+18,270,Vincristine,miR-29b-2*,1
+52,573,5-Fluorouracil,miR-7,1
+26,93,Bortezomib,miR-129,1
+0,154,Cisplatin,miR-181a*,1
+1,300,Gemcitabine,miR-3180,1
+17,25,Adriamycin,UCA1,1
+52,220,5-Fluorouracil,miR-21,1
+52,170,5-Fluorouracil,miR-18a,1
+5,513,Doxorubicin,miR-555,1
+5,316,Doxorubicin,miR-331,1
+64,490,Vinorelbine,miR-519b,1
+5,98,Doxorubicin,miR-1299,1
+9,150,Fluorouracil,miR-17-5p,1
+52,36,5-Fluorouracil,let-7e,1
+25,8,"1,25(OH)2D3",H19,1
+5,121,Doxorubicin,miR-142,1
+108,229,Tomudex,miR-215,1
+52,175,5-Fluorouracil,miR-1908,1
+1,302,Gemcitabine,miR-3186,1
+29,286,Verapamil,miR-30d*,1
+5,54,Doxorubicin,miR-10a*,1
+1,141,Gemcitabine,miR-155,1
+29,116,Verapamil,miR-140,1
+5,359,Doxorubicin,miR-378,1
+10,586,Paclitaxel,miR-768,1
+10,158,Paclitaxel,miR-182,1
+57,171,FOLFOX Chemotherapy,miR-18a*,1
+52,441,5-Fluorouracil,miR-4721,1
+0,202,Cisplatin,miR-19a,1
+27,185,Methotrexate,miR-193b,1
+1,426,Gemcitabine,miR-4655,1
+50,104,PLX4720,miR-132,1
+52,169,5-Fluorouracil,miR-188,1
+0,493,Cisplatin,miR-519e*,1
+50,323,PLX4720,miR-340,1
+52,89,5-Fluorouracil,miR-1280,1
+10,150,Paclitaxel,miR-17-5p,1
+38,25,Cetuximab,UCA1,1
+9,471,Fluorouracil,miR-503,1
+52,55,5-Fluorouracil,miR-10b,1
+34,215,Sorafenib,miR-206,1
+5,526,Doxorubicin,miR-587,1
+16,188,Docetaxel,miR-195,1
+0,592,Cisplatin,miR-875,1
+0,422,Cisplatin,miR-455-3p,1
+52,345,5-Fluorouracil,miR-3682,1
+75,118,Sunitinib,miR-141,1
+27,359,Methotrexate,miR-378,1
+1,321,Gemcitabine,miR-33a*,1
+52,415,5-Fluorouracil,miR-4521,1
+38,38,Cetuximab,let-7f-1*,1
+29,463,Verapamil,miR-497,1
+9,570,Fluorouracil,miR-6825-5p,1
+85,136,Pertuzumab,miR-150,1
+13,282,Oxaliplatin,miR-30b,1
+10,105,Paclitaxel,miR-133a,1
+57,52,FOLFOX Chemotherapy,miR-10a,1
+0,483,Cisplatin,miR-518b,1
+27,332,Methotrexate,miR-361,1
+5,274,Doxorubicin,miR-301b,1
+0,421,Cisplatin,miR-455,1
+55,42,Prednisolone,miR-100,1
+1,108,Gemcitabine,miR-1343,1
+52,379,5-Fluorouracil,miR-423,1
+3,51,Imatinib,miR-107,1
+29,560,Verapamil,miR-655,1
+29,228,Verapamil,miR-214*,1
+1,180,Gemcitabine,miR-1915,1
+5,146,Doxorubicin,miR-15b*,1
+65,494,Prednisone,miR-520,1
+0,83,Cisplatin,miR-127,1
+94,183,Epirubicin HCl,miR-193a,1
+10,118,Paclitaxel,miR-141,1
+6,241,Gefitinib,miR-221,1
+5,186,Doxorubicin,miR-193b*,1
+16,143,Docetaxel,miR-15a,1
+52,145,5-Fluorouracil,miR-15b,1
+59,213,Vemurafenib,miR-204-5p,1
+29,508,Verapamil,miR-542,1
+52,35,5-Fluorouracil,let-7d,1
+5,81,Doxorubicin,miR-1265,1
+29,505,Verapamil,miR-532,1
+52,204,5-Fluorouracil,miR-19b-1*,1
+0,216,Cisplatin,miR-20a,1
+5,47,Doxorubicin,miR-106a,1
+29,421,Verapamil,miR-455,1
+18,207,Vincristine,miR-200b,1
+0,172,Cisplatin,miR-18b,1
+10,315,Paclitaxel,miR-330,1
+16,391,Docetaxel,miR-429,1
+1,394,Gemcitabine,miR-4428,1
+29,482,Verapamil,miR-517c,1
+49,129,Capecitabine,miR-146a,1
+52,339,5-Fluorouracil,miR-365,1
+29,392,Verapamil,miR-431,1
+10,80,Paclitaxel,miR-1264,1
+0,540,Cisplatin,miR-613,1
+5,114,Doxorubicin,miR-138-1*,1
+5,282,Doxorubicin,miR-30b,1
+52,305,5-Fluorouracil,miR-3195,1
+0,530,Cisplatin,miR-590-5p,1
+0,46,Cisplatin,miR-105,1
+32,145,TRAIL therapy,miR-15b,1
+1,616,Gemcitabine,miR-98,1
+0,48,Cisplatin,miR-106b,1
+38,319,Cetuximab,miR-339,1
+1,418,Gemcitabine,miR-4532,1
+6,74,Gefitinib,miR-125b,1
+17,9,Adriamycin,HOTAIR,1
+1,400,Gemcitabine,miR-4467,1
+10,69,Paclitaxel,miR-1246,1
+10,239,Paclitaxel,miR-22-3p,1
+52,546,5-Fluorouracil,miR-625*,1
+52,365,5-Fluorouracil,miR-378g,1
+76,461,Platinum,miR-495,1
+30,69,epirubicin,miR-1246,1
+1,73,Gemcitabine,miR-125a,1
+1,252,Gemcitabine,miR-25,1
+1,569,Gemcitabine,miR-675*,1
+5,302,Doxorubicin,miR-3186,1
+1,55,Gemcitabine,miR-10b,1
+55,317,Prednisolone,miR-335,1
+0,243,Cisplatin,miR-222,1
+3,145,Imatinib,miR-15b,1
+7,545,Tamoxifen,miR-625,1
+57,218,FOLFOX Chemotherapy,miR-20b,1
+52,449,5-Fluorouracil,miR-4750,1
+26,135,Bortezomib,miR-149*,1
+1,94,Gemcitabine,miR-129*,1
+52,270,5-Fluorouracil,miR-29b-2*,1
+52,99,5-Fluorouracil,miR-130,1
+46,29,Vinblastine,Let-7,1
+18,153,Vincristine,miR-181a,1
+65,220,Prednisone,miR-21,1
+7,226,Tamoxifen,miR-213,1
+51,41,platinum-based doublet chemotherapy ,miR-1,1
+50,129,PLX4720,miR-146a,1
+7,92,Tamoxifen,miR-128a,1
+27,356,Methotrexate,miR-375,1
+38,588,Cetuximab,miR-801,1
+52,584,5-Fluorouracil,miR-766,1
+29,497,Verapamil,miR-520c,1
+5,312,Doxorubicin,miR-320d,1
+7,254,Tamoxifen,miR-26a,1
+45,327,Camptothecin,miR-34a,1
+26,607,Bortezomib,miR-92b,1
+1,214,Gemcitabine,miR-205,1
+1,422,Gemcitabine,miR-455-3p,1
+10,197,Paclitaxel,miR-199a,1
+1,241,Gemcitabine,miR-221,1
+10,326,Paclitaxel,miR-346,1
+19,488,Etoposide,miR-519,1
+52,254,5-Fluorouracil,miR-26a,1
+0,125,Cisplatin,miR-144-3p,1
+1,176,Gemcitabine,miR-191,1
+38,263,Cetuximab,miR-296,1
+51,115,platinum-based doublet chemotherapy ,miR-139,1
+0,37,Cisplatin,let-7f,1
+0,453,Cisplatin,miR-483,1
+18,263,Vincristine,miR-296,1
+0,129,Cisplatin,miR-146a,1
+27,259,Methotrexate,miR-27b,1
+50,36,PLX4720,let-7e,1
+1,432,Gemcitabine,miR-4685,1
+33,158,Glucocorticoid,miR-182,1
+5,237,Doxorubicin,miR-22,1
+0,73,Cisplatin,miR-125a,1
+7,391,Tamoxifen,miR-429,1
+29,459,Verapamil,miR-491,1
+52,523,5-Fluorouracil,miR-584,1
+1,411,Gemcitabine,miR-450a,1
+16,380,Docetaxel,miR-424,1
+17,41,Adriamycin,miR-1,1
+99,215,Euthyrox,miR-206,1
+29,540,Verapamil,miR-613,1
+92,285,histone deacetylase inhibitor,miR-30d,1
+82,141,Cyclopamine,miR-155,1
+1,402,Gemcitabine,miR-4478,1
+50,310,PLX4720,miR-320a,1
+29,474,Verapamil,miR-509,1
+52,62,5-Fluorouracil,miR-1228*,1
+0,564,Cisplatin,miR-663,1
+38,620,Cetuximab,miR-99b*,1
+13,185,Oxaliplatin,miR-193b,1
+0,457,Cisplatin,miR-489,1
+29,522,Verapamil,miR-582,1
+3,136,Imatinib,miR-150,1
+0,76,Cisplatin,miR-126,1
+1,492,Gemcitabine,miR-519d,1
+29,504,Verapamil,miR-526b*,1
+75,183,Sunitinib,miR-193a,1
+1,363,Gemcitabine,miR-378e,1
+1,319,Gemcitabine,miR-339,1
+10,181,Paclitaxel,miR-192,1
+5,261,Doxorubicin,miR-28,1
+52,361,5-Fluorouracil,miR-378c,1
+5,268,Doxorubicin,miR-29b,1
+60,43,Crizotinib,miR-100-5p,1
+29,490,Verapamil,miR-519b,1
+1,548,Gemcitabine,miR-629,1
+5,74,Doxorubicin,miR-125b,1
+0,147,Cisplatin,miR-16,1
+65,66,Prednisone,miR-1236,1
+32,74,TRAIL therapy,miR-125b,1
+1,187,Gemcitabine,miR-194,1
+96,239,Epirubicin hydrochloride,miR-22-3p,1
+5,595,Doxorubicin,miR-885,1
+0,245,Cisplatin,miR-223,1
+1,220,Gemcitabine,miR-21,1
+0,256,Cisplatin,miR-26b,1
+84,256,Mitomycin C,miR-26b,1
+22,6,Rapamycin,GAS5,1
+1,313,Gemcitabine,miR-324,1
+31,208,Chemotherapy,miR-200c,1
+18,177,Vincristine,miR-191*,1
+64,525,Vinorelbine,miR-586,1
+10,266,Paclitaxel,miR-29a,1
+79,122,Ribavirin,miR-143,1
+5,66,Doxorubicin,miR-1236,1
+52,172,5-Fluorouracil,miR-18b,1
+31,74,Chemotherapy,miR-125b,1
+5,137,Doxorubicin,miR-151,1
+16,266,Docetaxel,miR-29a,1
+3,310,Imatinib,miR-320a,1
+5,14,Doxorubicin,Lnc-VLDLR,1
+13,188,Oxaliplatin,miR-195,1
+29,325,Verapamil,miR-345,1
+57,223,FOLFOX Chemotherapy,miR-210,1
+17,24,Adriamycin,TUG1,1
+18,248,Vincristine,miR-23a,1
+0,153,Cisplatin,miR-181a,1
+5,48,Doxorubicin,miR-106b,1
+0,357,Cisplatin,miR-376c,1
+9,188,Fluorouracil,miR-195,1
+17,412,Adriamycin,miR-451,1
+13,157,Oxaliplatin,miR-181d,1
+0,529,Cisplatin,miR-590,1
+5,520,Doxorubicin,miR-576,1
+13,139,Oxaliplatin,miR-153,1
+1,303,Gemcitabine,miR-3187,1
+29,498,Verapamil,miR-520d,1
+5,221,Doxorubicin,miR-21*,1
+67,564,Cyclophosphamide,miR-663,1
+57,197,FOLFOX Chemotherapy,miR-199a,1
+1,101,Gemcitabine,miR-130a,1
+5,115,Doxorubicin,miR-139,1
+0,542,Cisplatin,miR-615,1
+1,456,Gemcitabine,miR-487b,1
+1,597,Gemcitabine,miR-887,1
+19,173,Etoposide,miR-19,1
+0,368,Cisplatin,miR-382,1
+13,126,Oxaliplatin,miR-145,1
+57,124,FOLFOX Chemotherapy,miR-144,1
+17,103,Adriamycin,miR-130b,1
+13,145,Oxaliplatin,miR-15b,1
+52,397,5-Fluorouracil,miR-4463,1
+52,475,5-Fluorouracil,miR-5096,1
+0,69,Cisplatin,miR-1246,1
+7,501,Tamoxifen,miR-520h,1
+10,153,Paclitaxel,miR-181a,1
+3,156,Imatinib,miR-181c,1
+50,614,PLX4720,miR-96,1
+57,379,FOLFOX Chemotherapy,miR-423,1
+59,327,Vemurafenib,miR-34a,1
+5,557,Doxorubicin,miR-651,1
+29,183,Verapamil,miR-193a,1
+5,542,Doxorubicin,miR-615,1
+52,438,5-Fluorouracil,miR-4711,1
+106,220,Pingyangmycin,miR-21,1
+9,126,Fluorouracil,miR-145,1
+5,463,Doxorubicin,miR-497,1
+53,74,Daunorubicin,miR-125b,1
+52,108,5-Fluorouracil,miR-1343,1
+6,150,Gefitinib,miR-17-5p,1
+1,389,Gemcitabine,miR-4286,1
+52,385,5-Fluorouracil,miR-4258,1
+54,34,L-asparaginase,let-7c,1
+1,523,Gemcitabine,miR-584,1
+3,455,Imatinib,miR-486,1
+66,285,Paroxetine,miR-30d,1
+10,614,Paclitaxel,miR-96,1
+0,377,Cisplatin,miR-421,1
+9,213,Fluorouracil,miR-204-5p,1
+7,483,Tamoxifen,miR-518b,1
+1,407,Gemcitabine,miR-4492,1
+29,352,Verapamil,miR-373*,1
+57,256,FOLFOX Chemotherapy,miR-26b,1
+5,200,Doxorubicin,miR-199b,1
+13,311,Oxaliplatin,miR-320c,1
+3,339,Imatinib,miR-365,1
+0,346,Cisplatin,miR-3687,1
+5,621,Doxorubicin,miR-Plus-A1031,1
+9,615,Fluorouracil,miR-96-5p,1
+5,465,Doxorubicin,miR-500,1
+0,43,Cisplatin,miR-100-5p,1
+19,317,Etoposide,miR-335,1
+13,55,Oxaliplatin,miR-10b,1
+0,607,Cisplatin,miR-92b,1
+19,141,Etoposide,miR-155,1
+1,350,Gemcitabine,miR-372,1
+5,289,Doxorubicin,miR-31,1
+52,314,5-Fluorouracil,miR-328,1
+6,193,Gefitinib,miR-197-3p,1
+13,96,Oxaliplatin,miR-1293,1
+52,179,5-Fluorouracil,miR-1914*,1
+52,118,5-Fluorouracil,miR-141,1
+100,216,Teniposide,miR-20a,1
+5,223,Doxorubicin,miR-210,1
+9,250,Fluorouracil,miR-23b-3p,1
+13,543,Oxaliplatin,miR-618,1
+18,202,Vincristine,miR-19a,1
+0,124,Cisplatin,miR-144,1
+53,76,Daunorubicin,miR-126,1
+52,440,5-Fluorouracil,miR-4716,1
+34,48,Sorafenib,miR-106b,1
+1,346,Gemcitabine,miR-3687,1
+57,313,FOLFOX Chemotherapy,miR-324,1
+52,183,5-Fluorouracil,miR-193a,1
+1,619,Gemcitabine,miR-99b,1
+13,310,Oxaliplatin,miR-320a,1
+5,376,Doxorubicin,miR-412,1
+0,331,Cisplatin,miR-3607,1
+18,76,Vincristine,miR-126,1
+8,158,Trastuzumab,miR-182,1
+7,496,Tamoxifen,miR-520b,1
+0,379,Cisplatin,miR-423,1
+50,317,PLX4720,miR-335,1
+97,243,Fulvestrant,miR-222,1
+1,85,Gemcitabine,miR-1275,1
+52,591,5-Fluorouracil,miR-874,1
+97,189,Fulvestrant,miR-196a,1
+13,120,Oxaliplatin,miR-141-3p,1
+52,453,5-Fluorouracil,miR-483,1
+30,8,epirubicin,H19,1
+0,164,Cisplatin,miR-185,1
+7,325,Tamoxifen,miR-345,1
+53,548,Daunorubicin,miR-629,1
+5,148,Doxorubicin,miR-17,1
+29,129,Verapamil,miR-146a,1
+19,42,Etoposide,miR-100,1
+13,69,Oxaliplatin,miR-1246,1
+5,110,Doxorubicin,miR-135b,1
+5,202,Doxorubicin,miR-19a,1
+0,170,Cisplatin,miR-18a,1
+5,118,Doxorubicin,miR-141,1
+9,202,Fluorouracil,miR-19a,1
+5,470,Doxorubicin,miR-502,1
+10,170,Paclitaxel,miR-18a,1
+1,450,Gemcitabine,miR-4758,1
+1,245,Gemcitabine,miR-223,1
+57,129,FOLFOX Chemotherapy,miR-146a,1
+9,22,Fluorouracil,SLC25A25-AS1,1
+1,445,Gemcitabine,miR-4732,1
+5,32,Doxorubicin,let-7a,1
+1,297,Gemcitabine,miR-3173,1
+52,435,5-Fluorouracil,miR-4695,1
+84,180,Mitomycin C,miR-1915,1
+10,351,Paclitaxel,miR-373,1
+75,126,Sunitinib,miR-145,1
+1,437,Gemcitabine,miR-4710,1
+10,202,Paclitaxel,miR-19a,1
+67,74,Cyclophosphamide,miR-125b,1
+0,224,Cisplatin,miR-211,1
+5,106,Doxorubicin,miR-133b,1
+52,178,5-Fluorouracil,miR-1913,1
+16,585,Docetaxel,miR-767,1
+54,77,L-asparaginase,miR-126*,1
+29,357,Verapamil,miR-376c,1
+0,353,Cisplatin,miR-374a,1
+10,306,Paclitaxel,miR-3196,1
+0,351,Cisplatin,miR-373,1
+7,489,Tamoxifen,miR-519a,1
+29,552,Verapamil,miR-639,1
+1,414,Gemcitabine,miR-452,1
+13,477,Oxaliplatin,miR-513a,1
+10,130,Paclitaxel,miR-146b,1
+0,272,Cisplatin,miR-300,1
+5,334,Doxorubicin,miR-362,1
+13,568,Oxaliplatin,miR-675,1
+0,189,Cisplatin,miR-196a,1
+50,258,PLX4720,miR-27a,1
+52,594,5-Fluorouracil,miR-877,1
+5,22,Doxorubicin,SLC25A25-AS1,1
+52,410,5-Fluorouracil,miR-4508,1
+18,133,Vincristine,miR-148b,1
+57,268,FOLFOX Chemotherapy,miR-29b,1
+57,214,FOLFOX Chemotherapy,miR-205,1
+13,512,Oxaliplatin,miR-550,1
+18,84,Vincristine,miR-1273g,1
+52,303,5-Fluorouracil,miR-3187,1
+52,370,5-Fluorouracil,miR-3937,1
+57,133,FOLFOX Chemotherapy,miR-148b,1
+5,174,Doxorubicin,miR-190,1
+42,110,Erlotinib,miR-135b,1
+57,266,FOLFOX Chemotherapy,miR-29a,1
+50,509,PLX4720,miR-543,1
+5,149,Doxorubicin,miR-17*,1
+5,101,Doxorubicin,miR-130a,1
+50,259,PLX4720,miR-27b,1
+10,227,Paclitaxel,miR-214,1
+1,508,Gemcitabine,miR-542,1
+1,253,Gemcitabine,miR-25*,1
+5,507,Doxorubicin,miR-541*,1
+5,601,Doxorubicin,miR-920,1
+84,282,Mitomycin C,miR-30b,1
+84,259,Mitomycin C,miR-27b,1
+27,116,Methotrexate,miR-140,1
+7,46,Tamoxifen,miR-105,1
+52,293,5-Fluorouracil,miR-3130,1
+13,572,Oxaliplatin,miR-6886-3p,1
+6,590,Gefitinib,miR-873,1
+64,524,Vinorelbine,miR-585,1
+14,248,Carboplatin,miR-23a,1
+6,282,Gefitinib,miR-30b,1
+8,120,Trastuzumab,miR-141-3p,1
+10,324,Paclitaxel,miR-342,1
+5,475,Doxorubicin,miR-5096,1
+53,73,Daunorubicin,miR-125a,1
+3,147,Imatinib,miR-16,1
+18,243,Vincristine,miR-222,1
+57,317,FOLFOX Chemotherapy,miR-335,1
+52,253,5-Fluorouracil,miR-25*,1
+52,218,5-Fluorouracil,miR-20b,1
+19,220,Etoposide,miR-21,1
+10,47,Paclitaxel,miR-106a,1
+1,612,Gemcitabine,miR-940,1
+5,245,Doxorubicin,miR-223,1
+7,327,Tamoxifen,miR-34a,1
+50,87,PLX4720,miR-128,1
+37,52,Temozolomide,miR-10a,1
+0,105,Cisplatin,miR-133a,1
+17,258,Adriamycin,miR-27a,1
+29,322,Verapamil,miR-33b,1
+10,175,Paclitaxel,miR-1908,1
+1,42,Gemcitabine,miR-100,1
+10,280,Paclitaxel,miR-30a,1
+28,8,Pirarubicin,H19,1
+0,474,Cisplatin,miR-509,1
+0,260,Cisplatin,miR-27b ,1
+57,216,FOLFOX Chemotherapy,miR-20a,1
+26,95,Bortezomib,miR-1290,1
+52,604,5-Fluorouracil,miR-92a,1
+19,461,Etoposide,miR-495,1
+34,77,Sorafenib,miR-126*,1
+84,186,Mitomycin C,miR-193b*,1
+79,329,Ribavirin,miR-34b,1
+1,425,Gemcitabine,miR-4646,1
+0,319,Cisplatin,miR-339,1
+7,137,Tamoxifen,miR-151,1
+52,45,5-Fluorouracil,miR-103,1
+0,276,Cisplatin,miR-302b,1
+52,350,5-Fluorouracil,miR-372,1
+65,270,Prednisone,miR-29b-2*,1
+54,600,L-asparaginase,miR-9,1
+31,64,Chemotherapy,miR-1233,1
+75,141,Sunitinib,miR-155,1
+1,130,Gemcitabine,miR-146b,1
+5,616,Doxorubicin,miR-98,1
+29,315,Verapamil,miR-330,1
+0,616,Cisplatin,miR-98,1
+9,212,Fluorouracil,miR-204,1
+1,178,Gemcitabine,miR-1913,1
+52,612,5-Fluorouracil,miR-940,1
+13,94,Oxaliplatin,miR-129*,1
+34,28,Sorafenib,linc-VLDLR,1
+55,600,Prednisolone,miR-9,1
+18,617,Vincristine,miR-99a,1
+52,366,5-Fluorouracil,miR-378i,1
+5,132,Doxorubicin,miR-148a,1
+117,258,Hydroxyurea,miR-27a,1
+51,165,platinum-based doublet chemotherapy ,miR-186,1
+75,327,Sunitinib,miR-34a,1
+17,220,Adriamycin,miR-21,1
+52,262,5-Fluorouracil,miR-2861,1
+0,349,Cisplatin,miR-371,1
+0,109,Cisplatin,miR-135a,1
+9,572,Fluorouracil,miR-6886-3p,1
+0,486,Cisplatin,miR-518f,1
+52,335,5-Fluorouracil,miR-3621,1
+35,243,Melphalan,miR-222,1
+5,214,Doxorubicin,miR-205,1
+0,600,Cisplatin,miR-9,1
+0,490,Cisplatin,miR-519b,1
+51,32,platinum-based doublet chemotherapy ,let-7a,1
+52,129,5-Fluorouracil,miR-146a,1
+52,65,5-Fluorouracil,miR-1234,1
+5,143,Doxorubicin,miR-15a,1
+29,537,Verapamil,miR-605,1
+6,254,Gefitinib,miR-26a,1
+1,382,Gemcitabine,miR-425,1
+7,207,Tamoxifen,miR-200b,1
+7,573,Tamoxifen,miR-7,1
+18,71,Vincristine,miR-1256,1
+18,201,Vincristine,miR-199b*,1
+5,534,Doxorubicin,miR-593*,1
+84,157,Mitomycin C,miR-181d,1
+5,86,Doxorubicin,miR-1277,1
+52,79,5-Fluorouracil,miR-1260b,1
+5,138,Doxorubicin,miR-152,1
+73,92,Exemestane,miR-128a,1
+7,313,Tamoxifen,miR-324,1
+120,519,AED therapy,miR-574,1
+5,580,Doxorubicin,miR-758,1
+5,241,Doxorubicin,miR-221,1
+52,405,5-Fluorouracil,miR-4485,1
+10,600,Paclitaxel,miR-9,1
+16,187,Docetaxel,miR-194,1
+52,346,5-Fluorouracil,miR-3687,1
+9,30,Fluorouracil,Let-7a,1
+66,567,Paroxetine,miR-671,1
+40,143,Dexamethasone,miR-15a,1
+52,279,5-Fluorouracil,miR-3065,1
+0,316,Cisplatin,miR-331,1
+17,273,Adriamycin,miR-301a,1
+52,321,5-Fluorouracil,miR-33a*,1
+5,609,Doxorubicin,miR-933,1
+9,59,Fluorouracil,miR-122,1
+7,192,Tamoxifen,miR-197,1
+6,227,Gefitinib,miR-214,1
+52,614,5-Fluorouracil,miR-96,1
+9,12,Fluorouracil,LOC285194,1
+7,76,Tamoxifen,miR-126,1
+16,336,Docetaxel,miR-363,1
+33,68,Glucocorticoid,miR-124,1
+52,436,5-Fluorouracil,miR-4707,1
+13,192,Oxaliplatin,miR-197,1
+19,196,Etoposide,miR-198,1
+29,470,Verapamil,miR-502,1
+5,598,Doxorubicin,miR-888,1
+0,158,Cisplatin,miR-182,1
+10,85,Paclitaxel,miR-1275,1
+18,228,Vincristine,miR-214*,1
+28,183,Pirarubicin,miR-193a,1
+6,549,Gefitinib,miR-630,1
+0,141,Cisplatin,miR-155,1
+13,318,Oxaliplatin,miR-338,1
+0,253,Cisplatin,miR-25*,1
+52,437,5-Fluorouracil,miR-4710,1
+39,29,Taxol,Let-7,1
+52,154,5-Fluorouracil,miR-181a*,1
+5,147,Doxorubicin,miR-16,1
+56,76,10-Hydroxycamptothecin,miR-126,1
+1,145,Gemcitabine,miR-15b,1
+5,158,Doxorubicin,miR-182,1
+52,48,5-Fluorouracil,miR-106b,1
+6,152,Gefitinib,miR-181,1
+29,206,Verapamil,miR-200a,1
+1,467,Gemcitabine,miR-500b,1
+82,268,Cyclopamine,miR-29b,1
+16,157,Docetaxel,miR-181d,1
+13,285,Oxaliplatin,miR-30d,1
+5,421,Doxorubicin,miR-455,1
+52,427,5-Fluorouracil,miR-4665,1
+29,153,Verapamil,miR-181a,1
+6,113,Gefitinib,miR-138,1
+75,283,Sunitinib,miR-30b*,1
+1,381,Gemcitabine,miR-424*,1
+32,9,TRAIL therapy,HOTAIR,1
+7,457,Tamoxifen,miR-489,1
+27,328,Methotrexate,miR-34a-5p,1
+10,123,Paclitaxel,miR-143*,1
+18,157,Vincristine,miR-181d,1
+5,133,Doxorubicin,miR-148b,1
+5,307,Doxorubicin,miR-32,1
+29,123,Verapamil,miR-143*,1
+66,314,Paroxetine,miR-328,1
+5,531,Doxorubicin,miR-591,1
+0,603,Cisplatin,miR-923,1
+14,202,Carboplatin,miR-19a,1
+13,575,Oxaliplatin,miR-7-5p,1
+52,216,5-Fluorouracil,miR-20a,1
+5,235,Doxorubicin,miR-219,1
+13,45,Oxaliplatin,miR-103,1
+112,243,AGRO100,miR-222,1
+5,614,Doxorubicin,miR-96,1
+10,609,Paclitaxel,miR-933,1
+16,617,Docetaxel,miR-99a,1
+13,97,Oxaliplatin,miR-1297,1
+0,166,Cisplatin,miR-186*,1
+52,466,5-Fluorouracil,miR-500a,1
+6,463,Gefitinib,miR-497,1
+0,484,Cisplatin,miR-518c,1
+5,324,Doxorubicin,miR-342,1
+52,428,5-Fluorouracil,miR-4669,1
+17,47,Adriamycin,miR-106a,1
+5,246,Doxorubicin,miR-224,1
+66,283,Paroxetine,miR-30b*,1
+10,122,Paclitaxel,miR-143,1
+1,566,Gemcitabine,miR-665,1
+1,595,Gemcitabine,miR-885,1
+16,73,Docetaxel,miR-125a,1
+5,217,Doxorubicin,miR-20a-5p,1
+18,203,Vincristine,miR-19b,1
+10,104,Paclitaxel,miR-132,1
+0,136,Cisplatin,miR-150,1
+14,129,Carboplatin,miR-146a,1
+5,283,Doxorubicin,miR-30b*,1
+13,63,Oxaliplatin,miR-1229-5p,1
+7,183,Tamoxifen,miR-193a,1
+0,196,Cisplatin,miR-198,1
+55,369,Prednisolone,miR-383,1
+52,342,5-Fluorouracil,miR-3665,1
+10,358,Paclitaxel,miR-377,1
+1,388,Gemcitabine,miR-4284,1
+13,254,Oxaliplatin,miR-26a,1
+29,596,Verapamil,miR-886,1
+13,393,Oxaliplatin,miR-433,1
+10,559,Paclitaxel,miR-654-5p,1
+48,356,Epirubicin,miR-375,1
+29,174,Verapamil,miR-190,1
+0,536,Cisplatin,miR-601,1
+0,207,Cisplatin,miR-200b,1
+0,358,Cisplatin,miR-377,1
+9,63,Fluorouracil,miR-1229-5p,1
+17,184,Adriamycin,miR-193a-3p,1
+5,210,Doxorubicin,miR-202,1
+6,284,Gefitinib,miR-30c,1
+5,480,Doxorubicin,miR-517a,1
+0,131,Cisplatin,miR-146b-5p,1
+55,34,Prednisolone,let-7c,1
+0,185,Cisplatin,miR-193b,1
+1,326,Gemcitabine,miR-346,1
+50,96,PLX4720,miR-1293,1
+42,208,Erlotinib,miR-200c,1
+57,509,FOLFOX Chemotherapy,miR-543,1
+7,620,Tamoxifen,miR-99b*,1
+52,252,5-Fluorouracil,miR-25,1
+18,551,Vincristine,miR-638,1
+13,523,Oxaliplatin,miR-584,1
+3,188,Imatinib,miR-195,1
+0,336,Cisplatin,miR-363,1
+1,398,Gemcitabine,miR-4465,1
+5,317,Doxorubicin,miR-335,1
+1,127,Gemcitabine,miR-1468,1
+29,521,Verapamil,miR-578,1
+14,131,Carboplatin,miR-146b-5p,1
+16,138,Docetaxel,miR-152,1
+66,468,Paroxetine,miR-501,1
+81,124,Dichloroacetate,miR-144,1
+1,555,Gemcitabine,miR-647,1
+13,287,Oxaliplatin,miR-30e,1
+5,514,Doxorubicin,miR-560,1
+52,116,5-Fluorouracil,miR-140,1
+29,347,Verapamil,miR-369,1
+7,479,Tamoxifen,miR-515,1
+37,113,Temozolomide,miR-138,1
+5,284,Doxorubicin,miR-30c,1
+13,222,Oxaliplatin,miR-21-5p,1
+29,528,Verapamil,miR-589*,1
+7,221,Tamoxifen,miR-21*,1
+52,337,5-Fluorouracil,miR-363*,1
+0,101,Cisplatin,miR-130a,1
+18,468,Vincristine,miR-501,1
+37,414,Temozolomide,miR-452,1
+7,379,Tamoxifen,miR-423,1
+70,618,Rituximab,miR-99a-5p,1
+5,360,Doxorubicin,miR-378a,1
+57,59,FOLFOX Chemotherapy,miR-122,1
+10,116,Paclitaxel,miR-140,1
+50,458,PLX4720,miR-490,1
+9,47,Fluorouracil,miR-106a,1
+19,217,Etoposide,miR-20a-5p,1
+27,308,Methotrexate,miR-320,1
+16,134,Docetaxel,miR-149,1
+48,31,Epirubicin,hsa-1274A,1
+1,583,Gemcitabine,miR-765,1
+13,227,Oxaliplatin,miR-214,1
+14,153,Carboplatin,miR-181a,1
+13,141,Oxaliplatin,miR-155,1
+0,203,Cisplatin,miR-19b,1
+17,243,Adriamycin,miR-222,1
+1,318,Gemcitabine,miR-338,1
+5,505,Doxorubicin,miR-532,1
+38,158,Cetuximab,miR-182,1
+31,241,Chemotherapy,miR-221,1
+66,455,Paroxetine,miR-486,1
+10,564,Paclitaxel,miR-663,1
+0,487,Cisplatin,miR-518f*,1
+1,307,Gemcitabine,miR-32,1
+29,146,Verapamil,miR-15b*,1
+52,377,5-Fluorouracil,miR-421,1
+5,265,Doxorubicin,miR-299,1
+1,371,Gemcitabine,miR-3940,1
+1,268,Gemcitabine,miR-29b,1
+1,223,Gemcitabine,miR-210,1
+52,319,5-Fluorouracil,miR-339,1
+1,591,Gemcitabine,miR-874,1
+6,116,Gefitinib,miR-140,1
+7,353,Tamoxifen,miR-374a,1
+0,74,Cisplatin,miR-125b,1
+57,243,FOLFOX Chemotherapy,miR-222,1
+1,183,Gemcitabine,miR-193a,1
+37,186,Temozolomide,miR-193b*,1
+6,101,Gefitinib,miR-130a,1
+102,220,Betulinic acid,miR-21,1
+0,361,Cisplatin,miR-378c,1
+38,356,Cetuximab,miR-375,1
+13,271,Oxaliplatin,miR-29c,1
+16,220,Docetaxel,miR-21,1
+1,416,Gemcitabine,miR-453,1
+5,412,Doxorubicin,miR-451,1
+5,281,Doxorubicin,miR-30a*,1
+54,76,L-asparaginase,miR-126,1
+3,122,Imatinib,miR-143,1
+19,169,Etoposide,miR-188,1
+5,536,Doxorubicin,miR-601,1
+20,6,Mitoxantrone,GAS5,1
+0,610,Cisplatin,miR-935,1
+52,568,5-Fluorouracil,miR-675,1
+10,531,Paclitaxel,miR-591,1
+27,542,Methotrexate,miR-615,1
+19,233,Etoposide,miR-217,1
+9,310,Fluorouracil,miR-320a,1
+29,252,Verapamil,miR-25,1
+5,75,Doxorubicin,miR-125b-5p,1
+57,40,FOLFOX Chemotherapy,let-7i,1
+90,479,Topotecan,miR-515,1
+5,162,Doxorubicin,miR-183,1
+5,258,Doxorubicin,miR-27a,1
+13,599,Oxaliplatin,miR-892b,1
+14,143,Carboplatin,miR-15a,1
+17,227,Adriamycin,miR-214,1
+0,356,Cisplatin,miR-375,1
+0,187,Cisplatin,miR-194,1
+92,153,histone deacetylase inhibitor,miR-181a,1
+5,232,Doxorubicin,miR-216b,1
+9,559,Fluorouracil,miR-654-5p,1
+50,617,PLX4720,miR-99a,1
+39,192,Taxol,miR-197,1
+52,223,5-Fluorouracil,miR-210,1
+7,579,Tamoxifen,miR-744,1
+0,391,Cisplatin,miR-429,1
+5,457,Doxorubicin,miR-489,1
+3,562,Imatinib,miR-660,1
+29,220,Verapamil,miR-21,1
+56,349,10-Hydroxycamptothecin,miR-371,1
+0,142,Cisplatin,miR-155-5p,1
+0,139,Cisplatin,miR-153,1
+52,447,5-Fluorouracil,miR-4745,1
+0,619,Cisplatin,miR-99b,1
+82,208,Cyclopamine,miR-200c,1
+10,589,Paclitaxel,miR-802,1
+18,494,Vincristine,miR-520,1
+5,469,Doxorubicin,miR-501-5P,1
+5,273,Doxorubicin,miR-301a,1
+1,370,Gemcitabine,miR-3937,1
+10,268,Paclitaxel,miR-29b,1
+80,558,pegIFN/RBV therapy,miR-652,1
+38,220,Cetuximab,miR-21,1
+31,138,Chemotherapy,miR-152,1
+5,176,Doxorubicin,miR-191,1
+29,319,Verapamil,miR-339,1
+1,441,Gemcitabine,miR-4721,1
+16,223,Docetaxel,miR-210,1
+0,282,Cisplatin,miR-30b,1
+29,478,Verapamil,miR-514,1
+115,576,modified ALLIC BFM 2002 protocol,miR-708,1
+57,316,FOLFOX Chemotherapy,miR-331,1
+57,153,FOLFOX Chemotherapy,miR-181a,1
+16,46,Docetaxel,miR-105,1
+58,41,Fluoropyrimidine,miR-1,1
+7,55,Tamoxifen,miR-10b,1
+5,187,Doxorubicin,miR-194,1
+10,143,Paclitaxel,miR-15a,1
+48,212,Epirubicin,miR-204,1
+52,95,5-Fluorouracil,miR-1290,1
+0,471,Cisplatin,miR-503,1
+10,103,Paclitaxel,miR-130b,1
+75,105,Sunitinib,miR-133a,1
+0,476,Cisplatin,miR-512,1
+0,98,Cisplatin,miR-1299,1
+0,133,Cisplatin,miR-148b,1
+57,185,FOLFOX Chemotherapy,miR-193b,1
+52,399,5-Fluorouracil,miR-4466,1
+13,500,Oxaliplatin,miR-520g,1
+13,214,Oxaliplatin,miR-205,1
+18,317,Vincristine,miR-335,1
+0,263,Cisplatin,miR-296,1
+10,223,Paclitaxel,miR-210,1
+37,147,Temozolomide,miR-16,1
+51,259,platinum-based doublet chemotherapy ,miR-27b,1
+18,131,Vincristine,miR-146b-5p,1
+26,58,Bortezomib,miR-1207,1
+52,529,5-Fluorouracil,miR-590,1
+17,202,Adriamycin,miR-19a,1
+0,480,Cisplatin,miR-517a,1
+34,189,Sorafenib,miR-196a,1
+9,215,Fluorouracil,miR-206,1
+0,565,Cisplatin,miR-663a,1
+52,299,5-Fluorouracil,miR-3178,1
+52,34,5-Fluorouracil,let-7c,1
+52,413,5-Fluorouracil,miR-4516,1
+7,310,Tamoxifen,miR-320a,1
+9,134,Fluorouracil,miR-149,1
+13,161,Oxaliplatin,miR-1826,1
+78,431,Valproate,miR-468,1
+27,421,Methotrexate,miR-455,1
+13,593,Oxaliplatin,miR-876,1
+38,211,Cetuximab,miR-203,1
+29,200,Verapamil,miR-199b,1
+5,315,Doxorubicin,miR-330,1
+5,594,Doxorubicin,miR-877,1
+19,256,Etoposide,miR-26b,1
+52,444,5-Fluorouracil,miR-4725,1
+5,280,Doxorubicin,miR-30a,1
+0,252,Cisplatin,miR-25,1
+29,480,Verapamil,miR-517a,1
+51,535,platinum-based doublet chemotherapy ,miR-598,1
+3,313,Imatinib,miR-324,1
+5,488,Doxorubicin,miR-519,1
+19,143,Etoposide,miR-15a,1
+29,156,Verapamil,miR-181c,1
+18,47,Vincristine,miR-106a,1
+9,6,Fluorouracil,GAS5,1
+13,562,Oxaliplatin,miR-660,1
+29,240,Verapamil,miR-220,1
+0,459,Cisplatin,miR-491,1
+34,111,Sorafenib,miR-136,1
+1,138,Gemcitabine,miR-152,1
+16,185,Docetaxel,miR-193b,1
+13,215,Oxaliplatin,miR-206,1
+23,148,Sirolimus,miR-17,1
+65,177,Prednisone,miR-191*,1
+29,374,Verapamil,miR-410,1
+13,376,Oxaliplatin,miR-412,1
+37,245,Temozolomide,miR-223,1
+16,6,Docetaxel,GAS5,1
+1,451,Gemcitabine,miR-4783,1
+5,30,Doxorubicin,Let-7a,1
+16,329,Docetaxel,miR-34b,1
+75,334,Sunitinib,miR-362,1
+113,241,Dihydrotestosterone,miR-221,1
+13,583,Oxaliplatin,miR-765,1
+7,494,Tamoxifen,miR-520,1
+10,601,Paclitaxel,miR-920,1
+5,182,Doxorubicin,miR-192*,1
+7,134,Tamoxifen,miR-149,1
+29,554,Verapamil,miR-643,1
+10,109,Paclitaxel,miR-135a,1
+1,446,Gemcitabine,miR-4739,1
+1,379,Gemcitabine,miR-423,1
+29,511,Verapamil,miR-548a,1
+0,231,Cisplatin,miR-216a,1
+52,406,5-Fluorouracil,miR-4488,1
+7,485,Tamoxifen,miR-518e*,1
+52,564,5-Fluorouracil,miR-663,1
+0,323,Cisplatin,miR-340,1
+0,588,Cisplatin,miR-801,1
+10,273,Paclitaxel,miR-301a,1
+7,355,Tamoxifen,miR-374b,1
+5,500,Doxorubicin,miR-520g,1
+3,143,Imatinib,miR-15a,1
+5,59,Doxorubicin,miR-122,1
+29,507,Verapamil,miR-541*,1
+54,317,L-asparaginase,miR-335,1
+1,377,Gemcitabine,miR-421,1
+29,514,Verapamil,miR-560,1
+65,114,Prednisone,miR-138-1*,1
+1,311,Gemcitabine,miR-320c,1
+7,45,Tamoxifen,miR-103,1
+0,12,Cisplatin,LOC285194,1
+115,248,modified ALLIC BFM 2002 protocol,miR-23a,1
+16,42,Docetaxel,miR-100,1
+56,414,10-Hydroxycamptothecin,miR-452,1
+55,201,Prednisolone,miR-199b*,1
+5,496,Doxorubicin,miR-520b,1
+5,477,Doxorubicin,miR-513a,1
+0,53,Cisplatin,miR-10a ,1
+10,292,Paclitaxel,miR-3127,1
+84,130,Mitomycin C,miR-146b,1
+13,127,Oxaliplatin,miR-1468,1
+0,148,Cisplatin,miR-17,1
+13,80,Oxaliplatin,miR-1264,1
+65,133,Prednisone,miR-148b,1
+76,245,Platinum,miR-223,1
+66,221,Paroxetine,miR-21*,1
+52,60,5-Fluorouracil,miR-1226,1
+52,113,5-Fluorouracil,miR-138,1
+1,314,Gemcitabine,miR-328,1
+26,262,Bortezomib,miR-2861,1
+52,242,5-Fluorouracil,miR-221*,1
+5,519,Doxorubicin,miR-574,1
+1,62,Gemcitabine,miR-1228*,1
+0,143,Cisplatin,miR-15a,1
+5,411,Doxorubicin,miR-450a,1
+1,279,Gemcitabine,miR-3065,1
+1,380,Gemcitabine,miR-424,1
+18,600,Vincristine,miR-9,1
+19,163,Etoposide,miR-184,1
+5,264,Doxorubicin,miR-298,1
+3,35,Imatinib,let-7d,1
+38,259,Cetuximab,miR-27b,1
+31,183,Chemotherapy,miR-193a,1
+13,257,Oxaliplatin,miR-275,1
+5,593,Doxorubicin,miR-876,1
+0,507,Cisplatin,miR-541*,1
+16,327,Docetaxel,miR-34a,1
+6,617,Gefitinib,miR-99a,1
+1,342,Gemcitabine,miR-3665,1
+17,461,Adriamycin,miR-495,1
+13,155,Oxaliplatin,miR-181b,1
+1,390,Gemcitabine,miR-4288,1
+56,351,10-Hydroxycamptothecin,miR-373,1
+5,420,Doxorubicin,miR-454,1
+57,51,FOLFOX Chemotherapy,miR-107,1
+52,364,5-Fluorouracil,miR-378f,1
+0,95,Cisplatin,miR-1290,1
+13,391,Oxaliplatin,miR-429,1
+52,38,5-Fluorouracil,let-7f-1*,1
+39,100,Taxol,miR-1307,1
+1,168,Gemcitabine,miR-187*,1
+52,294,5-Fluorouracil,miR-3141,1
+53,34,Daunorubicin,let-7c,1
+5,144,Doxorubicin,miR-15a*,1
+1,396,Gemcitabine,miR-4454,1
+50,249,PLX4720,miR-23b,1
+29,382,Verapamil,miR-425,1
+16,207,Docetaxel,miR-200b,1
+5,122,Doxorubicin,miR-143,1
+3,259,Imatinib,miR-27b,1
+52,333,5-Fluorouracil,miR-3619,1
+29,241,Verapamil,miR-221,1
+18,548,Vincristine,miR-629,1
+0,614,Cisplatin,miR-96,1
+1,172,Gemcitabine,miR-18b,1
+0,251,Cisplatin,miR-24,1
+19,380,Etoposide,miR-424,1
+1,413,Gemcitabine,miR-4516,1
+65,167,Prednisone,miR-187,1
+26,611,Bortezomib,miR-939,1
+9,55,Fluorouracil,miR-10b,1
+18,42,Vincristine,miR-100,1
+20,153,Mitoxantrone,miR-181a,1
+0,341,Cisplatin,miR-3653,1
+7,152,Tamoxifen,miR-181,1
+1,234,Gemcitabine,miR-218,1
+13,536,Oxaliplatin,miR-601,1
+5,198,Doxorubicin,miR-199a-3p,1
+55,77,Prednisolone,miR-126*,1
+34,185,Sorafenib,miR-193b,1
+5,126,Doxorubicin,miR-145,1
+84,166,Mitomycin C,miR-186*,1
+84,248,Mitomycin C,miR-23a,1
+54,369,L-asparaginase,miR-383,1
+9,289,Fluorouracil,miR-31,1
+29,290,Verapamil,miR-31*,1
+10,555,Paclitaxel,miR-647,1
+34,133,Sorafenib,miR-148b,1
+34,109,Sorafenib,miR-135a,1
+14,130,Carboplatin,miR-146b,1
+3,505,Imatinib,miR-532,1
+5,314,Doxorubicin,miR-328,1
+23,173,Sirolimus,miR-19,1
+1,305,Gemcitabine,miR-3195,1
+52,88,5-Fluorouracil,miR-128-2,1
+52,59,5-Fluorouracil,miR-122,1
+16,126,Docetaxel,miR-145,1
+16,414,Docetaxel,miR-452,1
+52,468,5-Fluorouracil,miR-501,1
+13,312,Oxaliplatin,miR-320d,1
+82,185,Cyclopamine,miR-193b,1
+1,261,Gemcitabine,miR-28,1
+3,172,Imatinib,miR-18b,1
+5,220,Doxorubicin,miR-21,1
+1,35,Gemcitabine,let-7d,1
+0,475,Cisplatin,miR-5096,1
+0,156,Cisplatin,miR-181c,1
+10,31,Paclitaxel,hsa-1274A,1
+84,153,Mitomycin C,miR-181a,1
+5,206,Doxorubicin,miR-200a,1
+10,592,Paclitaxel,miR-875,1
+19,285,Etoposide,miR-30d,1
+13,524,Oxaliplatin,miR-585,1
+51,249,platinum-based doublet chemotherapy ,miR-23b,1
+52,244,5-Fluorouracil,miR-222*,1
+5,290,Doxorubicin,miR-31*,1
+3,104,Imatinib,miR-132,1
+1,546,Gemcitabine,miR-625*,1
+26,74,Bortezomib,miR-125b,1
+34,246,Sorafenib,miR-224,1
+9,192,Fluorouracil,miR-197,1
+52,304,5-Fluorouracil,miR-3193,1
+29,191,Verapamil,miR-196b,1
+16,181,Docetaxel,miR-192,1
+5,225,Doxorubicin,miR-212,1
+0,575,Cisplatin,miR-7-5p,1
+52,298,5-Fluorouracil,miR-3177,1
+1,539,Gemcitabine,miR-6087,1
+65,75,Prednisone,miR-125b-5p,1
+0,348,Cisplatin,miR-370,1
+0,241,Cisplatin,miR-221,1
+29,527,Verapamil,miR-588,1
+0,186,Cisplatin,miR-193b*,1
+5,308,Doxorubicin,miR-320,1
+1,332,Gemcitabine,miR-361,1
+10,237,Paclitaxel,miR-22,1
+0,183,Cisplatin,miR-193a,1
+13,36,Oxaliplatin,let-7e,1
+9,120,Fluorouracil,miR-141-3p,1
+51,327,platinum-based doublet chemotherapy ,miR-34a,1
+5,392,Doxorubicin,miR-431,1
+5,134,Doxorubicin,miR-149,1
+18,618,Vincristine,miR-99a-5p,1
+52,82,5-Fluorouracil,miR-1268,1
+52,493,5-Fluorouracil,miR-519e*,1
+56,473,10-Hydroxycamptothecin,miR-506,1
+5,552,Doxorubicin,miR-639,1
+10,117,Paclitaxel,miR-140-3p,1
+1,107,Gemcitabine,miR-134,1
+0,482,Cisplatin,miR-517c,1
+10,82,Paclitaxel,miR-1268,1
+38,553,Cetuximab,miR-640,1
+29,321,Verapamil,miR-33a*,1
+57,121,FOLFOX Chemotherapy,miR-142,1
+24,6,Temsirolimus,GAS5,1
+16,274,Docetaxel,miR-301b,1
+5,266,Doxorubicin,miR-29a,1
+1,561,Gemcitabine,miR-658,1
+0,175,Cisplatin,miR-1908,1
+52,349,5-Fluorouracil,miR-371,1
+1,365,Gemcitabine,miR-378g,1
+1,420,Gemcitabine,miR-454,1
+7,206,Tamoxifen,miR-200a,1
+34,511,Sorafenib,miR-548a,1
+29,351,Verapamil,miR-373,1
+0,489,Cisplatin,miR-519a,1
+1,149,Gemcitabine,miR-17*,1
+57,578,FOLFOX Chemotherapy,miR-720,1
+55,211,Prednisolone,miR-203,1
+10,603,Paclitaxel,miR-923,1
+29,277,Verapamil,miR-302c,1
+10,247,Paclitaxel,miR-2277,1
+52,433,5-Fluorouracil,miR-4687,1
+1,577,Gemcitabine,miR-718,1
+0,328,Cisplatin,miR-34a-5p,1
+17,112,Adriamycin,miR-137,1
+29,154,Verapamil,miR-181a*,1
+57,55,FOLFOX Chemotherapy,miR-10b,1
+5,167,Doxorubicin,miR-187,1
+7,158,Tamoxifen,miR-182,1
+52,67,5-Fluorouracil,miR-1237,1
+17,153,Adriamycin,miR-181a,1
+29,354,Verapamil,miR-374a*,1
+0,273,Cisplatin,miR-301a,1
+6,122,Gefitinib,miR-143,1
+16,153,Docetaxel,miR-181a,1
+5,159,Doxorubicin,miR-182*,1
+18,211,Vincristine,miR-203,1
+1,61,Gemcitabine,miR-1228,1
+28,239,Pirarubicin,miR-22-3p,1
+52,544,5-Fluorouracil,miR-624*,1
+64,491,Vinorelbine,miR-519c,1
+1,417,Gemcitabine,miR-4530,1
+52,617,5-Fluorouracil,miR-99a,1
+16,422,Docetaxel,miR-455-3p,1
+66,470,Paroxetine,miR-502,1
+0,130,Cisplatin,miR-146b,1
+10,263,Paclitaxel,miR-296,1
+75,266,Sunitinib,miR-29a,1
+52,577,5-Fluorouracil,miR-718,1
+13,164,Oxaliplatin,miR-185,1
+7,484,Tamoxifen,miR-518c,1
+5,481,Doxorubicin,miR-517b,1
+18,129,Vincristine,miR-146a,1
+18,539,Vincristine,miR-6087,1
+52,423,5-Fluorouracil,miR-4638,1
+17,16,Adriamycin,MALAT1,1
+29,495,Verapamil,miR-520a,1
+17,28,Adriamycin,linc-VLDLR,1
+1,121,Gemcitabine,miR-142,1
+13,379,Oxaliplatin,miR-423,1
+1,60,Gemcitabine,miR-1226,1
+53,369,Daunorubicin,miR-383,1
+57,339,FOLFOX Chemotherapy,miR-365,1
+29,332,Verapamil,miR-361,1
+52,569,5-Fluorouracil,miR-675*,1
+10,141,Paclitaxel,miR-155,1
+52,467,5-Fluorouracil,miR-500b,1
+5,224,Doxorubicin,miR-211,1
+29,462,Verapamil,miR-496,1
+1,148,Gemcitabine,miR-17,1
+0,478,Cisplatin,miR-514,1
+18,75,Vincristine,miR-125b-5p,1
+5,327,Doxorubicin,miR-34a,1
+111,239,10-hydroxycamptothecin,miR-22-3p,1
+17,216,Adriamycin,miR-20a,1
+52,495,5-Fluorouracil,miR-520a,1
+1,244,Gemcitabine,miR-222*,1
+52,186,5-Fluorouracil,miR-193b*,1
+13,216,Oxaliplatin,miR-20a,1
+5,501,Doxorubicin,miR-520h,1
+1,436,Gemcitabine,miR-4707,1
+18,229,Vincristine,miR-215,1
+59,42,Vemurafenib,miR-100,1
+57,470,FOLFOX Chemotherapy,miR-502,1
+31,256,Chemotherapy,miR-26b,1
+52,160,5-Fluorouracil,miR-1825,1
+18,69,Vincristine,miR-1246,1
+52,390,5-Fluorouracil,miR-4288,1
+29,520,Verapamil,miR-576,1
+7,590,Tamoxifen,miR-873,1
+14,186,Carboplatin,miR-193b*,1
+5,37,Doxorubicin,let-7f,1
+67,212,Cyclophosphamide,miR-204,1
+52,295,5-Fluorouracil,miR-3147,1
+1,372,Gemcitabine,miR-3960,1
+18,41,Vincristine,miR-1,1
+115,245,modified ALLIC BFM 2002 protocol,miR-223,1
+5,610,Doxorubicin,miR-935,1
+53,77,Daunorubicin,miR-126*,1
+29,182,Verapamil,miR-192*,1
+18,216,Vincristine,miR-20a,1
+82,129,Cyclopamine,miR-146a,1
+1,239,Gemcitabine,miR-22-3p,1
+0,350,Cisplatin,miR-372,1
+13,520,Oxaliplatin,miR-576,1
+38,254,Cetuximab,miR-26a,1
+39,148,Taxol,miR-17,1
+29,320,Verapamil,miR-33a,1
+17,327,Adriamycin,miR-34a,1
+0,355,Cisplatin,miR-374b,1
+18,34,Vincristine,let-7c,1
+52,282,5-Fluorouracil,miR-30b,1
+51,409,platinum-based doublet chemotherapy ,miR-449a,1
+5,229,Doxorubicin,miR-215,1
+5,154,Doxorubicin,miR-181a*,1
+0,40,Cisplatin,let-7i,1
+28,184,Pirarubicin,miR-193a-3p,1
+50,382,PLX4720,miR-425,1
+50,341,PLX4720,miR-3653,1
+19,308,Etoposide,miR-320,1
+83,129,Interferon-alpha,miR-146a,1
+52,238,5-Fluorouracil,miR-22*,1
+1,383,Gemcitabine,miR-425*,1
+29,526,Verapamil,miR-587,1
+29,261,Verapamil,miR-28,1
+6,153,Gefitinib,miR-181a,1
+9,10,Fluorouracil,HULC,1
+29,348,Verapamil,miR-370,1
+10,588,Paclitaxel,miR-801,1
+5,260,Doxorubicin,miR-27b ,1
+5,151,Doxorubicin,miR-17-92,1
+1,155,Gemcitabine,miR-181b,1
+10,439,Paclitaxel,miR-4713,1
+1,301,Gemcitabine,miR-3184,1
+0,285,Cisplatin,miR-30d,1
+1,345,Gemcitabine,miR-3682,1
+0,180,Cisplatin,miR-1915,1
+50,141,PLX4720,miR-155,1
+52,338,5-Fluorouracil,miR-3647,1
+16,312,Docetaxel,miR-320d,1
+3,280,Imatinib,miR-30a,1
+3,317,Imatinib,miR-335,1
+9,611,Fluorouracil,miR-939,1
+0,88,Cisplatin,miR-128-2,1
+31,220,Chemotherapy,miR-21,1
+1,273,Gemcitabine,miR-301a,1
+5,515,Doxorubicin,miR-563,1
+52,69,5-Fluorouracil,miR-1246,1
+5,318,Doxorubicin,miR-338,1
+13,211,Oxaliplatin,miR-203,1
+34,14,Sorafenib,Lnc-VLDLR,1
+5,460,Doxorubicin,miR-494,1
+0,111,Cisplatin,miR-136,1
+5,84,Doxorubicin,miR-1273g,1
+52,74,5-Fluorouracil,miR-125b,1
+13,66,Oxaliplatin,miR-1236,1
+13,251,Oxaliplatin,miR-24,1
+0,167,Cisplatin,miR-187,1
+29,518,Verapamil,miR-571,1
+7,211,Tamoxifen,miR-203,1
+13,77,Oxaliplatin,miR-126*,1
+52,439,5-Fluorouracil,miR-4713,1
+1,65,Gemcitabine,miR-1234,1
+48,95,Epirubicin,miR-1290,1
+1,204,Gemcitabine,miR-19b-1*,1
+52,334,5-Fluorouracil,miR-362,1
+0,112,Cisplatin,miR-137,1
+5,68,Doxorubicin,miR-124,1
+1,179,Gemcitabine,miR-1914*,1
+55,74,Prednisolone,miR-125b,1
+56,39,10-Hydroxycamptothecin,let-7g,1
+38,171,Cetuximab,miR-18a*,1
+18,175,Vincristine,miR-1908,1
+0,584,Cisplatin,miR-766,1
+5,64,Doxorubicin,miR-1233,1
+72,92,Anastrozole,miR-128a,1
+5,255,Doxorubicin,miR-26a-MM1,1
+5,256,Doxorubicin,miR-26b,1
+29,126,Verapamil,miR-145,1
+5,380,Doxorubicin,miR-424,1
+0,44,Cisplatin,miR-101,1
+52,290,5-Fluorouracil,miR-31*,1
+1,269,Gemcitabine,miR-29b-1*,1
+0,39,Cisplatin,let-7g,1
+10,453,Paclitaxel,miR-483,1
+67,133,Cyclophosphamide,miR-148b,1
+16,285,Docetaxel,miR-30d,1
+93,336,intensive induction chemotherapy based on cytarabine and idarubicine,miR-363,1
+13,72,Oxaliplatin,miR-1258,1
+7,610,Tamoxifen,miR-935,1
+49,263,Capecitabine,miR-296,1
+0,34,Cisplatin,let-7c,1
+0,138,Cisplatin,miR-152,1
+10,205,Paclitaxel,miR-200,1
+5,374,Doxorubicin,miR-410,1
+52,101,5-Fluorouracil,miR-130a,1
+29,481,Verapamil,miR-517b,1
+31,229,Chemotherapy,miR-215,1
+16,214,Docetaxel,miR-205,1
+105,220,Hydrogen Peroxide,miR-21,1
+1,449,Gemcitabine,miR-4750,1
+0,215,Cisplatin,miR-206,1
+18,44,Vincristine,miR-101,1
+1,102,Gemcitabine,miR-130a-3p,1
+16,118,Docetaxel,miR-141,1
+10,530,Paclitaxel,miR-590-5p,1
+5,96,Doxorubicin,miR-1293,1
+116,246,5-fluorouracil,miR-224,1
+5,197,Doxorubicin,miR-199a,1
+0,117,Cisplatin,miR-140-3p,1
+38,138,Cetuximab,miR-152,1
+13,218,Oxaliplatin,miR-20b,1
+29,420,Verapamil,miR-454,1
+5,185,Doxorubicin,miR-193b,1
+13,256,Oxaliplatin,miR-26b,1
+52,301,5-Fluorouracil,miR-3184,1
+50,373,PLX4720,miR-409,1
+17,134,Adriamycin,miR-149,1
+52,443,5-Fluorouracil,miR-4723,1
+48,214,Epirubicin,miR-205,1
+31,148,Chemotherapy,miR-17,1
+7,272,Tamoxifen,miR-300,1
+10,241,Paclitaxel,miR-221,1
+38,271,Cetuximab,miR-29c,1
+29,531,Verapamil,miR-591,1
+54,211,L-asparaginase,miR-203,1
+57,220,FOLFOX Chemotherapy,miR-21,1
+37,220,Temozolomide,miR-21,1
+14,147,Carboplatin,miR-16,1
+10,282,Paclitaxel,miR-30b,1
+18,126,Vincristine,miR-145,1
+26,551,Bortezomib,miR-638,1
+29,516,Verapamil,miR-568,1
+95,183,SIOP treatment protocol,miR-193a,1
+95,258,SIOP treatment protocol,miR-27a,1
+52,40,5-Fluorouracil,let-7i,1
+1,479,Gemcitabine,miR-515,1
+8,356,Trastuzumab,miR-375,1
+51,332,platinum-based doublet chemotherapy ,miR-361,1
+8,220,Trastuzumab,miR-21,1
+29,558,Verapamil,miR-652,1
+54,201,L-asparaginase,miR-199b*,1
+63,49,Cyclosporin A,miR-106b-25,1
+3,200,Imatinib,miR-199b,1
+52,567,5-Fluorouracil,miR-671,1
+53,617,Daunorubicin,miR-99a,1
+5,177,Doxorubicin,miR-191*,1
+14,157,Carboplatin,miR-181d,1
+34,155,Sorafenib,miR-181b,1
+29,548,Verapamil,miR-629,1
+5,116,Doxorubicin,miR-140,1
+10,602,Paclitaxel,miR-922,1
+51,316,platinum-based doublet chemotherapy ,miR-331,1
+0,491,Cisplatin,miR-519c,1
+1,293,Gemcitabine,miR-3130,1
+52,285,5-Fluorouracil,miR-30d,1
+18,180,Vincristine,miR-1915,1
+52,607,5-Fluorouracil,miR-92b,1
+5,136,Doxorubicin,miR-150,1
+1,406,Gemcitabine,miR-4488,1
+29,598,Verapamil,miR-888,1
+38,412,Cetuximab,miR-451,1
+1,364,Gemcitabine,miR-378f,1
+1,280,Gemcitabine,miR-30a,1
+5,490,Doxorubicin,miR-519b,1
+83,220,Interferon-alpha,miR-21,1
+29,517,Verapamil,miR-569,1
+67,75,Cyclophosphamide,miR-125b-5p,1
+31,237,Chemotherapy,miR-22,1
+16,273,Docetaxel,miR-301a,1
+57,327,FOLFOX Chemotherapy,miR-34a,1
+5,219,Doxorubicin,miR-20b*,1
+5,71,Doxorubicin,miR-1256,1
+29,130,Verapamil,miR-146b,1
+13,327,Oxaliplatin,miR-34a,1
+29,574,Verapamil,miR-7-1*,1
+14,205,Carboplatin,miR-200,1
+80,329,pegIFN/RBV therapy,miR-34b,1
+5,175,Doxorubicin,miR-1908,1
+51,287,platinum-based doublet chemotherapy ,miR-30e,1
+1,315,Gemcitabine,miR-330,1
+113,243,Dihydrotestosterone,miR-222,1
+34,383,Sorafenib,miR-425*,1
+57,271,FOLFOX Chemotherapy,miR-29c,1
+5,321,Doxorubicin,miR-33a*,1
+29,403,Verapamil,miR-448,1
+57,617,FOLFOX Chemotherapy,miR-99a,1
+19,600,Etoposide,miR-9,1
+0,461,Cisplatin,miR-495,1
+18,257,Vincristine,miR-275,1
+52,141,5-Fluorouracil,miR-155,1
+13,571,Oxaliplatin,miR-6845-5p,1
+0,608,Cisplatin,miR-93,1
+48,74,Epirubicin,miR-125b,1
+1,188,Gemcitabine,miR-195,1
+38,77,Cetuximab,miR-126*,1
+0,289,Cisplatin,miR-31,1
+40,74,Dexamethasone,miR-125b,1
+52,251,5-Fluorouracil,miR-24,1
+16,412,Docetaxel,miR-451,1
+27,223,Methotrexate,miR-210,1
+56,318,10-Hydroxycamptothecin,miR-338,1
+56,118,10-Hydroxycamptothecin,miR-141,1
+0,330,Cisplatin,miR-34c,1
+52,309,5-Fluorouracil,miR-3200,1
+18,208,Vincristine,miR-200c,1
+52,408,5-Fluorouracil,miR-4497,1
+1,271,Gemcitabine,miR-29c,1
+3,37,Imatinib,let-7f,1
+13,377,Oxaliplatin,miR-421,1
+1,335,Gemcitabine,miR-3621,1
+10,129,Paclitaxel,miR-146a,1
+29,289,Verapamil,miR-31,1
+57,468,FOLFOX Chemotherapy,miR-501,1
+18,253,Vincristine,miR-25*,1
+10,95,Paclitaxel,miR-1290,1
+5,330,Doxorubicin,miR-34c,1
+29,265,Verapamil,miR-299,1
+52,401,5-Fluorouracil,miR-4476,1
+0,492,Cisplatin,miR-519d,1
+0,211,Cisplatin,miR-203,1
+48,202,Epirubicin,miR-19a,1
+6,265,Gefitinib,miR-299,1
+110,237,Pemetrexed,miR-22,1
+5,248,Doxorubicin,miR-23a,1
+31,367,Chemotherapy,miR-381,1
+103,241,Carmustine,miR-221,1
+13,280,Oxaliplatin,miR-30a,1
+1,442,Gemcitabine,miR-4722,1
+5,521,Doxorubicin,miR-578,1
+0,334,Cisplatin,miR-362,1
+13,200,Oxaliplatin,miR-199b,1
+34,233,Sorafenib,miR-217,1
+52,143,5-Fluorouracil,miR-15a,1
+58,258,Fluoropyrimidine,miR-27a,1
+16,148,Docetaxel,miR-17,1
+10,192,Paclitaxel,miR-197,1
+1,349,Gemcitabine,miR-371,1
+0,220,Cisplatin,miR-21,1
+10,30,Paclitaxel,Let-7a,1
+34,355,Sorafenib,miR-374b,1
+1,147,Gemcitabine,miR-16,1
+6,562,Gefitinib,miR-660,1
+25,248,"1,25(OH)2D3",miR-23a,0
+75,316,Sunitinib,miR-331,0
+7,182,Tamoxifen,miR-192*,0
+94,30,Epirubicin HCl,Let-7a,0
+21,340,Nutlin-3a,miR-3651,0
+110,91,Pemetrexed,miR-1288,0
+20,408,Mitoxantrone,miR-4497,0
+40,199,Dexamethasone,miR-199a-5p,0
+106,32,Pingyangmycin,let-7a,0
+6,70,Gefitinib,miR-1247,0
+118,90,Ethanol,miR-1285,0
+101,212,Arsenic Trioxide,miR-204,0
+72,349,Anastrozole,miR-371,0
+95,312,SIOP treatment protocol,miR-320d,0
+30,71,epirubicin,miR-1256,0
+2,211,Dasatinib,miR-203,0
+92,175,histone deacetylase inhibitor,miR-1908,0
+38,40,Cetuximab,let-7i,0
+84,395,Mitomycin C,miR-4430,0
+89,506,Staurosporine,miR-539,0
+118,267,Ethanol,miR-29a*,0
+59,579,Vemurafenib,miR-744,0
+68,63,Mafosfamide,miR-1229-5p,0
+40,571,Dexamethasone,miR-6845-5p,0
+43,548,Curcumin,miR-629,0
+67,346,Cyclophosphamide,miR-3687,0
+60,28,Crizotinib,linc-VLDLR,0
+12,474,Antioestrogens,miR-509,0
+12,512,Antioestrogens,miR-550,0
+112,253,AGRO100,miR-25*,0
+74,349,Letrozole,miR-371,0
+98,234,Leucovorin,miR-218,0
+115,78,modified ALLIC BFM 2002 protocol,miR-1260,0
+22,99,Rapamycin,miR-130,0
+97,239,Fulvestrant,miR-22-3p,0
+33,170,Glucocorticoid,miR-18a,0
+68,236,Mafosfamide,miR-219-2,0
+103,143,Carmustine,miR-15a,0
+16,445,Docetaxel,miR-4732,0
+33,464,Glucocorticoid,miR-499,0
+31,479,Chemotherapy,miR-515,0
+106,117,Pingyangmycin,miR-140-3p,0
+14,563,Carboplatin,miR-662,0
+116,11,5-fluorouracil,LINP1,0
+115,559,modified ALLIC BFM 2002 protocol,miR-654-5p,0
+47,584,Interferon-gamma,miR-766,0
+6,577,Gefitinib,miR-718,0
+114,503,DAPT,miR-523,0
+59,518,Vemurafenib,miR-571,0
+53,116,Daunorubicin,miR-140,0
+34,45,Sorafenib,miR-103,0
+50,462,PLX4720,miR-496,0
+66,359,Paroxetine,miR-378,0
+9,388,Fluorouracil,miR-4284,0
+50,271,PLX4720,miR-29c,0
+101,459,Arsenic Trioxide,miR-491,0
+17,361,Adriamycin,miR-378c,0
+88,160,Selumetinib,miR-1825,0
+101,67,Arsenic Trioxide,miR-1237,0
+7,317,Tamoxifen,miR-335,0
+15,219,Tetraplatin,miR-20b*,0
+45,122,Camptothecin,miR-143,0
+45,227,Camptothecin,miR-214,0
+50,580,PLX4720,miR-758,0
+48,463,Epirubicin,miR-497,0
+47,357,Interferon-gamma,miR-376c,0
+33,57,Glucocorticoid,miR-1202,0
+5,257,Doxorubicin,miR-275,0
+85,245,Pertuzumab,miR-223,0
+72,338,Anastrozole,miR-3647,0
+57,125,FOLFOX Chemotherapy,miR-144-3p,0
+84,365,Mitomycin C,miR-378g,0
+99,183,Euthyrox,miR-193a,0
+88,306,Selumetinib,miR-3196,0
+115,363,modified ALLIC BFM 2002 protocol,miR-378e,0
+58,422,Fluoropyrimidine,miR-455-3p,0
+51,51,platinum-based doublet chemotherapy ,miR-107,0
+39,590,Taxol,miR-873,0
+16,191,Docetaxel,miR-196b,0
+101,372,Arsenic Trioxide,miR-3960,0
+114,170,DAPT,miR-18a,0
+113,476,Dihydrotestosterone,miR-512,0
+92,49,histone deacetylase inhibitor,miR-106b-25,0
+3,175,Imatinib,miR-1908,0
+69,52,Retinoic Acid,miR-10a,0
+57,144,FOLFOX Chemotherapy,miR-15a*,0
+55,416,Prednisolone,miR-453,0
+116,522,5-fluorouracil,miR-582,0
+33,169,Glucocorticoid,miR-188,0
+34,140,Sorafenib,miR-154*,0
+79,516,Ribavirin,miR-568,0
+48,592,Epirubicin,miR-875,0
+19,577,Etoposide,miR-718,0
+94,63,Epirubicin HCl,miR-1229-5p,0
+21,229,Nutlin-3a,miR-215,0
+8,571,Trastuzumab,miR-6845-5p,0
+0,561,Cisplatin,miR-658,0
+49,143,Capecitabine,miR-15a,0
+63,103,Cyclosporin A,miR-130b,0
+96,406,Epirubicin hydrochloride,miR-4488,0
+32,178,TRAIL therapy,miR-1913,0
+28,368,Pirarubicin,miR-382,0
+22,539,Rapamycin,miR-6087,0
+39,307,Taxol,miR-32,0
+78,409,Valproate,miR-449a,0
+43,377,Curcumin,miR-421,0
+47,421,Interferon-gamma,miR-455,0
+92,455,histone deacetylase inhibitor,miR-486,0
+76,12,Platinum,LOC285194,0
+55,374,Prednisolone,miR-410,0
+33,572,Glucocorticoid,miR-6886-3p,0
+18,123,Vincristine,miR-143*,0
+3,454,Imatinib,miR-485,0
+37,468,Temozolomide,miR-501,0
+37,334,Temozolomide,miR-362,0
+12,65,Antioestrogens,miR-1234,0
+116,621,5-fluorouracil,miR-Plus-A1031,0
+117,103,Hydroxyurea,miR-130b,0
+110,267,Pemetrexed,miR-29a*,0
+56,258,10-Hydroxycamptothecin,miR-27a,0
+114,325,DAPT,miR-345,0
+66,394,Paroxetine,miR-4428,0
+9,46,Fluorouracil,miR-105,0
+114,11,DAPT,LINP1,0
+74,424,Letrozole,miR-4640,0
+24,180,Temsirolimus,miR-1915,0
+67,6,Cyclophosphamide,GAS5,0
+87,130,Irinotecan,miR-146b,0
+118,282,Ethanol,miR-30b,0
+9,234,Fluorouracil,miR-218,0
+22,193,Rapamycin,miR-197-3p,0
+45,251,Camptothecin,miR-24,0
+75,180,Sunitinib,miR-1915,0
+97,352,Fulvestrant,miR-373*,0
+68,556,Mafosfamide,miR-649,0
+10,92,Paclitaxel,miR-128a,0
+79,313,Ribavirin,miR-324,0
+69,99,Retinoic Acid,miR-130,0
+57,154,FOLFOX Chemotherapy,miR-181a*,0
+17,326,Adriamycin,miR-346,0
+62,527,Colchicine,miR-588,0
+94,105,Epirubicin HCl,miR-133a,0
+60,323,Crizotinib,miR-340,0
+102,182,Betulinic acid,miR-192*,0
+20,613,Mitoxantrone,miR-942,0
+93,40,intensive induction chemotherapy based on cytarabine and idarubicine,let-7i,0
+59,176,Vemurafenib,miR-191,0
+29,145,Verapamil,miR-15b,0
+97,73,Fulvestrant,miR-125a,0
+109,23,Lapatinib,SNHG5,0
+41,540,Ibrutinib,miR-613,0
+117,97,Hydroxyurea,miR-1297,0
+109,607,Lapatinib,miR-92b,0
+39,248,Taxol,miR-23a,0
+95,230,SIOP treatment protocol,miR-216,0
+65,47,Prednisone,miR-106a,0
+93,406,intensive induction chemotherapy based on cytarabine and idarubicine,miR-4488,0
+12,20,Antioestrogens,PVT1,0
+47,589,Interferon-gamma,miR-802,0
+79,207,Ribavirin,miR-200b,0
+30,13,epirubicin,LUCAT1,0
+47,410,Interferon-gamma,miR-4508,0
+33,355,Glucocorticoid,miR-374b,0
+2,201,Dasatinib,miR-199b*,0
+2,369,Dasatinib,miR-383,0
+95,93,SIOP treatment protocol,miR-129,0
+16,538,Docetaxel,miR-606,0
+118,550,Ethanol,miR-633,0
+12,481,Antioestrogens,miR-517b,0
+38,221,Cetuximab,miR-21*,0
+80,432,pegIFN/RBV therapy,miR-4685,0
+24,79,Temsirolimus,miR-1260b,0
+109,345,Lapatinib,miR-3682,0
+98,422,Leucovorin,miR-455-3p,0
+70,538,Rituximab,miR-606,0
+91,387,Fludarabine,miR-4279,0
+85,71,Pertuzumab,miR-1256,0
+100,477,Teniposide,miR-513a,0
+59,567,Vemurafenib,miR-671,0
+58,22,Fluoropyrimidine,SLC25A25-AS1,0
+25,146,"1,25(OH)2D3",miR-15b*,0
+56,184,10-Hydroxycamptothecin,miR-193a-3p,0
+115,13,modified ALLIC BFM 2002 protocol,LUCAT1,0
+34,318,Sorafenib,miR-338,0
+101,196,Arsenic Trioxide,miR-198,0
+83,382,Interferon-alpha,miR-425,0
+90,255,Topotecan,miR-26a-MM1,0
+40,572,Dexamethasone,miR-6886-3p,0
+41,12,Ibrutinib,LOC285194,0
+114,220,DAPT,miR-21,0
+35,84,Melphalan,miR-1273g,0
+60,217,Crizotinib,miR-20a-5p,0
+73,268,Exemestane,miR-29b,0
+75,533,Sunitinib,miR-593,0
+32,595,TRAIL therapy,miR-885,0
+45,108,Camptothecin,miR-1343,0
+17,566,Adriamycin,miR-665,0
+80,571,pegIFN/RBV therapy,miR-6845-5p,0
+56,423,10-Hydroxycamptothecin,miR-4638,0
+69,555,Retinoic Acid,miR-647,0
+113,124,Dihydrotestosterone,miR-144,0
+11,79,Propofol,miR-1260b,0
+92,152,histone deacetylase inhibitor,miR-181,0
+103,319,Carmustine,miR-339,0
+26,321,Bortezomib,miR-33a*,0
+45,73,Camptothecin,miR-125a,0
+29,612,Verapamil,miR-940,0
+32,205,TRAIL therapy,miR-200,0
+91,274,Fludarabine,miR-301b,0
+118,150,Ethanol,miR-17-5p,0
+78,138,Valproate,miR-152,0
+16,366,Docetaxel,miR-378i,0
+27,562,Methotrexate,miR-660,0
+31,406,Chemotherapy,miR-4488,0
+38,82,Cetuximab,miR-1268,0
+100,586,Teniposide,miR-768,0
+54,131,L-asparaginase,miR-146b-5p,0
+49,92,Capecitabine,miR-128a,0
+114,492,DAPT,miR-519d,0
+89,189,Staurosporine,miR-196a,0
+87,43,Irinotecan,miR-100-5p,0
+99,519,Euthyrox,miR-574,0
+9,596,Fluorouracil,miR-886,0
+91,41,Fludarabine,miR-1,0
+17,597,Adriamycin,miR-887,0
+118,577,Ethanol,miR-718,0
+9,400,Fluorouracil,miR-4467,0
+49,292,Capecitabine,miR-3127,0
+24,500,Temsirolimus,miR-520g,0
+84,464,Mitomycin C,miR-499,0
+31,57,Chemotherapy,miR-1202,0
+2,596,Dasatinib,miR-886,0
+72,97,Anastrozole,miR-1297,0
+91,298,Fludarabine,miR-3177,0
+38,90,Cetuximab,miR-1285,0
+52,86,5-Fluorouracil,miR-1277,0
+40,261,Dexamethasone,miR-28,0
+90,162,Topotecan,miR-183,0
+12,440,Antioestrogens,miR-4716,0
+6,596,Gefitinib,miR-886,0
+98,373,Leucovorin,miR-409,0
+65,506,Prednisone,miR-539,0
+16,48,Docetaxel,miR-106b,0
+101,109,Arsenic Trioxide,miR-135a,0
+110,223,Pemetrexed,miR-210,0
+42,16,Erlotinib,MALAT1,0
+88,268,Selumetinib,miR-29b,0
+53,113,Daunorubicin,miR-138,0
+101,293,Arsenic Trioxide,miR-3130,0
+55,356,Prednisolone,miR-375,0
+80,103,pegIFN/RBV therapy,miR-130b,0
+58,203,Fluoropyrimidine,miR-19b,0
+68,364,Mafosfamide,miR-378f,0
+58,239,Fluoropyrimidine,miR-22-3p,0
+49,444,Capecitabine,miR-4725,0
+15,277,Tetraplatin,miR-302c,0
+63,281,Cyclosporin A,miR-30a*,0
+104,120,Dibenziodolium,miR-141-3p,0
+75,440,Sunitinib,miR-4716,0
+48,166,Epirubicin,miR-186*,0
+97,3,Fulvestrant,CCAT1,0
+61,554,Lorlatinib,miR-643,0
+82,282,Cyclopamine,miR-30b,0
+81,81,Dichloroacetate,miR-1265,0
+35,305,Melphalan,miR-3195,0
+22,388,Rapamycin,miR-4284,0
+58,133,Fluoropyrimidine,miR-148b,0
+35,430,Melphalan,miR-4675,0
+43,411,Curcumin,miR-450a,0
+107,526,Raltitrexed,miR-587,0
+83,242,Interferon-alpha,miR-221*,0
+33,82,Glucocorticoid,miR-1268,0
+21,550,Nutlin-3a,miR-633,0
+84,258,Mitomycin C,miR-27a,0
+97,381,Fulvestrant,miR-424*,0
+95,176,SIOP treatment protocol,miR-191,0
+40,391,Dexamethasone,miR-429,0
+72,270,Anastrozole,miR-29b-2*,0
+48,219,Epirubicin,miR-20b*,0
+52,621,5-Fluorouracil,miR-Plus-A1031,0
+88,327,Selumetinib,miR-34a,0
+60,406,Crizotinib,miR-4488,0
+88,435,Selumetinib,miR-4695,0
+26,594,Bortezomib,miR-877,0
+44,53,PCI-24781,miR-10a ,0
+23,452,Sirolimus,miR-4787,0
+40,418,Dexamethasone,miR-4532,0
+62,165,Colchicine,miR-186,0
+112,79,AGRO100,miR-1260b,0
+117,5,Hydroxyurea,CUDR,0
+7,460,Tamoxifen,miR-494,0
+11,51,Propofol,miR-107,0
+14,560,Carboplatin,miR-655,0
+119,101,chemotherapy,miR-130a,0
+13,78,Oxaliplatin,miR-1260,0
+29,44,Verapamil,miR-101,0
+98,428,Leucovorin,miR-4669,0
+15,72,Tetraplatin,miR-1258,0
+30,360,epirubicin,miR-378a,0
+17,426,Adriamycin,miR-4655,0
+64,248,Vinorelbine,miR-23a,0
+90,407,Topotecan,miR-4492,0
+108,567,Tomudex,miR-671,0
+51,400,platinum-based doublet chemotherapy ,miR-4467,0
+49,365,Capecitabine,miR-378g,0
+32,337,TRAIL therapy,miR-363*,0
+109,139,Lapatinib,miR-153,0
+120,454,AED therapy,miR-485,0
+36,322,Oxymatrine,miR-33b,0
+89,116,Staurosporine,miR-140,0
+69,398,Retinoic Acid,miR-4465,0
+31,47,Chemotherapy,miR-106a,0
+56,328,10-Hydroxycamptothecin,miR-34a-5p,0
+63,452,Cyclosporin A,miR-4787,0
+72,445,Anastrozole,miR-4732,0
+88,103,Selumetinib,miR-130b,0
+112,581,AGRO100,miR-760,0
+19,372,Etoposide,miR-3960,0
+20,110,Mitoxantrone,miR-135b,0
+35,180,Melphalan,miR-1915,0
+30,359,epirubicin,miR-378,0
+100,415,Teniposide,miR-4521,0
+79,587,Ribavirin,miR-769,0
+4,567,Nilotinib,miR-671,0
+0,300,Cisplatin,miR-3180,0
+1,605,Gemcitabine,miR-92a-1,0
+13,535,Oxaliplatin,miR-598,0
+98,340,Leucovorin,miR-3651,0
+88,597,Selumetinib,miR-887,0
+75,51,Sunitinib,miR-107,0
+109,104,Lapatinib,miR-132,0
+44,317,PCI-24781,miR-335,0
+56,601,10-Hydroxycamptothecin,miR-920,0
+8,176,Trastuzumab,miR-191,0
+6,460,Gefitinib,miR-494,0
+33,102,Glucocorticoid,miR-130a-3p,0
+49,69,Capecitabine,miR-1246,0
+31,414,Chemotherapy,miR-452,0
+108,118,Tomudex,miR-141,0
+12,19,Antioestrogens,NEAT1,0
+103,346,Carmustine,miR-3687,0
+83,550,Interferon-alpha,miR-633,0
+32,43,TRAIL therapy,miR-100-5p,0
+4,24,Nilotinib,TUG1,0
+58,4,Fluoropyrimidine,CRNDE,0
+53,466,Daunorubicin,miR-500a,0
+75,276,Sunitinib,miR-302b,0
+4,49,Nilotinib,miR-106b-25,0
+8,246,Trastuzumab,miR-224,0
+35,446,Melphalan,miR-4739,0
+90,247,Topotecan,miR-2277,0
+82,395,Cyclopamine,miR-4430,0
+21,406,Nutlin-3a,miR-4488,0
+43,18,Curcumin,MRUL,0
+94,290,Epirubicin HCl,miR-31*,0
+86,302,Arsenic trioxide,miR-3186,0
+81,428,Dichloroacetate,miR-4669,0
+26,359,Bortezomib,miR-378,0
+120,245,AED therapy,miR-223,0
+55,230,Prednisolone,miR-216,0
+80,522,pegIFN/RBV therapy,miR-582,0
+45,41,Camptothecin,miR-1,0
+51,309,platinum-based doublet chemotherapy ,miR-3200,0
+117,134,Hydroxyurea,miR-149,0
+105,419,Hydrogen Peroxide,miR-4535,0
+119,323,chemotherapy,miR-340,0
+21,257,Nutlin-3a,miR-275,0
+9,111,Fluorouracil,miR-136,0
+67,180,Cyclophosphamide,miR-1915,0
+40,102,Dexamethasone,miR-130a-3p,0
+6,236,Gefitinib,miR-219-2,0
+36,557,Oxymatrine,miR-651,0
+82,159,Cyclopamine,miR-182*,0
+7,540,Tamoxifen,miR-613,0
+104,486,Dibenziodolium,miR-518f,0
+27,406,Methotrexate,miR-4488,0
+43,438,Curcumin,miR-4711,0
+109,167,Lapatinib,miR-187,0
+2,77,Dasatinib,miR-126*,0
+31,277,Chemotherapy,miR-302c,0
+96,582,Epirubicin hydrochloride,miR-762,0
+33,31,Glucocorticoid,hsa-1274A,0
+118,500,Ethanol,miR-520g,0
+6,568,Gefitinib,miR-675,0
+26,435,Bortezomib,miR-4695,0
+60,459,Crizotinib,miR-491,0
+18,275,Vincristine,miR-302a,0
+90,434,Topotecan,miR-4689,0
+32,371,TRAIL therapy,miR-3940,0
+99,109,Euthyrox,miR-135a,0
+49,344,Capecitabine,miR-3676,0
+42,586,Erlotinib,miR-768,0
+49,275,Capecitabine,miR-302a,0
+79,473,Ribavirin,miR-506,0
+75,555,Sunitinib,miR-647,0
+80,394,pegIFN/RBV therapy,miR-4428,0
+61,353,Lorlatinib,miR-374a,0
+9,395,Fluorouracil,miR-4430,0
+14,567,Carboplatin,miR-671,0
+98,251,Leucovorin,miR-24,0
+102,226,Betulinic acid,miR-213,0
+17,411,Adriamycin,miR-450a,0
+109,172,Lapatinib,miR-18b,0
+112,146,AGRO100,miR-15b*,0
+57,358,FOLFOX Chemotherapy,miR-377,0
+58,37,Fluoropyrimidine,let-7f,0
+51,412,platinum-based doublet chemotherapy ,miR-451,0
+11,335,Propofol,miR-3621,0
+52,518,5-Fluorouracil,miR-571,0
+85,575,Pertuzumab,miR-7-5p,0
+63,148,Cyclosporin A,miR-17,0
+92,221,histone deacetylase inhibitor,miR-21*,0
+48,344,Epirubicin,miR-3676,0
+118,224,Ethanol,miR-211,0
+75,284,Sunitinib,miR-30c,0
+43,15,Curcumin,MACC1-AS1,0
+75,543,Sunitinib,miR-618,0
+98,565,Leucovorin,miR-663a,0
+94,125,Epirubicin HCl,miR-144-3p,0
+12,316,Antioestrogens,miR-331,0
+104,54,Dibenziodolium,miR-10a*,0
+45,125,Camptothecin,miR-144-3p,0
+41,346,Ibrutinib,miR-3687,0
+14,481,Carboplatin,miR-517b,0
+87,604,Irinotecan,miR-92a,0
+13,481,Oxaliplatin,miR-517b,0
+53,12,Daunorubicin,LOC285194,0
+105,39,Hydrogen Peroxide,let-7g,0
+65,244,Prednisone,miR-222*,0
+86,207,Arsenic trioxide,miR-200b,0
+12,612,Antioestrogens,miR-940,0
+34,407,Sorafenib,miR-4492,0
+93,288,intensive induction chemotherapy based on cytarabine and idarubicine,miR-30e*,0
+120,100,AED therapy,miR-1307,0
+42,344,Erlotinib,miR-3676,0
+35,211,Melphalan,miR-203,0
+25,577,"1,25(OH)2D3",miR-718,0
+75,502,Sunitinib,miR-522,0
+76,520,Platinum,miR-576,0
+106,481,Pingyangmycin,miR-517b,0
+56,529,10-Hydroxycamptothecin,miR-590,0
+20,487,Mitoxantrone,miR-518f*,0
+105,497,Hydrogen Peroxide,miR-520c,0
+107,434,Raltitrexed,miR-4689,0
+84,392,Mitomycin C,miR-431,0
+95,474,SIOP treatment protocol,miR-509,0
+10,617,Paclitaxel,miR-99a,0
+88,286,Selumetinib,miR-30d*,0
+21,573,Nutlin-3a,miR-7,0
+21,69,Nutlin-3a,miR-1246,0
+53,259,Daunorubicin,miR-27b,0
+73,371,Exemestane,miR-3940,0
+87,339,Irinotecan,miR-365,0
+66,365,Paroxetine,miR-378g,0
+82,531,Cyclopamine,miR-591,0
+89,544,Staurosporine,miR-624*,0
+107,613,Raltitrexed,miR-942,0
+107,319,Raltitrexed,miR-339,0
+42,507,Erlotinib,miR-541*,0
+66,610,Paroxetine,miR-935,0
+33,470,Glucocorticoid,miR-502,0
+103,53,Carmustine,miR-10a ,0
+69,197,Retinoic Acid,miR-199a,0
+36,506,Oxymatrine,miR-539,0
+73,479,Exemestane,miR-515,0
+119,420,chemotherapy,miR-454,0
+53,619,Daunorubicin,miR-99b,0
+112,44,AGRO100,miR-101,0
+67,12,Cyclophosphamide,LOC285194,0
+22,589,Rapamycin,miR-802,0
+47,563,Interferon-gamma,miR-662,0
+90,75,Topotecan,miR-125b-5p,0
+63,175,Cyclosporin A,miR-1908,0
+47,534,Interferon-gamma,miR-593*,0
+32,307,TRAIL therapy,miR-32,0
+42,621,Erlotinib,miR-Plus-A1031,0
+29,553,Verapamil,miR-640,0
+41,359,Ibrutinib,miR-378,0
+25,143,"1,25(OH)2D3",miR-15a,0
+87,146,Irinotecan,miR-15b*,0
+33,274,Glucocorticoid,miR-301b,0
+92,478,histone deacetylase inhibitor,miR-514,0
+69,186,Retinoic Acid,miR-193b*,0
+87,224,Irinotecan,miR-211,0
+96,523,Epirubicin hydrochloride,miR-584,0
+33,615,Glucocorticoid,miR-96-5p,0
+74,543,Letrozole,miR-618,0
+23,64,Sirolimus,miR-1233,0
+74,23,Letrozole,SNHG5,0
+85,298,Pertuzumab,miR-3177,0
+105,496,Hydrogen Peroxide,miR-520b,0
+74,189,Letrozole,miR-196a,0
+54,300,L-asparaginase,miR-3180,0
+99,66,Euthyrox,miR-1236,0
+2,350,Dasatinib,miR-372,0
+81,217,Dichloroacetate,miR-20a-5p,0
+103,300,Carmustine,miR-3180,0
+31,566,Chemotherapy,miR-665,0
+19,594,Etoposide,miR-877,0
+35,551,Melphalan,miR-638,0
+101,391,Arsenic Trioxide,miR-429,0
+11,558,Propofol,miR-652,0
+58,27,Fluoropyrimidine,XLOC_006753,0
+77,398,Levetiracetam,miR-4465,0
+92,294,histone deacetylase inhibitor,miR-3141,0
+14,255,Carboplatin,miR-26a-MM1,0
+67,278,Cyclophosphamide,miR-302c*,0
+74,29,Letrozole,Let-7,0
+55,142,Prednisolone,miR-155-5p,0
+45,594,Camptothecin,miR-877,0
+87,107,Irinotecan,miR-134,0
+37,353,Temozolomide,miR-374a,0
+3,274,Imatinib,miR-301b,0
+92,216,histone deacetylase inhibitor,miR-20a,0
+63,268,Cyclosporin A,miR-29b,0
+70,353,Rituximab,miR-374a,0
+10,519,Paclitaxel,miR-574,0
+49,265,Capecitabine,miR-299,0
+59,212,Vemurafenib,miR-204,0
+101,510,Arsenic Trioxide,miR-545,0
+94,293,Epirubicin HCl,miR-3130,0
+112,53,AGRO100,miR-10a ,0
+24,300,Temsirolimus,miR-3180,0
+39,93,Taxol,miR-129,0
+9,198,Fluorouracil,miR-199a-3p,0
+89,483,Staurosporine,miR-518b,0
+66,52,Paroxetine,miR-10a,0
+34,411,Sorafenib,miR-450a,0
+57,204,FOLFOX Chemotherapy,miR-19b-1*,0
+35,607,Melphalan,miR-92b,0
+20,190,Mitoxantrone,miR-196a-5p,0
+116,335,5-fluorouracil,miR-3621,0
+52,465,5-Fluorouracil,miR-500,0
+54,329,L-asparaginase,miR-34b,0
+107,107,Raltitrexed,miR-134,0
+111,293,10-hydroxycamptothecin,miR-3130,0
+35,283,Melphalan,miR-30b*,0
+113,436,Dihydrotestosterone,miR-4707,0
+9,151,Fluorouracil,miR-17-92,0
+82,579,Cyclopamine,miR-744,0
+111,489,10-hydroxycamptothecin,miR-519a,0
+111,235,10-hydroxycamptothecin,miR-219,0
+100,172,Teniposide,miR-18b,0
+19,392,Etoposide,miR-431,0
+53,282,Daunorubicin,miR-30b,0
+64,84,Vinorelbine,miR-1273g,0
+85,100,Pertuzumab,miR-1307,0
+104,450,Dibenziodolium,miR-4758,0
+31,309,Chemotherapy,miR-3200,0
+2,496,Dasatinib,miR-520b,0
+35,262,Melphalan,miR-2861,0
+58,580,Fluoropyrimidine,miR-758,0
+56,232,10-Hydroxycamptothecin,miR-216b,0
+65,99,Prednisone,miR-130,0
+5,234,Doxorubicin,miR-218,0
+79,64,Ribavirin,miR-1233,0
+9,182,Fluorouracil,miR-192*,0
+49,248,Capecitabine,miR-23a,0
+81,43,Dichloroacetate,miR-100-5p,0
+119,358,chemotherapy,miR-377,0
+115,425,modified ALLIC BFM 2002 protocol,miR-4646,0
+10,337,Paclitaxel,miR-363*,0
+38,253,Cetuximab,miR-25*,0
+101,106,Arsenic Trioxide,miR-133b,0
+99,594,Euthyrox,miR-877,0
+39,157,Taxol,miR-181d,0
+98,529,Leucovorin,miR-590,0
+40,292,Dexamethasone,miR-3127,0
+33,127,Glucocorticoid,miR-1468,0
+57,58,FOLFOX Chemotherapy,miR-1207,0
+120,161,AED therapy,miR-1826,0
+84,134,Mitomycin C,miR-149,0
+20,426,Mitoxantrone,miR-4655,0
+44,233,PCI-24781,miR-217,0
+68,411,Mafosfamide,miR-450a,0
+78,73,Valproate,miR-125a,0
+18,351,Vincristine,miR-373,0
+102,261,Betulinic acid,miR-28,0
+39,285,Taxol,miR-30d,0
+119,206,chemotherapy,miR-200a,0
+41,440,Ibrutinib,miR-4716,0
+105,484,Hydrogen Peroxide,miR-518c,0
+53,562,Daunorubicin,miR-660,0
+111,451,10-hydroxycamptothecin,miR-4783,0
+23,249,Sirolimus,miR-23b,0
+93,325,intensive induction chemotherapy based on cytarabine and idarubicine,miR-345,0
+23,117,Sirolimus,miR-140-3p,0
+58,96,Fluoropyrimidine,miR-1293,0
+103,448,Carmustine,miR-4749,0
+28,133,Pirarubicin,miR-148b,0
+39,270,Taxol,miR-29b-2*,0
+85,573,Pertuzumab,miR-7,0
+72,259,Anastrozole,miR-27b,0
+26,524,Bortezomib,miR-585,0
+55,35,Prednisolone,let-7d,0
+90,168,Topotecan,miR-187*,0
+22,354,Rapamycin,miR-374a*,0
+119,462,chemotherapy,miR-496,0
+42,233,Erlotinib,miR-217,0
+119,486,chemotherapy,miR-518f,0
+9,447,Fluorouracil,miR-4745,0
+69,432,Retinoic Acid,miR-4685,0
+75,245,Sunitinib,miR-223,0
+116,182,5-fluorouracil,miR-192*,0
+74,391,Letrozole,miR-429,0
+61,414,Lorlatinib,miR-452,0
+100,145,Teniposide,miR-15b,0
+85,374,Pertuzumab,miR-410,0
+109,555,Lapatinib,miR-647,0
+70,382,Rituximab,miR-425,0
+78,525,Valproate,miR-586,0
+76,400,Platinum,miR-4467,0
+61,501,Lorlatinib,miR-520h,0
+114,525,DAPT,miR-586,0
+81,422,Dichloroacetate,miR-455-3p,0
+48,396,Epirubicin,miR-4454,0
+65,417,Prednisone,miR-4530,0
+62,204,Colchicine,miR-19b-1*,0
+82,296,Cyclopamine,miR-3154,0
+15,83,Tetraplatin,miR-127,0
+118,74,Ethanol,miR-125b,0
+97,396,Fulvestrant,miR-4454,0
+41,555,Ibrutinib,miR-647,0
+26,441,Bortezomib,miR-4721,0
+80,328,pegIFN/RBV therapy,miR-34a-5p,0
+76,254,Platinum,miR-26a,0
+31,527,Chemotherapy,miR-588,0
+58,425,Fluoropyrimidine,miR-4646,0
+9,45,Fluorouracil,miR-103,0
+46,547,Vinblastine,miR-628,0
+38,36,Cetuximab,let-7e,0
+108,114,Tomudex,miR-138-1*,0
+63,79,Cyclosporin A,miR-1260b,0
+51,290,platinum-based doublet chemotherapy ,miR-31*,0
+67,601,Cyclophosphamide,miR-920,0
+21,595,Nutlin-3a,miR-885,0
+91,40,Fludarabine,let-7i,0
+105,244,Hydrogen Peroxide,miR-222*,0
+79,389,Ribavirin,miR-4286,0
+59,536,Vemurafenib,miR-601,0
+33,20,Glucocorticoid,PVT1,0
+85,244,Pertuzumab,miR-222*,0
+96,508,Epirubicin hydrochloride,miR-542,0
+84,329,Mitomycin C,miR-34b,0
+45,369,Camptothecin,miR-383,0
+37,197,Temozolomide,miR-199a,0
+103,275,Carmustine,miR-302a,0
+56,80,10-Hydroxycamptothecin,miR-1264,0
+29,452,Verapamil,miR-4787,0
+105,221,Hydrogen Peroxide,miR-21*,0
+118,56,Ethanol,miR-1183,0
+100,56,Teniposide,miR-1183,0
+17,382,Adriamycin,miR-425,0
+115,326,modified ALLIC BFM 2002 protocol,miR-346,0
+39,436,Taxol,miR-4707,0
+92,287,histone deacetylase inhibitor,miR-30e,0
+73,560,Exemestane,miR-655,0
+70,520,Rituximab,miR-576,0
+3,536,Imatinib,miR-601,0
+92,2,histone deacetylase inhibitor,CASC11,0
+11,402,Propofol,miR-4478,0
+79,314,Ribavirin,miR-328,0
+107,150,Raltitrexed,miR-17-5p,0
+77,606,Levetiracetam,miR-92a-2*,0
+66,605,Paroxetine,miR-92a-1,0
+71,340,Cytarabine,miR-3651,0
+7,366,Tamoxifen,miR-378i,0
+32,7,TRAIL therapy,GIHCG,0
+41,221,Ibrutinib,miR-21*,0
+44,533,PCI-24781,miR-593,0
+39,489,Taxol,miR-519a,0
+46,55,Vinblastine,miR-10b,0
+61,362,Lorlatinib,miR-378d,0
+85,155,Pertuzumab,miR-181b,0
+72,570,Anastrozole,miR-6825-5p,0
+63,217,Cyclosporin A,miR-20a-5p,0
+105,75,Hydrogen Peroxide,miR-125b-5p,0
+7,572,Tamoxifen,miR-6886-3p,0
+47,179,Interferon-gamma,miR-1914*,0
+95,275,SIOP treatment protocol,miR-302a,0
+112,149,AGRO100,miR-17*,0
+65,215,Prednisone,miR-206,0
+11,175,Propofol,miR-1908,0
+76,10,Platinum,HULC,0
+86,356,Arsenic trioxide,miR-375,0
+65,179,Prednisone,miR-1914*,0
+92,268,histone deacetylase inhibitor,miR-29b,0
+113,131,Dihydrotestosterone,miR-146b-5p,0
+17,460,Adriamycin,miR-494,0
+108,527,Tomudex,miR-588,0
+107,567,Raltitrexed,miR-671,0
+94,73,Epirubicin HCl,miR-125a,0
+114,183,DAPT,miR-193a,0
+111,566,10-hydroxycamptothecin,miR-665,0
+13,108,Oxaliplatin,miR-1343,0
+120,347,AED therapy,miR-369,0
+69,320,Retinoic Acid,miR-33a,0
+44,486,PCI-24781,miR-518f,0
+30,57,epirubicin,miR-1202,0
+104,309,Dibenziodolium,miR-3200,0
+4,544,Nilotinib,miR-624*,0
+61,347,Lorlatinib,miR-369,0
+112,55,AGRO100,miR-10b,0
+120,137,AED therapy,miR-151,0
+16,209,Docetaxel,miR-200c*,0
+85,333,Pertuzumab,miR-3619,0
+84,217,Mitomycin C,miR-20a-5p,0
+59,256,Vemurafenib,miR-26b,0
+100,437,Teniposide,miR-4710,0
+93,270,intensive induction chemotherapy based on cytarabine and idarubicine,miR-29b-2*,0
+40,188,Dexamethasone,miR-195,0
+65,109,Prednisone,miR-135a,0
+22,359,Rapamycin,miR-378,0
+7,569,Tamoxifen,miR-675*,0
+89,229,Staurosporine,miR-215,0
+10,598,Paclitaxel,miR-888,0
+20,81,Mitoxantrone,miR-1265,0
+7,299,Tamoxifen,miR-3178,0
+8,601,Trastuzumab,miR-920,0
+112,555,AGRO100,miR-647,0
+117,118,Hydroxyurea,miR-141,0
+79,107,Ribavirin,miR-134,0
+67,612,Cyclophosphamide,miR-940,0
+29,272,Verapamil,miR-300,0
+46,449,Vinblastine,miR-4750,0
+35,314,Melphalan,miR-328,0
+99,394,Euthyrox,miR-4428,0
+82,199,Cyclopamine,miR-199a-5p,0
+114,534,DAPT,miR-593*,0
+12,428,Antioestrogens,miR-4669,0
+35,442,Melphalan,miR-4722,0
+49,302,Capecitabine,miR-3186,0
+35,561,Melphalan,miR-658,0
+28,601,Pirarubicin,miR-920,0
+105,558,Hydrogen Peroxide,miR-652,0
+3,607,Imatinib,miR-92b,0
+89,461,Staurosporine,miR-495,0
+73,128,Exemestane,miR-1469,0
+21,319,Nutlin-3a,miR-339,0
+49,73,Capecitabine,miR-125a,0
+39,612,Taxol,miR-940,0
+38,60,Cetuximab,miR-1226,0
+111,134,10-hydroxycamptothecin,miR-149,0
+3,564,Imatinib,miR-663,0
+111,356,10-hydroxycamptothecin,miR-375,0
+77,516,Levetiracetam,miR-568,0
+100,44,Teniposide,miR-101,0
+75,433,Sunitinib,miR-4687,0
+34,602,Sorafenib,miR-922,0
+105,577,Hydrogen Peroxide,miR-718,0
+27,164,Methotrexate,miR-185,0
+100,272,Teniposide,miR-300,0
+8,104,Trastuzumab,miR-132,0
+94,286,Epirubicin HCl,miR-30d*,0
+115,346,modified ALLIC BFM 2002 protocol,miR-3687,0
+115,557,modified ALLIC BFM 2002 protocol,miR-651,0
+81,240,Dichloroacetate,miR-220,0
+77,147,Levetiracetam,miR-16,0
+113,591,Dihydrotestosterone,miR-874,0
+94,440,Epirubicin HCl,miR-4716,0
+87,360,Irinotecan,miR-378a,0
+95,83,SIOP treatment protocol,miR-127,0
+12,472,Antioestrogens,miR-505,0
+0,292,Cisplatin,miR-3127,0
+64,186,Vinorelbine,miR-193b*,0
+61,299,Lorlatinib,miR-3178,0
+35,3,Melphalan,CCAT1,0
+44,298,PCI-24781,miR-3177,0
+90,135,Topotecan,miR-149*,0
+62,207,Colchicine,miR-200b,0
+42,313,Erlotinib,miR-324,0
+50,503,PLX4720,miR-523,0
+60,25,Crizotinib,UCA1,0
+116,551,5-fluorouracil,miR-638,0
+39,158,Taxol,miR-182,0
+16,594,Docetaxel,miR-877,0
+32,149,TRAIL therapy,miR-17*,0
+114,552,DAPT,miR-639,0
+31,580,Chemotherapy,miR-758,0
+56,41,10-Hydroxycamptothecin,miR-1,0
+114,317,DAPT,miR-335,0
+61,524,Lorlatinib,miR-585,0
+68,89,Mafosfamide,miR-1280,0
+36,238,Oxymatrine,miR-22*,0
+95,208,SIOP treatment protocol,miR-200c,0
+49,521,Capecitabine,miR-578,0
+46,448,Vinblastine,miR-4749,0
+39,30,Taxol,Let-7a,0
+92,17,histone deacetylase inhibitor,MEG3,0
+87,226,Irinotecan,miR-213,0
+82,533,Cyclopamine,miR-593,0
+38,542,Cetuximab,miR-615,0
+94,5,Epirubicin HCl,CUDR,0
+15,54,Tetraplatin,miR-10a*,0
+27,10,Methotrexate,HULC,0
+49,151,Capecitabine,miR-17-92,0
+76,561,Platinum,miR-658,0
+49,225,Capecitabine,miR-212,0
+8,488,Trastuzumab,miR-519,0
+6,526,Gefitinib,miR-587,0
+111,556,10-hydroxycamptothecin,miR-649,0
+54,68,L-asparaginase,miR-124,0
+56,28,10-Hydroxycamptothecin,linc-VLDLR,0
+96,130,Epirubicin hydrochloride,miR-146b,0
+62,137,Colchicine,miR-151,0
+103,605,Carmustine,miR-92a-1,0
+14,277,Carboplatin,miR-302c,0
+55,302,Prednisolone,miR-3186,0
+76,603,Platinum,miR-923,0
+23,180,Sirolimus,miR-1915,0
+111,500,10-hydroxycamptothecin,miR-520g,0
+50,12,PLX4720,LOC285194,0
+21,546,Nutlin-3a,miR-625*,0
+72,28,Anastrozole,linc-VLDLR,0
+83,254,Interferon-alpha,miR-26a,0
+24,92,Temsirolimus,miR-128a,0
+118,305,Ethanol,miR-3195,0
+109,249,Lapatinib,miR-23b,0
+22,27,Rapamycin,XLOC_006753,0
+63,511,Cyclosporin A,miR-548a,0
+95,524,SIOP treatment protocol,miR-585,0
+6,215,Gefitinib,miR-206,0
+73,237,Exemestane,miR-22,0
+18,403,Vincristine,miR-448,0
+61,156,Lorlatinib,miR-181c,0
+78,193,Valproate,miR-197-3p,0
+6,483,Gefitinib,miR-518b,0
+71,316,Cytarabine,miR-331,0
+102,119,Betulinic acid,miR-141*,0
+112,61,AGRO100,miR-1228,0
+68,47,Mafosfamide,miR-106a,0
+7,246,Tamoxifen,miR-224,0
+100,429,Teniposide,miR-4674,0
+2,581,Dasatinib,miR-760,0
+119,618,chemotherapy,miR-99a-5p,0
+9,446,Fluorouracil,miR-4739,0
+52,486,5-Fluorouracil,miR-518f,0
+69,457,Retinoic Acid,miR-489,0
+120,203,AED therapy,miR-19b,0
+104,597,Dibenziodolium,miR-887,0
+43,542,Curcumin,miR-615,0
+116,525,5-fluorouracil,miR-586,0
+78,543,Valproate,miR-618,0
+70,274,Rituximab,miR-301b,0
+64,42,Vinorelbine,miR-100,0
+89,489,Staurosporine,miR-519a,0
+64,290,Vinorelbine,miR-31*,0
+37,394,Temozolomide,miR-4428,0
+111,15,10-hydroxycamptothecin,MACC1-AS1,0
+28,434,Pirarubicin,miR-4689,0
+35,4,Melphalan,CRNDE,0
+0,226,Cisplatin,miR-213,0
+84,205,Mitomycin C,miR-200,0
+71,358,Cytarabine,miR-377,0
+27,560,Methotrexate,miR-655,0
+106,242,Pingyangmycin,miR-221*,0
+58,190,Fluoropyrimidine,miR-196a-5p,0
+16,317,Docetaxel,miR-335,0
+108,460,Tomudex,miR-494,0
+4,471,Nilotinib,miR-503,0
+3,2,Imatinib,CASC11,0
+53,570,Daunorubicin,miR-6825-5p,0
+56,426,10-Hydroxycamptothecin,miR-4655,0
+6,517,Gefitinib,miR-569,0
+48,304,Epirubicin,miR-3193,0
+84,314,Mitomycin C,miR-328,0
+40,383,Dexamethasone,miR-425*,0
+46,44,Vinblastine,miR-101,0
+26,30,Bortezomib,Let-7a,0
+103,201,Carmustine,miR-199b*,0
+71,60,Cytarabine,miR-1226,0
+43,225,Curcumin,miR-212,0
+44,259,PCI-24781,miR-27b,0
+107,476,Raltitrexed,miR-512,0
+89,331,Staurosporine,miR-3607,0
+81,563,Dichloroacetate,miR-662,0
+68,335,Mafosfamide,miR-3621,0
+20,377,Mitoxantrone,miR-421,0
+20,54,Mitoxantrone,miR-10a*,0
+110,410,Pemetrexed,miR-4508,0
+12,391,Antioestrogens,miR-429,0
+89,434,Staurosporine,miR-4689,0
+17,355,Adriamycin,miR-374b,0
+59,166,Vemurafenib,miR-186*,0
+102,531,Betulinic acid,miR-591,0
+59,159,Vemurafenib,miR-182*,0
+47,264,Interferon-gamma,miR-298,0
+32,462,TRAIL therapy,miR-496,0
+110,83,Pemetrexed,miR-127,0
+27,74,Methotrexate,miR-125b,0
+102,168,Betulinic acid,miR-187*,0
+24,147,Temsirolimus,miR-16,0
+83,417,Interferon-alpha,miR-4530,0
+120,451,AED therapy,miR-4783,0
+91,137,Fludarabine,miR-151,0
+116,107,5-fluorouracil,miR-134,0
+3,478,Imatinib,miR-514,0
+68,38,Mafosfamide,let-7f-1*,0
+53,244,Daunorubicin,miR-222*,0
+112,196,AGRO100,miR-198,0
+22,492,Rapamycin,miR-519d,0
+60,38,Crizotinib,let-7f-1*,0
+74,234,Letrozole,miR-218,0
+53,125,Daunorubicin,miR-144-3p,0
+110,258,Pemetrexed,miR-27a,0
+63,20,Cyclosporin A,PVT1,0
+81,584,Dichloroacetate,miR-766,0
+76,494,Platinum,miR-520,0
+3,437,Imatinib,miR-4710,0
+49,619,Capecitabine,miR-99b,0
+76,55,Platinum,miR-10b,0
+4,487,Nilotinib,miR-518f*,0
+14,530,Carboplatin,miR-590-5p,0
+108,307,Tomudex,miR-32,0
+69,473,Retinoic Acid,miR-506,0
+118,6,Ethanol,GAS5,0
+45,549,Camptothecin,miR-630,0
+15,81,Tetraplatin,miR-1265,0
+101,465,Arsenic Trioxide,miR-500,0
+72,440,Anastrozole,miR-4716,0
+33,456,Glucocorticoid,miR-487b,0
+83,120,Interferon-alpha,miR-141-3p,0
+47,499,Interferon-gamma,miR-520d*,0
+120,442,AED therapy,miR-4722,0
+39,555,Taxol,miR-647,0
+68,260,Mafosfamide,miR-27b ,0
+6,462,Gefitinib,miR-496,0
+52,240,5-Fluorouracil,miR-220,0
+102,530,Betulinic acid,miR-590-5p,0
+98,505,Leucovorin,miR-532,0
+37,310,Temozolomide,miR-320a,0
+74,170,Letrozole,miR-18a,0
+42,259,Erlotinib,miR-27b,0
+8,335,Trastuzumab,miR-3621,0
+37,304,Temozolomide,miR-3193,0
+106,357,Pingyangmycin,miR-376c,0
+59,431,Vemurafenib,miR-468,0
+20,218,Mitoxantrone,miR-20b,0
+2,500,Dasatinib,miR-520g,0
+94,426,Epirubicin HCl,miR-4655,0
+0,364,Cisplatin,miR-378f,0
+33,78,Glucocorticoid,miR-1260,0
+1,16,Gemcitabine,MALAT1,0
+30,529,epirubicin,miR-590,0
+23,126,Sirolimus,miR-145,0
+43,108,Curcumin,miR-1343,0
+98,90,Leucovorin,miR-1285,0
+3,199,Imatinib,miR-199a-5p,0
+119,441,chemotherapy,miR-4721,0
+70,602,Rituximab,miR-922,0
+16,101,Docetaxel,miR-130a,0
+62,358,Colchicine,miR-377,0
+54,208,L-asparaginase,miR-200c,0
+77,478,Levetiracetam,miR-514,0
+13,396,Oxaliplatin,miR-4454,0
+68,51,Mafosfamide,miR-107,0
+9,486,Fluorouracil,miR-518f,0
+86,459,Arsenic trioxide,miR-491,0
+95,91,SIOP treatment protocol,miR-1288,0
+14,146,Carboplatin,miR-15b*,0
+89,471,Staurosporine,miR-503,0
+77,4,Levetiracetam,CRNDE,0
+17,377,Adriamycin,miR-421,0
+102,99,Betulinic acid,miR-130,0
+17,183,Adriamycin,miR-193a,0
+18,596,Vincristine,miR-886,0
+15,329,Tetraplatin,miR-34b,0
+80,468,pegIFN/RBV therapy,miR-501,0
+3,62,Imatinib,miR-1228*,0
+119,405,chemotherapy,miR-4485,0
+78,620,Valproate,miR-99b*,0
+61,227,Lorlatinib,miR-214,0
+48,277,Epirubicin,miR-302c,0
+14,314,Carboplatin,miR-328,0
+16,397,Docetaxel,miR-4463,0
+8,583,Trastuzumab,miR-765,0
+33,576,Glucocorticoid,miR-708,0
+50,512,PLX4720,miR-550,0
+35,55,Melphalan,miR-10b,0
+77,448,Levetiracetam,miR-4749,0
+24,127,Temsirolimus,miR-1468,0
+45,346,Camptothecin,miR-3687,0
+46,407,Vinblastine,miR-4492,0
+112,600,AGRO100,miR-9,0
+89,51,Staurosporine,miR-107,0
+6,372,Gefitinib,miR-3960,0
+53,532,Daunorubicin,miR-592,0
+10,286,Paclitaxel,miR-30d*,0
+115,395,modified ALLIC BFM 2002 protocol,miR-4430,0
+97,92,Fulvestrant,miR-128a,0
+71,121,Cytarabine,miR-142,0
+72,203,Anastrozole,miR-19b,0
+46,508,Vinblastine,miR-542,0
+6,583,Gefitinib,miR-765,0
+62,112,Colchicine,miR-137,0
+82,10,Cyclopamine,HULC,0
+10,255,Paclitaxel,miR-26a-MM1,0
+36,172,Oxymatrine,miR-18b,0
+92,560,histone deacetylase inhibitor,miR-655,0
+54,620,L-asparaginase,miR-99b*,0
+6,82,Gefitinib,miR-1268,0
+33,543,Glucocorticoid,miR-618,0
+99,359,Euthyrox,miR-378,0
+111,146,10-hydroxycamptothecin,miR-15b*,0
+98,438,Leucovorin,miR-4711,0
+91,586,Fludarabine,miR-768,0
+11,516,Propofol,miR-568,0
+4,251,Nilotinib,miR-24,0
+88,290,Selumetinib,miR-31*,0
+3,74,Imatinib,miR-125b,0
+72,506,Anastrozole,miR-539,0
+60,314,Crizotinib,miR-328,0
+117,615,Hydroxyurea,miR-96-5p,0
+117,556,Hydroxyurea,miR-649,0
+115,274,modified ALLIC BFM 2002 protocol,miR-301b,0
+91,226,Fludarabine,miR-213,0
+68,363,Mafosfamide,miR-378e,0
+74,348,Letrozole,miR-370,0
+44,422,PCI-24781,miR-455-3p,0
+120,253,AED therapy,miR-25*,0
+109,403,Lapatinib,miR-448,0
+70,5,Rituximab,CUDR,0
+27,536,Methotrexate,miR-601,0
+23,355,Sirolimus,miR-374b,0
+29,211,Verapamil,miR-203,0
+57,460,FOLFOX Chemotherapy,miR-494,0
+30,371,epirubicin,miR-3940,0
+26,600,Bortezomib,miR-9,0
+71,417,Cytarabine,miR-4530,0
+8,453,Trastuzumab,miR-483,0
+92,20,histone deacetylase inhibitor,PVT1,0
+83,361,Interferon-alpha,miR-378c,0
+119,0,chemotherapy,ANRIL,0
+86,354,Arsenic trioxide,miR-374a*,0
+59,151,Vemurafenib,miR-17-92,0
+25,418,"1,25(OH)2D3",miR-4532,0
+98,468,Leucovorin,miR-501,0
+108,295,Tomudex,miR-3147,0
+74,566,Letrozole,miR-665,0
+84,272,Mitomycin C,miR-300,0
+104,160,Dibenziodolium,miR-1825,0
+56,573,10-Hydroxycamptothecin,miR-7,0
+65,193,Prednisone,miR-197-3p,0
+87,341,Irinotecan,miR-3653,0
+105,160,Hydrogen Peroxide,miR-1825,0
+17,58,Adriamycin,miR-1207,0
+7,276,Tamoxifen,miR-302b,0
+33,71,Glucocorticoid,miR-1256,0
+91,446,Fludarabine,miR-4739,0
+63,260,Cyclosporin A,miR-27b ,0
+107,267,Raltitrexed,miR-29a*,0
+66,92,Paroxetine,miR-128a,0
+43,230,Curcumin,miR-216,0
+109,424,Lapatinib,miR-4640,0
+5,466,Doxorubicin,miR-500a,0
+90,523,Topotecan,miR-584,0
+23,538,Sirolimus,miR-606,0
+71,338,Cytarabine,miR-3647,0
+19,342,Etoposide,miR-3665,0
+105,344,Hydrogen Peroxide,miR-3676,0
+100,276,Teniposide,miR-302b,0
+56,149,10-Hydroxycamptothecin,miR-17*,0
+66,210,Paroxetine,miR-202,0
+63,367,Cyclosporin A,miR-381,0
+5,305,Doxorubicin,miR-3195,0
+14,294,Carboplatin,miR-3141,0
+117,262,Hydroxyurea,miR-2861,0
+45,5,Camptothecin,CUDR,0
+15,517,Tetraplatin,miR-569,0
+26,565,Bortezomib,miR-663a,0
+85,254,Pertuzumab,miR-26a,0
+96,27,Epirubicin hydrochloride,XLOC_006753,0
+101,566,Arsenic Trioxide,miR-665,0
+8,58,Trastuzumab,miR-1207,0
+80,430,pegIFN/RBV therapy,miR-4675,0
+28,44,Pirarubicin,miR-101,0
+68,345,Mafosfamide,miR-3682,0
+84,209,Mitomycin C,miR-200c*,0
+28,117,Pirarubicin,miR-140-3p,0
+69,94,Retinoic Acid,miR-129*,0
+12,607,Antioestrogens,miR-92b,0
+83,109,Interferon-alpha,miR-135a,0
+2,13,Dasatinib,LUCAT1,0
+3,26,Imatinib,XIST,0
+9,271,Fluorouracil,miR-29c,0
+43,298,Curcumin,miR-3177,0
+79,257,Ribavirin,miR-275,0
+56,409,10-Hydroxycamptothecin,miR-449a,0
+55,206,Prednisolone,miR-200a,0
+51,226,platinum-based doublet chemotherapy ,miR-213,0
+102,283,Betulinic acid,miR-30b*,0
+21,379,Nutlin-3a,miR-423,0
+47,45,Interferon-gamma,miR-103,0
+36,300,Oxymatrine,miR-3180,0
+87,269,Irinotecan,miR-29b-1*,0
+74,182,Letrozole,miR-192*,0
+115,390,modified ALLIC BFM 2002 protocol,miR-4288,0
+28,557,Pirarubicin,miR-651,0
+38,395,Cetuximab,miR-4430,0
+113,527,Dihydrotestosterone,miR-588,0
+22,338,Rapamycin,miR-3647,0
+19,257,Etoposide,miR-275,0
+34,610,Sorafenib,miR-935,0
+103,256,Carmustine,miR-26b,0
+63,404,Cyclosporin A,miR-4484,0
+37,19,Temozolomide,NEAT1,0
+107,241,Raltitrexed,miR-221,0
+22,148,Rapamycin,miR-17,0
+105,434,Hydrogen Peroxide,miR-4689,0
+1,286,Gemcitabine,miR-30d*,0
+86,265,Arsenic trioxide,miR-299,0
+88,228,Selumetinib,miR-214*,0
+92,441,histone deacetylase inhibitor,miR-4721,0
+87,558,Irinotecan,miR-652,0
+54,315,L-asparaginase,miR-330,0
+116,197,5-fluorouracil,miR-199a,0
+95,6,SIOP treatment protocol,GAS5,0
+53,160,Daunorubicin,miR-1825,0
+65,200,Prednisone,miR-199b,0
+120,285,AED therapy,miR-30d,0
+83,311,Interferon-alpha,miR-320c,0
+90,480,Topotecan,miR-517a,0
+44,10,PCI-24781,HULC,0
+43,60,Curcumin,miR-1226,0
+16,230,Docetaxel,miR-216,0
+89,606,Staurosporine,miR-92a-2*,0
+38,76,Cetuximab,miR-126,0
+71,113,Cytarabine,miR-138,0
+72,561,Anastrozole,miR-658,0
+81,394,Dichloroacetate,miR-4428,0
+106,511,Pingyangmycin,miR-548a,0
+103,377,Carmustine,miR-421,0
+56,369,10-Hydroxycamptothecin,miR-383,0
+11,518,Propofol,miR-571,0
+47,400,Interferon-gamma,miR-4467,0
+97,161,Fulvestrant,miR-1826,0
+106,317,Pingyangmycin,miR-335,0
+42,509,Erlotinib,miR-543,0
+42,262,Erlotinib,miR-2861,0
+82,183,Cyclopamine,miR-193a,0
+4,294,Nilotinib,miR-3141,0
+74,236,Letrozole,miR-219-2,0
+14,616,Carboplatin,miR-98,0
+50,396,PLX4720,miR-4454,0
+107,415,Raltitrexed,miR-4521,0
+53,223,Daunorubicin,miR-210,0
+113,465,Dihydrotestosterone,miR-500,0
+33,309,Glucocorticoid,miR-3200,0
+88,369,Selumetinib,miR-383,0
+3,617,Imatinib,miR-99a,0
+41,323,Ibrutinib,miR-340,0
+60,573,Crizotinib,miR-7,0
+102,464,Betulinic acid,miR-499,0
+0,574,Cisplatin,miR-7-1*,0
+62,423,Colchicine,miR-4638,0
+92,597,histone deacetylase inhibitor,miR-887,0
+56,450,10-Hydroxycamptothecin,miR-4758,0
+85,481,Pertuzumab,miR-517b,0
+70,170,Rituximab,miR-18a,0
+94,344,Epirubicin HCl,miR-3676,0
+49,94,Capecitabine,miR-129*,0
+30,19,epirubicin,NEAT1,0
+97,117,Fulvestrant,miR-140-3p,0
+46,458,Vinblastine,miR-490,0
+90,77,Topotecan,miR-126*,0
+114,121,DAPT,miR-142,0
+112,59,AGRO100,miR-122,0
+78,21,Valproate,ROR1-AS1,0
+56,312,10-Hydroxycamptothecin,miR-320d,0
+77,108,Levetiracetam,miR-1343,0
+65,52,Prednisone,miR-10a,0
+107,283,Raltitrexed,miR-30b*,0
+84,299,Mitomycin C,miR-3178,0
+57,355,FOLFOX Chemotherapy,miR-374b,0
+57,290,FOLFOX Chemotherapy,miR-31*,0
+96,464,Epirubicin hydrochloride,miR-499,0
+27,437,Methotrexate,miR-4710,0
+54,205,L-asparaginase,miR-200,0
+10,256,Paclitaxel,miR-26b,0
+32,546,TRAIL therapy,miR-625*,0
+90,330,Topotecan,miR-34c,0
+14,203,Carboplatin,miR-19b,0
+97,134,Fulvestrant,miR-149,0
+102,505,Betulinic acid,miR-532,0
+67,5,Cyclophosphamide,CUDR,0
+7,413,Tamoxifen,miR-4516,0
+35,52,Melphalan,miR-10a,0
+24,587,Temsirolimus,miR-769,0
+92,146,histone deacetylase inhibitor,miR-15b*,0
+96,621,Epirubicin hydrochloride,miR-Plus-A1031,0
+65,118,Prednisone,miR-141,0
+96,97,Epirubicin hydrochloride,miR-1297,0
+62,590,Colchicine,miR-873,0
+109,367,Lapatinib,miR-381,0
+3,9,Imatinib,HOTAIR,0
+79,138,Ribavirin,miR-152,0
+13,335,Oxaliplatin,miR-3621,0
+86,480,Arsenic trioxide,miR-517a,0
+46,527,Vinblastine,miR-588,0
+41,220,Ibrutinib,miR-21,0
+57,556,FOLFOX Chemotherapy,miR-649,0
+77,71,Levetiracetam,miR-1256,0
+73,430,Exemestane,miR-4675,0
+83,328,Interferon-alpha,miR-34a-5p,0
+56,335,10-Hydroxycamptothecin,miR-3621,0
+22,365,Rapamycin,miR-378g,0
+62,339,Colchicine,miR-365,0
+108,398,Tomudex,miR-4465,0
+46,109,Vinblastine,miR-135a,0
+28,526,Pirarubicin,miR-587,0
+12,499,Antioestrogens,miR-520d*,0
+75,487,Sunitinib,miR-518f*,0
+8,472,Trastuzumab,miR-505,0
+82,589,Cyclopamine,miR-802,0
+25,215,"1,25(OH)2D3",miR-206,0
+41,242,Ibrutinib,miR-221*,0
+89,590,Staurosporine,miR-873,0
+18,9,Vincristine,HOTAIR,0
+46,489,Vinblastine,miR-519a,0
+9,368,Fluorouracil,miR-382,0
+78,137,Valproate,miR-151,0
+116,344,5-fluorouracil,miR-3676,0
+96,86,Epirubicin hydrochloride,miR-1277,0
+102,346,Betulinic acid,miR-3687,0
+100,406,Teniposide,miR-4488,0
+105,504,Hydrogen Peroxide,miR-526b*,0
+18,4,Vincristine,CRNDE,0
+29,7,Verapamil,GIHCG,0
+11,276,Propofol,miR-302b,0
+49,123,Capecitabine,miR-143*,0
+113,54,Dihydrotestosterone,miR-10a*,0
+51,345,platinum-based doublet chemotherapy ,miR-3682,0
+85,47,Pertuzumab,miR-106a,0
+11,236,Propofol,miR-219-2,0
+91,505,Fludarabine,miR-532,0
+10,520,Paclitaxel,miR-576,0
+27,86,Methotrexate,miR-1277,0
+91,578,Fludarabine,miR-720,0
+8,288,Trastuzumab,miR-30e*,0
+60,59,Crizotinib,miR-122,0
+44,615,PCI-24781,miR-96-5p,0
+110,28,Pemetrexed,linc-VLDLR,0
+114,58,DAPT,miR-1207,0
+24,51,Temsirolimus,miR-107,0
+99,378,Euthyrox,miR-422a,0
+2,89,Dasatinib,miR-1280,0
+71,535,Cytarabine,miR-598,0
+7,591,Tamoxifen,miR-874,0
+59,454,Vemurafenib,miR-485,0
+71,142,Cytarabine,miR-155-5p,0
+33,61,Glucocorticoid,miR-1228,0
+24,499,Temsirolimus,miR-520d*,0
+64,179,Vinorelbine,miR-1914*,0
+26,192,Bortezomib,miR-197,0
+119,536,chemotherapy,miR-601,0
+11,585,Propofol,miR-767,0
+74,56,Letrozole,miR-1183,0
+39,493,Taxol,miR-519e*,0
+14,292,Carboplatin,miR-3127,0
+11,564,Propofol,miR-663,0
+49,330,Capecitabine,miR-34c,0
+107,98,Raltitrexed,miR-1299,0
+82,92,Cyclopamine,miR-128a,0
+19,269,Etoposide,miR-29b-1*,0
+64,512,Vinorelbine,miR-550,0
+69,38,Retinoic Acid,let-7f-1*,0
+12,145,Antioestrogens,miR-15b,0
+76,311,Platinum,miR-320c,0
+78,328,Valproate,miR-34a-5p,0
+100,331,Teniposide,miR-3607,0
+70,48,Rituximab,miR-106b,0
+102,572,Betulinic acid,miR-6886-3p,0
+25,304,"1,25(OH)2D3",miR-3193,0
+101,189,Arsenic Trioxide,miR-196a,0
+90,615,Topotecan,miR-96-5p,0
+25,68,"1,25(OH)2D3",miR-124,0
+13,435,Oxaliplatin,miR-4695,0
+18,410,Vincristine,miR-4508,0
+67,323,Cyclophosphamide,miR-340,0
+97,136,Fulvestrant,miR-150,0
+9,173,Fluorouracil,miR-19,0
+54,512,L-asparaginase,miR-550,0
+0,537,Cisplatin,miR-605,0
+88,343,Selumetinib,miR-367,0
+93,592,intensive induction chemotherapy based on cytarabine and idarubicine,miR-875,0
+38,145,Cetuximab,miR-15b,0
+51,174,platinum-based doublet chemotherapy ,miR-190,0
+73,332,Exemestane,miR-361,0
+17,376,Adriamycin,miR-412,0
+55,247,Prednisolone,miR-2277,0
+43,339,Curcumin,miR-365,0
+9,288,Fluorouracil,miR-30e*,0
+47,250,Interferon-gamma,miR-23b-3p,0
+99,345,Euthyrox,miR-3682,0
+17,27,Adriamycin,XLOC_006753,0
+53,180,Daunorubicin,miR-1915,0
+11,268,Propofol,miR-29b,0
+110,537,Pemetrexed,miR-605,0
+118,329,Ethanol,miR-34b,0
+101,42,Arsenic Trioxide,miR-100,0
+26,434,Bortezomib,miR-4689,0
+118,175,Ethanol,miR-1908,0
+85,150,Pertuzumab,miR-17-5p,0
+51,198,platinum-based doublet chemotherapy ,miR-199a-3p,0
+13,412,Oxaliplatin,miR-451,0
+55,531,Prednisolone,miR-591,0
+39,40,Taxol,let-7i,0
+4,225,Nilotinib,miR-212,0
+54,298,L-asparaginase,miR-3177,0
+5,152,Doxorubicin,miR-181,0
+63,256,Cyclosporin A,miR-26b,0
+9,48,Fluorouracil,miR-106b,0
+80,15,pegIFN/RBV therapy,MACC1-AS1,0
+18,104,Vincristine,miR-132,0
+39,349,Taxol,miR-371,0
+3,238,Imatinib,miR-22*,0
+12,521,Antioestrogens,miR-578,0
+8,332,Trastuzumab,miR-361,0
+96,601,Epirubicin hydrochloride,miR-920,0
+91,141,Fludarabine,miR-155,0
+63,479,Cyclosporin A,miR-515,0
+45,595,Camptothecin,miR-885,0
+93,424,intensive induction chemotherapy based on cytarabine and idarubicine,miR-4640,0
+45,409,Camptothecin,miR-449a,0
+23,73,Sirolimus,miR-125a,0
+72,529,Anastrozole,miR-590,0
+55,216,Prednisolone,miR-20a,0
+105,132,Hydrogen Peroxide,miR-148a,0
+92,19,histone deacetylase inhibitor,NEAT1,0
+57,492,FOLFOX Chemotherapy,miR-519d,0
+87,487,Irinotecan,miR-518f*,0
+48,106,Epirubicin,miR-133b,0
+120,211,AED therapy,miR-203,0
+59,206,Vemurafenib,miR-200a,0
+23,300,Sirolimus,miR-3180,0
+49,222,Capecitabine,miR-21-5p,0
+2,535,Dasatinib,miR-598,0
+118,180,Ethanol,miR-1915,0
+52,476,5-Fluorouracil,miR-512,0
+29,298,Verapamil,miR-3177,0
+16,113,Docetaxel,miR-138,0
+103,482,Carmustine,miR-517c,0
+73,198,Exemestane,miR-199a-3p,0
+15,124,Tetraplatin,miR-144,0
+99,480,Euthyrox,miR-517a,0
+80,383,pegIFN/RBV therapy,miR-425*,0
+81,492,Dichloroacetate,miR-519d,0
+23,364,Sirolimus,miR-378f,0
+110,266,Pemetrexed,miR-29a,0
+28,326,Pirarubicin,miR-346,0
+33,23,Glucocorticoid,SNHG5,0
+32,579,TRAIL therapy,miR-744,0
+118,198,Ethanol,miR-199a-3p,0
+54,606,L-asparaginase,miR-92a-2*,0
+95,231,SIOP treatment protocol,miR-216a,0
+79,21,Ribavirin,ROR1-AS1,0
+78,591,Valproate,miR-874,0
+92,355,histone deacetylase inhibitor,miR-374b,0
+77,611,Levetiracetam,miR-939,0
+3,523,Imatinib,miR-584,0
+102,321,Betulinic acid,miR-33a*,0
+104,594,Dibenziodolium,miR-877,0
+46,296,Vinblastine,miR-3154,0
+105,233,Hydrogen Peroxide,miR-217,0
+28,501,Pirarubicin,miR-520h,0
+101,361,Arsenic Trioxide,miR-378c,0
+51,26,platinum-based doublet chemotherapy ,XIST,0
+64,584,Vinorelbine,miR-766,0
+8,250,Trastuzumab,miR-23b-3p,0
+67,600,Cyclophosphamide,miR-9,0
+92,109,histone deacetylase inhibitor,miR-135a,0
+72,126,Anastrozole,miR-145,0
+24,236,Temsirolimus,miR-219-2,0
+24,151,Temsirolimus,miR-17-92,0
+38,272,Cetuximab,miR-300,0
+12,437,Antioestrogens,miR-4710,0
+78,589,Valproate,miR-802,0
+36,171,Oxymatrine,miR-18a*,0
+101,546,Arsenic Trioxide,miR-625*,0
+74,345,Letrozole,miR-3682,0
+99,581,Euthyrox,miR-760,0
+41,538,Ibrutinib,miR-606,0
+34,76,Sorafenib,miR-126,0
+24,352,Temsirolimus,miR-373*,0
+93,412,intensive induction chemotherapy based on cytarabine and idarubicine,miR-451,0
+10,608,Paclitaxel,miR-93,0
+119,237,chemotherapy,miR-22,0
+18,158,Vincristine,miR-182,0
+20,338,Mitoxantrone,miR-3647,0
+17,17,Adriamycin,MEG3,0
+62,272,Colchicine,miR-300,0
+61,78,Lorlatinib,miR-1260,0
+68,355,Mafosfamide,miR-374b,0
+69,396,Retinoic Acid,miR-4454,0
+77,139,Levetiracetam,miR-153,0
+65,281,Prednisone,miR-30a*,0
+13,20,Oxaliplatin,PVT1,0
+30,454,epirubicin,miR-485,0
+43,182,Curcumin,miR-192*,0
+19,583,Etoposide,miR-765,0
+104,253,Dibenziodolium,miR-25*,0
+11,423,Propofol,miR-4638,0
+2,365,Dasatinib,miR-378g,0
+109,289,Lapatinib,miR-31,0
+116,440,5-fluorouracil,miR-4716,0
+47,290,Interferon-gamma,miR-31*,0
+42,5,Erlotinib,CUDR,0
+84,412,Mitomycin C,miR-451,0
+72,241,Anastrozole,miR-221,0
+70,117,Rituximab,miR-140-3p,0
+6,108,Gefitinib,miR-1343,0
+81,397,Dichloroacetate,miR-4463,0
+39,149,Taxol,miR-17*,0
+5,530,Doxorubicin,miR-590-5p,0
+18,328,Vincristine,miR-34a-5p,0
+116,134,5-fluorouracil,miR-149,0
+0,149,Cisplatin,miR-17*,0
+52,250,5-Fluorouracil,miR-23b-3p,0
+59,328,Vemurafenib,miR-34a-5p,0
+107,274,Raltitrexed,miR-301b,0
+41,347,Ibrutinib,miR-369,0
+73,53,Exemestane,miR-10a ,0
+75,48,Sunitinib,miR-106b,0
+44,415,PCI-24781,miR-4521,0
+35,127,Melphalan,miR-1468,0
+30,104,epirubicin,miR-132,0
+22,528,Rapamycin,miR-589*,0
+93,460,intensive induction chemotherapy based on cytarabine and idarubicine,miR-494,0
+114,433,DAPT,miR-4687,0
+84,6,Mitomycin C,GAS5,0
+34,343,Sorafenib,miR-367,0
+92,87,histone deacetylase inhibitor,miR-128,0
+27,468,Methotrexate,miR-501,0
+94,362,Epirubicin HCl,miR-378d,0
+38,449,Cetuximab,miR-4750,0
+19,157,Etoposide,miR-181d,0
+112,482,AGRO100,miR-517c,0
+88,246,Selumetinib,miR-224,0
+47,359,Interferon-gamma,miR-378,0
+20,621,Mitoxantrone,miR-Plus-A1031,0
+95,599,SIOP treatment protocol,miR-892b,0
+104,461,Dibenziodolium,miR-495,0
+63,494,Cyclosporin A,miR-520,0
+43,290,Curcumin,miR-31*,0
+38,92,Cetuximab,miR-128a,0
+29,11,Verapamil,LINP1,0
+107,126,Raltitrexed,miR-145,0
+120,91,AED therapy,miR-1288,0
+88,490,Selumetinib,miR-519b,0
+120,368,AED therapy,miR-382,0
+58,207,Fluoropyrimidine,miR-200b,0
+116,175,5-fluorouracil,miR-1908,0
+81,564,Dichloroacetate,miR-663,0
+100,262,Teniposide,miR-2861,0
+51,423,platinum-based doublet chemotherapy ,miR-4638,0
+38,305,Cetuximab,miR-3195,0
+89,601,Staurosporine,miR-920,0
+74,204,Letrozole,miR-19b-1*,0
+37,563,Temozolomide,miR-662,0
+8,338,Trastuzumab,miR-3647,0
+77,82,Levetiracetam,miR-1268,0
+98,250,Leucovorin,miR-23b-3p,0
+74,320,Letrozole,miR-33a,0
+112,361,AGRO100,miR-378c,0
+93,178,intensive induction chemotherapy based on cytarabine and idarubicine,miR-1913,0
+35,525,Melphalan,miR-586,0
+67,531,Cyclophosphamide,miR-591,0
+82,544,Cyclopamine,miR-624*,0
+39,601,Taxol,miR-920,0
+46,139,Vinblastine,miR-153,0
+108,589,Tomudex,miR-802,0
+102,360,Betulinic acid,miR-378a,0
+75,523,Sunitinib,miR-584,0
+88,65,Selumetinib,miR-1234,0
+25,65,"1,25(OH)2D3",miR-1234,0
+17,414,Adriamycin,miR-452,0
+110,25,Pemetrexed,UCA1,0
+38,336,Cetuximab,miR-363,0
+90,220,Topotecan,miR-21,0
+60,376,Crizotinib,miR-412,0
+81,324,Dichloroacetate,miR-342,0
+23,368,Sirolimus,miR-382,0
+88,87,Selumetinib,miR-128,0
+102,32,Betulinic acid,let-7a,0
+34,269,Sorafenib,miR-29b-1*,0
+23,86,Sirolimus,miR-1277,0
+72,540,Anastrozole,miR-613,0
+89,463,Staurosporine,miR-497,0
+92,537,histone deacetylase inhibitor,miR-605,0
+50,177,PLX4720,miR-191*,0
+4,445,Nilotinib,miR-4732,0
+68,553,Mafosfamide,miR-640,0
+20,178,Mitoxantrone,miR-1913,0
+26,269,Bortezomib,miR-29b-1*,0
+24,7,Temsirolimus,GIHCG,0
+68,312,Mafosfamide,miR-320d,0
+93,92,intensive induction chemotherapy based on cytarabine and idarubicine,miR-128a,0
+84,271,Mitomycin C,miR-29c,0
+110,423,Pemetrexed,miR-4638,0
+38,23,Cetuximab,SNHG5,0
+33,376,Glucocorticoid,miR-412,0
+58,452,Fluoropyrimidine,miR-4787,0
+7,294,Tamoxifen,miR-3141,0
+86,365,Arsenic trioxide,miR-378g,0
+20,351,Mitoxantrone,miR-373,0
+113,412,Dihydrotestosterone,miR-451,0
+61,90,Lorlatinib,miR-1285,0
+108,310,Tomudex,miR-320a,0
+14,326,Carboplatin,miR-346,0
+49,142,Capecitabine,miR-155-5p,0
+13,1,Oxaliplatin,BCAR4,0
+103,533,Carmustine,miR-593,0
+17,314,Adriamycin,miR-328,0
+82,560,Cyclopamine,miR-655,0
+87,609,Irinotecan,miR-933,0
+65,381,Prednisone,miR-424*,0
+41,204,Ibrutinib,miR-19b-1*,0
+87,481,Irinotecan,miR-517b,0
+79,278,Ribavirin,miR-302c*,0
+98,9,Leucovorin,HOTAIR,0
+83,570,Interferon-alpha,miR-6825-5p,0
+72,44,Anastrozole,miR-101,0
+33,107,Glucocorticoid,miR-134,0
+111,244,10-hydroxycamptothecin,miR-222*,0
+66,398,Paroxetine,miR-4465,0
+7,235,Tamoxifen,miR-219,0
+88,313,Selumetinib,miR-324,0
+48,393,Epirubicin,miR-433,0
+72,600,Anastrozole,miR-9,0
+87,100,Irinotecan,miR-1307,0
+100,41,Teniposide,miR-1,0
+113,621,Dihydrotestosterone,miR-Plus-A1031,0
+70,9,Rituximab,HOTAIR,0
+72,50,Anastrozole,miR-106~25,0
+77,204,Levetiracetam,miR-19b-1*,0
+99,421,Euthyrox,miR-455,0
+94,429,Epirubicin HCl,miR-4674,0
+14,347,Carboplatin,miR-369,0
+95,537,SIOP treatment protocol,miR-605,0
+105,3,Hydrogen Peroxide,CCAT1,0
+91,281,Fludarabine,miR-30a*,0
+50,478,PLX4720,miR-514,0
+50,611,PLX4720,miR-939,0
+119,262,chemotherapy,miR-2861,0
+25,250,"1,25(OH)2D3",miR-23b-3p,0
+24,227,Temsirolimus,miR-214,0
+7,497,Tamoxifen,miR-520c,0
+99,523,Euthyrox,miR-584,0
+120,311,AED therapy,miR-320c,0
+108,440,Tomudex,miR-4716,0
+116,225,5-fluorouracil,miR-212,0
+116,331,5-fluorouracil,miR-3607,0
+65,60,Prednisone,miR-1226,0
+83,494,Interferon-alpha,miR-520,0
+44,51,PCI-24781,miR-107,0
+62,232,Colchicine,miR-216b,0
+73,300,Exemestane,miR-3180,0
+85,198,Pertuzumab,miR-199a-3p,0
+41,274,Ibrutinib,miR-301b,0
+86,280,Arsenic trioxide,miR-30a,0
+78,371,Valproate,miR-3940,0
+88,427,Selumetinib,miR-4665,0
+39,386,Taxol,miR-4261,0
+78,405,Valproate,miR-4485,0
+119,250,chemotherapy,miR-23b-3p,0
+95,277,SIOP treatment protocol,miR-302c,0
+60,352,Crizotinib,miR-373*,0
+103,113,Carmustine,miR-138,0
+16,542,Docetaxel,miR-615,0
+24,142,Temsirolimus,miR-155-5p,0
+22,69,Rapamycin,miR-1246,0
+36,434,Oxymatrine,miR-4689,0
+1,392,Gemcitabine,miR-431,0
+87,427,Irinotecan,miR-4665,0
+11,440,Propofol,miR-4716,0
+3,362,Imatinib,miR-378d,0
+93,538,intensive induction chemotherapy based on cytarabine and idarubicine,miR-606,0
+62,351,Colchicine,miR-373,0
+87,53,Irinotecan,miR-10a ,0
+26,208,Bortezomib,miR-200c,0
+16,559,Docetaxel,miR-654-5p,0
+59,181,Vemurafenib,miR-192,0
+84,177,Mitomycin C,miR-191*,0
+110,321,Pemetrexed,miR-33a*,0
+24,429,Temsirolimus,miR-4674,0
+102,164,Betulinic acid,miR-185,0
+59,379,Vemurafenib,miR-423,0
+54,26,L-asparaginase,XIST,0
+87,84,Irinotecan,miR-1273g,0
+57,619,FOLFOX Chemotherapy,miR-99b,0
+37,222,Temozolomide,miR-21-5p,0
+80,181,pegIFN/RBV therapy,miR-192,0
+11,576,Propofol,miR-708,0
+52,461,5-Fluorouracil,miR-495,0
+24,581,Temsirolimus,miR-760,0
+74,523,Letrozole,miR-584,0
+77,320,Levetiracetam,miR-33a,0
+103,612,Carmustine,miR-940,0
+73,162,Exemestane,miR-183,0
+15,137,Tetraplatin,miR-151,0
+63,433,Cyclosporin A,miR-4687,0
+108,506,Tomudex,miR-539,0
+84,193,Mitomycin C,miR-197-3p,0
+118,179,Ethanol,miR-1914*,0
+6,195,Gefitinib,miR-1976,0
+97,368,Fulvestrant,miR-382,0
+119,166,chemotherapy,miR-186*,0
+39,220,Taxol,miR-21,0
+11,388,Propofol,miR-4284,0
+113,200,Dihydrotestosterone,miR-199b,0
+100,51,Teniposide,miR-107,0
+95,488,SIOP treatment protocol,miR-519,0
+22,316,Rapamycin,miR-331,0
+18,156,Vincristine,miR-181c,0
+0,426,Cisplatin,miR-4655,0
+96,145,Epirubicin hydrochloride,miR-15b,0
+107,245,Raltitrexed,miR-223,0
+63,40,Cyclosporin A,let-7i,0
+51,186,platinum-based doublet chemotherapy ,miR-193b*,0
+56,620,10-Hydroxycamptothecin,miR-99b*,0
+9,268,Fluorouracil,miR-29b,0
+36,470,Oxymatrine,miR-502,0
+27,112,Methotrexate,miR-137,0
+40,465,Dexamethasone,miR-500,0
+48,241,Epirubicin,miR-221,0
+83,338,Interferon-alpha,miR-3647,0
+64,549,Vinorelbine,miR-630,0
+24,478,Temsirolimus,miR-514,0
+2,168,Dasatinib,miR-187*,0
+106,536,Pingyangmycin,miR-601,0
+42,465,Erlotinib,miR-500,0
+57,126,FOLFOX Chemotherapy,miR-145,0
+96,33,Epirubicin hydrochloride,let-7b,0
+6,39,Gefitinib,let-7g,0
+29,523,Verapamil,miR-584,0
+13,17,Oxaliplatin,MEG3,0
+94,328,Epirubicin HCl,miR-34a-5p,0
+18,120,Vincristine,miR-141-3p,0
+26,193,Bortezomib,miR-197-3p,0
+17,213,Adriamycin,miR-204-5p,0
+1,13,Gemcitabine,LUCAT1,0
+6,36,Gefitinib,let-7e,0
+10,575,Paclitaxel,miR-7-5p,0
+59,422,Vemurafenib,miR-455-3p,0
+3,170,Imatinib,miR-18a,0
+30,33,epirubicin,let-7b,0
+10,26,Paclitaxel,XIST,0
+52,17,5-Fluorouracil,MEG3,0
+75,142,Sunitinib,miR-155-5p,0
+0,582,Cisplatin,miR-762,0
+7,377,Tamoxifen,miR-421,0
+59,149,Vemurafenib,miR-17*,0
+26,222,Bortezomib,miR-21-5p,0
+5,193,Doxorubicin,miR-197-3p,0
+3,213,Imatinib,miR-204-5p,0
+13,179,Oxaliplatin,miR-1914*,0
+7,150,Tamoxifen,miR-17-5p,0
+42,34,Erlotinib,let-7c,0
+42,142,Erlotinib,miR-155-5p,0
+10,422,Paclitaxel,miR-455-3p,0
+37,0,Temozolomide,ANRIL,0
+19,213,Etoposide,miR-204-5p,0
+13,190,Oxaliplatin,miR-196a-5p,0
+116,213,5-fluorouracil,miR-204-5p,0
+9,239,Fluorouracil,miR-22-3p,0
+29,40,Verapamil,let-7i,0
+9,328,Fluorouracil,miR-34a-5p,0
+18,199,Vincristine,miR-199a-5p,0
+17,328,Adriamycin,miR-34a-5p,0
+39,17,Taxol,MEG3,0
+17,313,Adriamycin,miR-324,0
+7,40,Tamoxifen,let-7i,0
+109,8,Lapatinib,H19,0
+40,618,Dexamethasone,miR-99a-5p,0
+10,328,Paclitaxel,miR-34a-5p,0
+51,120,platinum-based doublet chemotherapy ,miR-141-3p,0
+0,191,Cisplatin,miR-196b,0
+71,222,Cytarabine,miR-21-5p,0
+11,422,Propofol,miR-455-3p,0
+7,16,Tamoxifen,MALAT1,0
+39,422,Taxol,miR-455-3p,0
+5,17,Doxorubicin,MEG3,0
+10,102,Paclitaxel,miR-130a-3p,0
+6,328,Gefitinib,miR-34a-5p,0
+16,193,Docetaxel,miR-197-3p,0
+29,43,Verapamil,miR-100-5p,0
+1,125,Gemcitabine,miR-144-3p,0
+8,239,Trastuzumab,miR-22-3p,0
+17,125,Adriamycin,miR-144-3p,0
+60,8,Crizotinib,H19,0
+5,125,Doxorubicin,miR-144-3p,0
+7,463,Tamoxifen,miR-497,0
+96,213,Epirubicin hydrochloride,miR-204-5p,0
+34,60,Sorafenib,miR-1226,0
+9,380,Fluorouracil,miR-424,0
+38,213,Cetuximab,miR-204-5p,0
+18,508,Vincristine,miR-542,0
+1,34,Gemcitabine,let-7c,0
+0,508,Cisplatin,miR-542,0
+0,56,Cisplatin,miR-1183,0
+3,142,Imatinib,miR-155-5p,0
+26,150,Bortezomib,miR-17-5p,0
+37,199,Temozolomide,miR-199a-5p,0
+16,75,Docetaxel,miR-125b-5p,0
+52,132,5-Fluorouracil,miR-148a,0
+37,102,Temozolomide,miR-130a-3p,0
+75,193,Sunitinib,miR-197-3p,0
+37,217,Temozolomide,miR-20a-5p,0
+5,250,Doxorubicin,miR-23b-3p,0
+52,6,5-Fluorouracil,GAS5,0
+42,149,Erlotinib,miR-17*,0
+30,102,epirubicin,miR-130a-3p,0
+7,77,Tamoxifen,miR-126*,0
+34,575,Sorafenib,miR-7-5p,0
+19,575,Etoposide,miR-7-5p,0
+37,131,Temozolomide,miR-146b-5p,0
+42,120,Erlotinib,miR-141-3p,0
+116,199,5-fluorouracil,miR-199a-5p,0
+34,217,Sorafenib,miR-20a-5p,0
+34,359,Sorafenib,miR-378,0
+66,184,Paroxetine,miR-193a-3p,0
+59,606,Vemurafenib,miR-92a-2*,0
+13,339,Oxaliplatin,miR-365,0
+39,33,Taxol,let-7b,0
+39,102,Taxol,miR-130a-3p,0
+0,150,Cisplatin,miR-17-5p,0
+27,250,Methotrexate,miR-23b-3p,0
+59,198,Vemurafenib,miR-199a-3p,0
+37,328,Temozolomide,miR-34a-5p,0
+16,199,Docetaxel,miR-199a-5p,0
+16,102,Docetaxel,miR-130a-3p,0
+10,35,Paclitaxel,let-7d,0
+5,33,Doxorubicin,let-7b,0
+17,199,Adriamycin,miR-199a-5p,0
+5,339,Doxorubicin,miR-365,0
+3,184,Imatinib,miR-193a-3p,0
+16,34,Docetaxel,let-7c,0
+0,332,Cisplatin,miR-361,0
+9,75,Fluorouracil,miR-125b-5p,0
+9,199,Fluorouracil,miR-199a-5p,0
+10,34,Paclitaxel,let-7c,0
+59,217,Vemurafenib,miR-20a-5p,0
+27,217,Methotrexate,miR-20a-5p,0
+14,120,Carboplatin,miR-141-3p,0
+42,328,Erlotinib,miR-34a-5p,0
+27,213,Methotrexate,miR-204-5p,0
+67,250,Cyclophosphamide,miR-23b-3p,0
+37,33,Temozolomide,let-7b,0
+34,149,Sorafenib,miR-17*,0
+9,575,Fluorouracil,miR-7-5p,0
+18,193,Vincristine,miR-197-3p,0
+34,106,Sorafenib,miR-133b,0
+59,575,Vemurafenib,miR-7-5p,0
+39,75,Taxol,miR-125b-5p,0
+0,275,Cisplatin,miR-302a,0
+17,35,Adriamycin,let-7d,0
+18,222,Vincristine,miR-21-5p,0
+37,20,Temozolomide,PVT1,0
+109,5,Lapatinib,CUDR,0
+116,125,5-fluorouracil,miR-144-3p,0
+111,575,10-hydroxycamptothecin,miR-7-5p,0
+26,328,Bortezomib,miR-34a-5p,0
+9,132,Fluorouracil,miR-148a,0
+76,179,Platinum,miR-1914*,0
+0,75,Cisplatin,miR-125b-5p,0
+10,36,Paclitaxel,let-7e,0
+3,319,Imatinib,miR-339,0
+52,199,5-Fluorouracil,miR-199a-5p,0
+37,24,Temozolomide,TUG1,0
+52,117,5-Fluorouracil,miR-140-3p,0
+75,499,Sunitinib,miR-520d*,0
+34,199,Sorafenib,miR-199a-5p,0
+34,599,Sorafenib,miR-892b,0
+34,328,Sorafenib,miR-34a-5p,0
+59,171,Vemurafenib,miR-18a*,0
+53,250,Daunorubicin,miR-23b-3p,0
+76,120,Platinum,miR-141-3p,0
+20,43,Mitoxantrone,miR-100-5p,0
+26,217,Bortezomib,miR-20a-5p,0
+13,239,Oxaliplatin,miR-22-3p,0
+26,149,Bortezomib,miR-17*,0
+0,213,Cisplatin,miR-204-5p,0
+116,36,5-fluorouracil,let-7e,0
+10,33,Paclitaxel,let-7b,0
+39,328,Taxol,miR-34a-5p,0
+9,125,Fluorouracil,miR-144-3p,0
+42,193,Erlotinib,miR-197-3p,0
+64,8,Vinorelbine,H19,0
+64,17,Vinorelbine,MEG3,0
+29,39,Verapamil,let-7g,0
+52,213,5-Fluorouracil,miR-204-5p,0
+56,190,10-Hydroxycamptothecin,miR-196a-5p,0
+0,70,Cisplatin,miR-1247,0
+16,575,Docetaxel,miR-7-5p,0
+17,36,Adriamycin,let-7e,0
+34,150,Sorafenib,miR-17-5p,0
+13,34,Oxaliplatin,let-7c,0
+34,213,Sorafenib,miR-204-5p,0
+13,9,Oxaliplatin,HOTAIR,0
+55,120,Prednisolone,miR-141-3p,0
+84,328,Mitomycin C,miR-34a-5p,0
+0,568,Cisplatin,miR-675,0
+7,75,Tamoxifen,miR-125b-5p,0
+39,559,Taxol,miR-654-5p,0
+13,125,Oxaliplatin,miR-144-3p,0
+34,360,Sorafenib,miR-378a,0
+0,380,Cisplatin,miR-424,0
+7,289,Tamoxifen,miR-31,0
+111,190,10-hydroxycamptothecin,miR-196a-5p,0
+17,39,Adriamycin,let-7g,0
+18,102,Vincristine,miR-130a-3p,0
+5,35,Doxorubicin,let-7d,0
+59,36,Vemurafenib,let-7e,0
+5,575,Doxorubicin,miR-7-5p,0
+16,328,Docetaxel,miR-34a-5p,0
+52,125,5-Fluorouracil,miR-144-3p,0
+13,328,Oxaliplatin,miR-34a-5p,0
+13,39,Oxaliplatin,let-7g,0
+52,239,5-Fluorouracil,miR-22-3p,0
+39,36,Taxol,let-7e,0
+10,43,Paclitaxel,miR-100-5p,0
+76,63,Platinum,miR-1229-5p,0
+116,12,5-fluorouracil,LOC285194,0
+13,4,Oxaliplatin,CRNDE,0
+17,6,Adriamycin,GAS5,0
+37,34,Temozolomide,let-7c,0
+9,360,Fluorouracil,miR-378a,0
+52,156,5-Fluorouracil,miR-181c,0
+1,10,Gemcitabine,HULC,0
+3,615,Imatinib,miR-96-5p,0
+26,142,Bortezomib,miR-155-5p,0
+1,360,Gemcitabine,miR-378a,0
+7,131,Tamoxifen,miR-146b-5p,0
+1,33,Gemcitabine,let-7b,0
+9,17,Fluorouracil,MEG3,0
+17,339,Adriamycin,miR-365,0
+6,34,Gefitinib,let-7c,0
+0,116,Cisplatin,miR-140,0
+116,156,5-fluorouracil,miR-181c,0
+10,75,Paclitaxel,miR-125b-5p,0
+9,117,Fluorouracil,miR-140-3p,0
+6,35,Gefitinib,let-7d,0
+51,179,platinum-based doublet chemotherapy ,miR-1914*,0
+59,190,Vemurafenib,miR-196a-5p,0
+5,606,Doxorubicin,miR-92a-2*,0
+37,618,Temozolomide,miR-99a-5p,0
+9,359,Fluorouracil,miR-378,0
+13,75,Oxaliplatin,miR-125b-5p,0
+10,217,Paclitaxel,miR-20a-5p,0
+66,584,Paroxetine,miR-766,0
+37,125,Temozolomide,miR-144-3p,0
+0,583,Cisplatin,miR-765,0
+34,191,Sorafenib,miR-196b,0
+52,360,5-Fluorouracil,miR-378a,0
+0,54,Cisplatin,miR-10a*,0
+116,615,5-fluorouracil,miR-96-5p,0
+7,188,Tamoxifen,miR-195,0
+67,17,Cyclophosphamide,MEG3,0
+3,33,Imatinib,let-7b,0
+96,328,Epirubicin hydrochloride,miR-34a-5p,0
+75,250,Sunitinib,miR-23b-3p,0
+27,142,Methotrexate,miR-155-5p,0
+7,120,Tamoxifen,miR-141-3p,0
+34,179,Sorafenib,miR-1914*,0
+10,213,Paclitaxel,miR-204-5p,0
+10,125,Paclitaxel,miR-144-3p,0
+3,102,Imatinib,miR-130a-3p,0
+39,575,Taxol,miR-7-5p,0
+37,6,Temozolomide,GAS5,0
+39,150,Taxol,miR-17-5p,0
+64,193,Vinorelbine,miR-197-3p,0
+52,12,5-Fluorouracil,LOC285194,0
+65,508,Prednisone,miR-542,0
+16,213,Docetaxel,miR-204-5p,0
+116,359,5-fluorouracil,miR-378,0
+6,615,Gefitinib,miR-96-5p,0
+37,54,Temozolomide,miR-10a*,0
+7,149,Tamoxifen,miR-17*,0
+52,615,5-Fluorouracil,miR-96-5p,0
+39,34,Taxol,let-7c,0
+52,328,5-Fluorouracil,miR-34a-5p,0
+13,117,Oxaliplatin,miR-140-3p,0
+109,25,Lapatinib,UCA1,0
+34,70,Sorafenib,miR-1247,0
+39,213,Taxol,miR-204-5p,0
+43,222,Curcumin,miR-21-5p,0
+38,184,Cetuximab,miR-193a-3p,0
+40,43,Dexamethasone,miR-100-5p,0
+27,199,Methotrexate,miR-199a-5p,0
+9,33,Fluorouracil,let-7b,0
+66,33,Paroxetine,let-7b,0
+13,35,Oxaliplatin,let-7d,0
+10,39,Paclitaxel,let-7g,0
+39,125,Taxol,miR-144-3p,0
+39,6,Taxol,GAS5,0
+39,35,Taxol,let-7d,0
+0,217,Cisplatin,miR-20a-5p,0
+34,214,Sorafenib,miR-205,0
+59,150,Vemurafenib,miR-17-5p,0
+7,576,Tamoxifen,miR-708,0
+13,102,Oxaliplatin,miR-130a-3p,0
+5,213,Doxorubicin,miR-204-5p,0
+59,618,Vemurafenib,miR-99a-5p,0
+7,33,Tamoxifen,let-7b,0
+96,102,Epirubicin hydrochloride,miR-130a-3p,0
+16,8,Docetaxel,H19,0
+59,102,Vemurafenib,miR-130a-3p,0
+7,287,Tamoxifen,miR-30e,0
+37,12,Temozolomide,LOC285194,0
+0,61,Cisplatin,miR-1228,0
+9,193,Fluorouracil,miR-197-3p,0
+14,217,Carboplatin,miR-20a-5p,0
+10,6,Paclitaxel,GAS5,0
+39,239,Taxol,miR-22-3p,0
+17,575,Adriamycin,miR-7-5p,0
+13,142,Oxaliplatin,miR-155-5p,0
+116,75,5-fluorouracil,miR-125b-5p,0
+17,606,Adriamycin,miR-92a-2*,0
+27,43,Methotrexate,miR-100-5p,0
+116,360,5-fluorouracil,miR-378a,0
+39,39,Taxol,let-7g,0
+116,471,5-fluorouracil,miR-503,0
+3,150,Imatinib,miR-17-5p,0
+66,34,Paroxetine,let-7c,0
+116,499,5-fluorouracil,miR-520d*,0
+39,12,Taxol,LOC285194,0
+39,217,Taxol,miR-20a-5p,0
+18,17,Vincristine,MEG3,0
+17,33,Adriamycin,let-7b,0
+70,199,Rituximab,miR-199a-5p,0
+16,43,Docetaxel,miR-100-5p,0
+8,508,Trastuzumab,miR-542,0
+94,102,Epirubicin HCl,miR-130a-3p,0
+116,33,5-fluorouracil,let-7b,0
+17,250,Adriamycin,miR-23b-3p,0
+9,36,Fluorouracil,let-7e,0
+116,328,5-fluorouracil,miR-34a-5p,0
+3,126,Imatinib,miR-145,0
+1,77,Gemcitabine,miR-126*,0
+7,190,Tamoxifen,miR-196a-5p,0
+5,199,Doxorubicin,miR-199a-5p,0
+67,213,Cyclophosphamide,miR-204-5p,0
+3,17,Imatinib,MEG3,0
+52,193,5-Fluorouracil,miR-197-3p,0
+39,26,Taxol,XIST,0
+7,43,Tamoxifen,miR-100-5p,0
+38,575,Cetuximab,miR-7-5p,0
+23,213,Sirolimus,miR-204-5p,0
+6,575,Gefitinib,miR-7-5p,0
+30,328,epirubicin,miR-34a-5p,0
+5,239,Doxorubicin,miR-22-3p,0
+43,606,Curcumin,miR-92a-2*,0
+97,33,Fulvestrant,let-7b,0
+6,131,Gefitinib,miR-146b-5p,0
+116,575,5-fluorouracil,miR-7-5p,0
+10,40,Paclitaxel,let-7i,0
+3,75,Imatinib,miR-125b-5p,0
+64,250,Vinorelbine,miR-23b-3p,0
+18,36,Vincristine,let-7e,0
+4,423,Nilotinib,miR-4638,0
+67,577,Cyclophosphamide,miR-718,0
+17,84,Adriamycin,miR-1273g,0
+86,227,Arsenic trioxide,miR-214,0
+77,490,Levetiracetam,miR-519b,0
+4,67,Nilotinib,miR-1237,0
+67,188,Cyclophosphamide,miR-195,0
+106,189,Pingyangmycin,miR-196a,0
+33,26,Glucocorticoid,XIST,0
+95,342,SIOP treatment protocol,miR-3665,0
+95,589,SIOP treatment protocol,miR-802,0
+37,58,Temozolomide,miR-1207,0
+23,602,Sirolimus,miR-922,0
+71,562,Cytarabine,miR-660,0
+113,336,Dihydrotestosterone,miR-363,0
+32,410,TRAIL therapy,miR-4508,0
+108,121,Tomudex,miR-142,0
+105,505,Hydrogen Peroxide,miR-532,0
+38,58,Cetuximab,miR-1207,0
+27,549,Methotrexate,miR-630,0
+2,511,Dasatinib,miR-548a,0
+99,350,Euthyrox,miR-372,0
+80,67,pegIFN/RBV therapy,miR-1237,0
+73,583,Exemestane,miR-765,0
+25,79,"1,25(OH)2D3",miR-1260b,0
+89,131,Staurosporine,miR-146b-5p,0
+113,237,Dihydrotestosterone,miR-22,0
+26,527,Bortezomib,miR-588,0
+76,175,Platinum,miR-1908,0
+3,58,Imatinib,miR-1207,0
+89,289,Staurosporine,miR-31,0
+63,421,Cyclosporin A,miR-455,0
+49,84,Capecitabine,miR-1273g,0
+26,358,Bortezomib,miR-377,0
+64,308,Vinorelbine,miR-320,0
+16,597,Docetaxel,miR-887,0
+51,537,platinum-based doublet chemotherapy ,miR-605,0
+18,96,Vincristine,miR-1293,0
+78,217,Valproate,miR-20a-5p,0
+11,608,Propofol,miR-93,0
+117,80,Hydroxyurea,miR-1264,0
+96,288,Epirubicin hydrochloride,miR-30e*,0
+107,248,Raltitrexed,miR-23a,0
+49,201,Capecitabine,miR-199b*,0
+105,167,Hydrogen Peroxide,miR-187,0
+84,226,Mitomycin C,miR-213,0
+10,295,Paclitaxel,miR-3147,0
+114,177,DAPT,miR-191*,0
+33,129,Glucocorticoid,miR-146a,0
+35,301,Melphalan,miR-3184,0
+100,235,Teniposide,miR-219,0
+23,487,Sirolimus,miR-518f*,0
+45,519,Camptothecin,miR-574,0
+1,393,Gemcitabine,miR-433,0
+28,254,Pirarubicin,miR-26a,0
+23,212,Sirolimus,miR-204,0
+89,467,Staurosporine,miR-500b,0
+86,240,Arsenic trioxide,miR-220,0
+115,92,modified ALLIC BFM 2002 protocol,miR-128a,0
+33,346,Glucocorticoid,miR-3687,0
+19,112,Etoposide,miR-137,0
+62,517,Colchicine,miR-569,0
+20,585,Mitoxantrone,miR-767,0
+58,538,Fluoropyrimidine,miR-606,0
+69,115,Retinoic Acid,miR-139,0
+28,342,Pirarubicin,miR-3665,0
+109,346,Lapatinib,miR-3687,0
+48,559,Epirubicin,miR-654-5p,0
+62,199,Colchicine,miR-199a-5p,0
+48,409,Epirubicin,miR-449a,0
+90,196,Topotecan,miR-198,0
+12,376,Antioestrogens,miR-412,0
+108,43,Tomudex,miR-100-5p,0
+80,260,pegIFN/RBV therapy,miR-27b ,0
+116,472,5-fluorouracil,miR-505,0
+43,231,Curcumin,miR-216a,0
+2,46,Dasatinib,miR-105,0
+42,458,Erlotinib,miR-490,0
+88,201,Selumetinib,miR-199b*,0
+94,388,Epirubicin HCl,miR-4284,0
+88,180,Selumetinib,miR-1915,0
+78,521,Valproate,miR-578,0
+68,519,Mafosfamide,miR-574,0
+50,413,PLX4720,miR-4516,0
+12,226,Antioestrogens,miR-213,0
+34,74,Sorafenib,miR-125b,0
+112,621,AGRO100,miR-Plus-A1031,0
+34,619,Sorafenib,miR-99b,0
+15,56,Tetraplatin,miR-1183,0
+43,49,Curcumin,miR-106b-25,0
+16,11,Docetaxel,LINP1,0
+67,460,Cyclophosphamide,miR-494,0
+112,81,AGRO100,miR-1265,0
+44,266,PCI-24781,miR-29a,0
+97,600,Fulvestrant,miR-9,0
+66,360,Paroxetine,miR-378a,0
+62,215,Colchicine,miR-206,0
+85,504,Pertuzumab,miR-526b*,0
+36,386,Oxymatrine,miR-4261,0
+23,523,Sirolimus,miR-584,0
+117,25,Hydroxyurea,UCA1,0
+92,124,histone deacetylase inhibitor,miR-144,0
+67,325,Cyclophosphamide,miR-345,0
+115,70,modified ALLIC BFM 2002 protocol,miR-1247,0
+10,412,Paclitaxel,miR-451,0
+1,618,Gemcitabine,miR-99a-5p,0
+19,565,Etoposide,miR-663a,0
+19,409,Etoposide,miR-449a,0
+3,100,Imatinib,miR-1307,0
+39,435,Taxol,miR-4695,0
+106,175,Pingyangmycin,miR-1908,0
+119,327,chemotherapy,miR-34a,0
+54,449,L-asparaginase,miR-4750,0
+29,245,Verapamil,miR-223,0
+84,78,Mitomycin C,miR-1260,0
+73,495,Exemestane,miR-520a,0
+5,432,Doxorubicin,miR-4685,0
+86,532,Arsenic trioxide,miR-592,0
+2,145,Dasatinib,miR-15b,0
+80,62,pegIFN/RBV therapy,miR-1228*,0
+9,591,Fluorouracil,miR-874,0
+3,580,Imatinib,miR-758,0
+77,397,Levetiracetam,miR-4463,0
+36,109,Oxymatrine,miR-135a,0
+102,420,Betulinic acid,miR-454,0
+2,191,Dasatinib,miR-196b,0
+76,287,Platinum,miR-30e,0
+92,505,histone deacetylase inhibitor,miR-532,0
+81,127,Dichloroacetate,miR-1468,0
+74,602,Letrozole,miR-922,0
+31,548,Chemotherapy,miR-629,0
+55,239,Prednisolone,miR-22-3p,0
+106,518,Pingyangmycin,miR-571,0
+117,374,Hydroxyurea,miR-410,0
+15,146,Tetraplatin,miR-15b*,0
+111,37,10-hydroxycamptothecin,let-7f,0
+117,470,Hydroxyurea,miR-502,0
+32,181,TRAIL therapy,miR-192,0
+11,376,Propofol,miR-412,0
+99,427,Euthyrox,miR-4665,0
+31,230,Chemotherapy,miR-216,0
+41,335,Ibrutinib,miR-3621,0
+14,304,Carboplatin,miR-3193,0
+108,463,Tomudex,miR-497,0
+65,255,Prednisone,miR-26a-MM1,0
+35,86,Melphalan,miR-1277,0
+47,593,Interferon-gamma,miR-876,0
+37,524,Temozolomide,miR-585,0
+55,330,Prednisolone,miR-34c,0
+55,421,Prednisolone,miR-455,0
+116,135,5-fluorouracil,miR-149*,0
+17,358,Adriamycin,miR-377,0
+30,116,epirubicin,miR-140,0
+5,285,Doxorubicin,miR-30d,0
+76,351,Platinum,miR-373,0
+61,389,Lorlatinib,miR-4286,0
+52,105,5-Fluorouracil,miR-133a,0
+26,177,Bortezomib,miR-191*,0
+43,514,Curcumin,miR-560,0
+105,32,Hydrogen Peroxide,let-7a,0
+38,307,Cetuximab,miR-32,0
+27,94,Methotrexate,miR-129*,0
+97,301,Fulvestrant,miR-3184,0
+107,390,Raltitrexed,miR-4288,0
+31,52,Chemotherapy,miR-10a,0
+2,471,Dasatinib,miR-503,0
+72,475,Anastrozole,miR-5096,0
+61,279,Lorlatinib,miR-3065,0
+35,443,Melphalan,miR-4723,0
+49,296,Capecitabine,miR-3154,0
+42,470,Erlotinib,miR-502,0
+50,163,PLX4720,miR-184,0
+79,186,Ribavirin,miR-193b*,0
+13,119,Oxaliplatin,miR-141*,0
+54,527,L-asparaginase,miR-588,0
+32,228,TRAIL therapy,miR-214*,0
+13,138,Oxaliplatin,miR-152,0
+69,483,Retinoic Acid,miR-518b,0
+40,373,Dexamethasone,miR-409,0
+3,42,Imatinib,miR-100,0
+120,508,AED therapy,miR-542,0
+75,114,Sunitinib,miR-138-1*,0
+31,599,Chemotherapy,miR-892b,0
+76,479,Platinum,miR-515,0
+35,544,Melphalan,miR-624*,0
+19,88,Etoposide,miR-128-2,0
+50,183,PLX4720,miR-193a,0
+16,448,Docetaxel,miR-4749,0
+109,22,Lapatinib,SLC25A25-AS1,0
+19,451,Etoposide,miR-4783,0
+104,370,Dibenziodolium,miR-3937,0
+44,540,PCI-24781,miR-613,0
+83,296,Interferon-alpha,miR-3154,0
+108,584,Tomudex,miR-766,0
+62,379,Colchicine,miR-423,0
+97,257,Fulvestrant,miR-275,0
+97,160,Fulvestrant,miR-1825,0
+95,250,SIOP treatment protocol,miR-23b-3p,0
+103,332,Carmustine,miR-361,0
+3,464,Imatinib,miR-499,0
+110,380,Pemetrexed,miR-424,0
+18,73,Vincristine,miR-125a,0
+116,181,5-fluorouracil,miR-192,0
+59,172,Vemurafenib,miR-18b,0
+87,468,Irinotecan,miR-501,0
+39,456,Taxol,miR-487b,0
+113,127,Dihydrotestosterone,miR-1468,0
+2,297,Dasatinib,miR-3173,0
+86,612,Arsenic trioxide,miR-940,0
+11,429,Propofol,miR-4674,0
+13,212,Oxaliplatin,miR-204,0
+99,25,Euthyrox,UCA1,0
+20,437,Mitoxantrone,miR-4710,0
+63,242,Cyclosporin A,miR-221*,0
+78,281,Valproate,miR-30a*,0
+111,580,10-hydroxycamptothecin,miR-758,0
+113,206,Dihydrotestosterone,miR-200a,0
+105,612,Hydrogen Peroxide,miR-940,0
+79,415,Ribavirin,miR-4521,0
+42,270,Erlotinib,miR-29b-2*,0
+32,79,TRAIL therapy,miR-1260b,0
+116,153,5-fluorouracil,miR-181a,0
+113,542,Dihydrotestosterone,miR-615,0
+59,255,Vemurafenib,miR-26a-MM1,0
+2,121,Dasatinib,miR-142,0
+89,102,Staurosporine,miR-130a-3p,0
+29,605,Verapamil,miR-92a-1,0
+39,96,Taxol,miR-1293,0
+10,275,Paclitaxel,miR-302a,0
+53,314,Daunorubicin,miR-328,0
+87,498,Irinotecan,miR-520d,0
+35,333,Melphalan,miR-3619,0
+65,372,Prednisone,miR-3960,0
+114,257,DAPT,miR-275,0
+37,184,Temozolomide,miR-193a-3p,0
+102,520,Betulinic acid,miR-576,0
+107,143,Raltitrexed,miR-15a,0
+82,584,Cyclopamine,miR-766,0
+109,327,Lapatinib,miR-34a,0
+91,520,Fludarabine,miR-576,0
+51,109,platinum-based doublet chemotherapy ,miR-135a,0
+17,219,Adriamycin,miR-20b*,0
+69,309,Retinoic Acid,miR-3200,0
+102,412,Betulinic acid,miR-451,0
+46,340,Vinblastine,miR-3651,0
+26,476,Bortezomib,miR-512,0
+41,208,Ibrutinib,miR-200c,0
+29,350,Verapamil,miR-372,0
+15,62,Tetraplatin,miR-1228*,0
+55,275,Prednisolone,miR-302a,0
+50,445,PLX4720,miR-4732,0
+88,335,Selumetinib,miR-3621,0
+17,79,Adriamycin,miR-1260b,0
+43,77,Curcumin,miR-126*,0
+115,600,modified ALLIC BFM 2002 protocol,miR-9,0
+54,33,L-asparaginase,let-7b,0
+52,367,5-Fluorouracil,miR-381,0
+14,387,Carboplatin,miR-4279,0
+73,441,Exemestane,miR-4721,0
+35,122,Melphalan,miR-143,0
+7,28,Tamoxifen,linc-VLDLR,0
+108,50,Tomudex,miR-106~25,0
+72,133,Anastrozole,miR-148b,0
+106,344,Pingyangmycin,miR-3676,0
+69,56,Retinoic Acid,miR-1183,0
+23,94,Sirolimus,miR-129*,0
+82,1,Cyclopamine,BCAR4,0
+74,513,Letrozole,miR-555,0
+95,365,SIOP treatment protocol,miR-378g,0
+75,491,Sunitinib,miR-519c,0
+76,595,Platinum,miR-885,0
+120,336,AED therapy,miR-363,0
+99,116,Euthyrox,miR-140,0
+49,466,Capecitabine,miR-500a,0
+80,564,pegIFN/RBV therapy,miR-663,0
+60,414,Crizotinib,miR-452,0
+51,521,platinum-based doublet chemotherapy ,miR-578,0
+49,353,Capecitabine,miR-374a,0
+78,51,Valproate,miR-107,0
+115,71,modified ALLIC BFM 2002 protocol,miR-1256,0
+110,465,Pemetrexed,miR-500,0
+100,491,Teniposide,miR-519c,0
+39,302,Taxol,miR-3186,0
+43,69,Curcumin,miR-1246,0
+93,263,intensive induction chemotherapy based on cytarabine and idarubicine,miR-296,0
+104,114,Dibenziodolium,miR-138-1*,0
+6,161,Gefitinib,miR-1826,0
+97,569,Fulvestrant,miR-675*,0
+107,234,Raltitrexed,miR-218,0
+34,493,Sorafenib,miR-519e*,0
+99,478,Euthyrox,miR-514,0
+77,399,Levetiracetam,miR-4466,0
+69,490,Retinoic Acid,miR-519b,0
+7,135,Tamoxifen,miR-149*,0
+92,343,histone deacetylase inhibitor,miR-367,0
+118,290,Ethanol,miR-31*,0
+33,352,Glucocorticoid,miR-373*,0
+97,147,Fulvestrant,miR-16,0
+54,259,L-asparaginase,miR-27b,0
+60,76,Crizotinib,miR-126,0
+78,560,Valproate,miR-655,0
+98,113,Leucovorin,miR-138,0
+44,325,PCI-24781,miR-345,0
+65,464,Prednisone,miR-499,0
+83,42,Interferon-alpha,miR-100,0
+83,435,Interferon-alpha,miR-4695,0
+50,575,PLX4720,miR-7-5p,0
+63,274,Cyclosporin A,miR-301b,0
+81,612,Dichloroacetate,miR-940,0
+109,225,Lapatinib,miR-212,0
+96,395,Epirubicin hydrochloride,miR-4430,0
+47,256,Interferon-gamma,miR-26b,0
+109,392,Lapatinib,miR-431,0
+89,552,Staurosporine,miR-639,0
+72,512,Anastrozole,miR-550,0
+10,545,Paclitaxel,miR-625,0
+31,48,Chemotherapy,miR-106b,0
+31,386,Chemotherapy,miR-4261,0
+109,93,Lapatinib,miR-129,0
+17,149,Adriamycin,miR-17*,0
+76,535,Platinum,miR-598,0
+40,231,Dexamethasone,miR-216a,0
+77,434,Levetiracetam,miR-4689,0
+44,545,PCI-24781,miR-625,0
+64,418,Vinorelbine,miR-4532,0
+43,41,Curcumin,miR-1,0
+66,171,Paroxetine,miR-18a*,0
+71,553,Cytarabine,miR-640,0
+44,489,PCI-24781,miR-519a,0
+80,369,pegIFN/RBV therapy,miR-383,0
+75,393,Sunitinib,miR-433,0
+34,107,Sorafenib,miR-134,0
+87,330,Irinotecan,miR-34c,0
+115,566,modified ALLIC BFM 2002 protocol,miR-665,0
+97,41,Fulvestrant,miR-1,0
+25,417,"1,25(OH)2D3",miR-4530,0
+18,160,Vincristine,miR-1825,0
+95,377,SIOP treatment protocol,miR-421,0
+82,172,Cyclopamine,miR-18b,0
+57,409,FOLFOX Chemotherapy,miR-449a,0
+15,296,Tetraplatin,miR-3154,0
+0,302,Cisplatin,miR-3186,0
+114,423,DAPT,miR-4638,0
+28,449,Pirarubicin,miR-4750,0
+79,573,Ribavirin,miR-7,0
+92,480,histone deacetylase inhibitor,miR-517a,0
+12,414,Antioestrogens,miR-452,0
+73,429,Exemestane,miR-4674,0
+59,463,Vemurafenib,miR-497,0
+63,601,Cyclosporin A,miR-920,0
+86,163,Arsenic trioxide,miR-184,0
+24,463,Temsirolimus,miR-497,0
+78,187,Valproate,miR-194,0
+115,232,modified ALLIC BFM 2002 protocol,miR-216b,0
+110,599,Pemetrexed,miR-892b,0
+91,167,Fludarabine,miR-187,0
+56,304,10-Hydroxycamptothecin,miR-3193,0
+66,594,Paroxetine,miR-877,0
+71,102,Cytarabine,miR-130a-3p,0
+41,288,Ibrutinib,miR-30e*,0
+103,593,Carmustine,miR-876,0
+103,187,Carmustine,miR-194,0
+84,10,Mitomycin C,HULC,0
+50,558,PLX4720,miR-652,0
+111,512,10-hydroxycamptothecin,miR-550,0
+83,76,Interferon-alpha,miR-126,0
+24,250,Temsirolimus,miR-23b-3p,0
+8,38,Trastuzumab,let-7f-1*,0
+83,226,Interferon-alpha,miR-213,0
+96,402,Epirubicin hydrochloride,miR-4478,0
+61,3,Lorlatinib,CCAT1,0
+67,216,Cyclophosphamide,miR-20a,0
+66,27,Paroxetine,XLOC_006753,0
+97,422,Fulvestrant,miR-455-3p,0
+77,493,Levetiracetam,miR-519e*,0
+96,514,Epirubicin hydrochloride,miR-560,0
+7,340,Tamoxifen,miR-3651,0
+118,514,Ethanol,miR-560,0
+37,167,Temozolomide,miR-187,0
+45,465,Camptothecin,miR-500,0
+76,466,Platinum,miR-500a,0
+38,347,Cetuximab,miR-369,0
+79,168,Ribavirin,miR-187*,0
+41,121,Ibrutinib,miR-142,0
+106,418,Pingyangmycin,miR-4532,0
+54,427,L-asparaginase,miR-4665,0
+94,370,Epirubicin HCl,miR-3937,0
+23,57,Sirolimus,miR-1202,0
+24,557,Temsirolimus,miR-651,0
+90,491,Topotecan,miR-519c,0
+40,275,Dexamethasone,miR-302a,0
+30,478,epirubicin,miR-514,0
+77,79,Levetiracetam,miR-1260b,0
+33,14,Glucocorticoid,Lnc-VLDLR,0
+36,324,Oxymatrine,miR-342,0
+72,612,Anastrozole,miR-940,0
+15,438,Tetraplatin,miR-4711,0
+68,48,Mafosfamide,miR-106b,0
+26,420,Bortezomib,miR-454,0
+54,8,L-asparaginase,H19,0
+49,118,Capecitabine,miR-141,0
+41,578,Ibrutinib,miR-720,0
+62,621,Colchicine,miR-Plus-A1031,0
+105,543,Hydrogen Peroxide,miR-618,0
+93,567,intensive induction chemotherapy based on cytarabine and idarubicine,miR-671,0
+91,87,Fludarabine,miR-128,0
+43,76,Curcumin,miR-126,0
+86,346,Arsenic trioxide,miR-3687,0
+91,54,Fludarabine,miR-10a*,0
+41,446,Ibrutinib,miR-4739,0
+120,113,AED therapy,miR-138,0
+69,366,Retinoic Acid,miR-378i,0
+103,483,Carmustine,miR-518b,0
+109,366,Lapatinib,miR-378i,0
+10,22,Paclitaxel,SLC25A25-AS1,0
+8,114,Trastuzumab,miR-138-1*,0
+31,271,Chemotherapy,miR-29c,0
+104,349,Dibenziodolium,miR-371,0
+51,378,platinum-based doublet chemotherapy ,miR-422a,0
+119,299,chemotherapy,miR-3178,0
+0,401,Cisplatin,miR-4476,0
+78,71,Valproate,miR-1256,0
+21,140,Nutlin-3a,miR-154*,0
+102,604,Betulinic acid,miR-92a,0
+8,119,Trastuzumab,miR-141*,0
+22,493,Rapamycin,miR-519e*,0
+20,420,Mitoxantrone,miR-454,0
+63,362,Cyclosporin A,miR-378d,0
+115,50,modified ALLIC BFM 2002 protocol,miR-106~25,0
+83,4,Interferon-alpha,CRNDE,0
+74,28,Letrozole,linc-VLDLR,0
+66,246,Paroxetine,miR-224,0
+7,4,Tamoxifen,CRNDE,0
+84,621,Mitomycin C,miR-Plus-A1031,0
+11,521,Propofol,miR-578,0
+106,293,Pingyangmycin,miR-3130,0
+32,21,TRAIL therapy,ROR1-AS1,0
+98,350,Leucovorin,miR-372,0
+54,434,L-asparaginase,miR-4689,0
+82,247,Cyclopamine,miR-2277,0
+69,451,Retinoic Acid,miR-4783,0
+12,344,Antioestrogens,miR-3676,0
+113,253,Dihydrotestosterone,miR-25*,0
+27,444,Methotrexate,miR-4725,0
+50,529,PLX4720,miR-590,0
+31,335,Chemotherapy,miR-3621,0
+110,76,Pemetrexed,miR-126,0
+92,382,histone deacetylase inhibitor,miR-425,0
+66,159,Paroxetine,miR-182*,0
+116,506,5-fluorouracil,miR-539,0
+74,139,Letrozole,miR-153,0
+57,462,FOLFOX Chemotherapy,miR-496,0
+47,109,Interferon-gamma,miR-135a,0
+65,450,Prednisone,miR-4758,0
+113,316,Dihydrotestosterone,miR-331,0
+7,521,Tamoxifen,miR-578,0
+46,210,Vinblastine,miR-202,0
+7,323,Tamoxifen,miR-340,0
+5,296,Doxorubicin,miR-3154,0
+66,132,Paroxetine,miR-148a,0
+36,464,Oxymatrine,miR-499,0
+82,33,Cyclopamine,let-7b,0
+12,241,Antioestrogens,miR-221,0
+94,214,Epirubicin HCl,miR-205,0
+74,440,Letrozole,miR-4716,0
+9,190,Fluorouracil,miR-196a-5p,0
+98,371,Leucovorin,miR-3940,0
+101,36,Arsenic Trioxide,let-7e,0
+81,613,Dichloroacetate,miR-942,0
+96,420,Epirubicin hydrochloride,miR-454,0
+32,170,TRAIL therapy,miR-18a,0
+94,462,Epirubicin HCl,miR-496,0
+26,422,Bortezomib,miR-455-3p,0
+89,383,Staurosporine,miR-425*,0
+9,109,Fluorouracil,miR-135a,0
+38,121,Cetuximab,miR-142,0
+117,222,Hydroxyurea,miR-21-5p,0
+110,137,Pemetrexed,miR-151,0
+77,193,Levetiracetam,miR-197-3p,0
+104,455,Dibenziodolium,miR-486,0
+15,432,Tetraplatin,miR-4685,0
+65,232,Prednisone,miR-216b,0
+48,341,Epirubicin,miR-3653,0
+10,15,Paclitaxel,MACC1-AS1,0
+119,228,chemotherapy,miR-214*,0
+19,460,Etoposide,miR-494,0
+94,217,Epirubicin HCl,miR-20a-5p,0
+46,108,Vinblastine,miR-1343,0
+55,52,Prednisolone,miR-10a,0
+92,52,histone deacetylase inhibitor,miR-10a,0
+58,80,Fluoropyrimidine,miR-1264,0
+88,568,Selumetinib,miR-675,0
+104,153,Dibenziodolium,miR-181a,0
+3,508,Imatinib,miR-542,0
+49,411,Capecitabine,miR-450a,0
+97,573,Fulvestrant,miR-7,0
+83,185,Interferon-alpha,miR-193b,0
+115,19,modified ALLIC BFM 2002 protocol,NEAT1,0
+37,598,Temozolomide,miR-888,0
+93,177,intensive induction chemotherapy based on cytarabine and idarubicine,miR-191*,0
+25,211,"1,25(OH)2D3",miR-203,0
+50,72,PLX4720,miR-1258,0
+48,146,Epirubicin,miR-15b*,0
+103,440,Carmustine,miR-4716,0
+95,602,SIOP treatment protocol,miR-922,0
+111,283,10-hydroxycamptothecin,miR-30b*,0
+67,459,Cyclophosphamide,miR-491,0
+55,481,Prednisolone,miR-517b,0
+67,295,Cyclophosphamide,miR-3147,0
+44,427,PCI-24781,miR-4665,0
+89,545,Staurosporine,miR-625,0
+56,539,10-Hydroxycamptothecin,miR-6087,0
+107,598,Raltitrexed,miR-888,0
+71,86,Cytarabine,miR-1277,0
+31,482,Chemotherapy,miR-517c,0
+16,486,Docetaxel,miR-518f,0
+86,541,Arsenic trioxide,miR-614,0
+22,18,Rapamycin,MRUL,0
+42,385,Erlotinib,miR-4258,0
+72,351,Anastrozole,miR-373,0
+91,571,Fludarabine,miR-6845-5p,0
+78,109,Valproate,miR-135a,0
+27,617,Methotrexate,miR-99a,0
+8,32,Trastuzumab,let-7a,0
+69,83,Retinoic Acid,miR-127,0
+49,485,Capecitabine,miR-518e*,0
+25,297,"1,25(OH)2D3",miR-3173,0
+100,39,Teniposide,let-7g,0
+8,137,Trastuzumab,miR-151,0
+83,392,Interferon-alpha,miR-431,0
+31,227,Chemotherapy,miR-214,0
+56,79,10-Hydroxycamptothecin,miR-1260b,0
+3,557,Imatinib,miR-651,0
+23,258,Sirolimus,miR-27a,0
+42,417,Erlotinib,miR-4530,0
+93,46,intensive induction chemotherapy based on cytarabine and idarubicine,miR-105,0
+116,548,5-fluorouracil,miR-629,0
+37,345,Temozolomide,miR-3682,0
+110,116,Pemetrexed,miR-140,0
+77,420,Levetiracetam,miR-454,0
+70,386,Rituximab,miR-4261,0
+14,235,Carboplatin,miR-219,0
+89,278,Staurosporine,miR-302c*,0
+59,527,Vemurafenib,miR-588,0
+61,80,Lorlatinib,miR-1264,0
+108,562,Tomudex,miR-660,0
+27,407,Methotrexate,miR-4492,0
+75,490,Sunitinib,miR-519b,0
+32,20,TRAIL therapy,PVT1,0
+11,206,Propofol,miR-200a,0
+115,158,modified ALLIC BFM 2002 protocol,miR-182,0
+1,376,Gemcitabine,miR-412,0
+58,5,Fluoropyrimidine,CUDR,0
+1,283,Gemcitabine,miR-30b*,0
+32,492,TRAIL therapy,miR-519d,0
+39,600,Taxol,miR-9,0
+76,28,Platinum,linc-VLDLR,0
+28,144,Pirarubicin,miR-15a*,0
+3,531,Imatinib,miR-591,0
+51,318,platinum-based doublet chemotherapy ,miR-338,0
+28,373,Pirarubicin,miR-409,0
+79,200,Ribavirin,miR-199b,0
+26,138,Bortezomib,miR-152,0
+114,527,DAPT,miR-588,0
+117,596,Hydroxyurea,miR-886,0
+110,349,Pemetrexed,miR-371,0
+65,598,Prednisone,miR-888,0
+118,312,Ethanol,miR-320d,0
+99,85,Euthyrox,miR-1275,0
+66,351,Paroxetine,miR-373,0
+120,27,AED therapy,XLOC_006753,0
+57,400,FOLFOX Chemotherapy,miR-4467,0
+35,64,Melphalan,miR-1233,0
+91,534,Fludarabine,miR-593*,0
+99,390,Euthyrox,miR-4288,0
+111,604,10-hydroxycamptothecin,miR-92a,0
+69,219,Retinoic Acid,miR-20b*,0
+93,90,intensive induction chemotherapy based on cytarabine and idarubicine,miR-1285,0
+95,269,SIOP treatment protocol,miR-29b-1*,0
+37,140,Temozolomide,miR-154*,0
+21,549,Nutlin-3a,miR-630,0
+34,544,Sorafenib,miR-624*,0
+5,605,Doxorubicin,miR-92a-1,0
+84,26,Mitomycin C,XIST,0
+46,308,Vinblastine,miR-320,0
+118,570,Ethanol,miR-6825-5p,0
+44,39,PCI-24781,let-7g,0
+11,319,Propofol,miR-339,0
+42,379,Erlotinib,miR-423,0
+23,304,Sirolimus,miR-3193,0
+91,212,Fludarabine,miR-204,0
+22,11,Rapamycin,LINP1,0
+34,433,Sorafenib,miR-4687,0
+104,106,Dibenziodolium,miR-133b,0
+67,560,Cyclophosphamide,miR-655,0
+22,540,Rapamycin,miR-613,0
+105,210,Hydrogen Peroxide,miR-202,0
+63,216,Cyclosporin A,miR-20a,0
+20,574,Mitoxantrone,miR-7-1*,0
+42,502,Erlotinib,miR-522,0
+13,473,Oxaliplatin,miR-506,0
+22,2,Rapamycin,CASC11,0
+73,81,Exemestane,miR-1265,0
+29,611,Verapamil,miR-939,0
+92,190,histone deacetylase inhibitor,miR-196a-5p,0
+112,319,AGRO100,miR-339,0
+77,406,Levetiracetam,miR-4488,0
+102,365,Betulinic acid,miR-378g,0
+0,89,Cisplatin,miR-1280,0
+111,157,10-hydroxycamptothecin,miR-181d,0
+106,425,Pingyangmycin,miR-4646,0
+86,543,Arsenic trioxide,miR-618,0
+24,225,Temsirolimus,miR-212,0
+56,302,10-Hydroxycamptothecin,miR-3186,0
+19,168,Etoposide,miR-187*,0
+108,148,Tomudex,miR-17,0
+13,113,Oxaliplatin,miR-138,0
+94,590,Epirubicin HCl,miR-873,0
+90,471,Topotecan,miR-503,0
+23,520,Sirolimus,miR-576,0
+73,401,Exemestane,miR-4476,0
+84,322,Mitomycin C,miR-33b,0
+106,413,Pingyangmycin,miR-4516,0
+65,500,Prednisone,miR-520g,0
+109,437,Lapatinib,miR-4710,0
+93,59,intensive induction chemotherapy based on cytarabine and idarubicine,miR-122,0
+85,612,Pertuzumab,miR-940,0
+39,208,Taxol,miR-200c,0
+19,21,Etoposide,ROR1-AS1,0
+106,613,Pingyangmycin,miR-942,0
+83,132,Interferon-alpha,miR-148a,0
+13,231,Oxaliplatin,miR-216a,0
+41,56,Ibrutinib,miR-1183,0
+100,482,Teniposide,miR-517c,0
+116,549,5-fluorouracil,miR-630,0
+48,156,Epirubicin,miR-181c,0
+41,595,Ibrutinib,miR-885,0
+57,246,FOLFOX Chemotherapy,miR-224,0
+43,87,Curcumin,miR-128,0
+2,92,Dasatinib,miR-128a,0
+117,364,Hydroxyurea,miR-378f,0
+14,97,Carboplatin,miR-1297,0
+4,121,Nilotinib,miR-142,0
+70,394,Rituximab,miR-4428,0
+28,543,Pirarubicin,miR-618,0
+66,618,Paroxetine,miR-99a-5p,0
+84,447,Mitomycin C,miR-4745,0
+95,13,SIOP treatment protocol,LUCAT1,0
+101,593,Arsenic Trioxide,miR-876,0
+114,168,DAPT,miR-187*,0
+59,330,Vemurafenib,miR-34c,0
+85,578,Pertuzumab,miR-720,0
+14,321,Carboplatin,miR-33a*,0
+24,472,Temsirolimus,miR-505,0

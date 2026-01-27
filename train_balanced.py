@@ -572,7 +572,7 @@ def main():
     print("平衡样本实验 - 数据泄露验证")
     print("=" * 60)
     print("实验设计:")
-    print("  - 训练集 + 验证集: 非重叠的 resistant 对 (8:2 划分)")
+    print("  - 训练集: 非重叠的 resistant 对 ")
     print("  - 测试集: 重叠的 resistant 对 (独立测试)")
     print("=" * 60)
 
