@@ -1,7 +1,9 @@
 """
 平衡样本实验：数据泄露验证
-将 resistant 对分为 重叠部分(Part A) 和 非重叠部分(Part B)
-每个部分 80% 训练 / 20% 验证，正负样本 1:1 平衡
+
+实验设计：
+- 测试集：重叠部分（Curated数据库中出现的 resistant 对）
+- 训练+验证集：非重叠部分（其余 resistant 对），内部 80%/20% 划分
 
 负样本选取顺序：sensitive 优先，不够从 unknown 随机取
 """
@@ -11,7 +13,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch_geometric.data import HeteroData, Batch, Data
-from torch_geometric.transforms import ToUndirected
 from torch_geometric.loader import LinkNeighborLoader
 from tqdm import tqdm
 from sklearn.metrics import roc_auc_score, average_precision_score, precision_recall_curve
@@ -32,8 +33,6 @@ from train import (
     process_batch_drugs,
     mask_target_edges
 )
-from rdkit import Chem
-from rdkit.Chem import AllChem
 
 
 # ============================================================
@@ -50,19 +49,16 @@ def normalize_name(name):
 def load_or_create_split(split_dir='balanced_splits', seed=42):
     """
     加载或创建数据划分
-    如果文件已存在则直接读取，否则创建新的划分并保存
+
+    划分逻辑：
+    - 测试集：重叠的 resistant 对 + 平衡的负样本
+    - 训练验证集：非重叠的 resistant 对 + 平衡的负样本
 
     返回:
-        split_data: dict 包含以下键:
-            - 'part_a_train': Part A 训练集 (drug_idx, rna_idx, label)
-            - 'part_a_val': Part A 验证集
-            - 'part_b_train': Part B 训练集
-            - 'part_b_val': Part B 验证集
-            - 'drug_names': 药物名称列表
-            - 'rna_names': RNA 名称列表
+        split_data: dict
     """
     os.makedirs(split_dir, exist_ok=True)
-    split_file = os.path.join(split_dir, 'balanced_split.pkl')
+    split_file = os.path.join(split_dir, 'balanced_split_v2.pkl')
 
     if os.path.exists(split_file):
         print(f"检测到已存在的划分文件: {split_file}")
@@ -84,10 +80,6 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
     drug_names = list(adj_df.columns)
     adj_matrix = adj_df.values
 
-    # 创建名称到索引的映射
-    rna_name_to_idx = {name: i for i, name in enumerate(rna_names)}
-    drug_name_to_idx = {name: i for i, name in enumerate(drug_names)}
-
     # 标准化名称映射 (用于匹配 overlap)
     rna_norm_to_idx = {normalize_name(name): i for i, name in enumerate(rna_names)}
     drug_norm_to_idx = {normalize_name(name): i for i, name in enumerate(drug_names)}
@@ -103,7 +95,7 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
             drug_idx = drug_norm_to_idx[drug_norm]
             overlap_indices.add((drug_idx, rna_idx))  # (drug, rna) 格式
 
-    print(f"重叠对数量: {len(overlap_indices)}")
+    print(f"重叠对数量（从overlap文件匹配到）: {len(overlap_indices)}")
 
     # 3. 获取所有 resistant、sensitive、unknown 的索引
     resistant_indices = np.argwhere(adj_matrix == 1)  # (rna_idx, drug_idx)
@@ -119,27 +111,20 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
     print(f"总 sensitive 对数: {len(sensitive_list)}")
     print(f"总 unknown 对数: {len(unknown_list)}")
 
-    # 4. 划分 Part A (重叠) 和 Part B (非重叠)
-    part_a_pos = list(overlap_indices & resistant_set)  # 重叠且是 resistant
-    part_b_pos = list(resistant_set - overlap_indices)  # 非重叠的 resistant
+    # 4. 划分测试集（重叠）和训练验证集（非重叠）
+    # 测试集正样本：重叠的 resistant 对
+    test_pos = list(overlap_indices & resistant_set)
+    # 训练验证集正样本：非重叠的 resistant 对
+    train_val_pos = list(resistant_set - overlap_indices)
 
-    print(f"\nPart A (重叠) 正样本数: {len(part_a_pos)}")
-    print(f"Part B (非重叠) 正样本数: {len(part_b_pos)}")
+    print(f"\n测试集正样本数（重叠）: {len(test_pos)}")
+    print(f"训练验证集正样本数（非重叠）: {len(train_val_pos)}")
 
-    # 5. 打乱并划分训练/验证 (80%/20%)
-    np.random.shuffle(part_a_pos)
-    np.random.shuffle(part_b_pos)
+    # 5. 打乱
+    np.random.shuffle(test_pos)
+    np.random.shuffle(train_val_pos)
 
-    split_a = int(len(part_a_pos) * 0.8)
-    split_b = int(len(part_b_pos) * 0.8)
-
-    part_a_train_pos = part_a_pos[:split_a]
-    part_a_val_pos = part_a_pos[split_a:]
-    part_b_train_pos = part_b_pos[:split_b]
-    part_b_val_pos = part_b_pos[split_b:]
-
-    # 6. 为每个子集选取平衡的负样本
-    # 打乱 sensitive 和 unknown 列表
+    # 6. 为测试集和训练验证集分别选取平衡的负样本
     np.random.shuffle(sensitive_list)
     np.random.shuffle(unknown_list)
 
@@ -147,7 +132,6 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
         """
         选取 n_needed 个负样本
         优先使用 sensitive，不够从 unknown 补充
-        返回选取的样本列表和更新后的 used_set
         """
         selected = []
 
@@ -170,56 +154,40 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
 
         return selected, used_set
 
-    # 已使用的负样本（避免重复）
     used_negative = set()
 
-    # Part A 训练集负样本
-    part_a_train_neg, used_negative = select_negative_samples(
-        len(part_a_train_pos), sensitive_list, unknown_list, used_negative
+    # 测试集负样本
+    test_neg, used_negative = select_negative_samples(
+        len(test_pos), sensitive_list, unknown_list, used_negative
     )
 
-    # Part A 验证集负样本
-    part_a_val_neg, used_negative = select_negative_samples(
-        len(part_a_val_pos), sensitive_list, unknown_list, used_negative
+    # 训练验证集负样本
+    train_val_neg, used_negative = select_negative_samples(
+        len(train_val_pos), sensitive_list, unknown_list, used_negative
     )
 
-    # Part B 训练集负样本
-    part_b_train_neg, used_negative = select_negative_samples(
-        len(part_b_train_pos), sensitive_list, unknown_list, used_negative
-    )
+    print(f"\n测试集负样本数: {len(test_neg)}")
+    print(f"训练验证集负样本数: {len(train_val_neg)}")
 
-    # Part B 验证集负样本
-    part_b_val_neg, used_negative = select_negative_samples(
-        len(part_b_val_pos), sensitive_list, unknown_list, used_negative
-    )
-
-    # 7. 组装最终数据
+    # 7. 组装数据
     def combine_pos_neg(pos_list, neg_list):
-        """合并正负样本，返回 (edges, labels)"""
+        """合并正负样本"""
         edges = np.array(pos_list + neg_list)
         labels = np.concatenate([np.ones(len(pos_list)), np.zeros(len(neg_list))])
         return edges, labels
 
-    part_a_train_edges, part_a_train_labels = combine_pos_neg(part_a_train_pos, part_a_train_neg)
-    part_a_val_edges, part_a_val_labels = combine_pos_neg(part_a_val_pos, part_a_val_neg)
-    part_b_train_edges, part_b_train_labels = combine_pos_neg(part_b_train_pos, part_b_train_neg)
-    part_b_val_edges, part_b_val_labels = combine_pos_neg(part_b_val_pos, part_b_val_neg)
+    test_edges, test_labels = combine_pos_neg(test_pos, test_neg)
+    train_val_edges, train_val_labels = combine_pos_neg(train_val_pos, train_val_neg)
 
     # 8. 保存划分
     split_data = {
-        'part_a_train_edges': part_a_train_edges,
-        'part_a_train_labels': part_a_train_labels,
-        'part_a_val_edges': part_a_val_edges,
-        'part_a_val_labels': part_a_val_labels,
-        'part_b_train_edges': part_b_train_edges,
-        'part_b_train_labels': part_b_train_labels,
-        'part_b_val_edges': part_b_val_edges,
-        'part_b_val_labels': part_b_val_labels,
+        'test_edges': test_edges,
+        'test_labels': test_labels,
+        'train_val_edges': train_val_edges,
+        'train_val_labels': train_val_labels,
+        'train_val_pos': np.array(train_val_pos),  # 用于构建图结构
         'drug_names': drug_names,
         'rna_names': rna_names,
-        # 额外保存正样本用于构建图
-        'part_a_train_pos': np.array(part_a_train_pos),
-        'part_b_train_pos': np.array(part_b_train_pos),
     }
 
     with open(split_file, 'wb') as f:
@@ -227,7 +195,7 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
 
     print(f"\n划分已保存到: {split_file}")
 
-    # 同时保存可读的 CSV 文件
+    # 保存可读的 CSV 文件
     save_readable_splits(split_data, split_dir, drug_names, rna_names)
 
     print_split_stats(split_data)
@@ -241,23 +209,21 @@ def save_readable_splits(split_data, split_dir, drug_names, rna_names):
         records = []
         for (drug_idx, rna_idx), label in zip(edges, labels):
             records.append({
-                'drug_id': drug_idx,
-                'rna_id': rna_idx,
-                'drug_name': drug_names[drug_idx],
-                'rna_name': rna_names[rna_idx],
+                'drug_id': int(drug_idx),
+                'rna_id': int(rna_idx),
+                'drug_name': drug_names[int(drug_idx)],
+                'rna_name': rna_names[int(rna_idx)],
                 'label': int(label)
             })
         df = pd.DataFrame(records)
         # 按 label 降序排列 (1 在前，0 在后)
         df = df.sort_values('label', ascending=False)
         df.to_csv(os.path.join(split_dir, filename), index=False)
+        print(f"  已保存: {filename}")
 
-    save_split_csv(split_data['part_a_train_edges'], split_data['part_a_train_labels'], 'part_a_train.csv')
-    save_split_csv(split_data['part_a_val_edges'], split_data['part_a_val_labels'], 'part_a_val.csv')
-    save_split_csv(split_data['part_b_train_edges'], split_data['part_b_train_labels'], 'part_b_train.csv')
-    save_split_csv(split_data['part_b_val_edges'], split_data['part_b_val_labels'], 'part_b_val.csv')
-
-    print(f"可读 CSV 文件已保存到 {split_dir}/")
+    print("\n保存 CSV 文件:")
+    save_split_csv(split_data['test_edges'], split_data['test_labels'], 'test_set.csv')
+    save_split_csv(split_data['train_val_edges'], split_data['train_val_labels'], 'train_val_set.csv')
 
 
 def print_split_stats(split_data):
@@ -266,14 +232,16 @@ def print_split_stats(split_data):
     print("数据划分统计")
     print("=" * 50)
 
-    for part in ['a', 'b']:
-        for split in ['train', 'val']:
-            key = f'part_{part}_{split}_labels'
-            labels = split_data[key]
-            n_pos = int(np.sum(labels))
-            n_neg = len(labels) - n_pos
-            print(f"Part {part.upper()} {split}: 正样本={n_pos}, 负样本={n_neg}, 总计={len(labels)}")
+    test_labels = split_data['test_labels']
+    train_val_labels = split_data['train_val_labels']
 
+    test_pos = int(np.sum(test_labels))
+    test_neg = len(test_labels) - test_pos
+    train_val_pos = int(np.sum(train_val_labels))
+    train_val_neg = len(train_val_labels) - train_val_pos
+
+    print(f"测试集（重叠）: 正样本={test_pos}, 负样本={test_neg}, 总计={len(test_labels)}")
+    print(f"训练验证集（非重叠）: 正样本={train_val_pos}, 负样本={train_val_neg}, 总计={len(train_val_labels)}")
     print("=" * 50)
 
 
@@ -301,11 +269,8 @@ def info_nce_loss(view1, view2, temperature=0.07, symmetric=True):
 
 
 @torch.no_grad()
-def evaluate_balanced(model, loader, drug_smiles_graphs, rna_has_seq_tensor, device):
-    """
-    评估函数（平衡数据集版本）
-    由于数据已经平衡，直接计算指标即可
-    """
+def evaluate(model, loader, drug_smiles_graphs, rna_has_seq_tensor, device):
+    """评估函数"""
     model.eval()
     preds = []
     truths = []
@@ -324,12 +289,11 @@ def evaluate_balanced(model, loader, drug_smiles_graphs, rna_has_seq_tensor, dev
         truths.append(batch['drug', 'interacts', 'rna'].edge_label.cpu())
 
     if not preds:
-        return 0, 0, 0, 0, 0
+        return {'auc': 0, 'aupr': 0, 'recall': 0, 'f1': 0, 'f2': 0}
 
     preds = torch.cat(preds, dim=0).numpy()
     truths = torch.cat(truths, dim=0).numpy()
 
-    # 直接计算指标（因为数据已平衡）
     try:
         auc = roc_auc_score(truths, preds)
         aupr = average_precision_score(truths, preds)
@@ -346,7 +310,32 @@ def evaluate_balanced(model, loader, drug_smiles_graphs, rna_has_seq_tensor, dev
     best_f2_idx = np.argmax(f2_scores)
     best_recall = recall[best_f2_idx]
 
-    return auc, aupr, best_recall, best_f1, best_f2
+    return {
+        'auc': auc,
+        'aupr': aupr,
+        'recall': best_recall,
+        'f1': best_f1,
+        'f2': best_f2
+    }
+
+
+def create_data_loader(data, batch_size, shuffle=True):
+    """创建 DataLoader"""
+    return LinkNeighborLoader(
+        data,
+        num_neighbors={
+            ('drug', 'interacts', 'rna'): [20, 10],
+            ('rna', 'rev_interacts', 'drug'): [20, 10],
+            ('drug', 'similar_to', 'drug'): [10, 5],
+            ('rna', 'similar_to', 'rna'): [10, 5]
+        },
+        batch_size=batch_size,
+        shuffle=shuffle,
+        num_workers=0,
+        edge_label_index=(('drug', 'interacts', 'rna'), data['drug', 'interacts', 'rna'].edge_label_index),
+        edge_label=data['drug', 'interacts', 'rna'].edge_label,
+        disjoint=False
+    )
 
 
 def add_sim_edges(data, d_sim_idx, r_sim_idx):
@@ -356,13 +345,8 @@ def add_sim_edges(data, d_sim_idx, r_sim_idx):
     return data
 
 
-def train_one_experiment(
-    experiment_name,
-    train_edges,
-    train_labels,
-    val_edges,
-    val_labels,
-    train_pos_edges,  # 用于构建图结构的正样本边
+def train_and_evaluate(
+    split_data,
     drug_features_tensor,
     rna_features_tensor,
     rna_has_seq_tensor,
@@ -373,26 +357,56 @@ def train_one_experiment(
     config
 ):
     """
-    执行一组实验
+    训练并评估模型
+    - 训练集：非重叠数据的 80%
+    - 验证集：非重叠数据的 20%
+    - 测试集：重叠数据（独立）
     """
-    print(f"\n{'='*60}")
-    print(f"实验: {experiment_name}")
-    print(f"{'='*60}")
+    print("\n" + "=" * 60)
+    print("开始训练")
+    print("=" * 60)
+
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f"使用设备: {device}")
+
+    # 1. 划分训练集和验证集 (从 train_val 中 80/20 划分)
+    train_val_edges = split_data['train_val_edges']
+    train_val_labels = split_data['train_val_labels']
+    train_val_pos = split_data['train_val_pos']
+
+    n_samples = len(train_val_edges)
+    indices = np.random.permutation(n_samples)
+    split_idx = int(n_samples * 0.8)
+
+    train_indices = indices[:split_idx]
+    val_indices = indices[split_idx:]
+
+    train_edges = train_val_edges[train_indices]
+    train_labels = train_val_labels[train_indices]
+    val_edges = train_val_edges[val_indices]
+    val_labels = train_val_labels[val_indices]
+
+    # 训练集中的正样本（用于构建图）
+    train_pos_mask = train_labels == 1
+    train_pos_edges = train_edges[train_pos_mask]
+
     print(f"训练集: {len(train_edges)} 样本 (正:{int(train_labels.sum())}, 负:{len(train_labels)-int(train_labels.sum())})")
     print(f"验证集: {len(val_edges)} 样本 (正:{int(val_labels.sum())}, 负:{len(val_labels)-int(val_labels.sum())})")
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    test_edges = split_data['test_edges']
+    test_labels = split_data['test_labels']
+    print(f"测试集: {len(test_edges)} 样本 (正:{int(test_labels.sum())}, 负:{len(test_labels)-int(test_labels.sum())})")
 
-    # 计算 RNA GIP 相似性 (基于训练集正样本)
+    # 2. 计算 RNA GIP 相似性 (基于训练集正样本)
     train_adj_for_gip = np.zeros((len(all_rna_names), len(all_drug_names)))
     for drug_idx, rna_idx in train_pos_edges:
-        train_adj_for_gip[rna_idx, drug_idx] = 1
+        train_adj_for_gip[int(rna_idx), int(drug_idx)] = 1
 
     rna_gip_sim = calculate_gip_similarity(train_adj_for_gip)
     rna_gip_tensor = torch.tensor(rna_gip_sim, dtype=torch.float)
     rna_sim_edge_index = get_similarity_edges(rna_gip_sim, 0.6)
 
-    # 创建 HeteroData
+    # 3. 创建 HeteroData
     train_data = create_hetero_data(train_edges, train_labels, train_pos_edges,
                                      drug_features_tensor, rna_gip_tensor)
     train_data = add_sim_edges(train_data, drug_sim_edge_index, rna_sim_edge_index)
@@ -401,7 +415,11 @@ def train_one_experiment(
                                    drug_features_tensor, rna_gip_tensor)
     val_data = add_sim_edges(val_data, drug_sim_edge_index, rna_sim_edge_index)
 
-    # 初始化模型
+    test_data = create_hetero_data(test_edges, test_labels, train_pos_edges,
+                                    drug_features_tensor, rna_gip_tensor)
+    test_data = add_sim_edges(test_data, drug_sim_edge_index, rna_sim_edge_index)
+
+    # 4. 初始化模型
     device_rna_features = rna_features_tensor.to(device)
     device_rna_has_seq = rna_has_seq_tensor.to(device)
 
@@ -429,42 +447,15 @@ def train_one_experiment(
     # 使用普通 BCE Loss (因为数据已平衡)
     bce_loss_fn = nn.BCEWithLogitsLoss()
 
-    # DataLoader
-    train_loader = LinkNeighborLoader(
-        train_data,
-        num_neighbors={
-            ('drug', 'interacts', 'rna'): [20, 10],
-            ('rna', 'rev_interacts', 'drug'): [20, 10],
-            ('drug', 'similar_to', 'drug'): [10, 5],
-            ('rna', 'similar_to', 'rna'): [10, 5]
-        },
-        batch_size=config['batch_size'],
-        shuffle=True,
-        num_workers=0,
-        edge_label_index=(('drug', 'interacts', 'rna'), train_data['drug', 'interacts', 'rna'].edge_label_index),
-        edge_label=train_data['drug', 'interacts', 'rna'].edge_label,
-        disjoint=False
-    )
+    # 5. DataLoader
+    train_loader = create_data_loader(train_data, config['batch_size'], shuffle=True)
+    val_loader = create_data_loader(val_data, config['batch_size'] * 4, shuffle=False)
+    test_loader = create_data_loader(test_data, config['batch_size'] * 4, shuffle=False)
 
-    val_loader = LinkNeighborLoader(
-        val_data,
-        num_neighbors={
-            ('drug', 'interacts', 'rna'): [20, 10],
-            ('rna', 'rev_interacts', 'drug'): [20, 10],
-            ('drug', 'similar_to', 'drug'): [10, 5],
-            ('rna', 'similar_to', 'rna'): [10, 5]
-        },
-        batch_size=config['batch_size'] * 4,
-        shuffle=False,
-        num_workers=0,
-        edge_label_index=(('drug', 'interacts', 'rna'), val_data['drug', 'interacts', 'rna'].edge_label_index),
-        edge_label=val_data['drug', 'interacts', 'rna'].edge_label,
-        disjoint=False
-    )
-
-    # 训练循环
-    best_f2 = 0
-    best_metrics = (0, 0, 0, 0, 0)
+    # 6. 训练循环
+    best_val_f2 = 0
+    best_val_metrics = None
+    best_test_metrics = None
     best_epoch = 0
     patience = config['patience']
     counter = 0
@@ -473,7 +464,7 @@ def train_one_experiment(
         model.train()
         total_loss_sum = 0
 
-        with tqdm(train_loader, desc=f"Ep {epoch+1}/{config['epochs']}", leave=False) as pbar:
+        with tqdm(train_loader, desc=f"Epoch {epoch+1}/{config['epochs']}", leave=False) as pbar:
             for batch in pbar:
                 batch = batch.to(device)
                 batch = mask_target_edges(batch)
@@ -522,34 +513,41 @@ def train_one_experiment(
         scheduler.step(epoch_loss)
 
         # 验证
-        val_auc, val_aupr, val_recall, val_f1, val_f2 = evaluate_balanced(
-            model, val_loader, drug_smiles_graphs, device_rna_has_seq, device
-        )
+        val_metrics = evaluate(model, val_loader, drug_smiles_graphs, device_rna_has_seq, device)
 
-        if (epoch + 1) % 10 == 0 or val_f2 > best_f2:
-            print(f"  Epoch {epoch+1}: Loss={epoch_loss:.4f} | AUC={val_auc:.4f} | AUPR={val_aupr:.4f} | F1={val_f1:.4f} | F2={val_f2:.4f}")
+        if (epoch + 1) % 10 == 0 or val_metrics['f2'] > best_val_f2:
+            print(f"Epoch {epoch+1}: Loss={epoch_loss:.4f} | Val AUC={val_metrics['auc']:.4f} | Val F2={val_metrics['f2']:.4f}")
 
-        if val_f2 > best_f2:
-            best_f2 = val_f2
-            best_metrics = (val_auc, val_aupr, val_recall, val_f1, val_f2)
+        if val_metrics['f2'] > best_val_f2:
+            best_val_f2 = val_metrics['f2']
+            best_val_metrics = val_metrics
             best_epoch = epoch + 1
+
+            # 在最佳验证时评估测试集
+            best_test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
+
             # 保存最佳模型
-            torch.save(model.state_dict(), f'best_model_{experiment_name}.pth')
+            torch.save(model.state_dict(), 'best_model_balanced.pth')
             counter = 0
         else:
             counter += 1
             if counter >= patience:
-                print(f"  Early stopping at epoch {epoch+1}")
+                print(f"Early stopping at epoch {epoch+1}")
                 break
 
-    print(f"\n  最佳结果 (Epoch {best_epoch}):")
-    print(f"    AUC={best_metrics[0]:.4f}, AUPR={best_metrics[1]:.4f}, Recall={best_metrics[2]:.4f}, F1={best_metrics[3]:.4f}, F2={best_metrics[4]:.4f}")
+    # 7. 输出最终结果
+    print("\n" + "=" * 60)
+    print(f"最佳结果 (Epoch {best_epoch})")
+    print("=" * 60)
+    print(f"验证集 (非重叠数据):")
+    print(f"  AUC={best_val_metrics['auc']:.4f}, AUPR={best_val_metrics['aupr']:.4f}, "
+          f"F1={best_val_metrics['f1']:.4f}, F2={best_val_metrics['f2']:.4f}")
+    print(f"\n测试集 (重叠数据 - 独立测试):")
+    print(f"  AUC={best_test_metrics['auc']:.4f}, AUPR={best_test_metrics['aupr']:.4f}, "
+          f"F1={best_test_metrics['f1']:.4f}, F2={best_test_metrics['f2']:.4f}")
+    print("=" * 60)
 
-    # 清理
-    del model, optimizer, train_loader, val_loader
-    torch.cuda.empty_cache()
-
-    return best_metrics
+    return best_val_metrics, best_test_metrics
 
 
 def load_data_cache():
@@ -566,10 +564,7 @@ def load_data_cache():
 
 
 def main():
-    parser = argparse.ArgumentParser(description='平衡样本实验')
-    parser.add_argument('--experiment', type=str, default='all',
-                        choices=['all', 'part_a', 'part_b', 'cross_ab', 'cross_ba'],
-                        help='要运行的实验类型')
+    parser = argparse.ArgumentParser(description='平衡样本实验 - 数据泄露验证')
     parser.add_argument('--epochs', type=int, default=200)
     parser.add_argument('--batch_size', type=int, default=512)
     parser.add_argument('--lr', type=float, default=1e-4)
@@ -595,12 +590,16 @@ def main():
         'patience': args.patience,
         'hidden_channels': 128,
         'out_channels': 64,
-        'drug_initial_dim': 1024,  # Morgan fingerprint dimension
-        'rna_feature_dim': 256,    # Doc2Vec dimension
+        'drug_initial_dim': 1024,
+        'rna_feature_dim': 256,
     }
 
     print("=" * 60)
     print("平衡样本实验 - 数据泄露验证")
+    print("=" * 60)
+    print("实验设计:")
+    print("  - 训练集 + 验证集: 非重叠的 resistant 对 (8:2 划分)")
+    print("  - 测试集: 重叠的 resistant 对 (独立测试)")
     print("=" * 60)
 
     # 1. 加载或创建数据划分
@@ -621,87 +620,28 @@ def main():
     drug_sim_matrix = calculate_drug_similarity(drug_features_tensor.numpy())
     drug_sim_edge_index = get_similarity_edges(drug_sim_matrix, 0.6)
 
-    # 4. 准备实验数据
-    experiments = {}
+    # 4. 训练和评估
+    val_metrics, test_metrics = train_and_evaluate(
+        split_data=split_data,
+        drug_features_tensor=drug_features_tensor,
+        rna_features_tensor=rna_features_tensor,
+        rna_has_seq_tensor=rna_has_seq_tensor,
+        drug_smiles_graphs=drug_smiles_graphs,
+        drug_sim_edge_index=drug_sim_edge_index,
+        all_rna_names=all_rna_names,
+        all_drug_names=all_drug_names,
+        config=config
+    )
 
-    # 实验 1: Part A 训练 -> Part A 验证 (重叠数据内部)
-    experiments['part_a'] = {
-        'name': 'PartA_train_PartA_val',
-        'train_edges': split_data['part_a_train_edges'],
-        'train_labels': split_data['part_a_train_labels'],
-        'val_edges': split_data['part_a_val_edges'],
-        'val_labels': split_data['part_a_val_labels'],
-        'train_pos': split_data['part_a_train_pos'],
+    # 5. 保存结果
+    results = {
+        'val_metrics': val_metrics,
+        'test_metrics': test_metrics,
+        'config': config
     }
-
-    # 实验 2: Part B 训练 -> Part B 验证 (非重叠数据内部)
-    experiments['part_b'] = {
-        'name': 'PartB_train_PartB_val',
-        'train_edges': split_data['part_b_train_edges'],
-        'train_labels': split_data['part_b_train_labels'],
-        'val_edges': split_data['part_b_val_edges'],
-        'val_labels': split_data['part_b_val_labels'],
-        'train_pos': split_data['part_b_train_pos'],
-    }
-
-    # 实验 3: Part A 训练 -> Part B 验证 (交叉验证：重叠知识迁移到非重叠)
-    experiments['cross_ab'] = {
-        'name': 'PartA_train_PartB_val',
-        'train_edges': split_data['part_a_train_edges'],
-        'train_labels': split_data['part_a_train_labels'],
-        'val_edges': split_data['part_b_val_edges'],
-        'val_labels': split_data['part_b_val_labels'],
-        'train_pos': split_data['part_a_train_pos'],
-    }
-
-    # 实验 4: Part B 训练 -> Part A 验证 (交叉验证：非重叠知识迁移到重叠)
-    experiments['cross_ba'] = {
-        'name': 'PartB_train_PartA_val',
-        'train_edges': split_data['part_b_train_edges'],
-        'train_labels': split_data['part_b_train_labels'],
-        'val_edges': split_data['part_a_val_edges'],
-        'val_labels': split_data['part_a_val_labels'],
-        'train_pos': split_data['part_b_train_pos'],
-    }
-
-    # 5. 运行实验
-    results = {}
-
-    if args.experiment == 'all':
-        exp_list = ['part_a', 'part_b', 'cross_ab', 'cross_ba']
-    else:
-        exp_list = [args.experiment]
-
-    for exp_key in exp_list:
-        exp = experiments[exp_key]
-        metrics = train_one_experiment(
-            experiment_name=exp['name'],
-            train_edges=exp['train_edges'],
-            train_labels=exp['train_labels'],
-            val_edges=exp['val_edges'],
-            val_labels=exp['val_labels'],
-            train_pos_edges=exp['train_pos'],
-            drug_features_tensor=drug_features_tensor,
-            rna_features_tensor=rna_features_tensor,
-            rna_has_seq_tensor=rna_has_seq_tensor,
-            drug_smiles_graphs=drug_smiles_graphs,
-            drug_sim_edge_index=drug_sim_edge_index,
-            all_rna_names=all_rna_names,
-            all_drug_names=all_drug_names,
-            config=config
-        )
-        results[exp_key] = metrics
-
-    # 6. 汇总结果
-    print("\n" + "=" * 60)
-    print("实验结果汇总")
-    print("=" * 60)
-    print(f"{'实验':<30} {'AUC':<8} {'AUPR':<8} {'Recall':<8} {'F1':<8} {'F2':<8}")
-    print("-" * 70)
-    for exp_key, metrics in results.items():
-        exp_name = experiments[exp_key]['name']
-        print(f"{exp_name:<30} {metrics[0]:.4f}   {metrics[1]:.4f}   {metrics[2]:.4f}   {metrics[3]:.4f}   {metrics[4]:.4f}")
-    print("=" * 60)
+    with open('balanced_experiment_results.pkl', 'wb') as f:
+        pickle.dump(results, f)
+    print("\n结果已保存到: balanced_experiment_results.pkl")
 
 
 if __name__ == '__main__':
