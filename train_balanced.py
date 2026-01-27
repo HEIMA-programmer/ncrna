@@ -81,8 +81,18 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
     adj_matrix = adj_df.values
 
     # 标准化名称映射 (用于匹配 overlap)
-    rna_norm_to_idx = {normalize_name(name): i for i, name in enumerate(rna_names)}
-    drug_norm_to_idx = {normalize_name(name): i for i, name in enumerate(drug_names)}
+    rna_norm_to_idx = {}
+    for i, name in enumerate(rna_names):
+        norm = normalize_name(name)
+        if norm not in rna_norm_to_idx:
+            rna_norm_to_idx[norm] = i
+        # 如果已存在，保留第一个（不覆盖）
+
+    drug_norm_to_idx = {}
+    for i, name in enumerate(drug_names):
+        norm = normalize_name(name)
+        if norm not in drug_norm_to_idx:
+            drug_norm_to_idx[norm] = i
 
     # 2. 获取重叠对的索引
     overlap_indices = set()
@@ -369,29 +379,16 @@ def train_and_evaluate(
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"使用设备: {device}")
 
-    # 1. 划分训练集和验证集 (从 train_val 中 80/20 划分)
-    train_val_edges = split_data['train_val_edges']
-    train_val_labels = split_data['train_val_labels']
-    train_val_pos = split_data['train_val_pos']
+    # 1. 不做划分，使用全部数据作为训练集
+    train_edges = split_data['train_val_edges']
+    train_labels = split_data['train_val_labels']
 
-    n_samples = len(train_val_edges)
-    indices = np.random.permutation(n_samples)
-    split_idx = int(n_samples * 0.8)
-
-    train_indices = indices[:split_idx]
-    val_indices = indices[split_idx:]
-
-    train_edges = train_val_edges[train_indices]
-    train_labels = train_val_labels[train_indices]
-    val_edges = train_val_edges[val_indices]
-    val_labels = train_val_labels[val_indices]
-
-    # 训练集中的正样本（用于构建图）
+    # 仍然需要提取正样本用于构建图中的边 (message passing)
     train_pos_mask = train_labels == 1
     train_pos_edges = train_edges[train_pos_mask]
 
-    print(f"训练集: {len(train_edges)} 样本 (正:{int(train_labels.sum())}, 负:{len(train_labels)-int(train_labels.sum())})")
-    print(f"验证集: {len(val_edges)} 样本 (正:{int(val_labels.sum())}, 负:{len(val_labels)-int(val_labels.sum())})")
+    print(
+        f"训练集 (全量非重叠): {len(train_edges)} 样本 (正:{int(train_labels.sum())}, 负:{len(train_labels) - int(train_labels.sum())})")
 
     test_edges = split_data['test_edges']
     test_labels = split_data['test_labels']
@@ -411,9 +408,6 @@ def train_and_evaluate(
                                      drug_features_tensor, rna_gip_tensor)
     train_data = add_sim_edges(train_data, drug_sim_edge_index, rna_sim_edge_index)
 
-    val_data = create_hetero_data(val_edges, val_labels, train_pos_edges,
-                                   drug_features_tensor, rna_gip_tensor)
-    val_data = add_sim_edges(val_data, drug_sim_edge_index, rna_sim_edge_index)
 
     test_data = create_hetero_data(test_edges, test_labels, train_pos_edges,
                                     drug_features_tensor, rna_gip_tensor)
@@ -449,22 +443,16 @@ def train_and_evaluate(
 
     # 5. DataLoader
     train_loader = create_data_loader(train_data, config['batch_size'], shuffle=True)
-    val_loader = create_data_loader(val_data, config['batch_size'] * 4, shuffle=False)
     test_loader = create_data_loader(test_data, config['batch_size'] * 4, shuffle=False)
 
-    # 6. 训练循环
-    best_val_f2 = 0
-    best_val_metrics = None
-    best_test_metrics = None
-    best_epoch = 0
-    patience = config['patience']
-    counter = 0
+    # --- 修改后的训练循环 (无早停，跑满 epochs) ---
+    print(f"开始全量训练，共 {config['epochs']} 个 Epoch...")
 
     for epoch in range(config['epochs']):
         model.train()
         total_loss_sum = 0
 
-        with tqdm(train_loader, desc=f"Epoch {epoch+1}/{config['epochs']}", leave=False) as pbar:
+        with tqdm(train_loader, desc=f"Epoch {epoch + 1}/{config['epochs']}", leave=False) as pbar:
             for batch in pbar:
                 batch = batch.to(device)
                 batch = mask_target_edges(batch)
@@ -512,42 +500,28 @@ def train_and_evaluate(
         epoch_loss = total_loss_sum / len(train_loader)
         scheduler.step(epoch_loss)
 
-        # 验证
-        val_metrics = evaluate(model, val_loader, drug_smiles_graphs, device_rna_has_seq, device)
+        # 仅打印 Loss，不进行验证
+        if (epoch + 1) % 10 == 0:
+            print(f"Epoch {epoch + 1}: Loss={epoch_loss:.4f}")
 
-        if (epoch + 1) % 10 == 0 or val_metrics['f2'] > best_val_f2:
-            print(f"Epoch {epoch+1}: Loss={epoch_loss:.4f} | Val AUC={val_metrics['auc']:.4f} | Val F2={val_metrics['f2']:.4f}")
-
-        if val_metrics['f2'] > best_val_f2:
-            best_val_f2 = val_metrics['f2']
-            best_val_metrics = val_metrics
-            best_epoch = epoch + 1
-
-            # 在最佳验证时评估测试集
-            best_test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
-
-            # 保存最佳模型
-            torch.save(model.state_dict(), 'best_model_balanced.pth')
-            counter = 0
-        else:
-            counter += 1
-            if counter >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
-                break
-
-    # 7. 输出最终结果
+    # --- 训练结束，保存最后模型并测试 ---
     print("\n" + "=" * 60)
-    print(f"最佳结果 (Epoch {best_epoch})")
-    print("=" * 60)
-    print(f"验证集 (非重叠数据):")
-    print(f"  AUC={best_val_metrics['auc']:.4f}, AUPR={best_val_metrics['aupr']:.4f}, "
-          f"F1={best_val_metrics['f1']:.4f}, F2={best_val_metrics['f2']:.4f}")
-    print(f"\n测试集 (重叠数据 - 独立测试):")
-    print(f"  AUC={best_test_metrics['auc']:.4f}, AUPR={best_test_metrics['aupr']:.4f}, "
-          f"F1={best_test_metrics['f1']:.4f}, F2={best_test_metrics['f2']:.4f}")
+    print("训练完成，保存模型并评估测试集")
     print("=" * 60)
 
-    return best_val_metrics, best_test_metrics
+    # 保存最终模型
+    torch.save(model.state_dict(), 'best_model_balanced.pth')
+
+    # 评估测试集 (只在最后做一次)
+    test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
+
+    print(f"最终测试集结果 (Epoch {config['epochs']}):")
+    print(f"  AUC={test_metrics['auc']:.4f}, AUPR={test_metrics['aupr']:.4f}, "
+          f"F1={test_metrics['f1']:.4f}, F2={test_metrics['f2']:.4f}")
+    print("=" * 60)
+
+    # 返回结果 (第一个返回值给空字典即可，保持接口数量一致)
+    return {}, test_metrics
 
 
 def load_data_cache():

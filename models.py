@@ -48,7 +48,7 @@ class InteractionGNN(nn.Module):
         return x
 
 
-# --- 门控交叉注意力融合模块 ---
+# 门控交叉注意力融合模块
 # 用于融合四个视图的嵌入：药物结构、药物关联、RNA序列、RNA关联
 # 通过交叉注意力让RNA视图关注Drug视图，Drug视图关注RNA视图
 # 然后通过门控机制自适应地融合所有视图
