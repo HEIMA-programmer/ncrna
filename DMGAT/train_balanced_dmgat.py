@@ -296,15 +296,6 @@ def train():
         axis=0,
     )
 
-    # 构建正确的0/1目标矩阵（平衡实验专用）
-    # 在平衡实验中，正样本=1，负样本=0（不是-1）
-    target_matrix_np = np.zeros_like(adj_np, dtype=np.float32)
-    for r, c in split_info['train_pos']:
-        target_matrix_np[r, c] = 1.0
-    for r, c in split_info['test_pos']:
-        target_matrix_np[r, c] = 1.0
-    # 负样本保持为0
-
     # 转 Tensor
     lnc_dmap = torch.FloatTensor(lnc_dmap_np).to(device)
     mi_dmap = torch.FloatTensor(mi_dmap_np).to(device)
@@ -312,7 +303,7 @@ def train():
     rna_sim = torch.FloatTensor(rna_sim_np).to(device)
     drug_sim = torch.FloatTensor(drug_sim_np).to(device)
     adj_full = torch.FloatTensor(adj_full_np).to(device)
-    target_matrix = torch.FloatTensor(target_matrix_np).to(device)  # 使用0/1目标矩阵
+    adj = torch.FloatTensor(adj_np).to(device)
     train_mask = torch.FloatTensor(train_mask_np).to(device)
     test_mask = torch.FloatTensor(test_mask_np).to(device)
 
@@ -379,9 +370,9 @@ def train():
             lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
         )
 
-        # BCE 损失（使用0/1目标矩阵，而不是包含-1的adj）
+        # BCE 损失
         pred_logits = new_p_feat.mm(new_d_feat.T)
-        unmasked_bce_loss = bce_loss_fn(pred_logits, target_matrix)
+        unmasked_bce_loss = bce_loss_fn(pred_logits, adj)
         train_bce_loss = (unmasked_bce_loss * train_mask).sum() / train_mask.sum()
 
         # 对比损失（基于 local/global 特征，与 main.py 一致）
@@ -425,8 +416,7 @@ def train():
         test_rows, test_cols = np.where(test_mask_np == 1)
         y_true, y_scores = [], []
         for r, c in zip(test_rows, test_cols):
-            # 使用0/1目标矩阵获取真实标签
-            y_true.append(target_matrix_np[r, c])
+            y_true.append(adj_np[r, c])
             y_scores.append(pred[r, c].item())
 
         y_true, y_scores = np.array(y_true), np.array(y_scores)
