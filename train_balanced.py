@@ -35,9 +35,8 @@ from train import (
 )
 
 
-# ============================================================
+
 # 第一部分：数据划分模块
-# ============================================================
 
 def normalize_name(name):
     """标准化名称：转小写，去除空格和特殊字符"""
@@ -255,9 +254,8 @@ def print_split_stats(split_data):
     print("=" * 50)
 
 
-# ============================================================
+
 # 第二部分：训练模块
-# ============================================================
 
 def info_nce_loss(view1, view2, temperature=0.07, symmetric=True):
     """计算 InfoNCE 对比损失"""
@@ -512,7 +510,7 @@ def train_and_evaluate(
     # 保存最终模型
     torch.save(model.state_dict(), 'best_model_balanced.pth')
 
-    # 评估测试集 (只在最后做一次)
+    # 评估测试集
     test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
 
     print(f"最终测试集结果 (Epoch {config['epochs']}):")
@@ -520,7 +518,7 @@ def train_and_evaluate(
           f"F1={test_metrics['f1']:.4f}, F2={test_metrics['f2']:.4f}")
     print("=" * 60)
 
-    # 返回结果 (第一个返回值给空字典即可，保持接口数量一致)
+    # 返回结果
     return {}, test_metrics
 
 
@@ -569,7 +567,7 @@ def main():
     }
 
     print("=" * 60)
-    print("平衡样本实验 - 数据泄露验证")
+    print("平衡样本实验")
     print("=" * 60)
     print("实验设计:")
     print("  - 训练集: 非重叠的 resistant 对 ")
