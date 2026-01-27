@@ -19,9 +19,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 seed_everything(42)
 
 
-# ============================================================
-# 1. 核心组件：GIP 相似性重计算 (完全复刻 gen_gip.py 逻辑)
-# ============================================================
+
+# 1. IP 相似性重计算 (完全复刻 gen_gip.py 逻辑)
 def calculate_gip_sim(adj, gamma=1.0):
     """基于当前的训练集邻接矩阵重新计算 GIP 相似性"""
     # 计算模的平方
@@ -42,9 +41,8 @@ def calculate_gip_sim(adj, gamma=1.0):
     return K
 
 
-# ============================================================
-# 2. 核心组件：损失函数 (增加数值稳定性)
-# ============================================================
+
+# 2. 损失函数
 class MaskedBCELoss(nn.BCELoss):
     def forward(self, new_p_feat, new_d_feat, adj, train_mask, test_mask):
         self.reduction = "none"
@@ -91,9 +89,8 @@ class MaskedBCELoss(nn.BCELoss):
         return train_loss, test_loss, loss_b.item(), loss_c.item()
 
 
-# ============================================================
+
 # 3. 数据划分逻辑
-# ============================================================
 def normalize_name(name):
     if pd.isna(name): return ""
     return str(name).lower().strip().replace(" ", "").replace("-", "").replace("_", "")
@@ -233,9 +230,7 @@ def grad_clipping(net, theta):
             param.grad[:] *= theta / norm
 
 
-# ============================================================
 # 4. 主训练流程
-# ============================================================
 def train():
     print("加载数据...")
     if not os.path.exists("ncrna-drug_split.csv"):
