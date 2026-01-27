@@ -48,52 +48,49 @@ class InteractionGNN(nn.Module):
         return x
 
 
-# 门控交叉注意力融合模块
+# 多视图门控交叉注意力融合模块 (改进版)
 # 用于融合四个视图的嵌入：药物结构、药物关联、RNA序列、RNA关联
-# 通过交叉注意力让RNA视图关注Drug视图，Drug视图关注RNA视图
-# 然后通过门控机制自适应地融合所有视图
-class GatedCrossAttention(nn.Module):
-    def __init__(self, hidden_size):
+# 使用多头注意力机制，强化的门控策略，以及可学习的视图权重
+class MultiViewGatedCrossAttention(nn.Module):
+    def __init__(self, hidden_size, num_heads=4, dropout=0.5):
         super().__init__()
         self.hidden_size = hidden_size
 
-        # Query, Key, Value 投影层
-        self.q_proj = nn.Linear(hidden_size, hidden_size)
-        self.k_proj = nn.Linear(hidden_size, hidden_size)
-        self.v_proj = nn.Linear(hidden_size, hidden_size)
+        # Multi-head cross attention: RNA → Drug
+        self.rna_to_drug_attn = nn.MultiheadAttention(
+            embed_dim=hidden_size,
+            num_heads=num_heads,
+            dropout=dropout,
+            batch_first=True
+        )
+        # Multi-head cross attention: Drug → RNA
+        self.drug_to_rna_attn = nn.MultiheadAttention(
+            embed_dim=hidden_size,
+            num_heads=num_heads,
+            dropout=dropout,
+            batch_first=True
+        )
 
-        # Token-wise 门控：为每个视图学习一个门控权重
-        self.gate = nn.Linear(hidden_size, 1)
+        # 强化后的 gate：使用 token + cross 信息
+        self.gate = nn.Sequential(
+            nn.Linear(hidden_size * 2, hidden_size),
+            nn.ReLU(),
+            nn.Linear(hidden_size, 1),
+            nn.Sigmoid()
+        )
 
-        # 最终投影层
-        self.out_proj = nn.Linear(hidden_size, hidden_size)
+        # view-level attention（代替简单求和）
+        self.view_weight = nn.Parameter(torch.ones(4))
 
-        # Layer Norm 稳定训练
-        self.layer_norm = nn.LayerNorm(hidden_size)
+        # FFN + residual
+        self.ffn = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size * 4),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_size * 4, hidden_size)
+        )
 
-    def attention(self, Q, K, V):
-        """
-        计算注意力
-        Q: [batch_size, hidden_size]
-        K: [2, batch_size, hidden_size] (两个视图的keys堆叠)
-        V: [2, batch_size, hidden_size] (两个视图的values堆叠)
-        """
-        # Q: [batch_size, hidden_size] -> [batch_size, 1, hidden_size]
-        Q = Q.unsqueeze(1)
-
-        # K: [2, batch_size, hidden_size] -> [batch_size, 2, hidden_size]
-        K = K.permute(1, 0, 2)
-
-        # V: [2, batch_size, hidden_size] -> [batch_size, 2, hidden_size]
-        V = V.permute(1, 0, 2)
-
-        # 计算注意力分数: [batch_size, 1, 2]
-        scores = torch.matmul(Q, K.transpose(-2, -1)) / (self.hidden_size ** 0.5)
-        probs = F.softmax(scores, dim=-1)
-
-        # 加权求和: [batch_size, 1, hidden_size] -> [batch_size, hidden_size]
-        out = torch.matmul(probs, V).squeeze(1)
-        return out
+        self.ln = nn.LayerNorm(hidden_size)
 
     def forward(self, rna_seq_emb, rna_assoc_emb, drug_struct_emb, drug_assoc_emb):
         """
@@ -101,46 +98,47 @@ class GatedCrossAttention(nn.Module):
         每个输入: [batch_size, hidden_size]
         输出: [batch_size, hidden_size]
         """
-        # 四个视图的 token
-        tokens = [rna_seq_emb, rna_assoc_emb, drug_struct_emb, drug_assoc_emb]
+        B, H = rna_seq_emb.shape
 
-        # Step 1: 为每个 token 计算 Q, K, V
-        Q = [self.q_proj(t) for t in tokens]
-        K = [self.k_proj(t) for t in tokens]
-        V = [self.v_proj(t) for t in tokens]
+        # --- 1. prepare tensors ---
+        rna_tokens = torch.stack([rna_seq_emb, rna_assoc_emb], dim=1)          # [B, 2, H]
+        drug_tokens = torch.stack([drug_struct_emb, drug_assoc_emb], dim=1)    # [B, 2, H]
 
-        # Step 2: 交叉实体注意力
-        # RNA tokens (seq, assoc) attend to Drug tokens (struct, assoc)
-        drug_keys = torch.stack([K[2], K[3]])    # [2, batch, hidden]
-        drug_values = torch.stack([V[2], V[3]])  # [2, batch, hidden]
+        # --- 2. Cross-attention（inter-view only） ---
+        # RNA attends to Drug
+        rna_cross, _ = self.rna_to_drug_attn(
+            rna_tokens, drug_tokens, drug_tokens
+        )   # [B, 2, H]
 
-        rna_seq_attn = self.attention(Q[0], drug_keys, drug_values)
-        rna_assoc_attn = self.attention(Q[1], drug_keys, drug_values)
+        # Drug attends to RNA
+        drug_cross, _ = self.drug_to_rna_attn(
+            drug_tokens, rna_tokens, rna_tokens
+        )   # [B, 2, H]
 
-        # Drug tokens (struct, assoc) attend to RNA tokens (seq, assoc)
-        rna_keys = torch.stack([K[0], K[1]])     # [2, batch, hidden]
-        rna_values = torch.stack([V[0], V[1]])   # [2, batch, hidden]
+        # --- 3. Gate(token + cross_token) ---
+        fused_rna = []
+        for t, c in zip(rna_tokens.transpose(0, 1), rna_cross.transpose(0, 1)):
+            g = self.gate(torch.cat([t, c], dim=-1))
+            fused_rna.append(t + g * c)
+        fused_rna = torch.stack(fused_rna, dim=1)    # [B, 2, H]
 
-        drug_struct_attn = self.attention(Q[2], rna_keys, rna_values)
-        drug_assoc_attn = self.attention(Q[3], rna_keys, rna_values)
+        fused_drug = []
+        for t, c in zip(drug_tokens.transpose(0, 1), drug_cross.transpose(0, 1)):
+            g = self.gate(torch.cat([t, c], dim=-1))
+            fused_drug.append(t + g * c)
+        fused_drug = torch.stack(fused_drug, dim=1)
 
-        # Step 3: 应用 token-wise 门控
-        attn_outputs = [rna_seq_attn, rna_assoc_attn, drug_struct_attn, drug_assoc_attn]
-        gated_outputs = []
+        # --- 4. view-level attention（学习4个视图的重要性） ---
+        views = torch.cat([fused_rna, fused_drug], dim=1)  # [B, 4, H]
 
-        for t, attn_out in zip(tokens, attn_outputs):
-            # 门控权重基于原始 token 计算
-            g = torch.sigmoid(self.gate(t))  # [batch, 1]
-            gated_outputs.append(attn_out * g)
+        weights = F.softmax(self.view_weight, dim=0)        # [4]
+        fused = (views * weights.unsqueeze(0).unsqueeze(-1)).sum(dim=1)
 
-        # Step 4: 融合所有门控输出
-        fused = sum(gated_outputs)  # [batch, hidden_size]
+        # --- 5. FFN + residual ---
+        out = fused + self.ffn(fused)
+        out = self.ln(out)
 
-        # 通过输出投影和 LayerNorm
-        fused = self.out_proj(fused)
-        fused = self.layer_norm(fused)
-
-        return fused
+        return out
 
 
 # 这个模型整合了所有部分：药物结构编码器、关联图编码器、以及用于预测的分类器
@@ -226,9 +224,9 @@ class UnifiedModel(torch.nn.Module):
         # 用于对比学习的特征增强 (Masking)
         self.cl_dropout = nn.Dropout(p=0.2)  # 20% 的特征会被随机 Mask 掉
 
-        # 门控交叉注意力融合模块
-        # 将四个视图的嵌入通过交叉注意力和门控机制融合为单一向量
-        self.gated_cross_attention = GatedCrossAttention(out_channels)
+        # 多视图门控交叉注意力融合模块 (改进版)
+        # 使用多头注意力机制，强化的门控策略，以及可学习的视图权重
+        self.gated_cross_attention = MultiViewGatedCrossAttention(out_channels)
 
         # 分类器接受门控注意力融合后的 out_channels 维输入
         self.classifier = nn.Sequential(

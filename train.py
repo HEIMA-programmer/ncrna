@@ -732,7 +732,7 @@ if __name__ == '__main__':
 
 
         # 早停参数
-        patience = 40
+        patience = 50
         counter = 0  # 计数器
         early_stop = False  # 停止标志
         for epoch in range(EPOCHS):
