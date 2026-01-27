@@ -1,3 +1,15 @@
+"""
+DMGAT 平衡样本实验
+
+实验设计：
+- 测试集：重叠部分（Curated数据库中出现的 resistant 对）+ 平衡负样本
+- 训练集：非重叠部分（其余 resistant 对）+ 平衡负样本
+
+与 main.py 保持一致的设计：
+- 使用 BCE Loss + Contrastive Loss（基于local/global特征）
+- 但由于数据已平衡，对比损失权重可调整
+"""
+
 import numpy as np
 import pandas as pd
 import torch
@@ -19,13 +31,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 seed_everything(42)
 
 
-
-# 1. IP 相似性重计算 (完全复刻 gen_gip.py 逻辑)
+# 1. GIP 相似性重计算 (复刻 gen_gip.py 逻辑)
 def calculate_gip_sim(adj, gamma=1.0):
     """基于当前的训练集邻接矩阵重新计算 GIP 相似性"""
-    # 计算模的平方
     norm_sq = np.sum(np.square(adj), axis=1)
-    # 计算平均模 (main.py 逻辑: sumnormm / nm)
     mean_norm = np.mean(norm_sq)
 
     if mean_norm == 0:
@@ -33,66 +42,32 @@ def calculate_gip_sim(adj, gamma=1.0):
     else:
         gamma_prime = gamma / mean_norm
 
-    # 计算欧氏距离平方
     dists_sq = squareform(pdist(adj, metric='sqeuclidean'))
-
-    # 计算核矩阵
     K = np.exp(-gamma_prime * dists_sq)
     return K
 
 
+# 2. 对比损失（与 main.py 一致，基于 local/global 特征）
+class ContrastiveLoss(nn.Module):
+    def __init__(self, temperature=0.07):
+        super(ContrastiveLoss, self).__init__()
+        self.temperature = temperature
 
-# 2. 损失函数
-class MaskedBCELoss(nn.BCELoss):
-    def forward(self, new_p_feat, new_d_feat, adj, train_mask, test_mask):
-        self.reduction = "none"
+    def forward(self, feat_local, feat_global):
+        feat_local = F.normalize(feat_local, dim=1)
+        feat_global = F.normalize(feat_global, dim=1)
 
-        # --- 对比损失 (InfoNCE) ---
-        # 1. 计算余弦相似度并指数化
-        cosine_sim = F.cosine_similarity(new_p_feat.unsqueeze(1), new_d_feat.unsqueeze(0), dim=2)
-        # 限制数值范围防止溢出
-        cosine_sim = torch.clamp(cosine_sim, min=-1.0, max=1.0)
-        cosine_sim_exp = torch.exp(cosine_sim / 0.5)
+        sim_matrix = torch.matmul(feat_local, feat_global.T) / self.temperature
+        pos_sim = torch.diag(sim_matrix)
+        loss = -pos_sim + torch.logsumexp(sim_matrix, dim=1)
 
-        # 2. 分子: 正样本的相似度
-        sim_num = adj * cosine_sim_exp * train_mask
-
-        # 3. 分母: 正样本 + 所有负样本的相似度
-        # 注意: 这里 (1-adj)*train_mask 确保只计算训练集中的负样本
-        sim_diff = cosine_sim_exp * (1 - adj) * train_mask
-        sim_diff_sum = torch.sum(sim_diff, dim=1)
-        sim_diff_sum_expend = sim_diff_sum.repeat(new_d_feat.shape[0], 1).T
-
-        sim_den = sim_num + sim_diff_sum_expend
-
-        # 4. 计算对比损失
-        # 加入 1e-10 防止除零
-        loss_ratio = torch.div(sim_num, sim_den + 1e-10)
-
-        # 对于非正样本位置(adj=0或mask=0)，我们不希望它们产生 loss_c
-        # 构造 loss1:
-        #   如果是 Target Pos (adj=1, mask=1): loss1 = loss_ratio
-        #   如果是 Target Neg (adj=0, mask=1): loss1 = 1 + 0 = 1 -> log(1)=0 -> loss=0
-        loss1 = torch.clamp(1 - adj + 1 - train_mask, max=1) + loss_ratio
-
-        loss_log = -torch.log(loss1 + 1e-10)  # 再次防止 log(0)
-        loss_c = loss_log.sum()
-
-        # --- BCE 损失 (预测任务) ---
-        pred = torch.sigmoid(new_p_feat.mm(new_d_feat.t()))
-        unmasked_loss = super(MaskedBCELoss, self).forward(pred, adj)
-        loss_b = (unmasked_loss * train_mask).sum()
-
-        train_loss = loss_b + loss_c
-        test_loss = (unmasked_loss * test_mask).sum()
-
-        return train_loss, test_loss, loss_b.item(), loss_c.item()
-
+        return loss.mean()
 
 
 # 3. 数据划分逻辑
 def normalize_name(name):
-    if pd.isna(name): return ""
+    if pd.isna(name):
+        return ""
     return str(name).lower().strip().replace(" ", "").replace("-", "").replace("_", "")
 
 
@@ -110,12 +85,13 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
         if files:
             overlap_path = files[0]
         else:
+            print("错误: 未找到 overlap_analysis_result.csv")
             return None, None, None, None
 
     print(f"  读取 Overlap 文件: {overlap_path}")
     overlap_df = pd.read_csv(overlap_path)
 
-    # 2. 构建严谨的名称映射
+    # 2. 构建名称映射
     rna_names = list(adj_df.index)
     drug_names = list(adj_df.columns)
     adj_values = adj_df.values
@@ -148,7 +124,8 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
         if r in rna_map and d in drug_map:
             overlap_pairs.add((rna_map[r], drug_map[d]))
 
-    # 4. 获取样本坐标
+    # 4. 获取样本坐标 (基于 adj_with_sens.csv)
+    # 1 = resistant, -1 = sensitive, 0 = unknown
     sens_vals = adj_with_sens_df.values
     res_rows, res_cols = np.where(sens_vals == 1)
     resistant_indices = set(zip(res_rows, res_cols))
@@ -159,30 +136,34 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
     unk_rows, unk_cols = np.where(sens_vals == 0)
     unknown_indices = list(zip(unk_rows, unk_cols))
 
-    # 5. 划分 Pos
+    # 5. 划分正样本
     test_pos = list(overlap_pairs & resistant_indices)
     train_pos = list(resistant_indices - overlap_pairs)
 
     print(f"  测试集正样本 (Overlap): {len(test_pos)}")
     print(f"  训练集正样本 (Non-Overlap): {len(train_pos)}")
 
-    # 6. 采样 Neg (保持与 Train Pos 数量一致)
+    # 6. 采样负样本 (保持与正样本数量一致，优先sensitive，不足从unknown补充)
     random.seed(42)
     random.shuffle(sensitive_indices)
     random.shuffle(unknown_indices)
 
     def sample_neg(count, used_set):
         selected = []
+        # 优先从 sensitive 中选
         for x in sensitive_indices:
-            if len(selected) >= count: break
+            if len(selected) >= count:
+                break
             if x not in used_set:
-                selected.append(x);
+                selected.append(x)
                 used_set.add(x)
+        # 不足从 unknown 中补充
         if len(selected) < count:
             for x in unknown_indices:
-                if len(selected) >= count: break
+                if len(selected) >= count:
+                    break
                 if x not in used_set:
-                    selected.append(x);
+                    selected.append(x)
                     used_set.add(x)
         return selected, used_set
 
@@ -190,32 +171,45 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
     test_neg, used_neg = sample_neg(len(test_pos), used_neg)
     train_neg, used_neg = sample_neg(len(train_pos), used_neg)
 
+    print(f"  测试集负样本: {len(test_neg)}")
+    print(f"  训练集负样本: {len(train_neg)}")
+
     # 7. 生成 Masks
     train_mask = np.zeros(adj_df.shape)
     test_mask = np.zeros(adj_df.shape)
-    for r, c in train_pos + train_neg: train_mask[r, c] = 1
-    for r, c in test_pos + test_neg: test_mask[r, c] = 1
+    for r, c in train_pos + train_neg:
+        train_mask[r, c] = 1
+    for r, c in test_pos + test_neg:
+        test_mask[r, c] = 1
 
-    split_info = {'train_pos': train_pos, 'train_neg': train_neg, 'test_pos': test_pos, 'test_neg': test_neg}
+    split_info = {
+        'train_pos': train_pos,
+        'train_neg': train_neg,
+        'test_pos': test_pos,
+        'test_neg': test_neg
+    }
     return train_mask, test_mask, train_pos, split_info
 
 
 def save_csv_files(split_info, adj_df):
+    """保存划分 CSV 文件"""
     rna_names = adj_df.index.tolist()
     drug_names = adj_df.columns.tolist()
 
     def _save(pos, neg, filename):
         data = []
-        for r, c in pos: data.append([c, r, drug_names[c], rna_names[r], 1])
-        for r, c in neg: data.append([c, r, drug_names[c], rna_names[r], 0])
+        for r, c in pos:
+            data.append([c, r, drug_names[c], rna_names[r], 1])
+        for r, c in neg:
+            data.append([c, r, drug_names[c], rna_names[r], 0])
         df = pd.DataFrame(data, columns=['drug_id', 'rna_id', 'drug_name', 'rna_name', 'label'])
         df = df.sample(frac=1, random_state=42).reset_index(drop=True)
         df.to_csv(filename, index=False)
         print(f"  已保存: {filename} ({len(df)} 样本)")
 
-    print("正在保存划分 CSV 文件...")
+    print("\n正在保存划分 CSV 文件...")
     _save(split_info['test_pos'], split_info['test_neg'], 'test_set.csv')
-    _save(split_info['train_pos'], split_info['train_neg'], 'train_val_set.csv')
+    _save(split_info['train_pos'], split_info['train_neg'], 'train_set.csv')
 
 
 def grad_clipping(net, theta):
@@ -232,7 +226,15 @@ def grad_clipping(net, theta):
 
 # 4. 主训练流程
 def train():
-    print("加载数据...")
+    print("=" * 60)
+    print("DMGAT 平衡样本实验")
+    print("=" * 60)
+    print("实验设计:")
+    print("  - 训练集: 非重叠的 resistant 对 + 平衡负样本")
+    print("  - 测试集: 重叠的 resistant 对 + 平衡负样本 (独立测试)")
+    print("=" * 60)
+
+    print("\n加载数据...")
     if not os.path.exists("ncrna-drug_split.csv"):
         print("错误: 未找到 ncrna-drug_split.csv")
         return
@@ -254,25 +256,26 @@ def train():
     mi_dmap_np = feat_dm['mi_dmap']
     drug_dmap_np = feat_dm['drug_dmap']
 
-    # 特征处理
+    # 特征处理（与 main.py 一致）
     lnc_dmap_np = PolynomialFeatures(4).fit_transform(lnc_dmap_np)
     mi_dmap_np = PolynomialFeatures(1).fit_transform(mi_dmap_np)
     drug_dmap_np = PolynomialFeatures(2).fit_transform(drug_dmap_np)
 
     # 获取划分
     train_mask_np, test_mask_np, train_pos_list, split_info = get_balanced_split_masks(adj_df, adj_with_sens_df)
-    if split_info is None: return
+    if split_info is None:
+        return
 
     save_csv_files(split_info, adj_df)
     with open('balanced_split_dmgat.pkl', 'wb') as f:
         pickle.dump(split_info, f)
 
-    # 构建图结构 (防泄露: 只用 train_pos)
+    # 构建图结构 (防泄露: 只用 train_pos 构建消息传递图)
     train_adj_pure = np.zeros_like(adj_np)
     for r, c in train_pos_list:
         train_adj_pure[r, c] = 1
 
-    print("基于训练集重新计算 GIP 相似性...")
+    print("\n基于训练集重新计算 GIP 相似性...")
     rna_gip = calculate_gip_sim(train_adj_pure)
     drug_gip = calculate_gip_sim(train_adj_pure.T)
 
@@ -283,7 +286,7 @@ def train():
     drug_sim_np = drug_gip + drug_self_sim_base
     np.fill_diagonal(drug_sim_np, 1)
 
-    # GAT Adj (Train Only)
+    # GAT Adj (仅基于训练集正样本)
     train_interact = train_adj_pure
     adj_full_np = np.concatenate(
         (
@@ -304,65 +307,109 @@ def train():
     train_mask = torch.FloatTensor(train_mask_np).to(device)
     test_mask = torch.FloatTensor(test_mask_np).to(device)
 
-    # 模型初始化
+    # 模型参数（与 main.py 一致）
     linear_out_size = 512
     gcn_in_dim = 512
     gcn_out_dim = 512
     gat_hid_dim = 512
     gat_out_dim = 512
     pred_hid_size = 1024
+    n_heads = 2
+    dropout = 0.
 
-    # 修正: 学习率降低以防止 Loss 震荡
-    lr = 0.001
+    # 学习率和训练轮数
+    lr = 1e-4  # 与 main.py 一致
     num_epochs = 200
 
+    # 对比学习参数
+    lambda_contrastive = 1.0  # 对比损失权重
+    pretrain_epochs = 50  # 前50个周期用于对比学习预训练
+
+    # 初始化模型
     linear_layer = Linear(lnc_dmap, mi_dmap, drug_dmap, linear_out_size).to(device)
     r_gcn_list = [GCN(in_dim=gcn_in_dim, out_dim=gcn_out_dim, adj=rna_sim).to(device) for _ in range(2)]
     d_gcn_list = [GCN(in_dim=gcn_in_dim, out_dim=gcn_out_dim, adj=drug_sim).to(device) for _ in range(2)]
     gat_list = [GAT(in_dim=linear_out_size, hid_dim=gat_hid_dim, out_dim=gat_out_dim,
-                    adj_full=adj_full, dropout=0., alpha=0.1, nheads=2).to(device) for _ in range(4)]
+                    adj_full=adj_full, dropout=dropout, alpha=0.1, nheads=n_heads).to(device) for _ in range(4)]
     predictor = Predictor(gcn_out_dim, pred_hid_size).to(device)
 
     model = PUTransGCN(linear_layer, r_gcn_list, d_gcn_list, gat_list, predictor).to(device)
 
     def xavier_init_weights(m):
-        if type(m) == nn.Linear: nn.init.xavier_uniform_(m.weight)
+        if type(m) == nn.Linear:
+            nn.init.xavier_uniform_(m.weight)
 
     model.apply(xavier_init_weights)
 
-    optimizer = torch.optim.Adam(model.parameters(), lr=lr)
-    loss_fn = MaskedBCELoss()
+    # 优化器和调度器（与 main.py 一致）
+    optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-5)
 
-    print(f"开始全量训练 (Epochs={num_epochs}, LR={lr})...")
+    warmup_epochs = 30
+
+    def warmup_lambda(current_epoch):
+        if current_epoch < warmup_epochs:
+            return float(current_epoch + 1) / float(max(1, warmup_epochs))
+        return 1.0
+
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=warmup_lambda)
+
+    # 损失函数（与 main.py 一致）
+    bce_loss_fn = nn.BCEWithLogitsLoss(reduction='none')
+    contrastive_loss_fn = ContrastiveLoss(temperature=0.07)
+
+    print(f"\n开始训练 (Epochs={num_epochs}, LR={lr})...")
+    print(f"  前 {pretrain_epochs} epochs: 仅对比学习")
+    print(f"  后续 epochs: BCE + 对比学习")
 
     for epoch in range(num_epochs):
         model.train()
         optimizer.zero_grad()
 
-        model_out = model(lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full)
-        new_p_feat, new_d_feat = model_out[0], model_out[1]
+        # 前向传播（使用完整的6个返回值）
+        new_p_feat, new_d_feat, rna_local, rna_global, drug_local, drug_global = model(
+            lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
+        )
 
-        train_loss, _, loss_b, loss_c = loss_fn(new_p_feat, new_d_feat, adj, train_mask, test_mask)
+        # BCE 损失
+        pred_logits = new_p_feat.mm(new_d_feat.T)
+        unmasked_bce_loss = bce_loss_fn(pred_logits, adj)
+        train_bce_loss = (unmasked_bce_loss * train_mask).sum() / train_mask.sum()
 
-        train_loss.backward()
+        # 对比损失（基于 local/global 特征，与 main.py 一致）
+        contrastive_loss_rna = contrastive_loss_fn(rna_local, rna_global)
+        contrastive_loss_drug = contrastive_loss_fn(drug_local, drug_global)
+        total_contrastive_loss = contrastive_loss_rna + contrastive_loss_drug
 
-        # 修正: 启用梯度裁剪
-        grad_clipping(model, 1.0)
+        # 根据训练阶段构建总损失
+        if epoch < pretrain_epochs:
+            # 阶段一：只使用对比学习损失
+            total_loss = total_contrastive_loss
+            current_bce_loss_item = 0.0
+        else:
+            # 阶段二：BCE损失 + 加权的对比学习损失
+            total_loss = train_bce_loss + lambda_contrastive * total_contrastive_loss
+            current_bce_loss_item = train_bce_loss.item()
 
+        # 反向传播和优化
+        total_loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
         optimizer.step()
+        scheduler.step()
 
-        if (epoch + 1) % 10 == 0:
-            print(
-                f"Epoch {epoch + 1}/{num_epochs} | Total: {train_loss.item():.1f} (BCE: {loss_b:.1f}, Contrast: {loss_c:.1f})")
+        if (epoch + 1) % 20 == 0:
+            print(f"Epoch {epoch + 1}/{num_epochs} | BCE: {current_bce_loss_item:.4f} | "
+                  f"Contrastive: {total_contrastive_loss.item():.4f}")
 
     print("\n训练结束，保存模型...")
     torch.save(model.state_dict(), 'best_model_balanced_dmgat.pth')
 
-    print("\n正在评估重叠测试集...")
+    # 评估测试集
+    print("\n正在评估测试集...")
     model.eval()
     with torch.no_grad():
-        model_out = model(lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full)
-        new_p_feat, new_d_feat = model_out[0], model_out[1]
+        new_p_feat, new_d_feat, _, _, _, _ = model(
+            lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
+        )
 
         pred = torch.sigmoid(new_p_feat.mm(new_d_feat.t()))
 
@@ -380,14 +427,30 @@ def train():
         f1_scores = 2 * recalls * precisions / (recalls + precisions + 1e-10)
         f2_scores = 5 * recalls * precisions / (4 * precisions + recalls + 1e-10)
 
+        best_f2_idx = np.argmax(f2_scores)
+        best_recall = recalls[best_f2_idx]
+
+        print("\n" + "=" * 60)
+        print("DMGAT 平衡实验结果 (重叠测试集)")
         print("=" * 60)
-        print("DMGAT Balanced Experiment Results (Overlap Test Set)")
+        print(f"AUC   : {auc:.4f}")
+        print(f"AUPR  : {aupr:.4f}")
+        print(f"F1    : {np.max(f1_scores):.4f}")
+        print(f"F2    : {np.max(f2_scores):.4f}")
+        print(f"Recall: {best_recall:.4f}")
         print("=" * 60)
-        print(f"AUC : {auc:.4f}")
-        print(f"AUPR: {aupr:.4f}")
-        print(f"F1  : {np.max(f1_scores):.4f}")
-        print(f"F2  : {np.max(f2_scores):.4f}")
-        print("=" * 60)
+
+        # 保存结果
+        results = {
+            'auc': auc,
+            'aupr': aupr,
+            'f1': np.max(f1_scores),
+            'f2': np.max(f2_scores),
+            'recall': best_recall
+        }
+        with open('balanced_experiment_results_dmgat.pkl', 'wb') as f:
+            pickle.dump(results, f)
+        print("\n结果已保存到: balanced_experiment_results_dmgat.pkl")
 
 
 if __name__ == "__main__":

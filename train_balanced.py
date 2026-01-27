@@ -232,7 +232,7 @@ def save_readable_splits(split_data, split_dir, drug_names, rna_names):
 
     print("\n保存 CSV 文件:")
     save_split_csv(split_data['test_edges'], split_data['test_labels'], 'test_set.csv')
-    save_split_csv(split_data['train_val_edges'], split_data['train_val_labels'], 'train_val_set.csv')
+    save_split_csv(split_data['train_val_edges'], split_data['train_val_labels'], 'train_set.csv')
 
 
 def print_split_stats(split_data):
