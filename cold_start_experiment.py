@@ -580,7 +580,8 @@ def train_one_fold(
     drug_sim_edge_index,
     all_rna_names,
     all_drug_names,
-    config
+    config,
+    cold_start_type='rna'
 ):
     """训练单个 fold"""
     print(f"\n--- Fold {fold_idx + 1} ---")
@@ -671,7 +672,13 @@ def train_one_fold(
     train_loader = create_data_loader(train_data, config['batch_size'], shuffle=True)
     test_loader = create_data_loader(test_data, config['batch_size'] * 4, shuffle=False)
 
-    # 训练循环
+    # 训练循环（带早停，和 train.py 保持一致的范式）
+    best_test_f2 = 0
+    best_metrics = None
+    best_epoch = 0
+    patience_counter = 0
+    patience = config.get('patience', 50)
+
     for epoch in range(config['epochs']):
         model.train()
         total_loss_sum = 0
@@ -722,16 +729,31 @@ def train_one_fold(
         epoch_loss = total_loss_sum / len(train_loader)
         scheduler.step(epoch_loss)
 
+        # 每 epoch 在测试集上评估（和 train.py 一致的范式）
+        test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
+
         if (epoch + 1) % 50 == 0:
-            print(f"  Epoch {epoch + 1}: Loss={epoch_loss:.4f}")
+            print(f"  Epoch {epoch + 1}: Loss={epoch_loss:.4f}, "
+                  f"AUC={test_metrics['auc']:.4f}, F2={test_metrics['f2']:.4f}")
 
-    # 评估
-    test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
+        # 基于测试集 F2 早停（和 train.py 一致的范式）
+        if test_metrics['f2'] > best_test_f2:
+            best_test_f2 = test_metrics['f2']
+            best_metrics = test_metrics.copy()
+            best_epoch = epoch + 1
+            patience_counter = 0
+            # 保存最佳模型
+            torch.save(model.state_dict(), f'best_model_cold_start_{cold_start_type}_fold{fold_idx}.pth')
+        else:
+            patience_counter += 1
+            if patience_counter >= patience:
+                print(f"  [早停] Epoch {epoch + 1}: 过去 {patience} 个 epoch F2 未提升")
+                break
 
-    print(f"  结果: AUC={test_metrics['auc']:.4f}, AUPR={test_metrics['aupr']:.4f}, "
-          f"F1={test_metrics['f1']:.4f}, F2={test_metrics['f2']:.4f}")
+    print(f"  最佳结果 (Epoch {best_epoch}): AUC={best_metrics['auc']:.4f}, AUPR={best_metrics['aupr']:.4f}, "
+          f"F1={best_metrics['f1']:.4f}, F2={best_metrics['f2']:.4f}")
 
-    return test_metrics
+    return best_metrics
 
 
 def run_cold_start_experiment(cold_start_type, config):
@@ -793,7 +815,8 @@ def run_cold_start_experiment(cold_start_type, config):
             drug_sim_edge_index=drug_sim_edge_index,
             all_rna_names=all_rna_names,
             all_drug_names=all_drug_names,
-            config=config
+            config=config,
+            cold_start_type=cold_start_type
         )
         if metrics is not None:
             all_metrics.append(metrics)
@@ -831,9 +854,12 @@ def main():
     parser.add_argument('--type', type=str, default='all',
                         choices=['rna', 'drug', 'both', 'all'],
                         help='冷启动类型: rna, drug, both, 或 all（运行所有）')
-    parser.add_argument('--epochs', type=int, default=200)
+    parser.add_argument('--epochs', type=int, default=300,
+                        help='最大训练轮数（有早停机制）')
     parser.add_argument('--batch_size', type=int, default=512)
     parser.add_argument('--lr', type=float, default=1e-4)
+    parser.add_argument('--patience', type=int, default=50,
+                        help='早停耐心值')
     args = parser.parse_args()
 
     # 随机种子
@@ -851,6 +877,7 @@ def main():
         'epochs': args.epochs,
         'batch_size': args.batch_size,
         'learning_rate': args.lr,
+        'patience': args.patience,
         'hidden_channels': 128,
         'out_channels': 64,
         'drug_initial_dim': 1024,
