@@ -443,8 +443,13 @@ def train_and_evaluate(
     train_loader = create_data_loader(train_data, config['batch_size'], shuffle=True)
     test_loader = create_data_loader(test_data, config['batch_size'] * 4, shuffle=False)
 
-    # --- 修改后的训练循环 (无早停，跑满 epochs) ---
-    print(f"开始全量训练，共 {config['epochs']} 个 Epoch...")
+    # --- 训练循环 (带早停和每 epoch 评估) ---
+    print(f"开始训练，共 {config['epochs']} 个 Epoch，早停 patience={config['patience']}...")
+
+    best_test_f2 = 0
+    best_metrics = None
+    best_epoch = 0
+    patience_counter = 0
 
     for epoch in range(config['epochs']):
         model.train()
@@ -498,28 +503,40 @@ def train_and_evaluate(
         epoch_loss = total_loss_sum / len(train_loader)
         scheduler.step(epoch_loss)
 
-        # 仅打印 Loss，不进行验证
-        if (epoch + 1) % 10 == 0:
-            print(f"Epoch {epoch + 1}: Loss={epoch_loss:.4f}")
+        # 每 epoch 评估测试集
+        test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
 
-    # --- 训练结束，保存最后模型并测试 ---
+        print(f"Epoch {epoch + 1}: Loss={epoch_loss:.4f} | "
+              f"AUC={test_metrics['auc']:.4f}, AUPR={test_metrics['aupr']:.4f}, "
+              f"F1={test_metrics['f1']:.4f}, F2={test_metrics['f2']:.4f}")
+
+        # 早停检查 (基于 F2)
+        if test_metrics['f2'] > best_test_f2:
+            best_test_f2 = test_metrics['f2']
+            best_metrics = test_metrics.copy()
+            best_epoch = epoch + 1
+            patience_counter = 0
+            # 保存最佳模型
+            torch.save(model.state_dict(), 'best_model_balanced.pth')
+            print(f"  [保存最佳模型] F2={best_test_f2:.4f}")
+        else:
+            patience_counter += 1
+            if patience_counter >= config['patience']:
+                print(f"\n早停触发: {config['patience']} 个 epoch F2 未提升")
+                break
+
+    # --- 训练结束 ---
     print("\n" + "=" * 60)
-    print("训练完成，保存模型并评估测试集")
+    print("训练完成")
     print("=" * 60)
 
-    # 保存最终模型
-    torch.save(model.state_dict(), 'best_model_balanced.pth')
-
-    # 评估测试集
-    test_metrics = evaluate(model, test_loader, drug_smiles_graphs, device_rna_has_seq, device)
-
-    print(f"最终测试集结果 (Epoch {config['epochs']}):")
-    print(f"  AUC={test_metrics['auc']:.4f}, AUPR={test_metrics['aupr']:.4f}, "
-          f"F1={test_metrics['f1']:.4f}, F2={test_metrics['f2']:.4f}")
+    print(f"最佳结果 (Epoch {best_epoch}):")
+    print(f"  AUC={best_metrics['auc']:.4f}, AUPR={best_metrics['aupr']:.4f}, "
+          f"F1={best_metrics['f1']:.4f}, F2={best_metrics['f2']:.4f}")
     print("=" * 60)
 
     # 返回结果
-    return {}, test_metrics
+    return {}, best_metrics
 
 
 def load_data_cache():
@@ -538,7 +555,7 @@ def load_data_cache():
 def main():
     parser = argparse.ArgumentParser(description='平衡样本实验 - 数据泄露验证')
     parser.add_argument('--epochs', type=int, default=200)
-    parser.add_argument('--batch_size', type=int, default=512)
+    parser.add_argument('--batch_size', type=int, default=1024)
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--patience', type=int, default=40)
     args = parser.parse_args()

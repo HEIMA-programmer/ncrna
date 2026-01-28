@@ -361,6 +361,36 @@ def train():
     print(f"  前 {pretrain_epochs} epochs: 仅对比学习")
     print(f"  后续 epochs: BCE + 对比学习")
 
+    # 评估函数 (内联定义)
+    def evaluate_test():
+        model.eval()
+        with torch.no_grad():
+            p_feat, d_feat, _, _, _, _ = model(
+                lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
+            )
+            pred = torch.sigmoid(p_feat.mm(d_feat.t()))
+
+            test_rows, test_cols = np.where(test_mask_np == 1)
+            y_true, y_scores = [], []
+            for r, c in zip(test_rows, test_cols):
+                y_true.append(adj_np[r, c])
+                y_scores.append(pred[r, c].item())
+
+            y_true, y_scores = np.array(y_true), np.array(y_scores)
+
+            auc = metrics.roc_auc_score(y_true, y_scores)
+            aupr = metrics.average_precision_score(y_true, y_scores)
+            precisions, recalls, _ = metrics.precision_recall_curve(y_true, y_scores)
+            f1_scores = 2 * recalls * precisions / (recalls + precisions + 1e-10)
+            f2_scores = 5 * recalls * precisions / (4 * precisions + recalls + 1e-10)
+
+            return {
+                'auc': auc,
+                'aupr': aupr,
+                'f1': np.max(f1_scores),
+                'f2': np.max(f2_scores)
+            }
+
     for epoch in range(num_epochs):
         model.train()
         optimizer.zero_grad()
@@ -396,9 +426,11 @@ def train():
         optimizer.step()
         scheduler.step()
 
-        if (epoch + 1) % 20 == 0:
-            print(f"Epoch {epoch + 1}/{num_epochs} | BCE: {current_bce_loss_item:.4f} | "
-                  f"Contrastive: {total_contrastive_loss.item():.4f}")
+        # 每 epoch 评估
+        test_metrics = evaluate_test()
+        print(f"Epoch {epoch + 1}/{num_epochs} | BCE: {current_bce_loss_item:.4f} | "
+              f"CL: {total_contrastive_loss.item():.4f} | "
+              f"AUC: {test_metrics['auc']:.4f} | F2: {test_metrics['f2']:.4f}")
 
     print("\n训练结束，保存模型...")
     torch.save(model.state_dict(), 'best_model_balanced_dmgat.pth')

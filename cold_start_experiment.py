@@ -612,6 +612,21 @@ def train_one_fold(
         train_adj_for_gip[int(rna_idx), int(drug_idx)] = 1
 
     rna_gip_sim = calculate_gip_similarity(train_adj_for_gip)
+
+    # 关键修复：处理冷启动节点的 GIP 特征
+    # 冷启动节点（在训练集中没有边）的 GIP 行会是全零，导致模型无法有效学习
+    # 解决方案：用非零行的均值填充零行
+    row_sums = np.sum(np.abs(rna_gip_sim), axis=1)
+    zero_rows = row_sums < 1e-8  # 找出全零行（冷启动节点）
+    non_zero_rows = ~zero_rows
+
+    if zero_rows.any() and non_zero_rows.any():
+        # 计算非零行的均值
+        mean_gip_row = np.mean(rna_gip_sim[non_zero_rows], axis=0)
+        # 填充零行
+        rna_gip_sim[zero_rows] = mean_gip_row
+        print(f"  冷启动 GIP 修复: {zero_rows.sum()} 个 RNA 节点使用均值特征填充")
+
     rna_gip_tensor = torch.tensor(rna_gip_sim, dtype=torch.float)
     rna_sim_edge_index = get_similarity_edges(rna_gip_sim, 0.6)
 
