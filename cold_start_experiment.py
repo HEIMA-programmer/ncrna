@@ -99,7 +99,8 @@ class ColdStartSplitter:
         print(f"  RNA 节点数: {self.n_rna}")
         print(f"  Drug 节点数: {self.n_drug}")
 
-    def _sample_balanced_negative(self, positive_edges, used_negatives=None):
+    def _sample_balanced_negative(self, positive_edges, used_negatives=None,
+                                    valid_rnas=None, valid_drugs=None):
         """
         为给定的正样本采样平衡的负样本
         优先选择 sensitive，不足从 unknown 补充
@@ -107,6 +108,8 @@ class ColdStartSplitter:
         参数：
             positive_edges: 正样本边 (rna_idx, drug_idx)
             used_negatives: 已使用的负样本集合（避免重复）
+            valid_rnas: 可选，限制负样本的 RNA 必须来自此集合
+            valid_drugs: 可选，限制负样本的 Drug 必须来自此集合
 
         返回：
             negative_edges: 负样本边
@@ -119,6 +122,16 @@ class ColdStartSplitter:
 
         # 转换为集合以便快速查找
         pos_set = set(map(tuple, positive_edges))
+        valid_rnas_set = set(valid_rnas) if valid_rnas is not None else None
+        valid_drugs_set = set(valid_drugs) if valid_drugs is not None else None
+
+        def is_valid_sample(rna_idx, drug_idx):
+            """检查样本是否满足节点约束"""
+            if valid_rnas_set is not None and rna_idx not in valid_rnas_set:
+                return False
+            if valid_drugs_set is not None and drug_idx not in valid_drugs_set:
+                return False
+            return True
 
         # 打乱顺序
         sensitive_shuffled = self.sensitive_indices.copy()
@@ -130,8 +143,9 @@ class ColdStartSplitter:
         for idx in sensitive_shuffled:
             if len(selected) >= n_needed:
                 break
+            rna_idx, drug_idx = idx
             key = tuple(idx)
-            if key not in pos_set and key not in used_negatives:
+            if key not in pos_set and key not in used_negatives and is_valid_sample(rna_idx, drug_idx):
                 selected.append(idx)
                 used_negatives.add(key)
 
@@ -140,12 +154,13 @@ class ColdStartSplitter:
             for idx in unknown_shuffled:
                 if len(selected) >= n_needed:
                     break
+                rna_idx, drug_idx = idx
                 key = tuple(idx)
-                if key not in pos_set and key not in used_negatives:
+                if key not in pos_set and key not in used_negatives and is_valid_sample(rna_idx, drug_idx):
                     selected.append(idx)
                     used_negatives.add(key)
 
-        return np.array(selected), used_negatives
+        return np.array(selected) if selected else np.empty((0, 2), dtype=int), used_negatives
 
     def create_rna_cold_start_splits(self):
         """
@@ -184,9 +199,15 @@ class ColdStartSplitter:
             train_pos = np.array(train_pos) if train_pos else np.empty((0, 2), dtype=int)
 
             # 采样平衡负样本
+            # 关键修复：RNA 冷启动中，负样本的 RNA 必须与正样本的 RNA 来自同一集合
+            # 测试负样本的 RNA 来自 test_rnas，训练负样本的 RNA 来自 train_rnas
             used_neg = set()
-            test_neg, used_neg = self._sample_balanced_negative(test_pos, used_neg)
-            train_neg, used_neg = self._sample_balanced_negative(train_pos, used_neg)
+            test_neg, used_neg = self._sample_balanced_negative(
+                test_pos, used_neg, valid_rnas=test_rnas
+            )
+            train_neg, used_neg = self._sample_balanced_negative(
+                train_pos, used_neg, valid_rnas=train_rnas
+            )
 
             # 组装数据
             if len(test_pos) > 0 and len(test_neg) > 0:
@@ -252,9 +273,15 @@ class ColdStartSplitter:
             train_pos = np.array(train_pos) if train_pos else np.empty((0, 2), dtype=int)
 
             # 采样平衡负样本
+            # 关键修复：Drug 冷启动中，负样本的 Drug 必须与正样本的 Drug 来自同一集合
+            # 测试负样本的 Drug 来自 test_drugs，训练负样本的 Drug 来自 train_drugs
             used_neg = set()
-            test_neg, used_neg = self._sample_balanced_negative(test_pos, used_neg)
-            train_neg, used_neg = self._sample_balanced_negative(train_pos, used_neg)
+            test_neg, used_neg = self._sample_balanced_negative(
+                test_pos, used_neg, valid_drugs=test_drugs
+            )
+            train_neg, used_neg = self._sample_balanced_negative(
+                train_pos, used_neg, valid_drugs=train_drugs
+            )
 
             # 组装数据
             if len(test_pos) > 0 and len(test_neg) > 0:
@@ -585,6 +612,21 @@ def train_one_fold(
         train_adj_for_gip[int(rna_idx), int(drug_idx)] = 1
 
     rna_gip_sim = calculate_gip_similarity(train_adj_for_gip)
+
+    # 关键修复：处理冷启动节点的 GIP 特征
+    # 冷启动节点（在训练集中没有边）的 GIP 行会是全零，导致模型无法有效学习
+    # 解决方案：用非零行的均值填充零行
+    row_sums = np.sum(np.abs(rna_gip_sim), axis=1)
+    zero_rows = row_sums < 1e-8  # 找出全零行（冷启动节点）
+    non_zero_rows = ~zero_rows
+
+    if zero_rows.any() and non_zero_rows.any():
+        # 计算非零行的均值
+        mean_gip_row = np.mean(rna_gip_sim[non_zero_rows], axis=0)
+        # 填充零行
+        rna_gip_sim[zero_rows] = mean_gip_row
+        print(f"  冷启动 GIP 修复: {zero_rows.sum()} 个 RNA 节点使用均值特征填充")
+
     rna_gip_tensor = torch.tensor(rna_gip_sim, dtype=torch.float)
     rna_sim_edge_index = get_similarity_edges(rna_gip_sim, 0.6)
 
