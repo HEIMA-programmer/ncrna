@@ -66,13 +66,16 @@ def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='o
     os.makedirs(split_dir, exist_ok=True)
 
     # 根据重叠来源选择不同的划分文件和重叠文件
+    # 文件命名统一使用 overlap_source 后缀区分
     if overlap_source == 'unlabeled':
-        split_file = os.path.join(split_dir, 'balanced_split_unlabeled.pkl')
+        split_file = os.path.join(split_dir, 'balanced_split_92.pkl')
         overlap_csv = 'unlabeled_resistant_pairs.csv'
+        csv_suffix = '_92'
         print(f"使用重叠来源: 92个未标记pair (unlabeled_resistant_pairs.csv)")
     else:
-        split_file = os.path.join(split_dir, 'balanced_split_v2.pkl')
+        split_file = os.path.join(split_dir, 'balanced_split_73.pkl')
         overlap_csv = 'overlap_analysis_result.csv'
+        csv_suffix = '_73'
         print(f"使用重叠来源: 73个重叠 (overlap_analysis_result.csv)")
 
     if os.path.exists(split_file):
@@ -234,15 +237,20 @@ def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='o
 
     print(f"\n划分已保存到: {split_file}")
 
-    # 保存可读的 CSV 文件
-    save_readable_splits(split_data, split_dir, drug_names, rna_names)
+    # 保存可读的 CSV 文件（带后缀区分不同实验）
+    save_readable_splits(split_data, split_dir, drug_names, rna_names, csv_suffix)
 
     print_split_stats(split_data)
     return split_data
 
 
-def save_readable_splits(split_data, split_dir, drug_names, rna_names):
-    """保存可读的 CSV 格式划分文件"""
+def save_readable_splits(split_data, split_dir, drug_names, rna_names, csv_suffix=''):
+    """
+    保存可读的 CSV 格式划分文件
+
+    参数:
+        csv_suffix: 文件名后缀，用于区分不同的实验 (如 '_73' 或 '_92')
+    """
 
     def save_split_csv(edges, labels, filename):
         records = []
@@ -261,8 +269,8 @@ def save_readable_splits(split_data, split_dir, drug_names, rna_names):
         print(f"  已保存: {filename}")
 
     print("\n保存 CSV 文件:")
-    save_split_csv(split_data['test_edges'], split_data['test_labels'], 'test_set.csv')
-    save_split_csv(split_data['train_val_edges'], split_data['train_val_labels'], 'train_set.csv')
+    save_split_csv(split_data['test_edges'], split_data['test_labels'], f'test_set{csv_suffix}.csv')
+    save_split_csv(split_data['train_val_edges'], split_data['train_val_labels'], f'train_set{csv_suffix}.csv')
 
 
 def print_split_stats(split_data):
@@ -392,13 +400,17 @@ def train_and_evaluate(
     drug_sim_edge_index,
     all_rna_names,
     all_drug_names,
-    config
+    config,
+    model_suffix=''
 ):
     """
     训练并评估模型
     - 训练集：非重叠数据的 80%
     - 验证集：非重叠数据的 20%
     - 测试集：重叠数据（独立）
+
+    参数:
+        model_suffix: 模型保存文件名后缀 (如 '_73' 或 '_92')
     """
     print("\n" + "=" * 60)
     print("开始训练")
@@ -547,7 +559,7 @@ def train_and_evaluate(
             best_epoch = epoch + 1
             patience_counter = 0
             # 保存最佳模型
-            torch.save(model.state_dict(), 'best_model_balanced.pth')
+            torch.save(model.state_dict(), f'best_model_balanced{model_suffix}.pth')
             print(f"  [保存最佳模型] F2={best_test_f2:.4f}")
         else:
             patience_counter += 1
@@ -644,6 +656,7 @@ def main():
     drug_sim_edge_index = get_similarity_edges(drug_sim_matrix, 0.6)
 
     # 4. 训练和评估
+    model_suffix = '_92' if args.overlap_source == 'unlabeled' else '_73'
     val_metrics, test_metrics = train_and_evaluate(
         split_data=split_data,
         drug_features_tensor=drug_features_tensor,
@@ -653,18 +666,22 @@ def main():
         drug_sim_edge_index=drug_sim_edge_index,
         all_rna_names=all_rna_names,
         all_drug_names=all_drug_names,
-        config=config
+        config=config,
+        model_suffix=model_suffix
     )
 
-    # 5. 保存结果
+    # 5. 保存结果（区分不同实验）
+    result_suffix = '_92' if args.overlap_source == 'unlabeled' else '_73'
+    result_file = f'balanced_experiment_results{result_suffix}.pkl'
     results = {
         'val_metrics': val_metrics,
         'test_metrics': test_metrics,
-        'config': config
+        'config': config,
+        'overlap_source': args.overlap_source
     }
-    with open('balanced_experiment_results.pkl', 'wb') as f:
+    with open(result_file, 'wb') as f:
         pickle.dump(results, f)
-    print("\n结果已保存到: balanced_experiment_results.pkl")
+    print(f"\n结果已保存到: {result_file}")
 
 
 if __name__ == '__main__':
