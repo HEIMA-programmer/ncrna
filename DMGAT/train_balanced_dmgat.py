@@ -18,6 +18,7 @@ import torch.nn.functional as F
 import os
 import random
 import pickle
+import argparse
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn import metrics
 from scipy.spatial.distance import pdist, squareform
@@ -71,21 +72,35 @@ def normalize_name(name):
     return str(name).lower().strip().replace(" ", "").replace("-", "").replace("_", "")
 
 
-def get_balanced_split_masks(adj_df, adj_with_sens_df):
-    """生成 Mask 并返回详细的索引列表以便保存 CSV"""
+def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap'):
+    """
+    生成 Mask 并返回详细的索引列表以便保存 CSV
+
+    参数:
+        overlap_source: 重叠来源，可选值:
+            - 'overlap': 使用73个重叠 (overlap_analysis_result.csv)
+            - 'unlabeled': 使用94个未标记pair (unlabeled_resistant_pairs.csv)
+    """
     print("正在构建平衡实验划分...")
 
-    # 1. 查找 overlap 文件
-    overlap_path = 'overlap_analysis_result.csv'
+    # 1. 根据重叠来源选择文件
+    if overlap_source == 'unlabeled':
+        overlap_filename = 'unlabeled_resistant_pairs.csv'
+        print(f"  使用重叠来源: 94个未标记pair (unlabeled_resistant_pairs.csv)")
+    else:
+        overlap_filename = 'overlap_analysis_result.csv'
+        print(f"  使用重叠来源: 73个重叠 (overlap_analysis_result.csv)")
+
+    overlap_path = overlap_filename
     if not os.path.exists(overlap_path):
-        overlap_path = '../overlap_analysis_result.csv'
+        overlap_path = '../' + overlap_filename
     if not os.path.exists(overlap_path):
         import glob
-        files = glob.glob('**/' + 'overlap_analysis_result.csv', recursive=True)
+        files = glob.glob('**/' + overlap_filename, recursive=True)
         if files:
             overlap_path = files[0]
         else:
-            print("错误: 未找到 overlap_analysis_result.csv")
+            print(f"错误: 未找到 {overlap_filename}")
             return None, None, None, None
 
     print(f"  读取 Overlap 文件: {overlap_path}")
@@ -137,11 +152,20 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
     unknown_indices = list(zip(unk_rows, unk_cols))
 
     # 5. 划分正样本
-    test_pos = list(overlap_pairs & resistant_indices)
-    train_pos = list(resistant_indices - overlap_pairs)
-
-    print(f"  测试集正样本 (Overlap): {len(test_pos)}")
-    print(f"  训练集正样本 (Non-Overlap): {len(train_pos)}")
+    if overlap_source == 'unlabeled':
+        # 对于unlabeled来源：这94个pair在数据集中标记为0(unknown)，但在Curated中是resistant
+        # 测试集正样本：这94个pair（它们在数据集中是unknown，我们把它们当作正样本来测试）
+        test_pos = list(overlap_pairs)
+        # 训练集正样本：所有原始的resistant对（不排除，因为这94个本身就不在resistant_indices中）
+        train_pos = list(resistant_indices)
+        print(f"  测试集正样本 (unlabeled pairs from Curated): {len(test_pos)}")
+        print(f"  训练集正样本 (全部resistant): {len(train_pos)}")
+    else:
+        # 对于overlap来源：这73个pair在数据集中标记为1，也在Curated中为resistant
+        test_pos = list(overlap_pairs & resistant_indices)
+        train_pos = list(resistant_indices - overlap_pairs)
+        print(f"  测试集正样本 (Overlap): {len(test_pos)}")
+        print(f"  训练集正样本 (Non-Overlap): {len(train_pos)}")
 
     # 6. 采样负样本 (保持与正样本数量一致，优先sensitive，不足从unknown补充)
     random.seed(42)
@@ -167,7 +191,13 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df):
                     used_set.add(x)
         return selected, used_set
 
-    used_neg = set()
+    # 初始化已使用负样本集合
+    # 对于unlabeled来源，test_pos中的pair来自unknown，需要预先排除
+    if overlap_source == 'unlabeled':
+        used_neg = set(test_pos)  # 排除测试集正样本（它们原本在unknown中）
+    else:
+        used_neg = set()
+
     test_neg, used_neg = sample_neg(len(test_pos), used_neg)
     train_neg, used_neg = sample_neg(len(train_pos), used_neg)
 
@@ -225,13 +255,14 @@ def grad_clipping(net, theta):
 
 
 # 4. 主训练流程
-def train():
+def train(overlap_source='overlap'):
     print("=" * 60)
     print("DMGAT 平衡样本实验")
     print("=" * 60)
     print("实验设计:")
     print("  - 训练集: 非重叠的 resistant 对 + 平衡负样本")
     print("  - 测试集: 重叠的 resistant 对 + 平衡负样本 (独立测试)")
+    print(f"  - 重叠来源: {overlap_source}")
     print("=" * 60)
 
     print("\n加载数据...")
@@ -262,12 +293,19 @@ def train():
     drug_dmap_np = PolynomialFeatures(2).fit_transform(drug_dmap_np)
 
     # 获取划分
-    train_mask_np, test_mask_np, train_pos_list, split_info = get_balanced_split_masks(adj_df, adj_with_sens_df)
+    train_mask_np, test_mask_np, train_pos_list, split_info = get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source)
     if split_info is None:
         return
 
     save_csv_files(split_info, adj_df)
-    with open('balanced_split_dmgat.pkl', 'wb') as f:
+
+    # 根据重叠来源使用不同的保存文件名
+    if overlap_source == 'unlabeled':
+        split_pkl_file = 'balanced_split_dmgat_unlabeled.pkl'
+    else:
+        split_pkl_file = 'balanced_split_dmgat.pkl'
+
+    with open(split_pkl_file, 'wb') as f:
         pickle.dump(split_info, f)
 
     # 构建图结构 (防泄露: 只用 train_pos 构建消息传递图)
@@ -478,12 +516,26 @@ def train():
             'aupr': aupr,
             'f1': np.max(f1_scores),
             'f2': np.max(f2_scores),
-            'recall': best_recall
+            'recall': best_recall,
+            'overlap_source': overlap_source
         }
-        with open('balanced_experiment_results_dmgat.pkl', 'wb') as f:
+
+        # 根据重叠来源使用不同的结果文件名
+        if overlap_source == 'unlabeled':
+            result_file = 'balanced_experiment_results_dmgat_unlabeled.pkl'
+        else:
+            result_file = 'balanced_experiment_results_dmgat.pkl'
+
+        with open(result_file, 'wb') as f:
             pickle.dump(results, f)
-        print("\n结果已保存到: balanced_experiment_results_dmgat.pkl")
+        print(f"\n结果已保存到: {result_file}")
 
 
 if __name__ == "__main__":
-    train()
+    parser = argparse.ArgumentParser(description='DMGAT 平衡样本实验 - 数据泄露验证')
+    parser.add_argument('--overlap_source', type=str, default='overlap',
+                        choices=['overlap', 'unlabeled'],
+                        help='重叠来源: overlap=73个重叠, unlabeled=94个未标记pair')
+    args = parser.parse_args()
+
+    train(overlap_source=args.overlap_source)

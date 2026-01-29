@@ -191,6 +191,7 @@ def main():
     missing_drug = 0
     missing_both = 0
     missing_pair = 0  # RNA和Drug都在，但这个pair不在
+    missing_pair_list = []  # 收集这些pair
 
     for key in not_in_dataset:
         rna_norm, drug_norm = key
@@ -205,6 +206,13 @@ def main():
             missing_drug += 1
         else:
             missing_pair += 1
+            # 收集这些pair (RNA和Drug都在数据集中，但这个pair在数据集中标记为0/unknown)
+            original = resistant_pairs_normalized[key]
+            missing_pair_list.append({
+                'RNA': original[0],
+                'Drug': original[1],
+                'Source': 'Curated_Only'  # 仅在Curated中标记为resistant
+            })
 
     print(f"    - RNA 不在数据集中: {missing_rna}")
     print(f"    - Drug 不在数据集中: {missing_drug}")
@@ -224,6 +232,7 @@ def main():
     print("=" * 60)
 
     # 9. 保存结果
+    # 9.1 保存73个重叠的pair (数据集中标记为1，Curated中也标记为resistant)
     output_file = "overlap_analysis_result.csv"
     result_data = []
     for key in normalized_overlap_keys:
@@ -238,6 +247,14 @@ def main():
         result_df = pd.DataFrame(result_data)
         result_df.to_csv(output_file, index=False)
         print(f"\n重叠结果已保存到: {output_file}")
+
+    # 9.2 保存94个潜在冲突的pair (数据集中标记为0/unknown，但Curated中标记为resistant)
+    # 这些pair的RNA和Drug都在数据集中存在，只是这个特定pair在数据集中未标记
+    unlabeled_output_file = "unlabeled_resistant_pairs.csv"
+    if missing_pair_list:
+        unlabeled_df = pd.DataFrame(missing_pair_list)
+        unlabeled_df.to_csv(unlabeled_output_file, index=False)
+        print(f"未标记但Curated中为resistant的pair已保存到: {unlabeled_output_file}")
 
 
 if __name__ == "__main__":
