@@ -65,11 +65,56 @@ class ContrastiveLoss(nn.Module):
         return loss.mean()
 
 
-# 3. 数据划分逻辑
+# 3. 输出目录配置
+BALANCED_SPLITS_DIR = 'balanced_splits_dmgat'
+
+
+def get_split_paths(overlap_source):
+    """
+    获取划分文件路径（根据 overlap_source 区分）
+
+    返回:
+        split_pkl: pkl文件路径
+        test_csv: 测试集csv文件路径
+        train_csv: 训练集csv文件路径
+        result_pkl: 结果文件路径
+        model_path: 模型保存路径
+    """
+    suffix = '_92' if overlap_source == 'unlabeled' else '_73'
+    return {
+        'split_pkl': os.path.join(BALANCED_SPLITS_DIR, f'balanced_split{suffix}.pkl'),
+        'test_csv': os.path.join(BALANCED_SPLITS_DIR, f'test_set{suffix}.csv'),
+        'train_csv': os.path.join(BALANCED_SPLITS_DIR, f'train_set{suffix}.csv'),
+        'result_pkl': os.path.join(BALANCED_SPLITS_DIR, f'balanced_experiment_results{suffix}.pkl'),
+        'model_path': os.path.join(BALANCED_SPLITS_DIR, f'best_model_balanced{suffix}.pth'),
+    }
+
+
+# 4. 数据划分逻辑
 def normalize_name(name):
     if pd.isna(name):
         return ""
     return str(name).lower().strip().replace(" ", "").replace("-", "").replace("_", "")
+
+
+def load_existing_split(overlap_source):
+    """
+    尝试加载已存在的划分文件
+
+    返回:
+        如果存在，返回 (train_mask, test_mask, train_pos_list, split_info)
+        如果不存在，返回 None
+    """
+    paths = get_split_paths(overlap_source)
+    split_pkl = paths['split_pkl']
+
+    if os.path.exists(split_pkl):
+        print(f"检测到已存在的划分文件: {split_pkl}")
+        print("直接加载...")
+        with open(split_pkl, 'rb') as f:
+            split_info = pickle.load(f)
+        return split_info
+    return None
 
 
 def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap'):
@@ -221,12 +266,13 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
     return train_mask, test_mask, train_pos, split_info
 
 
-def save_csv_files(split_info, adj_df):
-    """保存划分 CSV 文件"""
+def save_csv_files(split_info, adj_df, overlap_source):
+    """保存划分 CSV 文件到指定目录"""
     rna_names = adj_df.index.tolist()
     drug_names = adj_df.columns.tolist()
+    paths = get_split_paths(overlap_source)
 
-    def _save(pos, neg, filename):
+    def _save(pos, neg, filepath):
         data = []
         for r, c in pos:
             data.append([c, r, drug_names[c], rna_names[r], 1])
@@ -234,12 +280,12 @@ def save_csv_files(split_info, adj_df):
             data.append([c, r, drug_names[c], rna_names[r], 0])
         df = pd.DataFrame(data, columns=['drug_id', 'rna_id', 'drug_name', 'rna_name', 'label'])
         df = df.sample(frac=1, random_state=42).reset_index(drop=True)
-        df.to_csv(filename, index=False)
-        print(f"  已保存: {filename} ({len(df)} 样本)")
+        df.to_csv(filepath, index=False)
+        print(f"  已保存: {filepath} ({len(df)} 样本)")
 
     print("\n正在保存划分 CSV 文件...")
-    _save(split_info['test_pos'], split_info['test_neg'], 'test_set.csv')
-    _save(split_info['train_pos'], split_info['train_neg'], 'train_set.csv')
+    _save(split_info['test_pos'], split_info['test_neg'], paths['test_csv'])
+    _save(split_info['train_pos'], split_info['train_neg'], paths['train_csv'])
 
 
 def grad_clipping(net, theta):
@@ -254,7 +300,7 @@ def grad_clipping(net, theta):
             param.grad[:] *= theta / norm
 
 
-# 4. 主训练流程
+# 5. 主训练流程
 def train(overlap_source='overlap'):
     print("=" * 60)
     print("DMGAT 平衡样本实验")
@@ -264,6 +310,10 @@ def train(overlap_source='overlap'):
     print("  - 测试集: 重叠的 resistant 对 + 平衡负样本 (独立测试)")
     print(f"  - 重叠来源: {overlap_source}")
     print("=" * 60)
+
+    # 创建输出目录
+    os.makedirs(BALANCED_SPLITS_DIR, exist_ok=True)
+    paths = get_split_paths(overlap_source)
 
     print("\n加载数据...")
     if not os.path.exists("ncrna-drug_split.csv"):
@@ -292,21 +342,33 @@ def train(overlap_source='overlap'):
     mi_dmap_np = PolynomialFeatures(1).fit_transform(mi_dmap_np)
     drug_dmap_np = PolynomialFeatures(2).fit_transform(drug_dmap_np)
 
-    # 获取划分
-    train_mask_np, test_mask_np, train_pos_list, split_info = get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source)
-    if split_info is None:
-        return
-
-    save_csv_files(split_info, adj_df)
-
-    # 根据重叠来源使用不同的保存文件名
-    if overlap_source == 'unlabeled':
-        split_pkl_file = 'balanced_split_dmgat_unlabeled.pkl'
+    # 尝试加载已存在的划分
+    existing_split = load_existing_split(overlap_source)
+    if existing_split is not None:
+        split_info = existing_split
+        # 从已保存的split_info重建train_pos_list和masks
+        train_pos_list = split_info['train_pos']
+        train_mask_np = np.zeros(adj_df.shape)
+        test_mask_np = np.zeros(adj_df.shape)
+        for r, c in split_info['train_pos'] + split_info['train_neg']:
+            train_mask_np[r, c] = 1
+        for r, c in split_info['test_pos'] + split_info['test_neg']:
+            test_mask_np[r, c] = 1
+        print(f"  训练集样本数: {int(train_mask_np.sum())}")
+        print(f"  测试集样本数: {int(test_mask_np.sum())}")
     else:
-        split_pkl_file = 'balanced_split_dmgat.pkl'
+        # 创建新的划分
+        train_mask_np, test_mask_np, train_pos_list, split_info = get_balanced_split_masks(
+            adj_df, adj_with_sens_df, overlap_source
+        )
+        if split_info is None:
+            return
 
-    with open(split_pkl_file, 'wb') as f:
-        pickle.dump(split_info, f)
+        # 保存划分文件
+        save_csv_files(split_info, adj_df, overlap_source)
+        with open(paths['split_pkl'], 'wb') as f:
+            pickle.dump(split_info, f)
+        print(f"\n划分已保存到: {paths['split_pkl']}")
 
     # 构建图结构 (防泄露: 只用 train_pos 构建消息传递图)
     train_adj_pure = np.zeros_like(adj_np)
@@ -361,7 +423,14 @@ def train(overlap_source='overlap'):
 
     # 对比学习参数
     lambda_contrastive = 1.0  # 对比损失权重
-    pretrain_epochs = 50  # 前50个周期用于对比学习预训练
+    # 注意：移除预训练阶段，从一开始就同时使用BCE和对比学习
+    # 原因：预训练阶段只做对比学习会导致预测层权重未被训练，初始AUC=0.5
+    pretrain_epochs = 0  # 不使用预训练阶段
+
+    # pred_logits scaling 因子（解决点积值过大问题）
+    # 特征维度为 pred_hid_size=1024，点积后值的标准差约 sqrt(1024)=32
+    # 使用 sqrt(dim) 进行 scaling 可以稳定 BCE Loss
+    logits_scale = np.sqrt(pred_hid_size)
 
     # 初始化模型
     linear_layer = Linear(lnc_dmap, mi_dmap, drug_dmap, linear_out_size).to(device)
@@ -396,8 +465,8 @@ def train(overlap_source='overlap'):
     contrastive_loss_fn = ContrastiveLoss(temperature=0.07)
 
     print(f"\n开始训练 (Epochs={num_epochs}, LR={lr})...")
-    print(f"  前 {pretrain_epochs} epochs: 仅对比学习")
-    print(f"  后续 epochs: BCE + 对比学习")
+    print(f"  使用 BCE Loss + 对比学习 (权重={lambda_contrastive})")
+    print(f"  Logits scaling 因子: {logits_scale:.2f}")
 
     def evaluate_test():
         model.eval()
@@ -405,7 +474,8 @@ def train(overlap_source='overlap'):
             p_feat, d_feat, _, _, _, _ = model(
                 lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
             )
-            pred = torch.sigmoid(p_feat.mm(d_feat.t()))
+            # 使用相同的 scaling 因子
+            pred = torch.sigmoid(p_feat.mm(d_feat.t()) / logits_scale)
 
             # 使用 split_info 中的正确标签，而不是从 adj_np 读取
             y_true, y_scores = [], []
@@ -441,8 +511,8 @@ def train(overlap_source='overlap'):
             lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
         )
 
-        # BCE 损失
-        pred_logits = new_p_feat.mm(new_d_feat.T)
+        # BCE 损失（对 logits 进行 scaling 以稳定训练）
+        pred_logits = new_p_feat.mm(new_d_feat.T) / logits_scale
         unmasked_bce_loss = bce_loss_fn(pred_logits, adj)
         train_bce_loss = (unmasked_bce_loss * train_mask).sum() / train_mask.sum()
 
@@ -474,7 +544,8 @@ def train(overlap_source='overlap'):
               f"AUC: {test_metrics['auc']:.4f} | F2: {test_metrics['f2']:.4f}")
 
     print("\n训练结束，保存模型...")
-    torch.save(model.state_dict(), 'best_model_balanced_dmgat.pth')
+    torch.save(model.state_dict(), paths['model_path'])
+    print(f"模型已保存到: {paths['model_path']}")
 
     # 评估测试集
     print("\n正在评估测试集...")
@@ -484,7 +555,8 @@ def train(overlap_source='overlap'):
             lnc_dmap, mi_dmap, drug_dmap, rna_sim, drug_sim, adj_full
         )
 
-        pred = torch.sigmoid(new_p_feat.mm(new_d_feat.t()))
+        # 使用相同的 scaling 因子
+        pred = torch.sigmoid(new_p_feat.mm(new_d_feat.t()) / logits_scale)
 
         # 使用 split_info 中的正确标签，而不是从 adj_np 读取
         y_true, y_scores = [], []
@@ -526,15 +598,9 @@ def train(overlap_source='overlap'):
             'overlap_source': overlap_source
         }
 
-        # 根据重叠来源使用不同的结果文件名
-        if overlap_source == 'unlabeled':
-            result_file = 'balanced_experiment_results_dmgat_unlabeled.pkl'
-        else:
-            result_file = 'balanced_experiment_results_dmgat.pkl'
-
-        with open(result_file, 'wb') as f:
+        with open(paths['result_pkl'], 'wb') as f:
             pickle.dump(results, f)
-        print(f"\n结果已保存到: {result_file}")
+        print(f"\n结果已保存到: {paths['result_pkl']}")
 
 
 if __name__ == "__main__":
