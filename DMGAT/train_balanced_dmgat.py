@@ -399,7 +399,6 @@ def train(overlap_source='overlap'):
     print(f"  前 {pretrain_epochs} epochs: 仅对比学习")
     print(f"  后续 epochs: BCE + 对比学习")
 
-    # 评估函数 (内联定义)
     def evaluate_test():
         model.eval()
         with torch.no_grad():
@@ -408,10 +407,13 @@ def train(overlap_source='overlap'):
             )
             pred = torch.sigmoid(p_feat.mm(d_feat.t()))
 
-            test_rows, test_cols = np.where(test_mask_np == 1)
+            # 使用 split_info 中的正确标签，而不是从 adj_np 读取
             y_true, y_scores = [], []
-            for r, c in zip(test_rows, test_cols):
-                y_true.append(adj_np[r, c])
+            for r, c in split_info['test_pos']:
+                y_true.append(1)
+                y_scores.append(pred[r, c].item())
+            for r, c in split_info['test_neg']:
+                y_true.append(0)
                 y_scores.append(pred[r, c].item())
 
             y_true, y_scores = np.array(y_true), np.array(y_scores)
@@ -428,6 +430,7 @@ def train(overlap_source='overlap'):
                 'f1': np.max(f1_scores),
                 'f2': np.max(f2_scores)
             }
+
 
     for epoch in range(num_epochs):
         model.train()
@@ -483,10 +486,13 @@ def train(overlap_source='overlap'):
 
         pred = torch.sigmoid(new_p_feat.mm(new_d_feat.t()))
 
-        test_rows, test_cols = np.where(test_mask_np == 1)
+        # 使用 split_info 中的正确标签，而不是从 adj_np 读取
         y_true, y_scores = [], []
-        for r, c in zip(test_rows, test_cols):
-            y_true.append(adj_np[r, c])
+        for r, c in split_info['test_pos']:
+            y_true.append(1)
+            y_scores.append(pred[r, c].item())
+        for r, c in split_info['test_neg']:
+            y_true.append(0)
             y_scores.append(pred[r, c].item())
 
         y_true, y_scores = np.array(y_true), np.array(y_scores)
