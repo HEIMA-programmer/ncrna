@@ -45,7 +45,7 @@ def normalize_name(name):
     return str(name).lower().strip().replace(" ", "").replace("-", "").replace("_", "")
 
 
-def load_or_create_split(split_dir='balanced_splits', seed=42):
+def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='overlap'):
     """
     加载或创建数据划分
 
@@ -53,11 +53,27 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
     - 测试集：重叠的 resistant 对 + 平衡的负样本
     - 训练验证集：非重叠的 resistant 对 + 平衡的负样本
 
+    参数:
+        split_dir: 划分文件保存目录
+        seed: 随机种子
+        overlap_source: 重叠来源，可选值:
+            - 'overlap': 使用73个重叠 (overlap_analysis_result.csv)
+            - 'unlabeled': 使用94个未标记pair (unlabeled_resistant_pairs.csv)
+
     返回:
         split_data: dict
     """
     os.makedirs(split_dir, exist_ok=True)
-    split_file = os.path.join(split_dir, 'balanced_split_v2.pkl')
+
+    # 根据重叠来源选择不同的划分文件和重叠文件
+    if overlap_source == 'unlabeled':
+        split_file = os.path.join(split_dir, 'balanced_split_unlabeled.pkl')
+        overlap_csv = 'unlabeled_resistant_pairs.csv'
+        print(f"使用重叠来源: 94个未标记pair (unlabeled_resistant_pairs.csv)")
+    else:
+        split_file = os.path.join(split_dir, 'balanced_split_v2.pkl')
+        overlap_csv = 'overlap_analysis_result.csv'
+        print(f"使用重叠来源: 73个重叠 (overlap_analysis_result.csv)")
 
     if os.path.exists(split_file):
         print(f"检测到已存在的划分文件: {split_file}")
@@ -73,7 +89,7 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
 
     # 1. 读取数据
     adj_df = pd.read_csv('adj_with_sens.csv', index_col=0)
-    overlap_df = pd.read_csv('overlap_analysis_result.csv')
+    overlap_df = pd.read_csv(overlap_csv)
 
     rna_names = list(adj_df.index)
     drug_names = list(adj_df.columns)
@@ -121,13 +137,22 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
     print(f"总 unknown 对数: {len(unknown_list)}")
 
     # 4. 划分测试集（重叠）和训练验证集（非重叠）
-    # 测试集正样本：重叠的 resistant 对
-    test_pos = list(overlap_indices & resistant_set)
-    # 训练验证集正样本：非重叠的 resistant 对
-    train_val_pos = list(resistant_set - overlap_indices)
-
-    print(f"\n测试集正样本数（重叠）: {len(test_pos)}")
-    print(f"训练验证集正样本数（非重叠）: {len(train_val_pos)}")
+    if overlap_source == 'unlabeled':
+        # 对于unlabeled来源：这94个pair在数据集中标记为0(unknown)，但在Curated中是resistant
+        # 测试集正样本：这94个pair（它们在数据集中是unknown，我们把它们当作正样本来测试）
+        test_pos = list(overlap_indices)
+        # 训练验证集正样本：所有原始的resistant对（不排除，因为这94个本身就不在resistant_set中）
+        train_val_pos = list(resistant_set)
+        print(f"\n测试集正样本数（unlabeled pairs from Curated）: {len(test_pos)}")
+        print(f"训练验证集正样本数（全部resistant）: {len(train_val_pos)}")
+    else:
+        # 对于overlap来源：这73个pair在数据集中标记为1，也在Curated中为resistant
+        # 测试集正样本：重叠的 resistant 对
+        test_pos = list(overlap_indices & resistant_set)
+        # 训练验证集正样本：非重叠的 resistant 对
+        train_val_pos = list(resistant_set - overlap_indices)
+        print(f"\n测试集正样本数（重叠）: {len(test_pos)}")
+        print(f"训练验证集正样本数（非重叠）: {len(train_val_pos)}")
 
     # 5. 打乱
     np.random.shuffle(test_pos)
@@ -163,7 +188,12 @@ def load_or_create_split(split_dir='balanced_splits', seed=42):
 
         return selected, used_set
 
-    used_negative = set()
+    # 初始化已使用负样本集合
+    # 对于unlabeled来源，test_pos中的pair来自unknown，需要预先排除
+    if overlap_source == 'unlabeled':
+        used_negative = set(test_pos)  # 排除测试集正样本（它们原本在unknown中）
+    else:
+        used_negative = set()
 
     # 测试集负样本
     test_neg, used_negative = select_negative_samples(
@@ -558,6 +588,9 @@ def main():
     parser.add_argument('--batch_size', type=int, default=1024)
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--patience', type=int, default=40)
+    parser.add_argument('--overlap_source', type=str, default='overlap',
+                        choices=['overlap', 'unlabeled'],
+                        help='重叠来源: overlap=73个重叠, unlabeled=94个未标记pair')
     args = parser.parse_args()
 
     # 随机种子
@@ -589,10 +622,11 @@ def main():
     print("实验设计:")
     print("  - 训练集: 非重叠的 resistant 对 ")
     print("  - 测试集: 重叠的 resistant 对 (独立测试)")
+    print(f"  - 重叠来源: {args.overlap_source}")
     print("=" * 60)
 
     # 1. 加载或创建数据划分
-    split_data = load_or_create_split()
+    split_data = load_or_create_split(overlap_source=args.overlap_source)
 
     # 2. 加载预处理数据
     cache_data = load_data_cache()
