@@ -158,6 +158,10 @@ def main():
     dataset_rnas_normalized = {normalize_name(r): r for r in rna_names}
     dataset_drugs_normalized = {normalize_name(d): d for d in drug_names}
 
+    # 创建名称到索引的映射（用于检查实际标签值）
+    rna_name_to_idx = {normalize_name(r): i for i, r in enumerate(rna_names)}
+    drug_name_to_idx = {normalize_name(d): i for i, d in enumerate(drug_names)}
+
     rna_overlap = set(curated_rnas_normalized.keys()) & set(dataset_rnas_normalized.keys())
     drug_overlap = set(curated_drugs_normalized.keys()) & set(dataset_drugs_normalized.keys())
 
@@ -205,14 +209,19 @@ def main():
         elif not drug_in:
             missing_drug += 1
         else:
-            missing_pair += 1
-            # 收集这些pair (RNA和Drug都在数据集中，但这个pair在数据集中标记为0/unknown)
-            original = resistant_pairs_normalized[key]
-            missing_pair_list.append({
-                'RNA': original[0],
-                'Drug': original[1],
-                'Source': 'Curated_Only'  # 仅在Curated中标记为resistant
-            })
+            # RNA和Drug都在数据集中，检查这个pair的实际标签
+            rna_idx = rna_name_to_idx[rna_norm]
+            drug_idx = drug_name_to_idx[drug_norm]
+            label_value = adj_matrix[rna_idx, drug_idx]
+
+            if label_value == 0:  # 只收集标签为0(unknown)的pair，排除sensitive(-1)
+                missing_pair += 1
+                original = resistant_pairs_normalized[key]
+                missing_pair_list.append({
+                    'RNA': original[0],
+                    'Drug': original[1],
+                    'Source': 'Curated_Only'
+                })
 
     print(f"    - RNA 不在数据集中: {missing_rna}")
     print(f"    - Drug 不在数据集中: {missing_drug}")

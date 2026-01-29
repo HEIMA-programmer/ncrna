@@ -79,14 +79,14 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
     参数:
         overlap_source: 重叠来源，可选值:
             - 'overlap': 使用73个重叠 (overlap_analysis_result.csv)
-            - 'unlabeled': 使用94个未标记pair (unlabeled_resistant_pairs.csv)
+            - 'unlabeled': 使用92个未标记pair (unlabeled_resistant_pairs.csv)
     """
     print("正在构建平衡实验划分...")
 
     # 1. 根据重叠来源选择文件
     if overlap_source == 'unlabeled':
         overlap_filename = 'unlabeled_resistant_pairs.csv'
-        print(f"  使用重叠来源: 94个未标记pair (unlabeled_resistant_pairs.csv)")
+        print(f"  使用重叠来源: 92个未标记pair (unlabeled_resistant_pairs.csv)")
     else:
         overlap_filename = 'overlap_analysis_result.csv'
         print(f"  使用重叠来源: 73个重叠 (overlap_analysis_result.csv)")
@@ -153,10 +153,10 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
 
     # 5. 划分正样本
     if overlap_source == 'unlabeled':
-        # 对于unlabeled来源：这94个pair在数据集中标记为0(unknown)，但在Curated中是resistant
-        # 测试集正样本：这94个pair（它们在数据集中是unknown，我们把它们当作正样本来测试）
+        # 对于unlabeled来源：这92个pair在数据集中标记为0(unknown)，但在Curated中是resistant
+        # 测试集正样本：这92个pair（它们在数据集中是unknown，我们把它们当作正样本来测试）
         test_pos = list(overlap_pairs)
-        # 训练集正样本：所有原始的resistant对（不排除，因为这94个本身就不在resistant_indices中）
+        # 训练集正样本：所有原始的resistant对（不排除，因为这92个本身就不在resistant_indices中）
         train_pos = list(resistant_indices)
         print(f"  测试集正样本 (unlabeled pairs from Curated): {len(test_pos)}")
         print(f"  训练集正样本 (全部resistant): {len(train_pos)}")
@@ -541,7 +541,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DMGAT 平衡样本实验 - 数据泄露验证')
     parser.add_argument('--overlap_source', type=str, default='overlap',
                         choices=['overlap', 'unlabeled'],
-                        help='重叠来源: overlap=73个重叠, unlabeled=94个未标记pair')
+                        help='重叠来源: overlap=73个重叠, unlabeled=92个未标记pair')
     args = parser.parse_args()
 
     train(overlap_source=args.overlap_source)
