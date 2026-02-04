@@ -1,0 +1,5373 @@
+rna_idx,drug_idx,rna_name,drug_name,label,split
+0,0,ANRIL,Cisplatin,1,train
+0,9,ANRIL,Fluorouracil,1,train
+0,10,ANRIL,Paclitaxel,1,train
+0,11,ANRIL,Propofol,1,train
+1,7,BCAR4,Tamoxifen,1,train
+1,12,BCAR4,Antioestrogens,1,train
+2,0,CASC11,Cisplatin,1,train
+2,13,CASC11,Oxaliplatin,1,train
+2,14,CASC11,Carboplatin,1,train
+2,15,CASC11,Tetraplatin,1,train
+3,0,CCAT1,Cisplatin,1,train
+3,10,CCAT1,Paclitaxel,1,train
+3,16,CCAT1,Docetaxel,1,train
+4,0,CRNDE,Cisplatin,1,train
+4,9,CRNDE,Fluorouracil,1,train
+4,17,CRNDE,Adriamycin,1,train
+5,0,CUDR,Cisplatin,1,train
+5,9,CUDR,Fluorouracil,1,train
+6,0,GAS5,Cisplatin,1,train
+6,5,GAS5,Doxorubicin,1,train
+6,8,GAS5,Trastuzumab,1,train
+6,9,GAS5,Fluorouracil,1,train
+6,16,GAS5,Docetaxel,1,train
+6,20,GAS5,Mitoxantrone,1,train
+6,21,GAS5,Nutlin-3a,1,train
+6,22,GAS5,Rapamycin,1,train
+6,23,GAS5,Sirolimus,1,train
+6,24,GAS5,Temsirolimus,1,train
+7,9,GIHCG,Fluorouracil,1,train
+7,13,GIHCG,Oxaliplatin,1,train
+8,0,H19,Cisplatin,1,train
+8,5,H19,Doxorubicin,1,train
+8,8,H19,Trastuzumab,1,train
+8,10,H19,Paclitaxel,1,train
+8,13,H19,Oxaliplatin,1,train
+8,18,H19,Vincristine,1,train
+8,19,H19,Etoposide,1,train
+8,25,H19,"1,25(OH)2D3",1,train
+8,26,H19,Bortezomib,1,train
+8,27,H19,Methotrexate,1,train
+8,28,H19,Pirarubicin,1,train
+8,29,H19,Verapamil,1,train
+8,30,H19,epirubicin,1,train
+9,0,HOTAIR,Cisplatin,1,train
+9,1,HOTAIR,Gemcitabine,1,train
+9,5,HOTAIR,Doxorubicin,1,train
+9,6,HOTAIR,Gefitinib,1,train
+9,7,HOTAIR,Tamoxifen,1,train
+9,14,HOTAIR,Carboplatin,1,train
+9,17,HOTAIR,Adriamycin,1,train
+9,19,HOTAIR,Etoposide,1,train
+9,31,HOTAIR,Chemotherapy,1,train
+10,9,HULC,Fluorouracil,1,train
+10,13,HULC,Oxaliplatin,1,train
+10,28,HULC,Pirarubicin,1,train
+11,5,LINP1,Doxorubicin,1,train
+11,9,LINP1,Fluorouracil,1,train
+12,0,LOC285194,Cisplatin,1,train
+12,9,LOC285194,Fluorouracil,1,train
+13,0,LUCAT1,Cisplatin,1,train
+13,27,LUCAT1,Methotrexate,1,train
+14,5,Lnc-VLDLR,Doxorubicin,1,train
+14,34,Lnc-VLDLR,Sorafenib,1,train
+15,9,MACC1-AS1,Fluorouracil,1,train
+15,13,MACC1-AS1,Oxaliplatin,1,train
+16,0,MALAT1,Cisplatin,1,train
+16,6,MALAT1,Gefitinib,1,train
+16,9,MALAT1,Fluorouracil,1,train
+16,10,MALAT1,Paclitaxel,1,train
+16,17,MALAT1,Adriamycin,1,train
+16,36,MALAT1,Oxymatrine,1,train
+16,37,MALAT1,Temozolomide,1,train
+17,0,MEG3,Cisplatin,1,train
+17,1,MEG3,Gemcitabine,1,train
+18,5,MRUL,Doxorubicin,1,train
+18,18,MRUL,Vincristine,1,train
+19,0,NEAT1,Cisplatin,1,train
+19,10,NEAT1,Paclitaxel,1,train
+19,18,NEAT1,Vincristine,1,train
+19,39,NEAT1,Taxol,1,train
+20,0,PVT1,Cisplatin,1,train
+20,1,PVT1,Gemcitabine,1,train
+20,5,PVT1,Doxorubicin,1,train
+20,9,PVT1,Fluorouracil,1,train
+20,10,PVT1,Paclitaxel,1,train
+21,40,ROR1-AS1,Dexamethasone,1,train
+22,5,SLC25A25-AS1,Doxorubicin,1,train
+22,9,SLC25A25-AS1,Fluorouracil,1,train
+23,0,SNHG5,Cisplatin,1,train
+23,3,SNHG5,Imatinib,1,train
+24,0,TUG1,Cisplatin,1,train
+24,1,TUG1,Gemcitabine,1,train
+24,17,TUG1,Adriamycin,1,train
+25,0,UCA1,Cisplatin,1,train
+25,1,UCA1,Gemcitabine,1,train
+25,3,UCA1,Imatinib,1,train
+25,7,UCA1,Tamoxifen,1,train
+25,9,UCA1,Fluorouracil,1,train
+25,10,UCA1,Paclitaxel,1,train
+25,17,UCA1,Adriamycin,1,train
+25,22,UCA1,Rapamycin,1,train
+25,38,UCA1,Cetuximab,1,train
+25,43,UCA1,Curcumin,1,train
+26,0,XIST,Cisplatin,1,train
+26,5,XIST,Doxorubicin,1,train
+26,44,XIST,PCI-24781,1,train
+27,0,XLOC_006753,Cisplatin,1,train
+27,9,XLOC_006753,Fluorouracil,1,train
+28,5,linc-VLDLR,Doxorubicin,1,train
+28,17,linc-VLDLR,Adriamycin,1,train
+28,34,linc-VLDLR,Sorafenib,1,train
+28,45,linc-VLDLR,Camptothecin,1,train
+29,39,Let-7,Taxol,1,train
+30,5,Let-7a,Doxorubicin,1,train
+30,9,Let-7a,Fluorouracil,1,train
+30,10,Let-7a,Paclitaxel,1,train
+30,30,Let-7a,epirubicin,1,train
+30,47,Let-7a,Interferon-gamma,1,train
+31,10,hsa-1274A,Paclitaxel,1,train
+32,0,let-7a,Cisplatin,1,train
+32,1,let-7a,Gemcitabine,1,train
+32,3,let-7a,Imatinib,1,train
+32,5,let-7a,Doxorubicin,1,train
+32,10,let-7a,Paclitaxel,1,train
+32,13,let-7a,Oxaliplatin,1,train
+32,47,let-7a,Interferon-gamma,1,train
+32,49,let-7a,Capecitabine,1,train
+32,51,let-7a,platinum-based doublet chemotherapy ,1,train
+33,0,let-7b,Cisplatin,1,train
+33,6,let-7b,Gefitinib,1,train
+33,51,let-7b,platinum-based doublet chemotherapy ,1,train
+33,52,let-7b,5-Fluorouracil,1,train
+34,0,let-7c,Cisplatin,1,train
+34,5,let-7c,Doxorubicin,1,train
+34,18,let-7c,Vincristine,1,train
+34,52,let-7c,5-Fluorouracil,1,train
+34,53,let-7c,Daunorubicin,1,train
+34,55,let-7c,Prednisolone,1,train
+35,0,let-7d,Cisplatin,1,train
+35,1,let-7d,Gemcitabine,1,train
+35,3,let-7d,Imatinib,1,train
+35,52,let-7d,5-Fluorouracil,1,train
+36,0,let-7e,Cisplatin,1,train
+36,3,let-7e,Imatinib,1,train
+36,5,let-7e,Doxorubicin,1,train
+36,13,let-7e,Oxaliplatin,1,train
+36,52,let-7e,5-Fluorouracil,1,train
+37,0,let-7f,Cisplatin,1,train
+37,3,let-7f,Imatinib,1,train
+37,5,let-7f,Doxorubicin,1,train
+38,1,let-7f-1*,Gemcitabine,1,train
+38,38,let-7f-1*,Cetuximab,1,train
+38,52,let-7f-1*,5-Fluorouracil,1,train
+39,0,let-7g,Cisplatin,1,train
+39,5,let-7g,Doxorubicin,1,train
+39,52,let-7g,5-Fluorouracil,1,train
+39,56,let-7g,10-Hydroxycamptothecin,1,train
+40,0,let-7i,Cisplatin,1,train
+40,1,let-7i,Gemcitabine,1,train
+40,3,let-7i,Imatinib,1,train
+40,5,let-7i,Doxorubicin,1,train
+40,52,let-7i,5-Fluorouracil,1,train
+41,13,miR-1,Oxaliplatin,1,train
+41,17,miR-1,Adriamycin,1,train
+41,18,miR-1,Vincristine,1,train
+41,51,miR-1,platinum-based doublet chemotherapy ,1,train
+42,0,miR-100,Cisplatin,1,train
+42,1,miR-100,Gemcitabine,1,train
+42,5,miR-100,Doxorubicin,1,train
+42,10,miR-100,Paclitaxel,1,train
+42,16,miR-100,Docetaxel,1,train
+42,18,miR-100,Vincristine,1,train
+42,19,miR-100,Etoposide,1,train
+42,34,miR-100,Sorafenib,1,train
+42,53,miR-100,Daunorubicin,1,train
+42,55,miR-100,Prednisolone,1,train
+43,0,miR-100-5p,Cisplatin,1,train
+43,60,miR-100-5p,Crizotinib,1,train
+44,0,miR-101,Cisplatin,1,train
+44,5,miR-101,Doxorubicin,1,train
+44,16,miR-101,Docetaxel,1,train
+44,18,miR-101,Vincristine,1,train
+44,23,miR-101,Sirolimus,1,train
+45,3,miR-103,Imatinib,1,train
+45,7,miR-103,Tamoxifen,1,train
+45,13,miR-103,Oxaliplatin,1,train
+45,17,miR-103,Adriamycin,1,train
+45,52,miR-103,5-Fluorouracil,1,train
+46,0,miR-105,Cisplatin,1,train
+46,7,miR-105,Tamoxifen,1,train
+46,16,miR-105,Docetaxel,1,train
+47,0,miR-106a,Cisplatin,1,train
+47,1,miR-106a,Gemcitabine,1,train
+47,5,miR-106a,Doxorubicin,1,train
+47,9,miR-106a,Fluorouracil,1,train
+47,10,miR-106a,Paclitaxel,1,train
+47,13,miR-106a,Oxaliplatin,1,train
+47,17,miR-106a,Adriamycin,1,train
+47,18,miR-106a,Vincristine,1,train
+47,52,miR-106a,5-Fluorouracil,1,train
+48,0,miR-106b,Cisplatin,1,train
+48,5,miR-106b,Doxorubicin,1,train
+48,10,miR-106b,Paclitaxel,1,train
+48,34,miR-106b,Sorafenib,1,train
+48,52,miR-106b,5-Fluorouracil,1,train
+49,10,miR-106b-25,Paclitaxel,1,train
+49,19,miR-106b-25,Etoposide,1,train
+49,62,miR-106b-25,Colchicine,1,train
+50,10,miR-106~25,Paclitaxel,1,train
+50,19,miR-106~25,Etoposide,1,train
+50,62,miR-106~25,Colchicine,1,train
+51,3,miR-107,Imatinib,1,train
+51,7,miR-107,Tamoxifen,1,train
+51,13,miR-107,Oxaliplatin,1,train
+51,52,miR-107,5-Fluorouracil,1,train
+52,0,miR-10a,Cisplatin,1,train
+52,1,miR-10a,Gemcitabine,1,train
+52,3,miR-10a,Imatinib,1,train
+52,5,miR-10a,Doxorubicin,1,train
+52,37,miR-10a,Temozolomide,1,train
+53,0,miR-10a ,Cisplatin,1,train
+53,64,miR-10a ,Vinorelbine,1,train
+54,5,miR-10a*,Doxorubicin,1,train
+54,13,miR-10a*,Oxaliplatin,1,train
+55,0,miR-10b,Cisplatin,1,train
+55,1,miR-10b,Gemcitabine,1,train
+55,6,miR-10b,Gefitinib,1,train
+55,7,miR-10b,Tamoxifen,1,train
+55,9,miR-10b,Fluorouracil,1,train
+55,13,miR-10b,Oxaliplatin,1,train
+55,31,miR-10b,Chemotherapy,1,train
+55,52,miR-10b,5-Fluorouracil,1,train
+56,6,miR-1183,Gefitinib,1,train
+56,13,miR-1183,Oxaliplatin,1,train
+57,1,miR-1202,Gemcitabine,1,train
+57,13,miR-1202,Oxaliplatin,1,train
+57,26,miR-1202,Bortezomib,1,train
+57,52,miR-1202,5-Fluorouracil,1,train
+58,13,miR-1207,Oxaliplatin,1,train
+58,18,miR-1207,Vincristine,1,train
+58,26,miR-1207,Bortezomib,1,train
+59,5,miR-122,Doxorubicin,1,train
+59,9,miR-122,Fluorouracil,1,train
+59,13,miR-122,Oxaliplatin,1,train
+59,26,miR-122,Bortezomib,1,train
+59,34,miR-122,Sorafenib,1,train
+59,52,miR-122,5-Fluorouracil,1,train
+60,1,miR-1226,Gemcitabine,1,train
+60,52,miR-1226,5-Fluorouracil,1,train
+61,1,miR-1228,Gemcitabine,1,train
+61,52,miR-1228,5-Fluorouracil,1,train
+62,0,miR-1228*,Cisplatin,1,train
+62,1,miR-1228*,Gemcitabine,1,train
+62,5,miR-1228*,Doxorubicin,1,train
+62,52,miR-1228*,5-Fluorouracil,1,train
+63,9,miR-1229-5p,Fluorouracil,1,train
+63,13,miR-1229-5p,Oxaliplatin,1,train
+64,5,miR-1233,Doxorubicin,1,train
+64,31,miR-1233,Chemotherapy,1,train
+65,1,miR-1234,Gemcitabine,1,train
+65,5,miR-1234,Doxorubicin,1,train
+65,52,miR-1234,5-Fluorouracil,1,train
+66,1,miR-1236,Gemcitabine,1,train
+66,5,miR-1236,Doxorubicin,1,train
+66,13,miR-1236,Oxaliplatin,1,train
+66,18,miR-1236,Vincristine,1,train
+66,52,miR-1236,5-Fluorouracil,1,train
+66,65,miR-1236,Prednisone,1,train
+67,1,miR-1237,Gemcitabine,1,train
+67,52,miR-1237,5-Fluorouracil,1,train
+68,5,miR-124,Doxorubicin,1,train
+68,33,miR-124,Glucocorticoid,1,train
+68,66,miR-124,Paroxetine,1,train
+69,0,miR-1246,Cisplatin,1,train
+69,1,miR-1246,Gemcitabine,1,train
+69,5,miR-1246,Doxorubicin,1,train
+69,9,miR-1246,Fluorouracil,1,train
+69,10,miR-1246,Paclitaxel,1,train
+69,13,miR-1246,Oxaliplatin,1,train
+69,16,miR-1246,Docetaxel,1,train
+69,18,miR-1246,Vincristine,1,train
+69,26,miR-1246,Bortezomib,1,train
+69,30,miR-1246,epirubicin,1,train
+69,52,miR-1246,5-Fluorouracil,1,train
+70,1,miR-1247,Gemcitabine,1,train
+70,18,miR-1247,Vincristine,1,train
+71,5,miR-1256,Doxorubicin,1,train
+71,18,miR-1256,Vincristine,1,train
+71,65,miR-1256,Prednisone,1,train
+72,0,miR-1258,Cisplatin,1,train
+72,13,miR-1258,Oxaliplatin,1,train
+73,0,miR-125a,Cisplatin,1,train
+73,1,miR-125a,Gemcitabine,1,train
+73,3,miR-125a,Imatinib,1,train
+73,5,miR-125a,Doxorubicin,1,train
+73,7,miR-125a,Tamoxifen,1,train
+73,16,miR-125a,Docetaxel,1,train
+73,38,miR-125a,Cetuximab,1,train
+73,53,miR-125a,Daunorubicin,1,train
+74,0,miR-125b,Cisplatin,1,train
+74,1,miR-125b,Gemcitabine,1,train
+74,5,miR-125b,Doxorubicin,1,train
+74,6,miR-125b,Gefitinib,1,train
+74,8,miR-125b,Trastuzumab,1,train
+74,9,miR-125b,Fluorouracil,1,train
+74,10,miR-125b,Paclitaxel,1,train
+74,18,miR-125b,Vincristine,1,train
+74,19,miR-125b,Etoposide,1,train
+74,26,miR-125b,Bortezomib,1,train
+74,31,miR-125b,Chemotherapy,1,train
+74,37,miR-125b,Temozolomide,1,train
+74,40,miR-125b,Dexamethasone,1,train
+74,52,miR-125b,5-Fluorouracil,1,train
+74,53,miR-125b,Daunorubicin,1,train
+74,55,miR-125b,Prednisolone,1,train
+74,67,miR-125b,Cyclophosphamide,1,train
+74,68,miR-125b,Mafosfamide,1,train
+74,69,miR-125b,Retinoic Acid,1,train
+75,5,miR-125b-5p,Doxorubicin,1,train
+75,18,miR-125b-5p,Vincristine,1,train
+75,26,miR-125b-5p,Bortezomib,1,train
+75,65,miR-125b-5p,Prednisone,1,train
+75,67,miR-125b-5p,Cyclophosphamide,1,train
+75,70,miR-125b-5p,Rituximab,1,train
+76,0,miR-126,Cisplatin,1,train
+76,1,miR-126,Gemcitabine,1,train
+76,5,miR-126,Doxorubicin,1,train
+76,7,miR-126,Tamoxifen,1,train
+76,13,miR-126,Oxaliplatin,1,train
+76,18,miR-126,Vincristine,1,train
+76,53,miR-126,Daunorubicin,1,train
+76,55,miR-126,Prednisolone,1,train
+76,56,miR-126,10-Hydroxycamptothecin,1,train
+76,71,miR-126,Cytarabine,1,train
+77,13,miR-126*,Oxaliplatin,1,train
+77,18,miR-126*,Vincristine,1,train
+77,34,miR-126*,Sorafenib,1,train
+77,38,miR-126*,Cetuximab,1,train
+77,53,miR-126*,Daunorubicin,1,train
+77,55,miR-126*,Prednisolone,1,train
+78,1,miR-1260,Gemcitabine,1,train
+78,52,miR-1260,5-Fluorouracil,1,train
+79,1,miR-1260b,Gemcitabine,1,train
+79,52,miR-1260b,5-Fluorouracil,1,train
+80,10,miR-1264,Paclitaxel,1,train
+80,13,miR-1264,Oxaliplatin,1,train
+81,5,miR-1265,Doxorubicin,1,train
+81,10,miR-1265,Paclitaxel,1,train
+81,13,miR-1265,Oxaliplatin,1,train
+82,1,miR-1268,Gemcitabine,1,train
+82,10,miR-1268,Paclitaxel,1,train
+82,52,miR-1268,5-Fluorouracil,1,train
+83,0,miR-127,Cisplatin,1,train
+83,5,miR-127,Doxorubicin,1,train
+83,6,miR-127,Gefitinib,1,train
+83,13,miR-127,Oxaliplatin,1,train
+84,5,miR-1273g,Doxorubicin,1,train
+84,18,miR-1273g,Vincristine,1,train
+85,1,miR-1275,Gemcitabine,1,train
+85,10,miR-1275,Paclitaxel,1,train
+85,52,miR-1275,5-Fluorouracil,1,train
+86,5,miR-1277,Doxorubicin,1,train
+86,10,miR-1277,Paclitaxel,1,train
+87,0,miR-128,Cisplatin,1,train
+87,5,miR-128,Doxorubicin,1,train
+87,13,miR-128,Oxaliplatin,1,train
+87,19,miR-128,Etoposide,1,train
+88,0,miR-128-2,Cisplatin,1,train
+88,5,miR-128-2,Doxorubicin,1,train
+88,9,miR-128-2,Fluorouracil,1,train
+88,52,miR-128-2,5-Fluorouracil,1,train
+89,1,miR-1280,Gemcitabine,1,train
+89,52,miR-1280,5-Fluorouracil,1,train
+90,1,miR-1285,Gemcitabine,1,train
+90,52,miR-1285,5-Fluorouracil,1,train
+91,1,miR-1288,Gemcitabine,1,train
+91,52,miR-1288,5-Fluorouracil,1,train
+92,3,miR-128a,Imatinib,1,train
+92,7,miR-128a,Tamoxifen,1,train
+92,72,miR-128a,Anastrozole,1,train
+92,73,miR-128a,Exemestane,1,train
+92,74,miR-128a,Letrozole,1,train
+93,0,miR-129,Cisplatin,1,train
+93,5,miR-129,Doxorubicin,1,train
+93,18,miR-129,Vincristine,1,train
+93,19,miR-129,Etoposide,1,train
+93,26,miR-129,Bortezomib,1,train
+93,52,miR-129,5-Fluorouracil,1,train
+94,1,miR-129*,Gemcitabine,1,train
+94,13,miR-129*,Oxaliplatin,1,train
+95,0,miR-1290,Cisplatin,1,train
+95,1,miR-1290,Gemcitabine,1,train
+95,10,miR-1290,Paclitaxel,1,train
+95,13,miR-1290,Oxaliplatin,1,train
+95,26,miR-1290,Bortezomib,1,train
+95,52,miR-1290,5-Fluorouracil,1,train
+96,5,miR-1293,Doxorubicin,1,train
+96,13,miR-1293,Oxaliplatin,1,train
+97,0,miR-1297,Cisplatin,1,train
+97,13,miR-1297,Oxaliplatin,1,train
+98,0,miR-1299,Cisplatin,1,train
+98,5,miR-1299,Doxorubicin,1,train
+98,13,miR-1299,Oxaliplatin,1,train
+99,13,miR-130,Oxaliplatin,1,train
+99,52,miR-130,5-Fluorouracil,1,train
+100,0,miR-1307,Cisplatin,1,train
+100,1,miR-1307,Gemcitabine,1,train
+100,39,miR-1307,Taxol,1,train
+100,52,miR-1307,5-Fluorouracil,1,train
+101,0,miR-130a,Cisplatin,1,train
+101,1,miR-130a,Gemcitabine,1,train
+101,5,miR-130a,Doxorubicin,1,train
+101,6,miR-130a,Gefitinib,1,train
+101,10,miR-130a,Paclitaxel,1,train
+101,13,miR-130a,Oxaliplatin,1,train
+101,34,miR-130a,Sorafenib,1,train
+101,52,miR-130a,5-Fluorouracil,1,train
+101,76,miR-130a,Platinum,1,train
+102,0,miR-130a-3p,Cisplatin,1,train
+102,1,miR-130a-3p,Gemcitabine,1,train
+103,0,miR-130b,Cisplatin,1,train
+103,1,miR-130b,Gemcitabine,1,train
+103,3,miR-130b,Imatinib,1,train
+103,10,miR-130b,Paclitaxel,1,train
+103,17,miR-130b,Adriamycin,1,train
+103,34,miR-130b,Sorafenib,1,train
+103,52,miR-130b,5-Fluorouracil,1,train
+104,0,miR-132,Cisplatin,1,train
+104,3,miR-132,Imatinib,1,train
+104,5,miR-132,Doxorubicin,1,train
+104,6,miR-132,Gefitinib,1,train
+104,10,miR-132,Paclitaxel,1,train
+104,31,miR-132,Chemotherapy,1,train
+104,37,miR-132,Temozolomide,1,train
+104,56,miR-132,10-Hydroxycamptothecin,1,train
+105,0,miR-133a,Cisplatin,1,train
+105,5,miR-133a,Doxorubicin,1,train
+105,10,miR-133a,Paclitaxel,1,train
+106,0,miR-133b,Cisplatin,1,train
+106,5,miR-133b,Doxorubicin,1,train
+106,10,miR-133b,Paclitaxel,1,train
+107,1,miR-134,Gemcitabine,1,train
+107,6,miR-134,Gefitinib,1,train
+107,10,miR-134,Paclitaxel,1,train
+108,1,miR-1343,Gemcitabine,1,train
+108,52,miR-1343,5-Fluorouracil,1,train
+109,0,miR-135a,Cisplatin,1,train
+109,5,miR-135a,Doxorubicin,1,train
+109,6,miR-135a,Gefitinib,1,train
+109,10,miR-135a,Paclitaxel,1,train
+109,13,miR-135a,Oxaliplatin,1,train
+109,19,miR-135a,Etoposide,1,train
+109,34,miR-135a,Sorafenib,1,train
+110,3,miR-135b,Imatinib,1,train
+110,5,miR-135b,Doxorubicin,1,train
+110,9,miR-135b,Fluorouracil,1,train
+110,10,miR-135b,Paclitaxel,1,train
+110,42,miR-135b,Erlotinib,1,train
+111,0,miR-136,Cisplatin,1,train
+111,34,miR-136,Sorafenib,1,train
+112,0,miR-137,Cisplatin,1,train
+112,5,miR-137,Doxorubicin,1,train
+112,17,miR-137,Adriamycin,1,train
+112,18,miR-137,Vincristine,1,train
+112,39,miR-137,Taxol,1,train
+113,0,miR-138,Cisplatin,1,train
+113,1,miR-138,Gemcitabine,1,train
+113,5,miR-138,Doxorubicin,1,train
+113,6,miR-138,Gefitinib,1,train
+113,37,miR-138,Temozolomide,1,train
+113,52,miR-138,5-Fluorouracil,1,train
+114,5,miR-138-1*,Doxorubicin,1,train
+114,18,miR-138-1*,Vincristine,1,train
+114,65,miR-138-1*,Prednisone,1,train
+115,5,miR-139,Doxorubicin,1,train
+115,10,miR-139,Paclitaxel,1,train
+115,51,miR-139,platinum-based doublet chemotherapy ,1,train
+116,1,miR-140,Gemcitabine,1,train
+116,3,miR-140,Imatinib,1,train
+116,5,miR-140,Doxorubicin,1,train
+116,6,miR-140,Gefitinib,1,train
+116,10,miR-140,Paclitaxel,1,train
+116,27,miR-140,Methotrexate,1,train
+116,29,miR-140,Verapamil,1,train
+116,31,miR-140,Chemotherapy,1,train
+116,42,miR-140,Erlotinib,1,train
+116,52,miR-140,5-Fluorouracil,1,train
+117,0,miR-140-3p,Cisplatin,1,train
+117,5,miR-140-3p,Doxorubicin,1,train
+117,10,miR-140-3p,Paclitaxel,1,train
+118,0,miR-141,Cisplatin,1,train
+118,5,miR-141,Doxorubicin,1,train
+118,7,miR-141,Tamoxifen,1,train
+118,10,miR-141,Paclitaxel,1,train
+118,16,miR-141,Docetaxel,1,train
+118,29,miR-141,Verapamil,1,train
+118,52,miR-141,5-Fluorouracil,1,train
+118,56,miR-141,10-Hydroxycamptothecin,1,train
+119,5,miR-141*,Doxorubicin,1,train
+119,29,miR-141*,Verapamil,1,train
+120,8,miR-141-3p,Trastuzumab,1,train
+120,9,miR-141-3p,Fluorouracil,1,train
+120,13,miR-141-3p,Oxaliplatin,1,train
+121,1,miR-142,Gemcitabine,1,train
+121,5,miR-142,Doxorubicin,1,train
+121,29,miR-142,Verapamil,1,train
+121,78,miR-142,Valproate,1,train
+122,1,miR-143,Gemcitabine,1,train
+122,3,miR-143,Imatinib,1,train
+122,5,miR-143,Doxorubicin,1,train
+122,6,miR-143,Gefitinib,1,train
+122,10,miR-143,Paclitaxel,1,train
+123,5,miR-143*,Doxorubicin,1,train
+123,10,miR-143*,Paclitaxel,1,train
+123,29,miR-143*,Verapamil,1,train
+124,0,miR-144,Cisplatin,1,train
+124,51,miR-144,platinum-based doublet chemotherapy ,1,train
+125,0,miR-144-3p,Cisplatin,1,train
+126,0,miR-145,Cisplatin,1,train
+126,5,miR-145,Doxorubicin,1,train
+126,6,miR-145,Gefitinib,1,train
+126,9,miR-145,Fluorouracil,1,train
+126,13,miR-145,Oxaliplatin,1,train
+126,16,miR-145,Docetaxel,1,train
+126,18,miR-145,Vincristine,1,train
+126,29,miR-145,Verapamil,1,train
+126,52,miR-145,5-Fluorouracil,1,train
+127,1,miR-1468,Gemcitabine,1,train
+127,13,miR-1468,Oxaliplatin,1,train
+128,1,miR-1469,Gemcitabine,1,train
+128,26,miR-1469,Bortezomib,1,train
+128,52,miR-1469,5-Fluorouracil,1,train
+129,0,miR-146a,Cisplatin,1,train
+129,1,miR-146a,Gemcitabine,1,train
+129,5,miR-146a,Doxorubicin,1,train
+129,10,miR-146a,Paclitaxel,1,train
+129,14,miR-146a,Carboplatin,1,train
+129,16,miR-146a,Docetaxel,1,train
+129,17,miR-146a,Adriamycin,1,train
+129,18,miR-146a,Vincristine,1,train
+129,29,miR-146a,Verapamil,1,train
+129,34,miR-146a,Sorafenib,1,train
+129,49,miR-146a,Capecitabine,1,train
+129,52,miR-146a,5-Fluorouracil,1,train
+129,82,miR-146a,Cyclopamine,1,train
+129,83,miR-146a,Interferon-alpha,1,train
+129,84,miR-146a,Mitomycin C,1,train
+130,0,miR-146b,Cisplatin,1,train
+130,1,miR-146b,Gemcitabine,1,train
+130,3,miR-146b,Imatinib,1,train
+130,5,miR-146b,Doxorubicin,1,train
+130,10,miR-146b,Paclitaxel,1,train
+130,14,miR-146b,Carboplatin,1,train
+130,16,miR-146b,Docetaxel,1,train
+130,18,miR-146b,Vincristine,1,train
+130,29,miR-146b,Verapamil,1,train
+130,34,miR-146b,Sorafenib,1,train
+130,84,miR-146b,Mitomycin C,1,train
+131,0,miR-146b-5p,Cisplatin,1,train
+131,5,miR-146b-5p,Doxorubicin,1,train
+131,14,miR-146b-5p,Carboplatin,1,train
+131,17,miR-146b-5p,Adriamycin,1,train
+131,18,miR-146b-5p,Vincristine,1,train
+131,27,miR-146b-5p,Methotrexate,1,train
+131,84,miR-146b-5p,Mitomycin C,1,train
+132,0,miR-148a,Cisplatin,1,train
+132,5,miR-148a,Doxorubicin,1,train
+132,6,miR-148a,Gefitinib,1,train
+132,29,miR-148a,Verapamil,1,train
+133,0,miR-148b,Cisplatin,1,train
+133,1,miR-148b,Gemcitabine,1,train
+133,5,miR-148b,Doxorubicin,1,train
+133,7,miR-148b,Tamoxifen,1,train
+133,18,miR-148b,Vincristine,1,train
+133,34,miR-148b,Sorafenib,1,train
+133,52,miR-148b,5-Fluorouracil,1,train
+133,65,miR-148b,Prednisone,1,train
+133,67,miR-148b,Cyclophosphamide,1,train
+134,0,miR-149,Cisplatin,1,train
+134,1,miR-149,Gemcitabine,1,train
+134,5,miR-149,Doxorubicin,1,train
+134,7,miR-149,Tamoxifen,1,train
+134,9,miR-149,Fluorouracil,1,train
+134,10,miR-149,Paclitaxel,1,train
+134,16,miR-149,Docetaxel,1,train
+134,17,miR-149,Adriamycin,1,train
+134,27,miR-149,Methotrexate,1,train
+134,52,miR-149,5-Fluorouracil,1,train
+135,0,miR-149*,Cisplatin,1,train
+135,26,miR-149*,Bortezomib,1,train
+136,0,miR-150,Cisplatin,1,train
+136,3,miR-150,Imatinib,1,train
+136,5,miR-150,Doxorubicin,1,train
+136,13,miR-150,Oxaliplatin,1,train
+136,19,miR-150,Etoposide,1,train
+136,85,miR-150,Pertuzumab,1,train
+137,1,miR-151,Gemcitabine,1,train
+137,3,miR-151,Imatinib,1,train
+137,5,miR-151,Doxorubicin,1,train
+137,7,miR-151,Tamoxifen,1,train
+137,13,miR-151,Oxaliplatin,1,train
+137,16,miR-151,Docetaxel,1,train
+137,29,miR-151,Verapamil,1,train
+138,0,miR-152,Cisplatin,1,train
+138,1,miR-152,Gemcitabine,1,train
+138,5,miR-152,Doxorubicin,1,train
+138,16,miR-152,Docetaxel,1,train
+138,31,miR-152,Chemotherapy,1,train
+138,38,miR-152,Cetuximab,1,train
+139,0,miR-153,Cisplatin,1,train
+139,5,miR-153,Doxorubicin,1,train
+139,13,miR-153,Oxaliplatin,1,train
+139,29,miR-153,Verapamil,1,train
+140,5,miR-154*,Doxorubicin,1,train
+140,29,miR-154*,Verapamil,1,train
+141,0,miR-155,Cisplatin,1,train
+141,1,miR-155,Gemcitabine,1,train
+141,5,miR-155,Doxorubicin,1,train
+141,7,miR-155,Tamoxifen,1,train
+141,10,miR-155,Paclitaxel,1,train
+141,13,miR-155,Oxaliplatin,1,train
+141,18,miR-155,Vincristine,1,train
+141,19,miR-155,Etoposide,1,train
+141,29,miR-155,Verapamil,1,train
+141,52,miR-155,5-Fluorouracil,1,train
+141,82,miR-155,Cyclopamine,1,train
+141,86,miR-155,Arsenic trioxide,1,train
+142,0,miR-155-5p,Cisplatin,1,train
+142,5,miR-155-5p,Doxorubicin,1,train
+142,10,miR-155-5p,Paclitaxel,1,train
+143,0,miR-15a,Cisplatin,1,train
+143,1,miR-15a,Gemcitabine,1,train
+143,3,miR-15a,Imatinib,1,train
+143,5,miR-15a,Doxorubicin,1,train
+143,10,miR-15a,Paclitaxel,1,train
+143,14,miR-15a,Carboplatin,1,train
+143,16,miR-15a,Docetaxel,1,train
+143,19,miR-15a,Etoposide,1,train
+143,40,miR-15a,Dexamethasone,1,train
+143,52,miR-15a,5-Fluorouracil,1,train
+143,84,miR-15a,Mitomycin C,1,train
+144,5,miR-15a*,Doxorubicin,1,train
+144,29,miR-15a*,Verapamil,1,train
+145,0,miR-15b,Cisplatin,1,train
+145,1,miR-15b,Gemcitabine,1,train
+145,3,miR-15b,Imatinib,1,train
+145,10,miR-15b,Paclitaxel,1,train
+145,13,miR-15b,Oxaliplatin,1,train
+145,52,miR-15b,5-Fluorouracil,1,train
+146,5,miR-15b*,Doxorubicin,1,train
+146,29,miR-15b*,Verapamil,1,train
+147,0,miR-16,Cisplatin,1,train
+147,1,miR-16,Gemcitabine,1,train
+147,3,miR-16,Imatinib,1,train
+147,5,miR-16,Doxorubicin,1,train
+147,10,miR-16,Paclitaxel,1,train
+147,13,miR-16,Oxaliplatin,1,train
+147,14,miR-16,Carboplatin,1,train
+147,29,miR-16,Verapamil,1,train
+147,37,miR-16,Temozolomide,1,train
+147,40,miR-16,Dexamethasone,1,train
+147,84,miR-16,Mitomycin C,1,train
+148,0,miR-17,Cisplatin,1,train
+148,1,miR-17,Gemcitabine,1,train
+148,5,miR-17,Doxorubicin,1,train
+148,10,miR-17,Paclitaxel,1,train
+148,13,miR-17,Oxaliplatin,1,train
+148,16,miR-17,Docetaxel,1,train
+148,19,miR-17,Etoposide,1,train
+148,23,miR-17,Sirolimus,1,train
+148,31,miR-17,Chemotherapy,1,train
+148,37,miR-17,Temozolomide,1,train
+148,39,miR-17,Taxol,1,train
+148,52,miR-17,5-Fluorouracil,1,train
+148,82,miR-17,Cyclopamine,1,train
+148,87,miR-17,Irinotecan,1,train
+149,1,miR-17*,Gemcitabine,1,train
+149,5,miR-17*,Doxorubicin,1,train
+149,38,miR-17*,Cetuximab,1,train
+149,52,miR-17*,5-Fluorouracil,1,train
+150,6,miR-17-5p,Gefitinib,1,train
+150,9,miR-17-5p,Fluorouracil,1,train
+150,10,miR-17-5p,Paclitaxel,1,train
+150,13,miR-17-5p,Oxaliplatin,1,train
+150,42,miR-17-5p,Erlotinib,1,train
+150,87,miR-17-5p,Irinotecan,1,train
+151,0,miR-17-92,Cisplatin,1,train
+151,5,miR-17-92,Doxorubicin,1,train
+151,19,miR-17-92,Etoposide,1,train
+151,23,miR-17-92,Sirolimus,1,train
+151,89,miR-17-92,Staurosporine,1,train
+151,90,miR-17-92,Topotecan,1,train
+152,0,miR-181,Cisplatin,1,train
+152,6,miR-181,Gefitinib,1,train
+152,7,miR-181,Tamoxifen,1,train
+153,0,miR-181a,Cisplatin,1,train
+153,5,miR-181a,Doxorubicin,1,train
+153,6,miR-181a,Gefitinib,1,train
+153,10,miR-181a,Paclitaxel,1,train
+153,13,miR-181a,Oxaliplatin,1,train
+153,14,miR-181a,Carboplatin,1,train
+153,16,miR-181a,Docetaxel,1,train
+153,17,miR-181a,Adriamycin,1,train
+153,18,miR-181a,Vincristine,1,train
+153,20,miR-181a,Mitoxantrone,1,train
+153,29,miR-181a,Verapamil,1,train
+153,31,miR-181a,Chemotherapy,1,train
+153,34,miR-181a,Sorafenib,1,train
+153,45,miR-181a,Camptothecin,1,train
+153,52,miR-181a,5-Fluorouracil,1,train
+153,76,miR-181a,Platinum,1,train
+153,84,miR-181a,Mitomycin C,1,train
+153,91,miR-181a,Fludarabine,1,train
+153,92,miR-181a,histone deacetylase inhibitor,1,train
+153,93,miR-181a,intensive induction chemotherapy based on cytarabine and idarubicine,1,train
+154,0,miR-181a*,Cisplatin,1,train
+154,1,miR-181a*,Gemcitabine,1,train
+154,5,miR-181a*,Doxorubicin,1,train
+154,29,miR-181a*,Verapamil,1,train
+154,52,miR-181a*,5-Fluorouracil,1,train
+155,0,miR-181b,Cisplatin,1,train
+155,1,miR-181b,Gemcitabine,1,train
+155,5,miR-181b,Doxorubicin,1,train
+155,10,miR-181b,Paclitaxel,1,train
+155,13,miR-181b,Oxaliplatin,1,train
+155,16,miR-181b,Docetaxel,1,train
+155,34,miR-181b,Sorafenib,1,train
+156,0,miR-181c,Cisplatin,1,train
+156,1,miR-181c,Gemcitabine,1,train
+156,3,miR-181c,Imatinib,1,train
+156,5,miR-181c,Doxorubicin,1,train
+156,9,miR-181c,Fluorouracil,1,train
+156,10,miR-181c,Paclitaxel,1,train
+156,29,miR-181c,Verapamil,1,train
+156,51,miR-181c,platinum-based doublet chemotherapy ,1,train
+157,0,miR-181d,Cisplatin,1,train
+157,1,miR-181d,Gemcitabine,1,train
+157,5,miR-181d,Doxorubicin,1,train
+157,7,miR-181d,Tamoxifen,1,train
+157,13,miR-181d,Oxaliplatin,1,train
+157,14,miR-181d,Carboplatin,1,train
+157,16,miR-181d,Docetaxel,1,train
+157,17,miR-181d,Adriamycin,1,train
+157,18,miR-181d,Vincristine,1,train
+157,29,miR-181d,Verapamil,1,train
+157,52,miR-181d,5-Fluorouracil,1,train
+157,84,miR-181d,Mitomycin C,1,train
+158,0,miR-182,Cisplatin,1,train
+158,5,miR-182,Doxorubicin,1,train
+158,7,miR-182,Tamoxifen,1,train
+158,8,miR-182,Trastuzumab,1,train
+158,9,miR-182,Fluorouracil,1,train
+158,10,miR-182,Paclitaxel,1,train
+158,13,miR-182,Oxaliplatin,1,train
+158,33,miR-182,Glucocorticoid,1,train
+158,38,miR-182,Cetuximab,1,train
+159,5,miR-182*,Doxorubicin,1,train
+159,29,miR-182*,Verapamil,1,train
+160,1,miR-1825,Gemcitabine,1,train
+160,52,miR-1825,5-Fluorouracil,1,train
+161,1,miR-1826,Gemcitabine,1,train
+161,13,miR-1826,Oxaliplatin,1,train
+162,0,miR-183,Cisplatin,1,train
+162,5,miR-183,Doxorubicin,1,train
+162,7,miR-183,Tamoxifen,1,train
+163,5,miR-184,Doxorubicin,1,train
+163,19,miR-184,Etoposide,1,train
+164,0,miR-185,Cisplatin,1,train
+164,1,miR-185,Gemcitabine,1,train
+164,13,miR-185,Oxaliplatin,1,train
+164,52,miR-185,5-Fluorouracil,1,train
+165,5,miR-186,Doxorubicin,1,train
+165,27,miR-186,Methotrexate,1,train
+165,29,miR-186,Verapamil,1,train
+165,51,miR-186,platinum-based doublet chemotherapy ,1,train
+166,0,miR-186*,Cisplatin,1,train
+166,5,miR-186*,Doxorubicin,1,train
+166,13,miR-186*,Oxaliplatin,1,train
+166,14,miR-186*,Carboplatin,1,train
+166,18,miR-186*,Vincristine,1,train
+166,84,miR-186*,Mitomycin C,1,train
+167,0,miR-187,Cisplatin,1,train
+167,1,miR-187,Gemcitabine,1,train
+167,5,miR-187,Doxorubicin,1,train
+167,10,miR-187,Paclitaxel,1,train
+167,18,miR-187,Vincristine,1,train
+167,65,miR-187,Prednisone,1,train
+167,67,miR-187,Cyclophosphamide,1,train
+168,1,miR-187*,Gemcitabine,1,train
+168,52,miR-187*,5-Fluorouracil,1,train
+169,1,miR-188,Gemcitabine,1,train
+169,5,miR-188,Doxorubicin,1,train
+169,10,miR-188,Paclitaxel,1,train
+169,19,miR-188,Etoposide,1,train
+169,52,miR-188,5-Fluorouracil,1,train
+170,0,miR-18a,Cisplatin,1,train
+170,1,miR-18a,Gemcitabine,1,train
+170,5,miR-18a,Doxorubicin,1,train
+170,10,miR-18a,Paclitaxel,1,train
+170,29,miR-18a,Verapamil,1,train
+170,52,miR-18a,5-Fluorouracil,1,train
+170,82,miR-18a,Cyclopamine,1,train
+171,10,miR-18a*,Paclitaxel,1,train
+171,38,miR-18a*,Cetuximab,1,train
+172,0,miR-18b,Cisplatin,1,train
+172,1,miR-18b,Gemcitabine,1,train
+172,3,miR-18b,Imatinib,1,train
+172,5,miR-18b,Doxorubicin,1,train
+172,52,miR-18b,5-Fluorouracil,1,train
+173,10,miR-19,Paclitaxel,1,train
+173,19,miR-19,Etoposide,1,train
+173,20,miR-19,Mitoxantrone,1,train
+173,23,miR-19,Sirolimus,1,train
+174,5,miR-190,Doxorubicin,1,train
+174,29,miR-190,Verapamil,1,train
+175,0,miR-1908,Cisplatin,1,train
+175,1,miR-1908,Gemcitabine,1,train
+175,5,miR-1908,Doxorubicin,1,train
+175,10,miR-1908,Paclitaxel,1,train
+175,13,miR-1908,Oxaliplatin,1,train
+175,14,miR-1908,Carboplatin,1,train
+175,18,miR-1908,Vincristine,1,train
+175,26,miR-1908,Bortezomib,1,train
+175,52,miR-1908,5-Fluorouracil,1,train
+175,84,miR-1908,Mitomycin C,1,train
+176,0,miR-191,Cisplatin,1,train
+176,1,miR-191,Gemcitabine,1,train
+176,5,miR-191,Doxorubicin,1,train
+176,13,miR-191,Oxaliplatin,1,train
+176,16,miR-191,Docetaxel,1,train
+176,52,miR-191,5-Fluorouracil,1,train
+177,5,miR-191*,Doxorubicin,1,train
+177,18,miR-191*,Vincristine,1,train
+177,65,miR-191*,Prednisone,1,train
+178,1,miR-1913,Gemcitabine,1,train
+178,52,miR-1913,5-Fluorouracil,1,train
+179,1,miR-1914*,Gemcitabine,1,train
+179,52,miR-1914*,5-Fluorouracil,1,train
+180,0,miR-1915,Cisplatin,1,train
+180,1,miR-1915,Gemcitabine,1,train
+180,5,miR-1915,Doxorubicin,1,train
+180,14,miR-1915,Carboplatin,1,train
+180,18,miR-1915,Vincristine,1,train
+180,26,miR-1915,Bortezomib,1,train
+180,52,miR-1915,5-Fluorouracil,1,train
+180,84,miR-1915,Mitomycin C,1,train
+181,0,miR-192,Cisplatin,1,train
+181,5,miR-192,Doxorubicin,1,train
+181,10,miR-192,Paclitaxel,1,train
+181,16,miR-192,Docetaxel,1,train
+181,34,miR-192,Sorafenib,1,train
+182,5,miR-192*,Doxorubicin,1,train
+182,29,miR-192*,Verapamil,1,train
+183,0,miR-193a,Cisplatin,1,train
+183,1,miR-193a,Gemcitabine,1,train
+183,5,miR-193a,Doxorubicin,1,train
+183,7,miR-193a,Tamoxifen,1,train
+183,10,miR-193a,Paclitaxel,1,train
+183,13,miR-193a,Oxaliplatin,1,train
+183,28,miR-193a,Pirarubicin,1,train
+183,29,miR-193a,Verapamil,1,train
+183,31,miR-193a,Chemotherapy,1,train
+183,37,miR-193a,Temozolomide,1,train
+183,52,miR-193a,5-Fluorouracil,1,train
+184,0,miR-193a-3p,Cisplatin,1,train
+184,9,miR-193a-3p,Fluorouracil,1,train
+184,10,miR-193a-3p,Paclitaxel,1,train
+184,16,miR-193a-3p,Docetaxel,1,train
+184,17,miR-193a-3p,Adriamycin,1,train
+184,28,miR-193a-3p,Pirarubicin,1,train
+184,64,miR-193a-3p,Vinorelbine,1,train
+184,96,miR-193a-3p,Epirubicin hydrochloride,1,train
+185,0,miR-193b,Cisplatin,1,train
+185,3,miR-193b,Imatinib,1,train
+185,5,miR-193b,Doxorubicin,1,train
+185,7,miR-193b,Tamoxifen,1,train
+185,10,miR-193b,Paclitaxel,1,train
+185,13,miR-193b,Oxaliplatin,1,train
+185,16,miR-193b,Docetaxel,1,train
+185,27,miR-193b,Methotrexate,1,train
+185,34,miR-193b,Sorafenib,1,train
+185,52,miR-193b,5-Fluorouracil,1,train
+185,82,miR-193b,Cyclopamine,1,train
+186,0,miR-193b*,Cisplatin,1,train
+186,1,miR-193b*,Gemcitabine,1,train
+186,5,miR-193b*,Doxorubicin,1,train
+186,10,miR-193b*,Paclitaxel,1,train
+186,14,miR-193b*,Carboplatin,1,train
+186,18,miR-193b*,Vincristine,1,train
+186,37,miR-193b*,Temozolomide,1,train
+186,52,miR-193b*,5-Fluorouracil,1,train
+186,84,miR-193b*,Mitomycin C,1,train
+187,0,miR-194,Cisplatin,1,train
+187,1,miR-194,Gemcitabine,1,train
+187,5,miR-194,Doxorubicin,1,train
+187,14,miR-194,Carboplatin,1,train
+187,16,miR-194,Docetaxel,1,train
+187,18,miR-194,Vincristine,1,train
+187,84,miR-194,Mitomycin C,1,train
+188,0,miR-195,Cisplatin,1,train
+188,1,miR-195,Gemcitabine,1,train
+188,3,miR-195,Imatinib,1,train
+188,5,miR-195,Doxorubicin,1,train
+188,9,miR-195,Fluorouracil,1,train
+188,10,miR-195,Paclitaxel,1,train
+188,13,miR-195,Oxaliplatin,1,train
+188,16,miR-195,Docetaxel,1,train
+188,37,miR-195,Temozolomide,1,train
+188,51,miR-195,platinum-based doublet chemotherapy ,1,train
+189,0,miR-196a,Cisplatin,1,train
+189,3,miR-196a,Imatinib,1,train
+189,5,miR-196a,Doxorubicin,1,train
+189,7,miR-196a,Tamoxifen,1,train
+189,16,miR-196a,Docetaxel,1,train
+189,29,miR-196a,Verapamil,1,train
+189,34,miR-196a,Sorafenib,1,train
+189,97,miR-196a,Fulvestrant,1,train
+190,0,miR-196a-5p,Cisplatin,1,train
+190,1,miR-196a-5p,Gemcitabine,1,train
+191,1,miR-196b,Gemcitabine,1,train
+191,5,miR-196b,Doxorubicin,1,train
+191,29,miR-196b,Verapamil,1,train
+191,52,miR-196b,5-Fluorouracil,1,train
+192,7,miR-197,Tamoxifen,1,train
+192,9,miR-197,Fluorouracil,1,train
+192,10,miR-197,Paclitaxel,1,train
+192,13,miR-197,Oxaliplatin,1,train
+192,19,miR-197,Etoposide,1,train
+192,39,miR-197,Taxol,1,train
+193,0,miR-197-3p,Cisplatin,1,train
+193,6,miR-197-3p,Gefitinib,1,train
+193,10,miR-197-3p,Paclitaxel,1,train
+193,17,miR-197-3p,Adriamycin,1,train
+194,0,miR-1973,Cisplatin,1,train
+194,10,miR-1973,Paclitaxel,1,train
+195,1,miR-1976,Gemcitabine,1,train
+195,52,miR-1976,5-Fluorouracil,1,train
+196,0,miR-198,Cisplatin,1,train
+196,19,miR-198,Etoposide,1,train
+197,0,miR-199a,Cisplatin,1,train
+197,5,miR-199a,Doxorubicin,1,train
+197,7,miR-199a,Tamoxifen,1,train
+197,10,miR-199a,Paclitaxel,1,train
+197,29,miR-199a,Verapamil,1,train
+197,38,miR-199a,Cetuximab,1,train
+198,0,miR-199a-3p,Cisplatin,1,train
+198,5,miR-199a-3p,Doxorubicin,1,train
+198,14,miR-199a-3p,Carboplatin,1,train
+199,0,miR-199a-5p,Cisplatin,1,train
+199,38,miR-199a-5p,Cetuximab,1,train
+199,92,miR-199a-5p,histone deacetylase inhibitor,1,train
+200,0,miR-199b,Cisplatin,1,train
+200,3,miR-199b,Imatinib,1,train
+200,5,miR-199b,Doxorubicin,1,train
+200,13,miR-199b,Oxaliplatin,1,train
+200,29,miR-199b,Verapamil,1,train
+200,38,miR-199b,Cetuximab,1,train
+201,18,miR-199b*,Vincristine,1,train
+201,53,miR-199b*,Daunorubicin,1,train
+201,55,miR-199b*,Prednisolone,1,train
+202,0,miR-19a,Cisplatin,1,train
+202,1,miR-19a,Gemcitabine,1,train
+202,5,miR-19a,Doxorubicin,1,train
+202,6,miR-19a,Gefitinib,1,train
+202,9,miR-19a,Fluorouracil,1,train
+202,10,miR-19a,Paclitaxel,1,train
+202,13,miR-19a,Oxaliplatin,1,train
+202,14,miR-19a,Carboplatin,1,train
+202,17,miR-19a,Adriamycin,1,train
+202,18,miR-19a,Vincristine,1,train
+202,29,miR-19a,Verapamil,1,train
+202,31,miR-19a,Chemotherapy,1,train
+202,98,miR-19a,Leucovorin,1,train
+203,0,miR-19b,Cisplatin,1,train
+203,1,miR-19b,Gemcitabine,1,train
+203,5,miR-19b,Doxorubicin,1,train
+203,9,miR-19b,Fluorouracil,1,train
+203,17,miR-19b,Adriamycin,1,train
+203,18,miR-19b,Vincristine,1,train
+203,19,miR-19b,Etoposide,1,train
+203,29,miR-19b,Verapamil,1,train
+203,38,miR-19b,Cetuximab,1,train
+203,52,miR-19b,5-Fluorouracil,1,train
+204,1,miR-19b-1*,Gemcitabine,1,train
+204,5,miR-19b-1*,Doxorubicin,1,train
+204,29,miR-19b-1*,Verapamil,1,train
+204,52,miR-19b-1*,5-Fluorouracil,1,train
+205,7,miR-200,Tamoxifen,1,train
+205,10,miR-200,Paclitaxel,1,train
+205,14,miR-200,Carboplatin,1,train
+206,0,miR-200a,Cisplatin,1,train
+206,5,miR-200a,Doxorubicin,1,train
+206,7,miR-200a,Tamoxifen,1,train
+206,10,miR-200a,Paclitaxel,1,train
+206,13,miR-200a,Oxaliplatin,1,train
+206,29,miR-200a,Verapamil,1,train
+206,43,miR-200a,Curcumin,1,train
+207,0,miR-200b,Cisplatin,1,train
+207,5,miR-200b,Doxorubicin,1,train
+207,7,miR-200b,Tamoxifen,1,train
+207,13,miR-200b,Oxaliplatin,1,train
+207,16,miR-200b,Docetaxel,1,train
+207,18,miR-200b,Vincristine,1,train
+207,43,miR-200b,Curcumin,1,train
+208,0,miR-200c,Cisplatin,1,train
+208,5,miR-200c,Doxorubicin,1,train
+208,7,miR-200c,Tamoxifen,1,train
+208,10,miR-200c,Paclitaxel,1,train
+208,13,miR-200c,Oxaliplatin,1,train
+208,14,miR-200c,Carboplatin,1,train
+208,16,miR-200c,Docetaxel,1,train
+208,18,miR-200c,Vincristine,1,train
+208,27,miR-200c,Methotrexate,1,train
+208,29,miR-200c,Verapamil,1,train
+208,31,miR-200c,Chemotherapy,1,train
+208,42,miR-200c,Erlotinib,1,train
+208,52,miR-200c,5-Fluorouracil,1,train
+208,82,miR-200c,Cyclopamine,1,train
+209,1,miR-200c*,Gemcitabine,1,train
+209,52,miR-200c*,5-Fluorouracil,1,train
+210,5,miR-202,Doxorubicin,1,train
+210,19,miR-202,Etoposide,1,train
+211,0,miR-203,Cisplatin,1,train
+211,3,miR-203,Imatinib,1,train
+211,5,miR-203,Doxorubicin,1,train
+211,7,miR-203,Tamoxifen,1,train
+211,13,miR-203,Oxaliplatin,1,train
+211,18,miR-203,Vincristine,1,train
+211,38,miR-203,Cetuximab,1,train
+211,53,miR-203,Daunorubicin,1,train
+211,55,miR-203,Prednisolone,1,train
+212,0,miR-204,Cisplatin,1,train
+212,1,miR-204,Gemcitabine,1,train
+212,9,miR-204,Fluorouracil,1,train
+212,67,miR-204,Cyclophosphamide,1,train
+213,9,miR-204-5p,Fluorouracil,1,train
+214,0,miR-205,Cisplatin,1,train
+214,1,miR-205,Gemcitabine,1,train
+214,5,miR-205,Doxorubicin,1,train
+214,10,miR-205,Paclitaxel,1,train
+214,13,miR-205,Oxaliplatin,1,train
+214,16,miR-205,Docetaxel,1,train
+214,29,miR-205,Verapamil,1,train
+214,52,miR-205,5-Fluorouracil,1,train
+215,0,miR-206,Cisplatin,1,train
+215,5,miR-206,Doxorubicin,1,train
+215,9,miR-206,Fluorouracil,1,train
+215,13,miR-206,Oxaliplatin,1,train
+215,29,miR-206,Verapamil,1,train
+215,34,miR-206,Sorafenib,1,train
+215,99,miR-206,Euthyrox,1,train
+216,0,miR-20a,Cisplatin,1,train
+216,1,miR-20a,Gemcitabine,1,train
+216,5,miR-20a,Doxorubicin,1,train
+216,13,miR-20a,Oxaliplatin,1,train
+216,16,miR-20a,Docetaxel,1,train
+216,17,miR-20a,Adriamycin,1,train
+216,18,miR-20a,Vincristine,1,train
+216,19,miR-20a,Etoposide,1,train
+216,52,miR-20a,5-Fluorouracil,1,train
+217,5,miR-20a-5p,Doxorubicin,1,train
+217,19,miR-20a-5p,Etoposide,1,train
+218,0,miR-20b,Cisplatin,1,train
+218,1,miR-20b,Gemcitabine,1,train
+218,10,miR-20b,Paclitaxel,1,train
+218,13,miR-20b,Oxaliplatin,1,train
+218,39,miR-20b,Taxol,1,train
+218,52,miR-20b,5-Fluorouracil,1,train
+219,5,miR-20b*,Doxorubicin,1,train
+219,7,miR-20b*,Tamoxifen,1,train
+219,10,miR-20b*,Paclitaxel,1,train
+220,0,miR-21,Cisplatin,1,train
+220,1,miR-21,Gemcitabine,1,train
+220,5,miR-21,Doxorubicin,1,train
+220,6,miR-21,Gefitinib,1,train
+220,7,miR-21,Tamoxifen,1,train
+220,8,miR-21,Trastuzumab,1,train
+220,9,miR-21,Fluorouracil,1,train
+220,10,miR-21,Paclitaxel,1,train
+220,13,miR-21,Oxaliplatin,1,train
+220,16,miR-21,Docetaxel,1,train
+220,17,miR-21,Adriamycin,1,train
+220,18,miR-21,Vincristine,1,train
+220,19,miR-21,Etoposide,1,train
+220,29,miR-21,Verapamil,1,train
+220,31,miR-21,Chemotherapy,1,train
+220,34,miR-21,Sorafenib,1,train
+220,37,miR-21,Temozolomide,1,train
+220,38,miR-21,Cetuximab,1,train
+220,43,miR-21,Curcumin,1,train
+220,52,miR-21,5-Fluorouracil,1,train
+220,53,miR-21,Daunorubicin,1,train
+220,65,miR-21,Prednisone,1,train
+220,67,miR-21,Cyclophosphamide,1,train
+220,83,miR-21,Interferon-alpha,1,train
+220,86,miR-21,Arsenic trioxide,1,train
+220,101,miR-21,Arsenic Trioxide,1,train
+220,102,miR-21,Betulinic acid,1,train
+220,103,miR-21,Carmustine,1,train
+220,104,miR-21,Dibenziodolium,1,train
+220,106,miR-21,Pingyangmycin,1,train
+221,5,miR-21*,Doxorubicin,1,train
+221,7,miR-21*,Tamoxifen,1,train
+221,66,miR-21*,Paroxetine,1,train
+222,9,miR-21-5p,Fluorouracil,1,train
+222,13,miR-21-5p,Oxaliplatin,1,train
+223,0,miR-210,Cisplatin,1,train
+223,1,miR-210,Gemcitabine,1,train
+223,3,miR-210,Imatinib,1,train
+223,5,miR-210,Doxorubicin,1,train
+223,8,miR-210,Trastuzumab,1,train
+223,10,miR-210,Paclitaxel,1,train
+223,16,miR-210,Docetaxel,1,train
+223,27,miR-210,Methotrexate,1,train
+223,37,miR-210,Temozolomide,1,train
+223,52,miR-210,5-Fluorouracil,1,train
+224,0,miR-211,Cisplatin,1,train
+224,5,miR-211,Doxorubicin,1,train
+225,3,miR-212,Imatinib,1,train
+225,5,miR-212,Doxorubicin,1,train
+225,16,miR-212,Docetaxel,1,train
+225,38,miR-212,Cetuximab,1,train
+226,7,miR-213,Tamoxifen,1,train
+226,10,miR-213,Paclitaxel,1,train
+227,0,miR-214,Cisplatin,1,train
+227,1,miR-214,Gemcitabine,1,train
+227,3,miR-214,Imatinib,1,train
+227,5,miR-214,Doxorubicin,1,train
+227,6,miR-214,Gefitinib,1,train
+227,10,miR-214,Paclitaxel,1,train
+227,13,miR-214,Oxaliplatin,1,train
+227,17,miR-214,Adriamycin,1,train
+228,5,miR-214*,Doxorubicin,1,train
+228,18,miR-214*,Vincristine,1,train
+228,29,miR-214*,Verapamil,1,train
+228,65,miR-214*,Prednisone,1,train
+229,0,miR-215,Cisplatin,1,train
+229,5,miR-215,Doxorubicin,1,train
+229,18,miR-215,Vincristine,1,train
+229,27,miR-215,Methotrexate,1,train
+229,31,miR-215,Chemotherapy,1,train
+229,49,miR-215,Capecitabine,1,train
+229,52,miR-215,5-Fluorouracil,1,train
+229,107,miR-215,Raltitrexed,1,train
+229,108,miR-215,Tomudex,1,train
+230,0,miR-216,Cisplatin,1,train
+230,13,miR-216,Oxaliplatin,1,train
+230,52,miR-216,5-Fluorouracil,1,train
+231,0,miR-216a,Cisplatin,1,train
+231,5,miR-216a,Doxorubicin,1,train
+231,29,miR-216a,Verapamil,1,train
+231,34,miR-216a,Sorafenib,1,train
+232,5,miR-216b,Doxorubicin,1,train
+232,13,miR-216b,Oxaliplatin,1,train
+232,29,miR-216b,Verapamil,1,train
+233,7,miR-217,Tamoxifen,1,train
+233,10,miR-217,Paclitaxel,1,train
+233,14,miR-217,Carboplatin,1,train
+233,19,miR-217,Etoposide,1,train
+233,34,miR-217,Sorafenib,1,train
+233,109,miR-217,Lapatinib,1,train
+234,0,miR-218,Cisplatin,1,train
+234,1,miR-218,Gemcitabine,1,train
+234,10,miR-218,Paclitaxel,1,train
+234,13,miR-218,Oxaliplatin,1,train
+234,18,miR-218,Vincristine,1,train
+234,19,miR-218,Etoposide,1,train
+234,52,miR-218,5-Fluorouracil,1,train
+235,5,miR-219,Doxorubicin,1,train
+235,29,miR-219,Verapamil,1,train
+236,10,miR-219-2,Paclitaxel,1,train
+236,38,miR-219-2,Cetuximab,1,train
+237,0,miR-22,Cisplatin,1,train
+237,1,miR-22,Gemcitabine,1,train
+237,5,miR-22,Doxorubicin,1,train
+237,6,miR-22,Gefitinib,1,train
+237,10,miR-22,Paclitaxel,1,train
+237,14,miR-22,Carboplatin,1,train
+237,18,miR-22,Vincristine,1,train
+237,31,miR-22,Chemotherapy,1,train
+237,84,miR-22,Mitomycin C,1,train
+237,110,miR-22,Pemetrexed,1,train
+238,1,miR-22*,Gemcitabine,1,train
+238,52,miR-22*,5-Fluorouracil,1,train
+239,0,miR-22-3p,Cisplatin,1,train
+239,1,miR-22-3p,Gemcitabine,1,train
+239,10,miR-22-3p,Paclitaxel,1,train
+239,17,miR-22-3p,Adriamycin,1,train
+239,28,miR-22-3p,Pirarubicin,1,train
+239,96,miR-22-3p,Epirubicin hydrochloride,1,train
+239,111,miR-22-3p,10-hydroxycamptothecin,1,train
+240,5,miR-220,Doxorubicin,1,train
+240,29,miR-220,Verapamil,1,train
+241,0,miR-221,Cisplatin,1,train
+241,1,miR-221,Gemcitabine,1,train
+241,5,miR-221,Doxorubicin,1,train
+241,6,miR-221,Gefitinib,1,train
+241,7,miR-221,Tamoxifen,1,train
+241,8,miR-221,Trastuzumab,1,train
+241,10,miR-221,Paclitaxel,1,train
+241,13,miR-221,Oxaliplatin,1,train
+241,17,miR-221,Adriamycin,1,train
+241,29,miR-221,Verapamil,1,train
+241,31,miR-221,Chemotherapy,1,train
+241,34,miR-221,Sorafenib,1,train
+241,35,miR-221,Melphalan,1,train
+241,38,miR-221,Cetuximab,1,train
+241,91,miR-221,Fludarabine,1,train
+241,97,miR-221,Fulvestrant,1,train
+241,103,miR-221,Carmustine,1,train
+242,1,miR-221*,Gemcitabine,1,train
+242,52,miR-221*,5-Fluorouracil,1,train
+243,0,miR-222,Cisplatin,1,train
+243,1,miR-222,Gemcitabine,1,train
+243,5,miR-222,Doxorubicin,1,train
+243,6,miR-222,Gefitinib,1,train
+243,7,miR-222,Tamoxifen,1,train
+243,9,miR-222,Fluorouracil,1,train
+243,13,miR-222,Oxaliplatin,1,train
+243,16,miR-222,Docetaxel,1,train
+243,17,miR-222,Adriamycin,1,train
+243,18,miR-222,Vincristine,1,train
+243,34,miR-222,Sorafenib,1,train
+243,35,miR-222,Melphalan,1,train
+243,52,miR-222,5-Fluorouracil,1,train
+243,97,miR-222,Fulvestrant,1,train
+244,1,miR-222*,Gemcitabine,1,train
+244,52,miR-222*,5-Fluorouracil,1,train
+245,0,miR-223,Cisplatin,1,train
+245,1,miR-223,Gemcitabine,1,train
+245,5,miR-223,Doxorubicin,1,train
+245,8,miR-223,Trastuzumab,1,train
+245,37,miR-223,Temozolomide,1,train
+245,42,miR-223,Erlotinib,1,train
+245,76,miR-223,Platinum,1,train
+245,114,miR-223,DAPT,1,train
+245,115,miR-223,modified ALLIC BFM 2002 protocol,1,train
+246,0,miR-224,Cisplatin,1,train
+246,3,miR-224,Imatinib,1,train
+246,5,miR-224,Doxorubicin,1,train
+246,13,miR-224,Oxaliplatin,1,train
+246,17,miR-224,Adriamycin,1,train
+246,18,miR-224,Vincristine,1,train
+246,27,miR-224,Methotrexate,1,train
+246,34,miR-224,Sorafenib,1,train
+246,65,miR-224,Prednisone,1,train
+246,116,miR-224,5-fluorouracil,1,train
+247,5,miR-2277,Doxorubicin,1,train
+247,10,miR-2277,Paclitaxel,1,train
+248,0,miR-23a,Cisplatin,1,train
+248,5,miR-23a,Doxorubicin,1,train
+248,14,miR-23a,Carboplatin,1,train
+248,18,miR-23a,Vincristine,1,train
+248,31,miR-23a,Chemotherapy,1,train
+248,84,miR-23a,Mitomycin C,1,train
+248,115,miR-23a,modified ALLIC BFM 2002 protocol,1,train
+248,116,miR-23a,5-fluorouracil,1,train
+249,10,miR-23b,Paclitaxel,1,train
+249,19,miR-23b,Etoposide,1,train
+249,51,miR-23b,platinum-based doublet chemotherapy ,1,train
+249,82,miR-23b,Cyclopamine,1,train
+250,0,miR-23b-3p,Cisplatin,1,train
+250,9,miR-23b-3p,Fluorouracil,1,train
+251,0,miR-24,Cisplatin,1,train
+251,13,miR-24,Oxaliplatin,1,train
+251,16,miR-24,Docetaxel,1,train
+251,51,miR-24,platinum-based doublet chemotherapy ,1,train
+251,52,miR-24,5-Fluorouracil,1,train
+252,0,miR-25,Cisplatin,1,train
+252,1,miR-25,Gemcitabine,1,train
+252,3,miR-25,Imatinib,1,train
+252,5,miR-25,Doxorubicin,1,train
+252,13,miR-25,Oxaliplatin,1,train
+252,29,miR-25,Verapamil,1,train
+252,31,miR-25,Chemotherapy,1,train
+252,52,miR-25,5-Fluorouracil,1,train
+253,0,miR-25*,Cisplatin,1,train
+253,1,miR-25*,Gemcitabine,1,train
+253,5,miR-25*,Doxorubicin,1,train
+253,18,miR-25*,Vincristine,1,train
+253,52,miR-25*,5-Fluorouracil,1,train
+254,0,miR-26a,Cisplatin,1,train
+254,5,miR-26a,Doxorubicin,1,train
+254,6,miR-26a,Gefitinib,1,train
+254,7,miR-26a,Tamoxifen,1,train
+254,13,miR-26a,Oxaliplatin,1,train
+254,16,miR-26a,Docetaxel,1,train
+254,29,miR-26a,Verapamil,1,train
+254,38,miR-26a,Cetuximab,1,train
+254,51,miR-26a,platinum-based doublet chemotherapy ,1,train
+254,52,miR-26a,5-Fluorouracil,1,train
+255,5,miR-26a-MM1,Doxorubicin,1,train
+255,29,miR-26a-MM1,Verapamil,1,train
+256,0,miR-26b,Cisplatin,1,train
+256,5,miR-26b,Doxorubicin,1,train
+256,13,miR-26b,Oxaliplatin,1,train
+256,14,miR-26b,Carboplatin,1,train
+256,16,miR-26b,Docetaxel,1,train
+256,18,miR-26b,Vincristine,1,train
+256,19,miR-26b,Etoposide,1,train
+256,31,miR-26b,Chemotherapy,1,train
+256,52,miR-26b,5-Fluorouracil,1,train
+256,84,miR-26b,Mitomycin C,1,train
+257,13,miR-275,Oxaliplatin,1,train
+257,18,miR-275,Vincristine,1,train
+258,0,miR-27a,Cisplatin,1,train
+258,5,miR-27a,Doxorubicin,1,train
+258,10,miR-27a,Paclitaxel,1,train
+258,16,miR-27a,Docetaxel,1,train
+258,17,miR-27a,Adriamycin,1,train
+258,18,miR-27a,Vincristine,1,train
+258,39,miR-27a,Taxol,1,train
+258,52,miR-27a,5-Fluorouracil,1,train
+259,0,miR-27b,Cisplatin,1,train
+259,3,miR-27b,Imatinib,1,train
+259,5,miR-27b,Doxorubicin,1,train
+259,7,miR-27b,Tamoxifen,1,train
+259,9,miR-27b,Fluorouracil,1,train
+259,14,miR-27b,Carboplatin,1,train
+259,16,miR-27b,Docetaxel,1,train
+259,17,miR-27b,Adriamycin,1,train
+259,18,miR-27b,Vincristine,1,train
+259,27,miR-27b,Methotrexate,1,train
+259,38,miR-27b,Cetuximab,1,train
+259,51,miR-27b,platinum-based doublet chemotherapy ,1,train
+259,67,miR-27b,Cyclophosphamide,1,train
+259,84,miR-27b,Mitomycin C,1,train
+260,0,miR-27b ,Cisplatin,1,train
+260,5,miR-27b ,Doxorubicin,1,train
+260,14,miR-27b ,Carboplatin,1,train
+260,84,miR-27b ,Mitomycin C,1,train
+261,1,miR-28,Gemcitabine,1,train
+261,5,miR-28,Doxorubicin,1,train
+261,10,miR-28,Paclitaxel,1,train
+261,29,miR-28,Verapamil,1,train
+262,1,miR-2861,Gemcitabine,1,train
+262,26,miR-2861,Bortezomib,1,train
+262,52,miR-2861,5-Fluorouracil,1,train
+263,0,miR-296,Cisplatin,1,train
+263,5,miR-296,Doxorubicin,1,train
+263,10,miR-296,Paclitaxel,1,train
+263,18,miR-296,Vincristine,1,train
+263,38,miR-296,Cetuximab,1,train
+263,49,miR-296,Capecitabine,1,train
+263,52,miR-296,5-Fluorouracil,1,train
+264,5,miR-298,Doxorubicin,1,train
+264,19,miR-298,Etoposide,1,train
+265,5,miR-299,Doxorubicin,1,train
+265,6,miR-299,Gefitinib,1,train
+265,29,miR-299,Verapamil,1,train
+266,0,miR-29a,Cisplatin,1,train
+266,5,miR-29a,Doxorubicin,1,train
+266,10,miR-29a,Paclitaxel,1,train
+266,13,miR-29a,Oxaliplatin,1,train
+266,16,miR-29a,Docetaxel,1,train
+266,17,miR-29a,Adriamycin,1,train
+266,19,miR-29a,Etoposide,1,train
+266,39,miR-29a,Taxol,1,train
+266,91,miR-29a,Fludarabine,1,train
+267,5,miR-29a*,Doxorubicin,1,train
+267,29,miR-29a*,Verapamil,1,train
+268,0,miR-29b,Cisplatin,1,train
+268,1,miR-29b,Gemcitabine,1,train
+268,3,miR-29b,Imatinib,1,train
+268,5,miR-29b,Doxorubicin,1,train
+268,10,miR-29b,Paclitaxel,1,train
+268,13,miR-29b,Oxaliplatin,1,train
+268,19,miR-29b,Etoposide,1,train
+268,82,miR-29b,Cyclopamine,1,train
+268,118,miR-29b,Ethanol,1,train
+269,1,miR-29b-1*,Gemcitabine,1,train
+269,52,miR-29b-1*,5-Fluorouracil,1,train
+270,5,miR-29b-2*,Doxorubicin,1,train
+270,18,miR-29b-2*,Vincristine,1,train
+270,49,miR-29b-2*,Capecitabine,1,train
+270,52,miR-29b-2*,5-Fluorouracil,1,train
+270,65,miR-29b-2*,Prednisone,1,train
+271,0,miR-29c,Cisplatin,1,train
+271,1,miR-29c,Gemcitabine,1,train
+271,5,miR-29c,Doxorubicin,1,train
+271,10,miR-29c,Paclitaxel,1,train
+271,13,miR-29c,Oxaliplatin,1,train
+271,19,miR-29c,Etoposide,1,train
+271,29,miR-29c,Verapamil,1,train
+271,38,miR-29c,Cetuximab,1,train
+271,51,miR-29c,platinum-based doublet chemotherapy ,1,train
+271,52,miR-29c,5-Fluorouracil,1,train
+272,0,miR-300,Cisplatin,1,train
+272,7,miR-300,Tamoxifen,1,train
+273,0,miR-301a,Cisplatin,1,train
+273,1,miR-301a,Gemcitabine,1,train
+273,3,miR-301a,Imatinib,1,train
+273,5,miR-301a,Doxorubicin,1,train
+273,10,miR-301a,Paclitaxel,1,train
+273,16,miR-301a,Docetaxel,1,train
+273,17,miR-301a,Adriamycin,1,train
+274,1,miR-301b,Gemcitabine,1,train
+274,5,miR-301b,Doxorubicin,1,train
+274,16,miR-301b,Docetaxel,1,train
+274,29,miR-301b,Verapamil,1,train
+274,52,miR-301b,5-Fluorouracil,1,train
+275,5,miR-302a,Doxorubicin,1,train
+275,29,miR-302a,Verapamil,1,train
+276,0,miR-302b,Cisplatin,1,train
+276,5,miR-302b,Doxorubicin,1,train
+277,0,miR-302c,Cisplatin,1,train
+277,5,miR-302c,Doxorubicin,1,train
+277,29,miR-302c,Verapamil,1,train
+278,5,miR-302c*,Doxorubicin,1,train
+278,29,miR-302c*,Verapamil,1,train
+279,1,miR-3065,Gemcitabine,1,train
+279,51,miR-3065,platinum-based doublet chemotherapy ,1,train
+279,52,miR-3065,5-Fluorouracil,1,train
+280,1,miR-30a,Gemcitabine,1,train
+280,3,miR-30a,Imatinib,1,train
+280,5,miR-30a,Doxorubicin,1,train
+280,10,miR-30a,Paclitaxel,1,train
+280,13,miR-30a,Oxaliplatin,1,train
+280,16,miR-30a,Docetaxel,1,train
+280,31,miR-30a,Chemotherapy,1,train
+281,5,miR-30a*,Doxorubicin,1,train
+281,29,miR-30a*,Verapamil,1,train
+282,0,miR-30b,Cisplatin,1,train
+282,3,miR-30b,Imatinib,1,train
+282,5,miR-30b,Doxorubicin,1,train
+282,6,miR-30b,Gefitinib,1,train
+282,10,miR-30b,Paclitaxel,1,train
+282,13,miR-30b,Oxaliplatin,1,train
+282,14,miR-30b,Carboplatin,1,train
+282,52,miR-30b,5-Fluorouracil,1,train
+282,66,miR-30b,Paroxetine,1,train
+282,84,miR-30b,Mitomycin C,1,train
+283,5,miR-30b*,Doxorubicin,1,train
+283,29,miR-30b*,Verapamil,1,train
+283,66,miR-30b*,Paroxetine,1,train
+284,3,miR-30c,Imatinib,1,train
+284,5,miR-30c,Doxorubicin,1,train
+284,6,miR-30c,Gefitinib,1,train
+284,10,miR-30c,Paclitaxel,1,train
+284,13,miR-30c,Oxaliplatin,1,train
+284,51,miR-30c,platinum-based doublet chemotherapy ,1,train
+284,82,miR-30c,Cyclopamine,1,train
+285,0,miR-30d,Cisplatin,1,train
+285,13,miR-30d,Oxaliplatin,1,train
+285,16,miR-30d,Docetaxel,1,train
+285,19,miR-30d,Etoposide,1,train
+285,52,miR-30d,5-Fluorouracil,1,train
+285,66,miR-30d,Paroxetine,1,train
+285,92,miR-30d,histone deacetylase inhibitor,1,train
+286,5,miR-30d*,Doxorubicin,1,train
+286,29,miR-30d*,Verapamil,1,train
+287,0,miR-30e,Cisplatin,1,train
+287,5,miR-30e,Doxorubicin,1,train
+287,13,miR-30e,Oxaliplatin,1,train
+287,16,miR-30e,Docetaxel,1,train
+287,29,miR-30e,Verapamil,1,train
+287,51,miR-30e,platinum-based doublet chemotherapy ,1,train
+288,5,miR-30e*,Doxorubicin,1,train
+288,29,miR-30e*,Verapamil,1,train
+289,0,miR-31,Cisplatin,1,train
+289,5,miR-31,Doxorubicin,1,train
+289,6,miR-31,Gefitinib,1,train
+289,9,miR-31,Fluorouracil,1,train
+289,13,miR-31,Oxaliplatin,1,train
+289,16,miR-31,Docetaxel,1,train
+289,19,miR-31,Etoposide,1,train
+289,29,miR-31,Verapamil,1,train
+289,52,miR-31,5-Fluorouracil,1,train
+290,1,miR-31*,Gemcitabine,1,train
+290,5,miR-31*,Doxorubicin,1,train
+290,29,miR-31*,Verapamil,1,train
+290,52,miR-31*,5-Fluorouracil,1,train
+291,1,miR-3126,Gemcitabine,1,train
+291,52,miR-3126,5-Fluorouracil,1,train
+292,2,miR-3127,Dasatinib,1,train
+292,10,miR-3127,Paclitaxel,1,train
+293,1,miR-3130,Gemcitabine,1,train
+293,52,miR-3130,5-Fluorouracil,1,train
+294,1,miR-3141,Gemcitabine,1,train
+294,52,miR-3141,5-Fluorouracil,1,train
+295,1,miR-3147,Gemcitabine,1,train
+295,52,miR-3147,5-Fluorouracil,1,train
+296,1,miR-3154,Gemcitabine,1,train
+296,52,miR-3154,5-Fluorouracil,1,train
+297,1,miR-3173,Gemcitabine,1,train
+297,52,miR-3173,5-Fluorouracil,1,train
+298,1,miR-3177,Gemcitabine,1,train
+298,52,miR-3177,5-Fluorouracil,1,train
+299,1,miR-3178,Gemcitabine,1,train
+299,52,miR-3178,5-Fluorouracil,1,train
+300,1,miR-3180,Gemcitabine,1,train
+300,52,miR-3180,5-Fluorouracil,1,train
+301,1,miR-3184,Gemcitabine,1,train
+301,52,miR-3184,5-Fluorouracil,1,train
+302,1,miR-3186,Gemcitabine,1,train
+302,5,miR-3186,Doxorubicin,1,train
+302,52,miR-3186,5-Fluorouracil,1,train
+303,1,miR-3187,Gemcitabine,1,train
+303,52,miR-3187,5-Fluorouracil,1,train
+304,1,miR-3193,Gemcitabine,1,train
+304,52,miR-3193,5-Fluorouracil,1,train
+305,1,miR-3195,Gemcitabine,1,train
+305,52,miR-3195,5-Fluorouracil,1,train
+306,10,miR-3196,Paclitaxel,1,train
+306,26,miR-3196,Bortezomib,1,train
+307,1,miR-32,Gemcitabine,1,train
+307,5,miR-32,Doxorubicin,1,train
+307,10,miR-32,Paclitaxel,1,train
+307,29,miR-32,Verapamil,1,train
+307,71,miR-32,Cytarabine,1,train
+308,5,miR-320,Doxorubicin,1,train
+308,19,miR-320,Etoposide,1,train
+308,27,miR-320,Methotrexate,1,train
+308,29,miR-320,Verapamil,1,train
+309,1,miR-3200,Gemcitabine,1,train
+309,52,miR-3200,5-Fluorouracil,1,train
+310,0,miR-320a,Cisplatin,1,train
+310,3,miR-320a,Imatinib,1,train
+310,5,miR-320a,Doxorubicin,1,train
+310,7,miR-320a,Tamoxifen,1,train
+310,9,miR-320a,Fluorouracil,1,train
+310,13,miR-320a,Oxaliplatin,1,train
+311,1,miR-320c,Gemcitabine,1,train
+311,13,miR-320c,Oxaliplatin,1,train
+312,0,miR-320d,Cisplatin,1,train
+312,5,miR-320d,Doxorubicin,1,train
+312,13,miR-320d,Oxaliplatin,1,train
+312,16,miR-320d,Docetaxel,1,train
+313,1,miR-324,Gemcitabine,1,train
+313,3,miR-324,Imatinib,1,train
+313,7,miR-324,Tamoxifen,1,train
+313,13,miR-324,Oxaliplatin,1,train
+313,52,miR-324,5-Fluorouracil,1,train
+314,1,miR-328,Gemcitabine,1,train
+314,3,miR-328,Imatinib,1,train
+314,5,miR-328,Doxorubicin,1,train
+314,20,miR-328,Mitoxantrone,1,train
+314,51,miR-328,platinum-based doublet chemotherapy ,1,train
+314,52,miR-328,5-Fluorouracil,1,train
+314,66,miR-328,Paroxetine,1,train
+315,1,miR-330,Gemcitabine,1,train
+315,5,miR-330,Doxorubicin,1,train
+315,7,miR-330,Tamoxifen,1,train
+315,10,miR-330,Paclitaxel,1,train
+315,19,miR-330,Etoposide,1,train
+315,29,miR-330,Verapamil,1,train
+315,52,miR-330,5-Fluorouracil,1,train
+316,0,miR-331,Cisplatin,1,train
+316,5,miR-331,Doxorubicin,1,train
+316,7,miR-331,Tamoxifen,1,train
+316,29,miR-331,Verapamil,1,train
+316,51,miR-331,platinum-based doublet chemotherapy ,1,train
+317,0,miR-335,Cisplatin,1,train
+317,3,miR-335,Imatinib,1,train
+317,5,miR-335,Doxorubicin,1,train
+317,17,miR-335,Adriamycin,1,train
+317,18,miR-335,Vincristine,1,train
+317,19,miR-335,Etoposide,1,train
+317,53,miR-335,Daunorubicin,1,train
+317,55,miR-335,Prednisolone,1,train
+317,71,miR-335,Cytarabine,1,train
+317,119,miR-335,chemotherapy,1,train
+318,1,miR-338,Gemcitabine,1,train
+318,5,miR-338,Doxorubicin,1,train
+318,13,miR-338,Oxaliplatin,1,train
+318,52,miR-338,5-Fluorouracil,1,train
+318,56,miR-338,10-Hydroxycamptothecin,1,train
+319,0,miR-339,Cisplatin,1,train
+319,1,miR-339,Gemcitabine,1,train
+319,5,miR-339,Doxorubicin,1,train
+319,7,miR-339,Tamoxifen,1,train
+319,16,miR-339,Docetaxel,1,train
+319,29,miR-339,Verapamil,1,train
+319,38,miR-339,Cetuximab,1,train
+319,52,miR-339,5-Fluorouracil,1,train
+320,0,miR-33a,Cisplatin,1,train
+320,5,miR-33a,Doxorubicin,1,train
+320,29,miR-33a,Verapamil,1,train
+321,1,miR-33a*,Gemcitabine,1,train
+321,5,miR-33a*,Doxorubicin,1,train
+321,29,miR-33a*,Verapamil,1,train
+321,52,miR-33a*,5-Fluorouracil,1,train
+322,5,miR-33b,Doxorubicin,1,train
+322,26,miR-33b,Bortezomib,1,train
+322,29,miR-33b,Verapamil,1,train
+322,31,miR-33b,Chemotherapy,1,train
+323,0,miR-340,Cisplatin,1,train
+323,16,miR-340,Docetaxel,1,train
+324,5,miR-342,Doxorubicin,1,train
+324,7,miR-342,Tamoxifen,1,train
+324,10,miR-342,Paclitaxel,1,train
+324,13,miR-342,Oxaliplatin,1,train
+324,16,miR-342,Docetaxel,1,train
+325,5,miR-345,Doxorubicin,1,train
+325,7,miR-345,Tamoxifen,1,train
+325,29,miR-345,Verapamil,1,train
+325,34,miR-345,Sorafenib,1,train
+326,1,miR-346,Gemcitabine,1,train
+326,10,miR-346,Paclitaxel,1,train
+326,52,miR-346,5-Fluorouracil,1,train
+327,0,miR-34a,Cisplatin,1,train
+327,1,miR-34a,Gemcitabine,1,train
+327,5,miR-34a,Doxorubicin,1,train
+327,7,miR-34a,Tamoxifen,1,train
+327,9,miR-34a,Fluorouracil,1,train
+327,10,miR-34a,Paclitaxel,1,train
+327,13,miR-34a,Oxaliplatin,1,train
+327,16,miR-34a,Docetaxel,1,train
+327,17,miR-34a,Adriamycin,1,train
+327,29,miR-34a,Verapamil,1,train
+327,45,miR-34a,Camptothecin,1,train
+327,51,miR-34a,platinum-based doublet chemotherapy ,1,train
+327,82,miR-34a,Cyclopamine,1,train
+328,0,miR-34a-5p,Cisplatin,1,train
+328,5,miR-34a-5p,Doxorubicin,1,train
+328,14,miR-34a-5p,Carboplatin,1,train
+328,19,miR-34a-5p,Etoposide,1,train
+328,27,miR-34a-5p,Methotrexate,1,train
+329,5,miR-34b,Doxorubicin,1,train
+329,13,miR-34b,Oxaliplatin,1,train
+329,16,miR-34b,Docetaxel,1,train
+329,29,miR-34b,Verapamil,1,train
+329,51,miR-34b,platinum-based doublet chemotherapy ,1,train
+330,0,miR-34c,Cisplatin,1,train
+330,1,miR-34c,Gemcitabine,1,train
+330,3,miR-34c,Imatinib,1,train
+330,5,miR-34c,Doxorubicin,1,train
+330,10,miR-34c,Paclitaxel,1,train
+331,0,miR-3607,Cisplatin,1,train
+332,1,miR-361,Gemcitabine,1,train
+332,5,miR-361,Doxorubicin,1,train
+332,7,miR-361,Tamoxifen,1,train
+332,13,miR-361,Oxaliplatin,1,train
+332,27,miR-361,Methotrexate,1,train
+332,29,miR-361,Verapamil,1,train
+332,51,miR-361,platinum-based doublet chemotherapy ,1,train
+332,52,miR-361,5-Fluorouracil,1,train
+333,1,miR-3619,Gemcitabine,1,train
+333,52,miR-3619,5-Fluorouracil,1,train
+334,0,miR-362,Cisplatin,1,train
+334,1,miR-362,Gemcitabine,1,train
+334,3,miR-362,Imatinib,1,train
+334,5,miR-362,Doxorubicin,1,train
+334,52,miR-362,5-Fluorouracil,1,train
+335,0,miR-3621,Cisplatin,1,train
+335,1,miR-3621,Gemcitabine,1,train
+335,52,miR-3621,5-Fluorouracil,1,train
+336,0,miR-363,Cisplatin,1,train
+336,9,miR-363,Fluorouracil,1,train
+336,10,miR-363,Paclitaxel,1,train
+336,16,miR-363,Docetaxel,1,train
+336,31,miR-363,Chemotherapy,1,train
+336,93,miR-363,intensive induction chemotherapy based on cytarabine and idarubicine,1,train
+337,0,miR-363*,Cisplatin,1,train
+337,52,miR-363*,5-Fluorouracil,1,train
+337,66,miR-363*,Paroxetine,1,train
+338,1,miR-3647,Gemcitabine,1,train
+338,52,miR-3647,5-Fluorouracil,1,train
+339,0,miR-365,Cisplatin,1,train
+339,1,miR-365,Gemcitabine,1,train
+339,3,miR-365,Imatinib,1,train
+339,7,miR-365,Tamoxifen,1,train
+339,27,miR-365,Methotrexate,1,train
+339,52,miR-365,5-Fluorouracil,1,train
+339,56,miR-365,10-Hydroxycamptothecin,1,train
+340,0,miR-3651,Cisplatin,1,train
+341,0,miR-3653,Cisplatin,1,train
+342,1,miR-3665,Gemcitabine,1,train
+342,52,miR-3665,5-Fluorouracil,1,train
+343,5,miR-367,Doxorubicin,1,train
+343,10,miR-367,Paclitaxel,1,train
+343,29,miR-367,Verapamil,1,train
+344,1,miR-3676,Gemcitabine,1,train
+344,52,miR-3676,5-Fluorouracil,1,train
+345,1,miR-3682,Gemcitabine,1,train
+345,52,miR-3682,5-Fluorouracil,1,train
+346,0,miR-3687,Cisplatin,1,train
+346,1,miR-3687,Gemcitabine,1,train
+346,52,miR-3687,5-Fluorouracil,1,train
+347,1,miR-369,Gemcitabine,1,train
+347,5,miR-369,Doxorubicin,1,train
+347,29,miR-369,Verapamil,1,train
+348,0,miR-370,Cisplatin,1,train
+348,1,miR-370,Gemcitabine,1,train
+348,5,miR-370,Doxorubicin,1,train
+348,29,miR-370,Verapamil,1,train
+348,52,miR-370,5-Fluorouracil,1,train
+349,0,miR-371,Cisplatin,1,train
+349,1,miR-371,Gemcitabine,1,train
+349,16,miR-371,Docetaxel,1,train
+349,52,miR-371,5-Fluorouracil,1,train
+349,56,miR-371,10-Hydroxycamptothecin,1,train
+350,0,miR-372,Cisplatin,1,train
+350,1,miR-372,Gemcitabine,1,train
+350,13,miR-372,Oxaliplatin,1,train
+350,52,miR-372,5-Fluorouracil,1,train
+350,56,miR-372,10-Hydroxycamptothecin,1,train
+351,0,miR-373,Cisplatin,1,train
+351,1,miR-373,Gemcitabine,1,train
+351,5,miR-373,Doxorubicin,1,train
+351,10,miR-373,Paclitaxel,1,train
+351,29,miR-373,Verapamil,1,train
+351,56,miR-373,10-Hydroxycamptothecin,1,train
+351,82,miR-373,Cyclopamine,1,train
+352,0,miR-373*,Cisplatin,1,train
+352,5,miR-373*,Doxorubicin,1,train
+352,29,miR-373*,Verapamil,1,train
+353,0,miR-374a,Cisplatin,1,train
+353,6,miR-374a,Gefitinib,1,train
+353,7,miR-374a,Tamoxifen,1,train
+354,5,miR-374a*,Doxorubicin,1,train
+354,29,miR-374a*,Verapamil,1,train
+355,0,miR-374b,Cisplatin,1,train
+355,1,miR-374b,Gemcitabine,1,train
+355,7,miR-374b,Tamoxifen,1,train
+355,34,miR-374b,Sorafenib,1,train
+356,0,miR-375,Cisplatin,1,train
+356,5,miR-375,Doxorubicin,1,train
+356,6,miR-375,Gefitinib,1,train
+356,7,miR-375,Tamoxifen,1,train
+356,8,miR-375,Trastuzumab,1,train
+356,10,miR-375,Paclitaxel,1,train
+356,13,miR-375,Oxaliplatin,1,train
+356,16,miR-375,Docetaxel,1,train
+356,27,miR-375,Methotrexate,1,train
+356,31,miR-375,Chemotherapy,1,train
+356,38,miR-375,Cetuximab,1,train
+356,64,miR-375,Vinorelbine,1,train
+357,0,miR-376c,Cisplatin,1,train
+357,5,miR-376c,Doxorubicin,1,train
+357,29,miR-376c,Verapamil,1,train
+358,0,miR-377,Cisplatin,1,train
+358,10,miR-377,Paclitaxel,1,train
+359,0,miR-378,Cisplatin,1,train
+359,1,miR-378,Gemcitabine,1,train
+359,5,miR-378,Doxorubicin,1,train
+359,27,miR-378,Methotrexate,1,train
+359,52,miR-378,5-Fluorouracil,1,train
+360,5,miR-378a,Doxorubicin,1,train
+360,18,miR-378a,Vincristine,1,train
+361,0,miR-378c,Cisplatin,1,train
+361,1,miR-378c,Gemcitabine,1,train
+361,52,miR-378c,5-Fluorouracil,1,train
+362,1,miR-378d,Gemcitabine,1,train
+362,52,miR-378d,5-Fluorouracil,1,train
+363,1,miR-378e,Gemcitabine,1,train
+363,52,miR-378e,5-Fluorouracil,1,train
+364,1,miR-378f,Gemcitabine,1,train
+364,52,miR-378f,5-Fluorouracil,1,train
+365,1,miR-378g,Gemcitabine,1,train
+365,52,miR-378g,5-Fluorouracil,1,train
+366,1,miR-378i,Gemcitabine,1,train
+366,52,miR-378i,5-Fluorouracil,1,train
+367,5,miR-381,Doxorubicin,1,train
+367,16,miR-381,Docetaxel,1,train
+367,31,miR-381,Chemotherapy,1,train
+368,0,miR-382,Cisplatin,1,train
+368,5,miR-382,Doxorubicin,1,train
+368,13,miR-382,Oxaliplatin,1,train
+368,27,miR-382,Methotrexate,1,train
+369,0,miR-383,Cisplatin,1,train
+369,13,miR-383,Oxaliplatin,1,train
+369,18,miR-383,Vincristine,1,train
+369,53,miR-383,Daunorubicin,1,train
+369,55,miR-383,Prednisolone,1,train
+370,1,miR-3937,Gemcitabine,1,train
+370,52,miR-3937,5-Fluorouracil,1,train
+371,1,miR-3940,Gemcitabine,1,train
+371,52,miR-3940,5-Fluorouracil,1,train
+372,1,miR-3960,Gemcitabine,1,train
+372,52,miR-3960,5-Fluorouracil,1,train
+374,5,miR-410,Doxorubicin,1,train
+374,29,miR-410,Verapamil,1,train
+375,0,miR-411,Cisplatin,1,train
+375,10,miR-411,Paclitaxel,1,train
+376,5,miR-412,Doxorubicin,1,train
+376,13,miR-412,Oxaliplatin,1,train
+376,29,miR-412,Verapamil,1,train
+377,0,miR-421,Cisplatin,1,train
+377,1,miR-421,Gemcitabine,1,train
+377,13,miR-421,Oxaliplatin,1,train
+377,52,miR-421,5-Fluorouracil,1,train
+378,1,miR-422a,Gemcitabine,1,train
+378,5,miR-422a,Doxorubicin,1,train
+378,52,miR-422a,5-Fluorouracil,1,train
+379,0,miR-423,Cisplatin,1,train
+379,1,miR-423,Gemcitabine,1,train
+379,6,miR-423,Gefitinib,1,train
+379,7,miR-423,Tamoxifen,1,train
+379,13,miR-423,Oxaliplatin,1,train
+379,52,miR-423,5-Fluorouracil,1,train
+380,1,miR-424,Gemcitabine,1,train
+380,5,miR-424,Doxorubicin,1,train
+380,16,miR-424,Docetaxel,1,train
+380,19,miR-424,Etoposide,1,train
+380,52,miR-424,5-Fluorouracil,1,train
+381,0,miR-424*,Cisplatin,1,train
+381,1,miR-424*,Gemcitabine,1,train
+381,18,miR-424*,Vincristine,1,train
+381,52,miR-424*,5-Fluorouracil,1,train
+382,1,miR-425,Gemcitabine,1,train
+382,5,miR-425,Doxorubicin,1,train
+382,7,miR-425,Tamoxifen,1,train
+382,13,miR-425,Oxaliplatin,1,train
+382,18,miR-425,Vincristine,1,train
+382,29,miR-425,Verapamil,1,train
+382,52,miR-425,5-Fluorouracil,1,train
+383,1,miR-425*,Gemcitabine,1,train
+383,34,miR-425*,Sorafenib,1,train
+383,52,miR-425*,5-Fluorouracil,1,train
+383,66,miR-425*,Paroxetine,1,train
+384,1,miR-4257,Gemcitabine,1,train
+384,52,miR-4257,5-Fluorouracil,1,train
+385,1,miR-4258,Gemcitabine,1,train
+385,52,miR-4258,5-Fluorouracil,1,train
+386,1,miR-4261,Gemcitabine,1,train
+386,52,miR-4261,5-Fluorouracil,1,train
+387,1,miR-4279,Gemcitabine,1,train
+387,52,miR-4279,5-Fluorouracil,1,train
+388,0,miR-4284,Cisplatin,1,train
+388,1,miR-4284,Gemcitabine,1,train
+388,5,miR-4284,Doxorubicin,1,train
+388,16,miR-4284,Docetaxel,1,train
+388,52,miR-4284,5-Fluorouracil,1,train
+389,1,miR-4286,Gemcitabine,1,train
+389,52,miR-4286,5-Fluorouracil,1,train
+390,1,miR-4288,Gemcitabine,1,train
+390,10,miR-4288,Paclitaxel,1,train
+390,52,miR-4288,5-Fluorouracil,1,train
+391,0,miR-429,Cisplatin,1,train
+391,1,miR-429,Gemcitabine,1,train
+391,5,miR-429,Doxorubicin,1,train
+391,7,miR-429,Tamoxifen,1,train
+391,13,miR-429,Oxaliplatin,1,train
+391,16,miR-429,Docetaxel,1,train
+391,18,miR-429,Vincristine,1,train
+391,29,miR-429,Verapamil,1,train
+391,52,miR-429,5-Fluorouracil,1,train
+391,56,miR-429,10-Hydroxycamptothecin,1,train
+392,5,miR-431,Doxorubicin,1,train
+392,16,miR-431,Docetaxel,1,train
+392,29,miR-431,Verapamil,1,train
+393,10,miR-433,Paclitaxel,1,train
+393,13,miR-433,Oxaliplatin,1,train
+394,1,miR-4428,Gemcitabine,1,train
+394,52,miR-4428,5-Fluorouracil,1,train
+395,5,miR-4430,Doxorubicin,1,train
+395,18,miR-4430,Vincristine,1,train
+396,1,miR-4454,Gemcitabine,1,train
+396,52,miR-4454,5-Fluorouracil,1,train
+397,1,miR-4463,Gemcitabine,1,train
+397,52,miR-4463,5-Fluorouracil,1,train
+398,1,miR-4465,Gemcitabine,1,train
+398,52,miR-4465,5-Fluorouracil,1,train
+399,1,miR-4466,Gemcitabine,1,train
+399,52,miR-4466,5-Fluorouracil,1,train
+400,1,miR-4467,Gemcitabine,1,train
+400,52,miR-4467,5-Fluorouracil,1,train
+401,1,miR-4476,Gemcitabine,1,train
+401,52,miR-4476,5-Fluorouracil,1,train
+402,1,miR-4478,Gemcitabine,1,train
+402,52,miR-4478,5-Fluorouracil,1,train
+403,5,miR-448,Doxorubicin,1,train
+403,29,miR-448,Verapamil,1,train
+404,1,miR-4484,Gemcitabine,1,train
+404,52,miR-4484,5-Fluorouracil,1,train
+405,1,miR-4485,Gemcitabine,1,train
+405,52,miR-4485,5-Fluorouracil,1,train
+406,1,miR-4488,Gemcitabine,1,train
+406,52,miR-4488,5-Fluorouracil,1,train
+407,1,miR-4492,Gemcitabine,1,train
+407,52,miR-4492,5-Fluorouracil,1,train
+408,1,miR-4497,Gemcitabine,1,train
+408,52,miR-4497,5-Fluorouracil,1,train
+409,7,miR-449a,Tamoxifen,1,train
+409,51,miR-449a,platinum-based doublet chemotherapy ,1,train
+410,1,miR-4508,Gemcitabine,1,train
+410,52,miR-4508,5-Fluorouracil,1,train
+411,1,miR-450a,Gemcitabine,1,train
+411,5,miR-450a,Doxorubicin,1,train
+411,29,miR-450a,Verapamil,1,train
+411,52,miR-450a,5-Fluorouracil,1,train
+412,0,miR-451,Cisplatin,1,train
+412,5,miR-451,Doxorubicin,1,train
+412,16,miR-451,Docetaxel,1,train
+412,17,miR-451,Adriamycin,1,train
+412,29,miR-451,Verapamil,1,train
+412,38,miR-451,Cetuximab,1,train
+413,1,miR-4516,Gemcitabine,1,train
+413,52,miR-4516,5-Fluorouracil,1,train
+414,0,miR-452,Cisplatin,1,train
+414,1,miR-452,Gemcitabine,1,train
+414,16,miR-452,Docetaxel,1,train
+414,37,miR-452,Temozolomide,1,train
+414,56,miR-452,10-Hydroxycamptothecin,1,train
+415,1,miR-4521,Gemcitabine,1,train
+415,52,miR-4521,5-Fluorouracil,1,train
+416,1,miR-453,Gemcitabine,1,train
+416,5,miR-453,Doxorubicin,1,train
+416,29,miR-453,Verapamil,1,train
+417,1,miR-4530,Gemcitabine,1,train
+417,52,miR-4530,5-Fluorouracil,1,train
+418,1,miR-4532,Gemcitabine,1,train
+418,52,miR-4532,5-Fluorouracil,1,train
+419,1,miR-4535,Gemcitabine,1,train
+419,52,miR-4535,5-Fluorouracil,1,train
+420,1,miR-454,Gemcitabine,1,train
+420,5,miR-454,Doxorubicin,1,train
+420,16,miR-454,Docetaxel,1,train
+420,29,miR-454,Verapamil,1,train
+420,52,miR-454,5-Fluorouracil,1,train
+421,0,miR-455,Cisplatin,1,train
+421,5,miR-455,Doxorubicin,1,train
+421,16,miR-455,Docetaxel,1,train
+421,27,miR-455,Methotrexate,1,train
+421,29,miR-455,Verapamil,1,train
+422,0,miR-455-3p,Cisplatin,1,train
+422,1,miR-455-3p,Gemcitabine,1,train
+422,16,miR-455-3p,Docetaxel,1,train
+423,1,miR-4638,Gemcitabine,1,train
+423,52,miR-4638,5-Fluorouracil,1,train
+424,1,miR-4640,Gemcitabine,1,train
+424,52,miR-4640,5-Fluorouracil,1,train
+425,1,miR-4646,Gemcitabine,1,train
+425,52,miR-4646,5-Fluorouracil,1,train
+426,1,miR-4655,Gemcitabine,1,train
+426,52,miR-4655,5-Fluorouracil,1,train
+427,1,miR-4665,Gemcitabine,1,train
+427,52,miR-4665,5-Fluorouracil,1,train
+428,1,miR-4669,Gemcitabine,1,train
+428,52,miR-4669,5-Fluorouracil,1,train
+429,1,miR-4674,Gemcitabine,1,train
+429,52,miR-4674,5-Fluorouracil,1,train
+430,1,miR-4675,Gemcitabine,1,train
+430,52,miR-4675,5-Fluorouracil,1,train
+431,78,miR-468,Valproate,1,train
+432,1,miR-4685,Gemcitabine,1,train
+432,52,miR-4685,5-Fluorouracil,1,train
+433,1,miR-4687,Gemcitabine,1,train
+433,52,miR-4687,5-Fluorouracil,1,train
+434,1,miR-4689,Gemcitabine,1,train
+434,52,miR-4689,5-Fluorouracil,1,train
+435,1,miR-4695,Gemcitabine,1,train
+435,52,miR-4695,5-Fluorouracil,1,train
+436,1,miR-4707,Gemcitabine,1,train
+436,52,miR-4707,5-Fluorouracil,1,train
+437,1,miR-4710,Gemcitabine,1,train
+437,52,miR-4710,5-Fluorouracil,1,train
+438,1,miR-4711,Gemcitabine,1,train
+438,52,miR-4711,5-Fluorouracil,1,train
+439,1,miR-4713,Gemcitabine,1,train
+439,10,miR-4713,Paclitaxel,1,train
+439,52,miR-4713,5-Fluorouracil,1,train
+440,1,miR-4716,Gemcitabine,1,train
+440,52,miR-4716,5-Fluorouracil,1,train
+441,1,miR-4721,Gemcitabine,1,train
+441,52,miR-4721,5-Fluorouracil,1,train
+442,1,miR-4722,Gemcitabine,1,train
+442,52,miR-4722,5-Fluorouracil,1,train
+443,1,miR-4723,Gemcitabine,1,train
+443,52,miR-4723,5-Fluorouracil,1,train
+444,1,miR-4725,Gemcitabine,1,train
+444,52,miR-4725,5-Fluorouracil,1,train
+445,1,miR-4732,Gemcitabine,1,train
+445,52,miR-4732,5-Fluorouracil,1,train
+446,1,miR-4739,Gemcitabine,1,train
+446,52,miR-4739,5-Fluorouracil,1,train
+447,1,miR-4745,Gemcitabine,1,train
+447,52,miR-4745,5-Fluorouracil,1,train
+448,1,miR-4749,Gemcitabine,1,train
+448,52,miR-4749,5-Fluorouracil,1,train
+449,1,miR-4750,Gemcitabine,1,train
+449,52,miR-4750,5-Fluorouracil,1,train
+450,1,miR-4758,Gemcitabine,1,train
+450,52,miR-4758,5-Fluorouracil,1,train
+451,1,miR-4783,Gemcitabine,1,train
+451,52,miR-4783,5-Fluorouracil,1,train
+452,1,miR-4787,Gemcitabine,1,train
+452,52,miR-4787,5-Fluorouracil,1,train
+453,0,miR-483,Cisplatin,1,train
+453,1,miR-483,Gemcitabine,1,train
+453,3,miR-483,Imatinib,1,train
+453,5,miR-483,Doxorubicin,1,train
+453,10,miR-483,Paclitaxel,1,train
+453,13,miR-483,Oxaliplatin,1,train
+453,17,miR-483,Adriamycin,1,train
+453,34,miR-483,Sorafenib,1,train
+453,52,miR-483,5-Fluorouracil,1,train
+454,0,miR-485,Cisplatin,1,train
+454,5,miR-485,Doxorubicin,1,train
+454,29,miR-485,Verapamil,1,train
+454,66,miR-485,Paroxetine,1,train
+454,91,miR-485,Fludarabine,1,train
+455,0,miR-486,Cisplatin,1,train
+455,1,miR-486,Gemcitabine,1,train
+455,3,miR-486,Imatinib,1,train
+455,5,miR-486,Doxorubicin,1,train
+455,52,miR-486,5-Fluorouracil,1,train
+455,66,miR-486,Paroxetine,1,train
+456,1,miR-487b,Gemcitabine,1,train
+456,5,miR-487b,Doxorubicin,1,train
+456,6,miR-487b,Gefitinib,1,train
+457,0,miR-489,Cisplatin,1,train
+457,5,miR-489,Doxorubicin,1,train
+457,7,miR-489,Tamoxifen,1,train
+458,10,miR-490,Paclitaxel,1,train
+459,0,miR-491,Cisplatin,1,train
+459,5,miR-491,Doxorubicin,1,train
+459,29,miR-491,Verapamil,1,train
+460,1,miR-494,Gemcitabine,1,train
+460,5,miR-494,Doxorubicin,1,train
+460,18,miR-494,Vincristine,1,train
+460,34,miR-494,Sorafenib,1,train
+461,0,miR-495,Cisplatin,1,train
+461,17,miR-495,Adriamycin,1,train
+461,19,miR-495,Etoposide,1,train
+461,76,miR-495,Platinum,1,train
+462,5,miR-496,Doxorubicin,1,train
+462,29,miR-496,Verapamil,1,train
+463,5,miR-497,Doxorubicin,1,train
+463,6,miR-497,Gefitinib,1,train
+463,29,miR-497,Verapamil,1,train
+463,37,miR-497,Temozolomide,1,train
+463,51,miR-497,platinum-based doublet chemotherapy ,1,train
+464,5,miR-499,Doxorubicin,1,train
+464,29,miR-499,Verapamil,1,train
+465,5,miR-500,Doxorubicin,1,train
+465,16,miR-500,Docetaxel,1,train
+465,66,miR-500,Paroxetine,1,train
+466,1,miR-500a,Gemcitabine,1,train
+466,51,miR-500a,platinum-based doublet chemotherapy ,1,train
+466,52,miR-500a,5-Fluorouracil,1,train
+467,1,miR-500b,Gemcitabine,1,train
+467,52,miR-500b,5-Fluorouracil,1,train
+468,0,miR-501,Cisplatin,1,train
+468,5,miR-501,Doxorubicin,1,train
+468,18,miR-501,Vincristine,1,train
+468,52,miR-501,5-Fluorouracil,1,train
+468,66,miR-501,Paroxetine,1,train
+469,5,miR-501-5P,Doxorubicin,1,train
+469,19,miR-501-5P,Etoposide,1,train
+470,5,miR-502,Doxorubicin,1,train
+470,29,miR-502,Verapamil,1,train
+470,37,miR-502,Temozolomide,1,train
+470,66,miR-502,Paroxetine,1,train
+471,0,miR-503,Cisplatin,1,train
+471,1,miR-503,Gemcitabine,1,train
+471,9,miR-503,Fluorouracil,1,train
+471,52,miR-503,5-Fluorouracil,1,train
+472,5,miR-505,Doxorubicin,1,train
+472,27,miR-505,Methotrexate,1,train
+472,29,miR-505,Verapamil,1,train
+473,56,miR-506,10-Hydroxycamptothecin,1,train
+473,111,miR-506,10-hydroxycamptothecin,1,train
+474,0,miR-509,Cisplatin,1,train
+474,5,miR-509,Doxorubicin,1,train
+474,29,miR-509,Verapamil,1,train
+475,0,miR-5096,Cisplatin,1,train
+475,5,miR-5096,Doxorubicin,1,train
+475,18,miR-5096,Vincristine,1,train
+475,52,miR-5096,5-Fluorouracil,1,train
+476,0,miR-512,Cisplatin,1,train
+476,7,miR-512,Tamoxifen,1,train
+477,1,miR-513a,Gemcitabine,1,train
+477,5,miR-513a,Doxorubicin,1,train
+477,10,miR-513a,Paclitaxel,1,train
+477,13,miR-513a,Oxaliplatin,1,train
+478,0,miR-514,Cisplatin,1,train
+478,5,miR-514,Doxorubicin,1,train
+478,29,miR-514,Verapamil,1,train
+479,0,miR-515,Cisplatin,1,train
+479,1,miR-515,Gemcitabine,1,train
+479,7,miR-515,Tamoxifen,1,train
+479,90,miR-515,Topotecan,1,train
+480,0,miR-517a,Cisplatin,1,train
+480,5,miR-517a,Doxorubicin,1,train
+480,29,miR-517a,Verapamil,1,train
+481,0,miR-517b,Cisplatin,1,train
+481,5,miR-517b,Doxorubicin,1,train
+481,29,miR-517b,Verapamil,1,train
+482,0,miR-517c,Cisplatin,1,train
+482,5,miR-517c,Doxorubicin,1,train
+482,7,miR-517c,Tamoxifen,1,train
+482,29,miR-517c,Verapamil,1,train
+482,64,miR-517c,Vinorelbine,1,train
+483,0,miR-518b,Cisplatin,1,train
+483,7,miR-518b,Tamoxifen,1,train
+484,0,miR-518c,Cisplatin,1,train
+484,7,miR-518c,Tamoxifen,1,train
+485,7,miR-518e*,Tamoxifen,1,train
+485,64,miR-518e*,Vinorelbine,1,train
+486,0,miR-518f,Cisplatin,1,train
+486,1,miR-518f,Gemcitabine,1,train
+486,7,miR-518f,Tamoxifen,1,train
+486,64,miR-518f,Vinorelbine,1,train
+487,0,miR-518f*,Cisplatin,1,train
+487,52,miR-518f*,5-Fluorouracil,1,train
+488,5,miR-519,Doxorubicin,1,train
+488,19,miR-519,Etoposide,1,train
+489,0,miR-519a,Cisplatin,1,train
+489,7,miR-519a,Tamoxifen,1,train
+490,0,miR-519b,Cisplatin,1,train
+490,5,miR-519b,Doxorubicin,1,train
+490,29,miR-519b,Verapamil,1,train
+490,64,miR-519b,Vinorelbine,1,train
+491,0,miR-519c,Cisplatin,1,train
+491,7,miR-519c,Tamoxifen,1,train
+491,64,miR-519c,Vinorelbine,1,train
+492,0,miR-519d,Cisplatin,1,train
+492,1,miR-519d,Gemcitabine,1,train
+492,7,miR-519d,Tamoxifen,1,train
+493,0,miR-519e*,Cisplatin,1,train
+493,52,miR-519e*,5-Fluorouracil,1,train
+493,64,miR-519e*,Vinorelbine,1,train
+494,5,miR-520,Doxorubicin,1,train
+494,7,miR-520,Tamoxifen,1,train
+494,18,miR-520,Vincristine,1,train
+494,65,miR-520,Prednisone,1,train
+495,0,miR-520a,Cisplatin,1,train
+495,5,miR-520a,Doxorubicin,1,train
+495,29,miR-520a,Verapamil,1,train
+495,52,miR-520a,5-Fluorouracil,1,train
+496,0,miR-520b,Cisplatin,1,train
+496,5,miR-520b,Doxorubicin,1,train
+496,7,miR-520b,Tamoxifen,1,train
+496,29,miR-520b,Verapamil,1,train
+497,0,miR-520c,Cisplatin,1,train
+497,5,miR-520c,Doxorubicin,1,train
+497,29,miR-520c,Verapamil,1,train
+498,5,miR-520d,Doxorubicin,1,train
+498,29,miR-520d,Verapamil,1,train
+499,0,miR-520d*,Cisplatin,1,train
+499,52,miR-520d*,5-Fluorouracil,1,train
+500,0,miR-520g,Cisplatin,1,train
+500,5,miR-520g,Doxorubicin,1,train
+500,9,miR-520g,Fluorouracil,1,train
+500,10,miR-520g,Paclitaxel,1,train
+500,13,miR-520g,Oxaliplatin,1,train
+500,29,miR-520g,Verapamil,1,train
+501,0,miR-520h,Cisplatin,1,train
+501,5,miR-520h,Doxorubicin,1,train
+501,7,miR-520h,Tamoxifen,1,train
+501,10,miR-520h,Paclitaxel,1,train
+501,29,miR-520h,Verapamil,1,train
+502,0,miR-522,Cisplatin,1,train
+502,7,miR-522,Tamoxifen,1,train
+503,0,miR-523,Cisplatin,1,train
+503,5,miR-523,Doxorubicin,1,train
+504,5,miR-526b*,Doxorubicin,1,train
+504,29,miR-526b*,Verapamil,1,train
+505,0,miR-532,Cisplatin,1,train
+505,1,miR-532,Gemcitabine,1,train
+505,3,miR-532,Imatinib,1,train
+505,5,miR-532,Doxorubicin,1,train
+505,18,miR-532,Vincristine,1,train
+505,29,miR-532,Verapamil,1,train
+505,52,miR-532,5-Fluorouracil,1,train
+505,93,miR-532,intensive induction chemotherapy based on cytarabine and idarubicine,1,train
+506,0,miR-539,Cisplatin,1,train
+506,5,miR-539,Doxorubicin,1,train
+506,29,miR-539,Verapamil,1,train
+507,0,miR-541*,Cisplatin,1,train
+507,5,miR-541*,Doxorubicin,1,train
+507,29,miR-541*,Verapamil,1,train
+508,1,miR-542,Gemcitabine,1,train
+508,5,miR-542,Doxorubicin,1,train
+508,29,miR-542,Verapamil,1,train
+510,5,miR-545,Doxorubicin,1,train
+510,29,miR-545,Verapamil,1,train
+511,5,miR-548a,Doxorubicin,1,train
+511,29,miR-548a,Verapamil,1,train
+511,34,miR-548a,Sorafenib,1,train
+512,7,miR-550,Tamoxifen,1,train
+512,13,miR-550,Oxaliplatin,1,train
+513,5,miR-555,Doxorubicin,1,train
+513,29,miR-555,Verapamil,1,train
+514,5,miR-560,Doxorubicin,1,train
+514,29,miR-560,Verapamil,1,train
+515,5,miR-563,Doxorubicin,1,train
+515,29,miR-563,Verapamil,1,train
+516,5,miR-568,Doxorubicin,1,train
+516,29,miR-568,Verapamil,1,train
+517,5,miR-569,Doxorubicin,1,train
+517,29,miR-569,Verapamil,1,train
+518,5,miR-571,Doxorubicin,1,train
+518,29,miR-571,Verapamil,1,train
+519,5,miR-574,Doxorubicin,1,train
+519,120,miR-574,AED therapy,1,train
+520,5,miR-576,Doxorubicin,1,train
+520,13,miR-576,Oxaliplatin,1,train
+520,29,miR-576,Verapamil,1,train
+521,5,miR-578,Doxorubicin,1,train
+521,29,miR-578,Verapamil,1,train
+522,5,miR-582,Doxorubicin,1,train
+522,29,miR-582,Verapamil,1,train
+522,64,miR-582,Vinorelbine,1,train
+523,0,miR-584,Cisplatin,1,train
+523,1,miR-584,Gemcitabine,1,train
+523,5,miR-584,Doxorubicin,1,train
+523,13,miR-584,Oxaliplatin,1,train
+523,52,miR-584,5-Fluorouracil,1,train
+524,13,miR-585,Oxaliplatin,1,train
+524,64,miR-585,Vinorelbine,1,train
+525,5,miR-586,Doxorubicin,1,train
+525,29,miR-586,Verapamil,1,train
+525,64,miR-586,Vinorelbine,1,train
+526,5,miR-587,Doxorubicin,1,train
+526,29,miR-587,Verapamil,1,train
+526,52,miR-587,5-Fluorouracil,1,train
+527,5,miR-588,Doxorubicin,1,train
+527,29,miR-588,Verapamil,1,train
+528,5,miR-589*,Doxorubicin,1,train
+528,29,miR-589*,Verapamil,1,train
+529,0,miR-590,Cisplatin,1,train
+529,1,miR-590,Gemcitabine,1,train
+529,5,miR-590,Doxorubicin,1,train
+529,29,miR-590,Verapamil,1,train
+529,52,miR-590,5-Fluorouracil,1,train
+530,0,miR-590-5p,Cisplatin,1,train
+530,10,miR-590-5p,Paclitaxel,1,train
+530,17,miR-590-5p,Adriamycin,1,train
+531,5,miR-591,Doxorubicin,1,train
+531,10,miR-591,Paclitaxel,1,train
+531,13,miR-591,Oxaliplatin,1,train
+531,29,miR-591,Verapamil,1,train
+532,5,miR-592,Doxorubicin,1,train
+532,29,miR-592,Verapamil,1,train
+533,1,miR-593,Gemcitabine,1,train
+533,52,miR-593,5-Fluorouracil,1,train
+534,5,miR-593*,Doxorubicin,1,train
+534,29,miR-593*,Verapamil,1,train
+535,0,miR-598,Cisplatin,1,train
+535,16,miR-598,Docetaxel,1,train
+535,51,miR-598,platinum-based doublet chemotherapy ,1,train
+536,0,miR-601,Cisplatin,1,train
+536,5,miR-601,Doxorubicin,1,train
+536,13,miR-601,Oxaliplatin,1,train
+536,29,miR-601,Verapamil,1,train
+537,5,miR-605,Doxorubicin,1,train
+537,29,miR-605,Verapamil,1,train
+538,5,miR-606,Doxorubicin,1,train
+538,29,miR-606,Verapamil,1,train
+539,1,miR-6087,Gemcitabine,1,train
+539,18,miR-6087,Vincristine,1,train
+540,0,miR-613,Cisplatin,1,train
+540,5,miR-613,Doxorubicin,1,train
+540,13,miR-613,Oxaliplatin,1,train
+540,29,miR-613,Verapamil,1,train
+540,34,miR-613,Sorafenib,1,train
+541,1,miR-614,Gemcitabine,1,train
+541,52,miR-614,5-Fluorouracil,1,train
+542,0,miR-615,Cisplatin,1,train
+542,5,miR-615,Doxorubicin,1,train
+542,18,miR-615,Vincristine,1,train
+542,27,miR-615,Methotrexate,1,train
+542,52,miR-615,5-Fluorouracil,1,train
+543,13,miR-618,Oxaliplatin,1,train
+543,52,miR-618,5-Fluorouracil,1,train
+544,1,miR-624*,Gemcitabine,1,train
+544,52,miR-624*,5-Fluorouracil,1,train
+545,7,miR-625,Tamoxifen,1,train
+545,31,miR-625,Chemotherapy,1,train
+545,66,miR-625,Paroxetine,1,train
+546,1,miR-625*,Gemcitabine,1,train
+546,52,miR-625*,5-Fluorouracil,1,train
+547,7,miR-628,Tamoxifen,1,train
+547,51,miR-628,platinum-based doublet chemotherapy ,1,train
+548,1,miR-629,Gemcitabine,1,train
+548,5,miR-629,Doxorubicin,1,train
+548,18,miR-629,Vincristine,1,train
+548,29,miR-629,Verapamil,1,train
+548,52,miR-629,5-Fluorouracil,1,train
+548,53,miR-629,Daunorubicin,1,train
+548,55,miR-629,Prednisolone,1,train
+548,66,miR-629,Paroxetine,1,train
+549,0,miR-630,Cisplatin,1,train
+549,6,miR-630,Gefitinib,1,train
+549,13,miR-630,Oxaliplatin,1,train
+550,0,miR-633,Cisplatin,1,train
+550,5,miR-633,Doxorubicin,1,train
+550,29,miR-633,Verapamil,1,train
+551,0,miR-638,Cisplatin,1,train
+551,13,miR-638,Oxaliplatin,1,train
+551,18,miR-638,Vincristine,1,train
+551,26,miR-638,Bortezomib,1,train
+552,5,miR-639,Doxorubicin,1,train
+552,29,miR-639,Verapamil,1,train
+553,10,miR-640,Paclitaxel,1,train
+553,38,miR-640,Cetuximab,1,train
+554,1,miR-643,Gemcitabine,1,train
+554,5,miR-643,Doxorubicin,1,train
+554,29,miR-643,Verapamil,1,train
+555,1,miR-647,Gemcitabine,1,train
+555,10,miR-647,Paclitaxel,1,train
+556,5,miR-649,Doxorubicin,1,train
+556,29,miR-649,Verapamil,1,train
+557,5,miR-651,Doxorubicin,1,train
+557,29,miR-651,Verapamil,1,train
+558,5,miR-652,Doxorubicin,1,train
+558,29,miR-652,Verapamil,1,train
+559,0,miR-654-5p,Cisplatin,1,train
+559,9,miR-654-5p,Fluorouracil,1,train
+559,10,miR-654-5p,Paclitaxel,1,train
+560,5,miR-655,Doxorubicin,1,train
+560,29,miR-655,Verapamil,1,train
+561,1,miR-658,Gemcitabine,1,train
+561,52,miR-658,5-Fluorouracil,1,train
+562,1,miR-660,Gemcitabine,1,train
+562,3,miR-660,Imatinib,1,train
+562,5,miR-660,Doxorubicin,1,train
+562,6,miR-660,Gefitinib,1,train
+562,13,miR-660,Oxaliplatin,1,train
+562,29,miR-660,Verapamil,1,train
+562,52,miR-660,5-Fluorouracil,1,train
+563,5,miR-662,Doxorubicin,1,train
+563,29,miR-662,Verapamil,1,train
+564,0,miR-663,Cisplatin,1,train
+564,1,miR-663,Gemcitabine,1,train
+564,10,miR-663,Paclitaxel,1,train
+564,16,miR-663,Docetaxel,1,train
+564,52,miR-663,5-Fluorouracil,1,train
+564,67,miR-663,Cyclophosphamide,1,train
+565,0,miR-663a,Cisplatin,1,train
+565,52,miR-663a,5-Fluorouracil,1,train
+566,1,miR-665,Gemcitabine,1,train
+566,52,miR-665,5-Fluorouracil,1,train
+567,1,miR-671,Gemcitabine,1,train
+567,52,miR-671,5-Fluorouracil,1,train
+567,66,miR-671,Paroxetine,1,train
+568,1,miR-675,Gemcitabine,1,train
+568,13,miR-675,Oxaliplatin,1,train
+568,52,miR-675,5-Fluorouracil,1,train
+569,1,miR-675*,Gemcitabine,1,train
+569,52,miR-675*,5-Fluorouracil,1,train
+570,9,miR-6825-5p,Fluorouracil,1,train
+570,13,miR-6825-5p,Oxaliplatin,1,train
+570,28,miR-6825-5p,Pirarubicin,1,train
+571,9,miR-6845-5p,Fluorouracil,1,train
+571,13,miR-6845-5p,Oxaliplatin,1,train
+571,28,miR-6845-5p,Pirarubicin,1,train
+572,9,miR-6886-3p,Fluorouracil,1,train
+572,13,miR-6886-3p,Oxaliplatin,1,train
+572,28,miR-6886-3p,Pirarubicin,1,train
+573,0,miR-7,Cisplatin,1,train
+573,1,miR-7,Gemcitabine,1,train
+573,7,miR-7,Tamoxifen,1,train
+573,13,miR-7,Oxaliplatin,1,train
+573,52,miR-7,5-Fluorouracil,1,train
+574,5,miR-7-1*,Doxorubicin,1,train
+574,29,miR-7-1*,Verapamil,1,train
+575,0,miR-7-5p,Cisplatin,1,train
+575,13,miR-7-5p,Oxaliplatin,1,train
+576,1,miR-708,Gemcitabine,1,train
+576,115,miR-708,modified ALLIC BFM 2002 protocol,1,train
+577,1,miR-718,Gemcitabine,1,train
+577,52,miR-718,5-Fluorouracil,1,train
+578,1,miR-720,Gemcitabine,1,train
+578,52,miR-720,5-Fluorouracil,1,train
+579,0,miR-744,Cisplatin,1,train
+579,6,miR-744,Gefitinib,1,train
+579,7,miR-744,Tamoxifen,1,train
+580,5,miR-758,Doxorubicin,1,train
+580,29,miR-758,Verapamil,1,train
+581,5,miR-760,Doxorubicin,1,train
+581,29,miR-760,Verapamil,1,train
+582,1,miR-762,Gemcitabine,1,train
+582,6,miR-762,Gefitinib,1,train
+582,26,miR-762,Bortezomib,1,train
+582,52,miR-762,5-Fluorouracil,1,train
+583,1,miR-765,Gemcitabine,1,train
+583,5,miR-765,Doxorubicin,1,train
+583,13,miR-765,Oxaliplatin,1,train
+583,29,miR-765,Verapamil,1,train
+584,0,miR-766,Cisplatin,1,train
+584,1,miR-766,Gemcitabine,1,train
+584,5,miR-766,Doxorubicin,1,train
+584,6,miR-766,Gefitinib,1,train
+584,18,miR-766,Vincristine,1,train
+584,52,miR-766,5-Fluorouracil,1,train
+585,5,miR-767,Doxorubicin,1,train
+585,16,miR-767,Docetaxel,1,train
+585,29,miR-767,Verapamil,1,train
+586,10,miR-768,Paclitaxel,1,train
+586,38,miR-768,Cetuximab,1,train
+587,5,miR-769,Doxorubicin,1,train
+587,7,miR-769,Tamoxifen,1,train
+587,10,miR-769,Paclitaxel,1,train
+587,29,miR-769,Verapamil,1,train
+588,0,miR-801,Cisplatin,1,train
+588,10,miR-801,Paclitaxel,1,train
+588,38,miR-801,Cetuximab,1,train
+589,5,miR-802,Doxorubicin,1,train
+589,10,miR-802,Paclitaxel,1,train
+590,6,miR-873,Gefitinib,1,train
+590,7,miR-873,Tamoxifen,1,train
+591,1,miR-874,Gemcitabine,1,train
+591,52,miR-874,5-Fluorouracil,1,train
+592,0,miR-875,Cisplatin,1,train
+592,10,miR-875,Paclitaxel,1,train
+593,0,miR-876,Cisplatin,1,train
+593,5,miR-876,Doxorubicin,1,train
+593,13,miR-876,Oxaliplatin,1,train
+593,29,miR-876,Verapamil,1,train
+594,0,miR-877,Cisplatin,1,train
+594,5,miR-877,Doxorubicin,1,train
+594,18,miR-877,Vincristine,1,train
+594,52,miR-877,5-Fluorouracil,1,train
+595,1,miR-885,Gemcitabine,1,train
+595,5,miR-885,Doxorubicin,1,train
+595,10,miR-885,Paclitaxel,1,train
+596,0,miR-886,Cisplatin,1,train
+596,5,miR-886,Doxorubicin,1,train
+596,29,miR-886,Verapamil,1,train
+597,1,miR-887,Gemcitabine,1,train
+597,52,miR-887,5-Fluorouracil,1,train
+598,5,miR-888,Doxorubicin,1,train
+598,29,miR-888,Verapamil,1,train
+599,5,miR-892b,Doxorubicin,1,train
+599,13,miR-892b,Oxaliplatin,1,train
+600,0,miR-9,Cisplatin,1,train
+600,5,miR-9,Doxorubicin,1,train
+600,10,miR-9,Paclitaxel,1,train
+600,18,miR-9,Vincristine,1,train
+600,19,miR-9,Etoposide,1,train
+600,37,miR-9,Temozolomide,1,train
+600,53,miR-9,Daunorubicin,1,train
+600,55,miR-9,Prednisolone,1,train
+601,5,miR-920,Doxorubicin,1,train
+601,10,miR-920,Paclitaxel,1,train
+602,5,miR-922,Doxorubicin,1,train
+602,10,miR-922,Paclitaxel,1,train
+603,0,miR-923,Cisplatin,1,train
+603,10,miR-923,Paclitaxel,1,train
+604,0,miR-92a,Cisplatin,1,train
+604,5,miR-92a,Doxorubicin,1,train
+604,6,miR-92a,Gefitinib,1,train
+604,13,miR-92a,Oxaliplatin,1,train
+604,29,miR-92a,Verapamil,1,train
+604,52,miR-92a,5-Fluorouracil,1,train
+605,0,miR-92a-1,Cisplatin,1,train
+606,0,miR-92a-2*,Cisplatin,1,train
+606,14,miR-92a-2*,Carboplatin,1,train
+607,0,miR-92b,Cisplatin,1,train
+607,1,miR-92b,Gemcitabine,1,train
+607,18,miR-92b,Vincristine,1,train
+607,26,miR-92b,Bortezomib,1,train
+607,52,miR-92b,5-Fluorouracil,1,train
+608,0,miR-93,Cisplatin,1,train
+608,5,miR-93,Doxorubicin,1,train
+608,13,miR-93,Oxaliplatin,1,train
+608,29,miR-93,Verapamil,1,train
+609,5,miR-933,Doxorubicin,1,train
+609,10,miR-933,Paclitaxel,1,train
+610,0,miR-935,Cisplatin,1,train
+610,5,miR-935,Doxorubicin,1,train
+610,7,miR-935,Tamoxifen,1,train
+611,9,miR-939,Fluorouracil,1,train
+611,13,miR-939,Oxaliplatin,1,train
+611,26,miR-939,Bortezomib,1,train
+612,1,miR-940,Gemcitabine,1,train
+612,52,miR-940,5-Fluorouracil,1,train
+614,0,miR-96,Cisplatin,1,train
+614,5,miR-96,Doxorubicin,1,train
+614,7,miR-96,Tamoxifen,1,train
+614,10,miR-96,Paclitaxel,1,train
+614,29,miR-96,Verapamil,1,train
+614,52,miR-96,5-Fluorouracil,1,train
+615,9,miR-96-5p,Fluorouracil,1,train
+615,13,miR-96-5p,Oxaliplatin,1,train
+616,0,miR-98,Cisplatin,1,train
+616,1,miR-98,Gemcitabine,1,train
+616,5,miR-98,Doxorubicin,1,train
+616,16,miR-98,Docetaxel,1,train
+616,52,miR-98,5-Fluorouracil,1,train
+616,56,miR-98,10-Hydroxycamptothecin,1,train
+617,0,miR-99a,Cisplatin,1,train
+617,1,miR-99a,Gemcitabine,1,train
+617,5,miR-99a,Doxorubicin,1,train
+617,6,miR-99a,Gefitinib,1,train
+617,13,miR-99a,Oxaliplatin,1,train
+617,16,miR-99a,Docetaxel,1,train
+617,18,miR-99a,Vincristine,1,train
+617,29,miR-99a,Verapamil,1,train
+617,52,miR-99a,5-Fluorouracil,1,train
+617,53,miR-99a,Daunorubicin,1,train
+617,55,miR-99a,Prednisolone,1,train
+618,5,miR-99a-5p,Doxorubicin,1,train
+618,18,miR-99a-5p,Vincristine,1,train
+618,65,miR-99a-5p,Prednisone,1,train
+618,67,miR-99a-5p,Cyclophosphamide,1,train
+618,70,miR-99a-5p,Rituximab,1,train
+619,0,miR-99b,Cisplatin,1,train
+619,1,miR-99b,Gemcitabine,1,train
+619,5,miR-99b,Doxorubicin,1,train
+619,7,miR-99b,Tamoxifen,1,train
+619,13,miR-99b,Oxaliplatin,1,train
+619,16,miR-99b,Docetaxel,1,train
+620,1,miR-99b*,Gemcitabine,1,train
+620,7,miR-99b*,Tamoxifen,1,train
+620,38,miR-99b*,Cetuximab,1,train
+621,5,miR-Plus-A1031,Doxorubicin,1,train
+621,18,miR-Plus-A1031,Vincristine,1,train
+621,65,miR-Plus-A1031,Prednisone,1,train
+360,34,miR-378a,Sorafenib,0,train
+508,8,miR-542,Trastuzumab,0,train
+75,52,miR-125b-5p,5-Fluorouracil,0,train
+199,34,miR-199a-5p,Sorafenib,0,train
+150,3,miR-17-5p,Imatinib,0,train
+179,13,miR-1914*,Oxaliplatin,0,train
+5,109,CUDR,Lapatinib,0,train
+239,8,miR-22-3p,Trastuzumab,0,train
+117,13,miR-140-3p,Oxaliplatin,0,train
+217,27,miR-20a-5p,Methotrexate,0,train
+184,66,miR-193a-3p,Paroxetine,0,train
+250,64,miR-23b-3p,Vinorelbine,0,train
+8,109,H19,Lapatinib,0,train
+575,56,miR-7-5p,10-Hydroxycamptothecin,0,train
+328,30,miR-34a-5p,epirubicin,0,train
+575,38,miR-7-5p,Cetuximab,0,train
+422,10,miR-455-3p,Paclitaxel,0,train
+149,26,miR-17*,Bortezomib,0,train
+250,67,miR-23b-3p,Cyclophosphamide,0,train
+150,7,miR-17-5p,Tamoxifen,0,train
+618,3,miR-99a-5p,Imatinib,0,train
+149,39,miR-17*,Taxol,0,train
+360,1,miR-378a,Gemcitabine,0,train
+328,13,miR-34a-5p,Oxaliplatin,0,train
+499,116,miR-520d*,5-fluorouracil,0,train
+25,109,UCA1,Lapatinib,0,train
+75,3,miR-125b-5p,Imatinib,0,train
+8,1,H19,Gemcitabine,0,train
+575,10,miR-7-5p,Paclitaxel,0,train
+190,56,miR-196a-5p,10-Hydroxycamptothecin,0,train
+17,18,MEG3,Vincristine,0,train
+142,26,miR-155-5p,Bortezomib,0,train
+35,5,let-7d,Doxorubicin,0,train
+131,6,miR-146b-5p,Gefitinib,0,train
+328,45,miR-34a-5p,Camptothecin,0,train
+193,26,miR-197-3p,Bortezomib,0,train
+328,52,miR-34a-5p,5-Fluorouracil,0,train
+193,18,miR-197-3p,Vincristine,0,train
+575,116,miR-7-5p,5-fluorouracil,0,train
+12,116,LOC285194,5-fluorouracil,0,train
+275,0,miR-302a,Cisplatin,0,train
+193,116,miR-197-3p,5-fluorouracil,0,train
+239,5,miR-22-3p,Doxorubicin,0,train
+102,10,miR-130a-3p,Paclitaxel,0,train
+239,9,miR-22-3p,Fluorouracil,0,train
+530,5,miR-590-5p,Doxorubicin,0,train
+8,60,H19,Crizotinib,0,train
+35,6,let-7d,Gefitinib,0,train
+120,18,miR-141-3p,Vincristine,0,train
+328,6,miR-34a-5p,Gefitinib,0,train
+102,37,miR-130a-3p,Temozolomide,0,train
+508,65,miR-542,Prednisone,0,train
+599,34,miR-892b,Sorafenib,0,train
+575,97,miR-7-5p,Fulvestrant,0,train
+615,116,miR-96-5p,5-fluorouracil,0,train
+199,5,miR-199a-5p,Doxorubicin,0,train
+70,34,miR-1247,Sorafenib,0,train
+150,26,miR-17-5p,Bortezomib,0,train
+250,53,miR-23b-3p,Daunorubicin,0,train
+217,10,miR-20a-5p,Paclitaxel,0,train
+217,17,miR-20a-5p,Adriamycin,0,train
+559,39,miR-654-5p,Taxol,0,train
+618,37,miR-99a-5p,Temozolomide,0,train
+120,51,miR-141-3p,platinum-based doublet chemotherapy ,0,train
+61,0,miR-1228,Cisplatin,0,train
+328,10,miR-34a-5p,Paclitaxel,0,train
+568,0,miR-675,Cisplatin,0,train
+584,66,miR-766,Paroxetine,0,train
+328,17,miR-34a-5p,Adriamycin,0,train
+575,5,miR-7-5p,Doxorubicin,0,train
+6,39,GAS5,Taxol,0,train
+17,3,MEG3,Imatinib,0,train
+120,55,miR-141-3p,Prednisolone,0,train
+156,116,miR-181c,5-fluorouracil,0,train
+142,13,miR-155-5p,Oxaliplatin,0,train
+193,42,miR-197-3p,Erlotinib,0,train
+618,0,miR-99a-5p,Cisplatin,0,train
+142,3,miR-155-5p,Imatinib,0,train
+75,9,miR-125b-5p,Fluorouracil,0,train
+150,39,miR-17-5p,Taxol,0,train
+6,10,GAS5,Paclitaxel,0,train
+17,9,MEG3,Fluorouracil,0,train
+75,7,miR-125b-5p,Tamoxifen,0,train
+508,18,miR-542,Vincristine,0,train
+250,1,miR-23b-3p,Gemcitabine,0,train
+575,16,miR-7-5p,Docetaxel,0,train
+199,17,miR-199a-5p,Adriamycin,0,train
+16,7,MALAT1,Tamoxifen,0,train
+54,0,miR-10a*,Cisplatin,0,train
+606,17,miR-92a-2*,Adriamycin,0,train
+6,52,GAS5,5-Fluorouracil,0,train
+102,18,miR-130a-3p,Vincristine,0,train
+63,51,miR-1229-5p,platinum-based doublet chemotherapy ,0,train
+17,116,MEG3,5-fluorouracil,0,train
+10,1,HULC,Gemcitabine,0,train
+575,37,miR-7-5p,Temozolomide,0,train
+328,39,miR-34a-5p,Taxol,0,train
+193,5,miR-197-3p,Doxorubicin,0,train
+35,10,let-7d,Paclitaxel,0,train
+102,3,miR-130a-3p,Imatinib,0,train
+35,17,let-7d,Adriamycin,0,train
+606,43,miR-92a-2*,Curcumin,0,train
+250,17,miR-23b-3p,Adriamycin,0,train
+179,51,miR-1914*,platinum-based doublet chemotherapy ,0,train
+0,37,ANRIL,Temozolomide,0,train
+199,16,miR-199a-5p,Docetaxel,0,train
+63,76,miR-1229-5p,Platinum,0,train
+328,42,miR-34a-5p,Erlotinib,0,train
+26,39,XIST,Taxol,0,train
+150,34,miR-17-5p,Sorafenib,0,train
+615,52,miR-96-5p,5-Fluorouracil,0,train
+328,16,miR-34a-5p,Docetaxel,0,train
+530,16,miR-590-5p,Docetaxel,0,train
+328,84,miR-34a-5p,Mitomycin C,0,train
+615,6,miR-96-5p,Gefitinib,0,train
+12,52,LOC285194,5-Fluorouracil,0,train
+582,0,miR-762,Cisplatin,0,train
+142,27,miR-155-5p,Methotrexate,0,train
+17,52,MEG3,5-Fluorouracil,0,train
+75,116,miR-125b-5p,5-fluorouracil,0,train
+239,52,miR-22-3p,5-Fluorouracil,0,train
+156,52,miR-181c,5-Fluorouracil,0,train
+199,52,miR-199a-5p,5-Fluorouracil,0,train
+245,3,miR-223,Imatinib,0,train
+102,96,miR-130a-3p,Epirubicin hydrochloride,0,train
+328,37,miR-34a-5p,Temozolomide,0,train
+184,38,miR-193a-3p,Cetuximab,0,train
+149,7,miR-17*,Tamoxifen,0,train
+615,71,miR-96-5p,Cytarabine,0,train
+250,52,miR-23b-3p,5-Fluorouracil,0,train
+615,16,miR-96-5p,Docetaxel,0,train
+190,111,miR-196a-5p,10-hydroxycamptothecin,0,train
+328,9,miR-34a-5p,Fluorouracil,0,train
+35,39,let-7d,Taxol,0,train
+575,17,miR-7-5p,Adriamycin,0,train
+583,0,miR-765,Cisplatin,0,train
+328,34,miR-34a-5p,Sorafenib,0,train
+116,0,miR-140,Cisplatin,0,train
+222,43,miR-21-5p,Curcumin,0,train
+239,39,miR-22-3p,Taxol,0,train
+575,52,miR-7-5p,5-Fluorouracil,0,train
+217,0,miR-20a-5p,Cisplatin,0,train
+576,7,miR-708,Tamoxifen,0,train
+142,97,miR-155-5p,Fulvestrant,0,train
+199,70,miR-199a-5p,Rituximab,0,train
+199,116,miR-199a-5p,5-fluorouracil,0,train
+190,7,miR-196a-5p,Tamoxifen,0,train
+8,64,H19,Vinorelbine,0,train
+377,7,miR-421,Tamoxifen,0,train
+20,37,PVT1,Temozolomide,0,train
+575,40,miR-7-5p,Dexamethasone,0,train
+217,14,miR-20a-5p,Carboplatin,0,train
+17,5,MEG3,Doxorubicin,0,train
+184,1,miR-193a-3p,Gemcitabine,0,train
+217,37,miR-20a-5p,Temozolomide,0,train
+6,37,GAS5,Temozolomide,0,train
+222,26,miR-21-5p,Bortezomib,0,train
+35,13,let-7d,Oxaliplatin,0,train
+184,3,miR-193a-3p,Imatinib,0,train
+102,30,miR-130a-3p,epirubicin,0,train
+360,116,miR-378a,5-fluorouracil,0,train
+193,16,miR-197-3p,Docetaxel,0,train
+17,39,MEG3,Taxol,0,train
+217,34,miR-20a-5p,Sorafenib,0,train
+150,0,miR-17-5p,Cisplatin,0,train
+222,18,miR-21-5p,Vincristine,0,train
+120,42,miR-141-3p,Erlotinib,0,train
+179,34,miR-1914*,Sorafenib,0,train
+328,26,miR-34a-5p,Bortezomib,0,train
+102,39,miR-130a-3p,Taxol,0,train
+575,19,miR-7-5p,Etoposide,0,train
+239,13,miR-22-3p,Oxaliplatin,0,train
+13,1,LUCAT1,Gemcitabine,0,train
+131,37,miR-146b-5p,Temozolomide,0,train
+575,18,miR-7-5p,Vincristine,0,train
+102,13,miR-130a-3p,Oxaliplatin,0,train
+6,116,GAS5,5-fluorouracil,0,train
+142,42,miR-155-5p,Erlotinib,0,train
+149,34,miR-17*,Sorafenib,0,train
+472,7,miR-505,Tamoxifen,0,train
+54,37,miR-10a*,Temozolomide,0,train
+217,26,miR-20a-5p,Bortezomib,0,train
+328,18,miR-34a-5p,Vincristine,0,train
+149,0,miR-17*,Cisplatin,0,train
+134,116,miR-149,5-fluorouracil,0,train
+6,34,GAS5,Sorafenib,0,train
+199,9,miR-199a-5p,Fluorouracil,0,train
+75,0,miR-125b-5p,Cisplatin,0,train
+193,52,miR-197-3p,5-Fluorouracil,0,train
+575,9,miR-7-5p,Fluorouracil,0,train
+12,39,LOC285194,Taxol,0,train
+606,5,miR-92a-2*,Doxorubicin,0,train
+149,10,miR-17*,Paclitaxel,0,train
+199,37,miR-199a-5p,Temozolomide,0,train
+360,9,miR-378a,Fluorouracil,0,train
+575,34,miR-7-5p,Sorafenib,0,train
+499,9,miR-520d*,Fluorouracil,0,train
+131,7,miR-146b-5p,Tamoxifen,0,train
+328,96,miR-34a-5p,Epirubicin hydrochloride,0,train
+17,67,MEG3,Cyclophosphamide,0,train
+24,37,TUG1,Temozolomide,0,train
+559,38,miR-654-5p,Cetuximab,0,train
+75,10,miR-125b-5p,Paclitaxel,0,train
+380,116,miR-424,5-fluorouracil,0,train
+12,37,LOC285194,Temozolomide,0,train
+6,17,GAS5,Adriamycin,0,train
+102,26,miR-130a-3p,Bortezomib,0,train
+422,39,miR-455-3p,Taxol,0,train
+471,116,miR-503,5-fluorouracil,0,train
+190,13,miR-196a-5p,Oxaliplatin,0,train
+17,17,MEG3,Adriamycin,0,train
+120,76,miR-141-3p,Platinum,0,train
+217,7,miR-20a-5p,Tamoxifen,0,train
+222,102,miR-21-5p,Betulinic acid,0,train
+618,40,miR-99a-5p,Dexamethasone,0,train
+250,18,miR-23b-3p,Vincristine,0,train
+422,11,miR-455-3p,Propofol,0,train
+179,49,miR-1914*,Capecitabine,0,train
+250,116,miR-23b-3p,5-fluorouracil,0,train
+217,39,miR-20a-5p,Taxol,0,train
+70,0,miR-1247,Cisplatin,0,train
+508,0,miR-542,Cisplatin,0,train
+120,7,miR-141-3p,Tamoxifen,0,train
+75,16,miR-125b-5p,Docetaxel,0,train
+463,7,miR-497,Tamoxifen,0,train
+239,116,miR-22-3p,5-fluorouracil,0,train
+12,10,LOC285194,Paclitaxel,0,train
+17,10,MEG3,Paclitaxel,0,train
+179,76,miR-1914*,Platinum,0,train
+120,14,miR-141-3p,Carboplatin,0,train
+199,27,miR-199a-5p,Methotrexate,0,train
+191,0,miR-196b,Cisplatin,0,train
+26,10,XIST,Paclitaxel,0,train
+8,16,H19,Docetaxel,0,train
+615,3,miR-96-5p,Imatinib,0,train
+530,42,miR-590-5p,Erlotinib,0,train
+15,0,MACC1-AS1,Cisplatin,0,train
+380,9,miR-424,Fluorouracil,0,train
+250,27,miR-23b-3p,Methotrexate,0,train
+75,13,miR-125b-5p,Oxaliplatin,0,train
+102,16,miR-130a-3p,Docetaxel,0,train
+575,6,miR-7-5p,Gefitinib,0,train
+75,39,miR-125b-5p,Taxol,0,train
+149,42,miR-17*,Erlotinib,0,train
+188,7,miR-195,Tamoxifen,0,train
+508,19,miR-542,Etoposide,0,train
+60,34,miR-1226,Sorafenib,0,train
+193,9,miR-197-3p,Fluorouracil,0,train
+117,9,miR-140-3p,Fluorouracil,0,train
+56,0,miR-1183,Cisplatin,0,train
+117,116,miR-140-3p,5-fluorouracil,0,train
+199,39,miR-199a-5p,Taxol,0,train
+117,52,miR-140-3p,5-Fluorouracil,0,train
+222,71,miR-21-5p,Cytarabine,0,train
+250,5,miR-23b-3p,Doxorubicin,0,train
+575,39,miR-7-5p,Taxol,0,train
+415,3,miR-4521,Imatinib,0,train
+4,13,CRNDE,Oxaliplatin,0,train
+17,64,MEG3,Vinorelbine,0,train
+360,52,miR-378a,5-Fluorouracil,0,train
+199,18,miR-199a-5p,Vincristine,0,train
+17,13,MEG3,Oxaliplatin,0,train
+120,6,miR-141-3p,Gefitinib,0,train
+149,3,miR-17*,Imatinib,0,train
+199,10,miR-199a-5p,Paclitaxel,0,train
+575,111,miR-7-5p,10-hydroxycamptothecin,0,train
+193,64,miR-197-3p,Vinorelbine,0,train
+191,34,miR-196b,Sorafenib,0,train
+328,116,miR-34a-5p,5-fluorouracil,0,train
+380,0,miR-424,Cisplatin,0,train
+120,38,miR-141-3p,Cetuximab,0,train
+125,45,miR-144-3p,Camptothecin,0,train
+602,1,miR-922,Gemcitabine,0,train
+364,83,miR-378f,Interferon-alpha,0,train
+291,113,miR-3126,Dihydrotestosterone,0,train
+211,111,miR-203,10-hydroxycamptothecin,0,train
+552,12,miR-639,Antioestrogens,0,train
+478,54,miR-514,L-asparaginase,0,train
+172,68,miR-18b,Mafosfamide,0,train
+526,17,miR-587,Adriamycin,0,train
+300,3,miR-3180,Imatinib,0,train
+379,65,miR-423,Prednisone,0,train
+385,0,miR-4258,Cisplatin,0,train
+186,104,miR-193b*,Dibenziodolium,0,train
+31,43,hsa-1274A,Curcumin,0,train
+428,99,miR-4669,Euthyrox,0,train
+304,67,miR-3193,Cyclophosphamide,0,train
+613,35,miR-942,Melphalan,0,train
+123,92,miR-143*,histone deacetylase inhibitor,0,train
+549,47,miR-630,Interferon-gamma,0,train
+428,97,miR-4669,Fulvestrant,0,train
+188,30,miR-195,epirubicin,0,train
+83,29,miR-127,Verapamil,0,train
+546,101,miR-625*,Arsenic Trioxide,0,train
+568,2,miR-675,Dasatinib,0,train
+350,50,miR-372,PLX4720,0,train
+219,73,miR-20b*,Exemestane,0,train
+306,14,miR-3196,Carboplatin,0,train
+258,44,miR-27a,PCI-24781,0,train
+29,92,Let-7,histone deacetylase inhibitor,0,train
+403,60,miR-448,Crizotinib,0,train
+0,29,ANRIL,Verapamil,0,train
+121,34,miR-142,Sorafenib,0,train
+82,64,miR-1268,Vinorelbine,0,train
+335,98,miR-3621,Leucovorin,0,train
+291,58,miR-3126,Fluoropyrimidine,0,train
+97,24,miR-1297,Temsirolimus,0,train
+230,84,miR-216,Mitomycin C,0,train
+103,54,miR-130b,L-asparaginase,0,train
+96,52,miR-1293,5-Fluorouracil,0,train
+5,115,CUDR,modified ALLIC BFM 2002 protocol,0,train
+419,103,miR-4535,Carmustine,0,train
+199,42,miR-199a-5p,Erlotinib,0,train
+384,90,miR-4257,Topotecan,0,train
+12,101,LOC285194,Arsenic Trioxide,0,train
+361,19,miR-378c,Etoposide,0,train
+81,19,miR-1265,Etoposide,0,train
+97,91,miR-1297,Fludarabine,0,train
+303,110,miR-3187,Pemetrexed,0,train
+574,1,miR-7-1*,Gemcitabine,0,train
+92,30,miR-128a,epirubicin,0,train
+74,58,miR-125b,Fluoropyrimidine,0,train
+307,66,miR-32,Paroxetine,0,train
+15,95,MACC1-AS1,SIOP treatment protocol,0,train
+460,107,miR-494,Raltitrexed,0,train
+510,89,miR-545,Staurosporine,0,train
+352,28,miR-373*,Pirarubicin,0,train
+69,8,miR-1246,Trastuzumab,0,train
+98,115,miR-1299,modified ALLIC BFM 2002 protocol,0,train
+378,64,miR-422a,Vinorelbine,0,train
+610,24,miR-935,Temsirolimus,0,train
+320,12,miR-33a,Antioestrogens,0,train
+16,105,MALAT1,Hydrogen Peroxide,0,train
+297,20,miR-3173,Mitoxantrone,0,train
+161,103,miR-1826,Carmustine,0,train
+220,54,miR-21,L-asparaginase,0,train
+112,56,miR-137,10-Hydroxycamptothecin,0,train
+194,34,miR-1973,Sorafenib,0,train
+246,88,miR-224,Selumetinib,0,train
+620,56,miR-99b*,10-Hydroxycamptothecin,0,train
+275,25,miR-302a,"1,25(OH)2D3",0,train
+424,7,miR-4640,Tamoxifen,0,train
+95,59,miR-1290,Vemurafenib,0,train
+535,4,miR-598,Nilotinib,0,train
+72,9,miR-1258,Fluorouracil,0,train
+55,116,miR-10b,5-fluorouracil,0,train
+189,94,miR-196a,Epirubicin HCl,0,train
+79,70,miR-1260b,Rituximab,0,train
+520,71,miR-576,Cytarabine,0,train
+376,52,miR-412,5-Fluorouracil,0,train
+570,76,miR-6825-5p,Platinum,0,train
+517,74,miR-569,Letrozole,0,train
+462,49,miR-496,Capecitabine,0,train
+269,60,miR-29b-1*,Crizotinib,0,train
+518,106,miR-571,Pingyangmycin,0,train
+376,11,miR-412,Propofol,0,train
+90,109,miR-1285,Lapatinib,0,train
+170,42,miR-18a,Erlotinib,0,train
+357,34,miR-376c,Sorafenib,0,train
+305,90,miR-3195,Topotecan,0,train
+405,60,miR-4485,Crizotinib,0,train
+239,102,miR-22-3p,Betulinic acid,0,train
+344,32,miR-3676,TRAIL therapy,0,train
+480,48,miR-517a,Epirubicin,0,train
+360,109,miR-378a,Lapatinib,0,train
+27,1,XLOC_006753,Gemcitabine,0,train
+596,117,miR-886,Hydroxyurea,0,train
+321,92,miR-33a*,histone deacetylase inhibitor,0,train
+43,103,miR-100-5p,Carmustine,0,train
+366,22,miR-378i,Rapamycin,0,train
+446,112,miR-4739,AGRO100,0,train
+477,104,miR-513a,Dibenziodolium,0,train
+235,115,miR-219,modified ALLIC BFM 2002 protocol,0,train
+471,44,miR-503,PCI-24781,0,train
+515,82,miR-563,Cyclopamine,0,train
+538,37,miR-606,Temozolomide,0,train
+178,34,miR-1913,Sorafenib,0,train
+163,62,miR-184,Colchicine,0,train
+528,56,miR-589*,10-Hydroxycamptothecin,0,train
+468,23,miR-501,Sirolimus,0,train
+419,3,miR-4535,Imatinib,0,train
+411,103,miR-450a,Carmustine,0,train
+73,13,miR-125a,Oxaliplatin,0,train
+29,47,Let-7,Interferon-gamma,0,train
+518,116,miR-571,5-fluorouracil,0,train
+609,91,miR-933,Fludarabine,0,train
+279,4,miR-3065,Nilotinib,0,train
+392,92,miR-431,histone deacetylase inhibitor,0,train
+291,120,miR-3126,AED therapy,0,train
+595,85,miR-885,Pertuzumab,0,train
+447,96,miR-4745,Epirubicin hydrochloride,0,train
+464,18,miR-499,Vincristine,0,train
+259,75,miR-27b,Sunitinib,0,train
+287,103,miR-30e,Carmustine,0,train
+596,102,miR-886,Betulinic acid,0,train
+401,3,miR-4476,Imatinib,0,train
+151,82,miR-17-92,Cyclopamine,0,train
+461,11,miR-495,Propofol,0,train
+515,58,miR-563,Fluoropyrimidine,0,train
+463,48,miR-497,Epirubicin,0,train
+442,27,miR-4722,Methotrexate,0,train
+284,113,miR-30c,Dihydrotestosterone,0,train
+153,114,miR-181a,DAPT,0,train
+554,110,miR-643,Pemetrexed,0,train
+451,15,miR-4783,Tetraplatin,0,train
+515,37,miR-563,Temozolomide,0,train
+191,40,miR-196b,Dexamethasone,0,train
+29,49,Let-7,Capecitabine,0,train
+562,45,miR-660,Camptothecin,0,train
+455,117,miR-486,Hydroxyurea,0,train
+56,111,miR-1183,10-hydroxycamptothecin,0,train
+252,61,miR-25,Lorlatinib,0,train
+508,77,miR-542,Levetiracetam,0,train
+536,77,miR-601,Levetiracetam,0,train
+238,2,miR-22*,Dasatinib,0,train
+37,62,let-7f,Colchicine,0,train
+218,66,miR-20b,Paroxetine,0,train
+169,73,miR-188,Exemestane,0,train
+502,16,miR-522,Docetaxel,0,train
+240,78,miR-220,Valproate,0,train
+245,41,miR-223,Ibrutinib,0,train
+40,108,let-7i,Tomudex,0,train
+45,103,miR-103,Carmustine,0,train
+284,53,miR-30c,Daunorubicin,0,train
+158,4,miR-182,Nilotinib,0,train
+396,87,miR-4454,Irinotecan,0,train
+271,64,miR-29c,Vinorelbine,0,train
+192,102,miR-197,Betulinic acid,0,train
+52,4,miR-10a,Nilotinib,0,train
+137,41,miR-151,Ibrutinib,0,train
+179,54,miR-1914*,L-asparaginase,0,train
+478,77,miR-514,Levetiracetam,0,train
+259,100,miR-27b,Teniposide,0,train
+397,109,miR-4463,Lapatinib,0,train
+423,33,miR-4638,Glucocorticoid,0,train
+571,84,miR-6845-5p,Mitomycin C,0,train
+340,67,miR-3651,Cyclophosphamide,0,train
+16,57,MALAT1,FOLFOX Chemotherapy,0,train
+9,30,HOTAIR,epirubicin,0,train
+482,41,miR-517c,Ibrutinib,0,train
+210,97,miR-202,Fulvestrant,0,train
+317,38,miR-335,Cetuximab,0,train
+162,31,miR-183,Chemotherapy,0,train
+165,30,miR-186,epirubicin,0,train
+122,36,miR-143,Oxymatrine,0,train
+291,71,miR-3126,Cytarabine,0,train
+454,65,miR-485,Prednisone,0,train
+411,73,miR-450a,Exemestane,0,train
+579,79,miR-744,Ribavirin,0,train
+91,80,miR-1288,pegIFN/RBV therapy,0,train
+30,105,Let-7a,Hydrogen Peroxide,0,train
+445,104,miR-4732,Dibenziodolium,0,train
+253,24,miR-25*,Temsirolimus,0,train
+477,21,miR-513a,Nutlin-3a,0,train
+503,81,miR-523,Dichloroacetate,0,train
+617,120,miR-99a,AED therapy,0,train
+563,40,miR-662,Dexamethasone,0,train
+539,55,miR-6087,Prednisolone,0,train
+318,14,miR-338,Carboplatin,0,train
+484,118,miR-518c,Ethanol,0,train
+126,62,miR-145,Colchicine,0,train
+263,1,miR-296,Gemcitabine,0,train
+499,35,miR-520d*,Melphalan,0,train
+145,31,miR-15b,Chemotherapy,0,train
+8,115,H19,modified ALLIC BFM 2002 protocol,0,train
+538,17,miR-606,Adriamycin,0,train
+312,85,miR-320d,Pertuzumab,0,train
+335,102,miR-3621,Betulinic acid,0,train
+402,96,miR-4478,Epirubicin hydrochloride,0,train
+319,81,miR-339,Dichloroacetate,0,train
+453,75,miR-483,Sunitinib,0,train
+316,99,miR-331,Euthyrox,0,train
+434,71,miR-4689,Cytarabine,0,train
+484,40,miR-518c,Dexamethasone,0,train
+483,4,miR-518b,Nilotinib,0,train
+310,2,miR-320a,Dasatinib,0,train
+418,99,miR-4532,Euthyrox,0,train
+324,85,miR-342,Pertuzumab,0,train
+72,104,miR-1258,Dibenziodolium,0,train
+612,58,miR-940,Fluoropyrimidine,0,train
+219,101,miR-20b*,Arsenic Trioxide,0,train
+236,50,miR-219-2,PLX4720,0,train
+579,107,miR-744,Raltitrexed,0,train
+47,32,miR-106a,TRAIL therapy,0,train
+457,101,miR-489,Arsenic Trioxide,0,train
+279,36,miR-3065,Oxymatrine,0,train
+50,12,miR-106~25,Antioestrogens,0,train
+340,120,miR-3651,AED therapy,0,train
+334,97,miR-362,Fulvestrant,0,train
+316,61,miR-331,Lorlatinib,0,train
+93,12,miR-129,Antioestrogens,0,train
+482,33,miR-517c,Glucocorticoid,0,train
+543,73,miR-618,Exemestane,0,train
+239,25,miR-22-3p,"1,25(OH)2D3",0,train
+475,19,miR-5096,Etoposide,0,train
+60,78,miR-1226,Valproate,0,train
+619,62,miR-99b,Colchicine,0,train
+360,74,miR-378a,Letrozole,0,train
+196,84,miR-198,Mitomycin C,0,train
+333,110,miR-3619,Pemetrexed,0,train
+598,3,miR-888,Imatinib,0,train
+241,14,miR-221,Carboplatin,0,train
+75,99,miR-125b-5p,Euthyrox,0,train
+549,31,miR-630,Chemotherapy,0,train
+9,93,HOTAIR,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+503,19,miR-523,Etoposide,0,train
+579,64,miR-744,Vinorelbine,0,train
+519,106,miR-574,Pingyangmycin,0,train
+366,4,miR-378i,Nilotinib,0,train
+384,99,miR-4257,Euthyrox,0,train
+188,22,miR-195,Rapamycin,0,train
+488,49,miR-519,Capecitabine,0,train
+166,71,miR-186*,Cytarabine,0,train
+606,36,miR-92a-2*,Oxymatrine,0,train
+479,75,miR-515,Sunitinib,0,train
+41,94,miR-1,Epirubicin HCl,0,train
+26,13,XIST,Oxaliplatin,0,train
+95,76,miR-1290,Platinum,0,train
+407,38,miR-4492,Cetuximab,0,train
+27,11,XLOC_006753,Propofol,0,train
+194,27,miR-1973,Methotrexate,0,train
+158,68,miR-182,Mafosfamide,0,train
+51,46,miR-107,Vinblastine,0,train
+22,12,SLC25A25-AS1,Antioestrogens,0,train
+505,17,miR-532,Adriamycin,0,train
+15,11,MACC1-AS1,Propofol,0,train
+401,22,miR-4476,Rapamycin,0,train
+174,3,miR-190,Imatinib,0,train
+441,86,miR-4721,Arsenic trioxide,0,train
+410,18,miR-4508,Vincristine,0,train
+119,116,miR-141*,5-fluorouracil,0,train
+83,90,miR-127,Topotecan,0,train
+321,65,miR-33a*,Prednisone,0,train
+90,39,miR-1285,Taxol,0,train
+275,23,miR-302a,Sirolimus,0,train
+285,31,miR-30d,Chemotherapy,0,train
+568,5,miR-675,Doxorubicin,0,train
+28,26,linc-VLDLR,Bortezomib,0,train
+154,48,miR-181a*,Epirubicin,0,train
+29,118,Let-7,Ethanol,0,train
+294,88,miR-3141,Selumetinib,0,train
+390,31,miR-4288,Chemotherapy,0,train
+564,7,miR-663,Tamoxifen,0,train
+170,58,miR-18a,Fluoropyrimidine,0,train
+36,101,let-7e,Arsenic Trioxide,0,train
+514,44,miR-560,PCI-24781,0,train
+407,109,miR-4492,Lapatinib,0,train
+572,98,miR-6886-3p,Leucovorin,0,train
+128,101,miR-1469,Arsenic Trioxide,0,train
+398,45,miR-4465,Camptothecin,0,train
+357,47,miR-376c,Interferon-gamma,0,train
+57,4,miR-1202,Nilotinib,0,train
+195,12,miR-1976,Antioestrogens,0,train
+86,72,miR-1277,Anastrozole,0,train
+409,4,miR-449a,Nilotinib,0,train
+309,53,miR-3200,Daunorubicin,0,train
+69,24,miR-1246,Temsirolimus,0,train
+36,55,let-7e,Prednisolone,0,train
+524,103,miR-585,Carmustine,0,train
+424,9,miR-4640,Fluorouracil,0,train
+66,47,miR-1236,Interferon-gamma,0,train
+505,109,miR-532,Lapatinib,0,train
+301,99,miR-3184,Euthyrox,0,train
+497,107,miR-520c,Raltitrexed,0,train
+355,3,miR-374b,Imatinib,0,train
+363,83,miR-378e,Interferon-alpha,0,train
+467,102,miR-500b,Betulinic acid,0,train
+281,34,miR-30a*,Sorafenib,0,train
+253,65,miR-25*,Prednisone,0,train
+119,53,miR-141*,Daunorubicin,0,train
+324,71,miR-342,Cytarabine,0,train
+99,43,miR-130,Curcumin,0,train
+142,83,miR-155-5p,Interferon-alpha,0,train
+343,83,miR-367,Interferon-alpha,0,train
+401,89,miR-4476,Staurosporine,0,train
+590,102,miR-873,Betulinic acid,0,train
+515,70,miR-563,Rituximab,0,train
+383,49,miR-425*,Capecitabine,0,train
+207,21,miR-200b,Nutlin-3a,0,train
+7,26,GIHCG,Bortezomib,0,train
+139,111,miR-153,10-hydroxycamptothecin,0,train
+104,116,miR-132,5-fluorouracil,0,train
+552,39,miR-639,Taxol,0,train
+134,102,miR-149,Betulinic acid,0,train
+222,36,miR-21-5p,Oxymatrine,0,train
+524,47,miR-585,Interferon-gamma,0,train
+247,59,miR-2277,Vemurafenib,0,train
+506,19,miR-539,Etoposide,0,train
+195,19,miR-1976,Etoposide,0,train
+42,101,miR-100,Arsenic Trioxide,0,train
+296,29,miR-3154,Verapamil,0,train
+560,43,miR-655,Curcumin,0,train
+575,109,miR-7-5p,Lapatinib,0,train
+536,102,miR-601,Betulinic acid,0,train
+96,51,miR-1293,platinum-based doublet chemotherapy ,0,train
+401,87,miR-4476,Irinotecan,0,train
+93,115,miR-129,modified ALLIC BFM 2002 protocol,0,train
+467,92,miR-500b,histone deacetylase inhibitor,0,train
+201,12,miR-199b*,Antioestrogens,0,train
+161,29,miR-1826,Verapamil,0,train
+232,28,miR-216b,Pirarubicin,0,train
+37,71,let-7f,Cytarabine,0,train
+11,7,LINP1,Tamoxifen,0,train
+207,60,miR-200b,Crizotinib,0,train
+132,118,miR-148a,Ethanol,0,train
+469,79,miR-501-5P,Ribavirin,0,train
+505,97,miR-532,Fulvestrant,0,train
+17,55,MEG3,Prednisolone,0,train
+108,86,miR-1343,Arsenic trioxide,0,train
+365,86,miR-378g,Arsenic trioxide,0,train
+94,9,miR-129*,Fluorouracil,0,train
+337,58,miR-363*,Fluoropyrimidine,0,train
+508,83,miR-542,Interferon-alpha,0,train
+233,2,miR-217,Dasatinib,0,train
+193,114,miR-197-3p,DAPT,0,train
+147,32,miR-16,TRAIL therapy,0,train
+224,108,miR-211,Tomudex,0,train
+347,117,miR-369,Hydroxyurea,0,train
+481,35,miR-517b,Melphalan,0,train
+610,102,miR-935,Betulinic acid,0,train
+568,98,miR-675,Leucovorin,0,train
+521,106,miR-578,Pingyangmycin,0,train
+616,68,miR-98,Mafosfamide,0,train
+464,78,miR-499,Valproate,0,train
+386,23,miR-4261,Sirolimus,0,train
+264,77,miR-298,Levetiracetam,0,train
+578,6,miR-720,Gefitinib,0,train
+592,93,miR-875,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+565,93,miR-663a,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+273,95,miR-301a,SIOP treatment protocol,0,train
+93,15,miR-129,Tetraplatin,0,train
+362,86,miR-378d,Arsenic trioxide,0,train
+377,51,miR-421,platinum-based doublet chemotherapy ,0,train
+121,76,miR-142,Platinum,0,train
+461,62,miR-495,Colchicine,0,train
+50,71,miR-106~25,Cytarabine,0,train
+404,102,miR-4484,Betulinic acid,0,train
+580,57,miR-758,FOLFOX Chemotherapy,0,train
+72,111,miR-1258,10-hydroxycamptothecin,0,train
+139,22,miR-153,Rapamycin,0,train
+352,32,miR-373*,TRAIL therapy,0,train
+348,101,miR-370,Arsenic Trioxide,0,train
+187,7,miR-194,Tamoxifen,0,train
+52,43,miR-10a,Curcumin,0,train
+416,68,miR-453,Mafosfamide,0,train
+299,33,miR-3178,Glucocorticoid,0,train
+296,54,miR-3154,L-asparaginase,0,train
+269,102,miR-29b-1*,Betulinic acid,0,train
+620,15,miR-99b*,Tetraplatin,0,train
+619,88,miR-99b,Selumetinib,0,train
+522,89,miR-582,Staurosporine,0,train
+49,23,miR-106b-25,Sirolimus,0,train
+492,27,miR-519d,Methotrexate,0,train
+375,86,miR-411,Arsenic trioxide,0,train
+130,101,miR-146b,Arsenic Trioxide,0,train
+487,76,miR-518f*,Platinum,0,train
+376,3,miR-412,Imatinib,0,train
+300,34,miR-3180,Sorafenib,0,train
+135,114,miR-149*,DAPT,0,train
+591,98,miR-874,Leucovorin,0,train
+67,13,miR-1237,Oxaliplatin,0,train
+570,46,miR-6825-5p,Vinblastine,0,train
+311,77,miR-320c,Levetiracetam,0,train
+177,95,miR-191*,SIOP treatment protocol,0,train
+95,64,miR-1290,Vinorelbine,0,train
+112,95,miR-137,SIOP treatment protocol,0,train
+202,21,miR-19a,Nutlin-3a,0,train
+533,41,miR-593,Ibrutinib,0,train
+150,105,miR-17-5p,Hydrogen Peroxide,0,train
+60,113,miR-1226,Dihydrotestosterone,0,train
+251,40,miR-24,Dexamethasone,0,train
+56,7,miR-1183,Tamoxifen,0,train
+578,37,miR-720,Temozolomide,0,train
+422,51,miR-455-3p,platinum-based doublet chemotherapy ,0,train
+243,119,miR-222,chemotherapy,0,train
+564,81,miR-663,Dichloroacetate,0,train
+92,28,miR-128a,Pirarubicin,0,train
+414,95,miR-452,SIOP treatment protocol,0,train
+182,118,miR-192*,Ethanol,0,train
+492,14,miR-519d,Carboplatin,0,train
+603,100,miR-923,Teniposide,0,train
+212,27,miR-204,Methotrexate,0,train
+189,20,miR-196a,Mitoxantrone,0,train
+318,12,miR-338,Antioestrogens,0,train
+333,60,miR-3619,Crizotinib,0,train
+44,66,miR-101,Paroxetine,0,train
+21,19,ROR1-AS1,Etoposide,0,train
+290,49,miR-31*,Capecitabine,0,train
+143,94,miR-15a,Epirubicin HCl,0,train
+241,89,miR-221,Staurosporine,0,train
+223,113,miR-210,Dihydrotestosterone,0,train
+334,32,miR-362,TRAIL therapy,0,train
+377,106,miR-421,Pingyangmycin,0,train
+391,35,miR-429,Melphalan,0,train
+97,90,miR-1297,Topotecan,0,train
+347,71,miR-369,Cytarabine,0,train
+416,60,miR-453,Crizotinib,0,train
+137,44,miR-151,PCI-24781,0,train
+301,80,miR-3184,pegIFN/RBV therapy,0,train
+562,120,miR-660,AED therapy,0,train
+503,28,miR-523,Pirarubicin,0,train
+207,30,miR-200b,epirubicin,0,train
+207,12,miR-200b,Antioestrogens,0,train
+348,79,miR-370,Ribavirin,0,train
+30,102,Let-7a,Betulinic acid,0,train
+366,82,miR-378i,Cyclopamine,0,train
+339,36,miR-365,Oxymatrine,0,train
+87,109,miR-128,Lapatinib,0,train
+179,66,miR-1914*,Paroxetine,0,train
+56,22,miR-1183,Rapamycin,0,train
+119,28,miR-141*,Pirarubicin,0,train
+348,10,miR-370,Paclitaxel,0,train
+97,106,miR-1297,Pingyangmycin,0,train
+613,24,miR-942,Temsirolimus,0,train
+106,102,miR-133b,Betulinic acid,0,train
+537,12,miR-605,Antioestrogens,0,train
+280,19,miR-30a,Etoposide,0,train
+255,47,miR-26a-MM1,Interferon-gamma,0,train
+208,51,miR-200c,platinum-based doublet chemotherapy ,0,train
+458,31,miR-490,Chemotherapy,0,train
+198,50,miR-199a-3p,PLX4720,0,train
+51,79,miR-107,Ribavirin,0,train
+41,26,miR-1,Bortezomib,0,train
+7,58,GIHCG,Fluoropyrimidine,0,train
+452,103,miR-4787,Carmustine,0,train
+335,89,miR-3621,Staurosporine,0,train
+194,52,miR-1973,5-Fluorouracil,0,train
+162,8,miR-183,Trastuzumab,0,train
+338,66,miR-3647,Paroxetine,0,train
+295,119,miR-3147,chemotherapy,0,train
+520,63,miR-576,Cyclosporin A,0,train
+593,114,miR-876,DAPT,0,train
+151,83,miR-17-92,Interferon-alpha,0,train
+570,98,miR-6825-5p,Leucovorin,0,train
+23,101,SNHG5,Arsenic Trioxide,0,train
+146,66,miR-15b*,Paroxetine,0,train
+299,111,miR-3178,10-hydroxycamptothecin,0,train
+606,87,miR-92a-2*,Irinotecan,0,train
+74,94,miR-125b,Epirubicin HCl,0,train
+14,95,Lnc-VLDLR,SIOP treatment protocol,0,train
+593,53,miR-876,Daunorubicin,0,train
+545,104,miR-625,Dibenziodolium,0,train
+528,44,miR-589*,PCI-24781,0,train
+334,105,miR-362,Hydrogen Peroxide,0,train
+356,88,miR-375,Selumetinib,0,train
+342,71,miR-3665,Cytarabine,0,train
+425,30,miR-4646,epirubicin,0,train
+81,99,miR-1265,Euthyrox,0,train
+37,65,let-7f,Prednisone,0,train
+604,55,miR-92a,Prednisolone,0,train
+461,79,miR-495,Ribavirin,0,train
+271,28,miR-29c,Pirarubicin,0,train
+584,107,miR-766,Raltitrexed,0,train
+62,15,miR-1228*,Tetraplatin,0,train
+327,113,miR-34a,Dihydrotestosterone,0,train
+367,46,miR-381,Vinblastine,0,train
+126,38,miR-145,Cetuximab,0,train
+29,50,Let-7,PLX4720,0,train
+37,114,let-7f,DAPT,0,train
+7,16,GIHCG,Docetaxel,0,train
+372,89,miR-3960,Staurosporine,0,train
+214,17,miR-205,Adriamycin,0,train
+264,27,miR-298,Methotrexate,0,train
+159,89,miR-182*,Staurosporine,0,train
+561,21,miR-658,Nutlin-3a,0,train
+365,40,miR-378g,Dexamethasone,0,train
+559,43,miR-654-5p,Curcumin,0,train
+66,58,miR-1236,Fluoropyrimidine,0,train
+550,79,miR-633,Ribavirin,0,train
+553,110,miR-640,Pemetrexed,0,train
+207,79,miR-200b,Ribavirin,0,train
+57,117,miR-1202,Hydroxyurea,0,train
+566,68,miR-665,Mafosfamide,0,train
+569,58,miR-675*,Fluoropyrimidine,0,train
+368,40,miR-382,Dexamethasone,0,train
+47,29,miR-106a,Verapamil,0,train
+289,28,miR-31,Pirarubicin,0,train
+605,94,miR-92a-1,Epirubicin HCl,0,train
+447,92,miR-4745,histone deacetylase inhibitor,0,train
+239,22,miR-22-3p,Rapamycin,0,train
+129,13,miR-146a,Oxaliplatin,0,train
+399,27,miR-4466,Methotrexate,0,train
+284,80,miR-30c,pegIFN/RBV therapy,0,train
+300,83,miR-3180,Interferon-alpha,0,train
+528,72,miR-589*,Anastrozole,0,train
+61,16,miR-1228,Docetaxel,0,train
+471,3,miR-503,Imatinib,0,train
+408,92,miR-4497,histone deacetylase inhibitor,0,train
+239,30,miR-22-3p,epirubicin,0,train
+257,82,miR-275,Cyclopamine,0,train
+568,68,miR-675,Mafosfamide,0,train
+418,3,miR-4532,Imatinib,0,train
+58,98,miR-1207,Leucovorin,0,train
+501,98,miR-520h,Leucovorin,0,train
+313,34,miR-324,Sorafenib,0,train
+225,114,miR-212,DAPT,0,train
+60,47,miR-1226,Interferon-gamma,0,train
+153,112,miR-181a,AGRO100,0,train
+553,49,miR-640,Capecitabine,0,train
+605,62,miR-92a-1,Colchicine,0,train
+432,27,miR-4685,Methotrexate,0,train
+224,104,miR-211,Dibenziodolium,0,train
+450,118,miR-4758,Ethanol,0,train
+438,54,miR-4711,L-asparaginase,0,train
+500,33,miR-520g,Glucocorticoid,0,train
+501,110,miR-520h,Pemetrexed,0,train
+215,59,miR-206,Vemurafenib,0,train
+536,70,miR-601,Rituximab,0,train
+510,45,miR-545,Camptothecin,0,train
+610,115,miR-935,modified ALLIC BFM 2002 protocol,0,train
+296,113,miR-3154,Dihydrotestosterone,0,train
+308,2,miR-320,Dasatinib,0,train
+356,107,miR-375,Raltitrexed,0,train
+210,109,miR-202,Lapatinib,0,train
+260,110,miR-27b ,Pemetrexed,0,train
+10,113,HULC,Dihydrotestosterone,0,train
+499,88,miR-520d*,Selumetinib,0,train
+243,92,miR-222,histone deacetylase inhibitor,0,train
+612,12,miR-940,Antioestrogens,0,train
+477,70,miR-513a,Rituximab,0,train
+8,65,H19,Prednisone,0,train
+560,48,miR-655,Epirubicin,0,train
+289,71,miR-31,Cytarabine,0,train
+569,31,miR-675*,Chemotherapy,0,train
+444,88,miR-4725,Selumetinib,0,train
+362,33,miR-378d,Glucocorticoid,0,train
+586,71,miR-768,Cytarabine,0,train
+323,63,miR-340,Cyclosporin A,0,train
+431,68,miR-468,Mafosfamide,0,train
+409,108,miR-449a,Tomudex,0,train
+199,23,miR-199a-5p,Sirolimus,0,train
+524,51,miR-585,platinum-based doublet chemotherapy ,0,train
+104,35,miR-132,Melphalan,0,train
+135,60,miR-149*,Crizotinib,0,train
+476,65,miR-512,Prednisone,0,train
+260,15,miR-27b ,Tetraplatin,0,train
+392,62,miR-431,Colchicine,0,train
+474,60,miR-509,Crizotinib,0,train
+112,20,miR-137,Mitoxantrone,0,train
+524,116,miR-585,5-fluorouracil,0,train
+600,56,miR-9,10-Hydroxycamptothecin,0,train
+435,28,miR-4695,Pirarubicin,0,train
+524,69,miR-585,Retinoic Acid,0,train
+340,57,miR-3651,FOLFOX Chemotherapy,0,train
+175,98,miR-1908,Leucovorin,0,train
+533,115,miR-593,modified ALLIC BFM 2002 protocol,0,train
+557,0,miR-651,Cisplatin,0,train
+159,15,miR-182*,Tetraplatin,0,train
+560,41,miR-655,Ibrutinib,0,train
+327,110,miR-34a,Pemetrexed,0,train
+131,59,miR-146b-5p,Vemurafenib,0,train
+87,100,miR-128,Teniposide,0,train
+471,72,miR-503,Anastrozole,0,train
+172,60,miR-18b,Crizotinib,0,train
+284,58,miR-30c,Fluoropyrimidine,0,train
+429,113,miR-4674,Dihydrotestosterone,0,train
+164,27,miR-185,Methotrexate,0,train
+407,29,miR-4492,Verapamil,0,train
+437,34,miR-4710,Sorafenib,0,train
+67,87,miR-1237,Irinotecan,0,train
+361,84,miR-378c,Mitomycin C,0,train
+402,47,miR-4478,Interferon-gamma,0,train
+340,2,miR-3651,Dasatinib,0,train
+589,12,miR-802,Antioestrogens,0,train
+269,0,miR-29b-1*,Cisplatin,0,train
+445,93,miR-4732,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+277,28,miR-302c,Pirarubicin,0,train
+45,73,miR-103,Exemestane,0,train
+516,31,miR-568,Chemotherapy,0,train
+131,81,miR-146b-5p,Dichloroacetate,0,train
+84,48,miR-1273g,Epirubicin,0,train
+599,107,miR-892b,Raltitrexed,0,train
+349,5,miR-371,Doxorubicin,0,train
+317,64,miR-335,Vinorelbine,0,train
+23,72,SNHG5,Anastrozole,0,train
+7,54,GIHCG,L-asparaginase,0,train
+200,113,miR-199b,Dihydrotestosterone,0,train
+215,89,miR-206,Staurosporine,0,train
+246,33,miR-224,Glucocorticoid,0,train
+91,55,miR-1288,Prednisolone,0,train
+117,80,miR-140-3p,pegIFN/RBV therapy,0,train
+141,97,miR-155,Fulvestrant,0,train
+345,15,miR-3682,Tetraplatin,0,train
+520,6,miR-576,Gefitinib,0,train
+134,22,miR-149,Rapamycin,0,train
+358,105,miR-377,Hydrogen Peroxide,0,train
+400,120,miR-4467,AED therapy,0,train
+163,36,miR-184,Oxymatrine,0,train
+299,21,miR-3178,Nutlin-3a,0,train
+489,44,miR-519a,PCI-24781,0,train
+286,79,miR-30d*,Ribavirin,0,train
+30,75,Let-7a,Sunitinib,0,train
+57,23,miR-1202,Sirolimus,0,train
+136,9,miR-150,Fluorouracil,0,train
+202,51,miR-19a,platinum-based doublet chemotherapy ,0,train
+8,93,H19,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+296,95,miR-3154,SIOP treatment protocol,0,train
+31,110,hsa-1274A,Pemetrexed,0,train
+548,26,miR-629,Bortezomib,0,train
+260,56,miR-27b ,10-Hydroxycamptothecin,0,train
+608,30,miR-93,epirubicin,0,train
+453,109,miR-483,Lapatinib,0,train
+398,113,miR-4465,Dihydrotestosterone,0,train
+189,75,miR-196a,Sunitinib,0,train
+61,83,miR-1228,Interferon-alpha,0,train
+606,44,miR-92a-2*,PCI-24781,0,train
+297,17,miR-3173,Adriamycin,0,train
+325,70,miR-345,Rituximab,0,train
+6,91,GAS5,Fludarabine,0,train
+193,46,miR-197-3p,Vinblastine,0,train
+411,75,miR-450a,Sunitinib,0,train
+227,62,miR-214,Colchicine,0,train
+8,32,H19,TRAIL therapy,0,train
+258,20,miR-27a,Mitoxantrone,0,train
+437,11,miR-4710,Propofol,0,train
+152,30,miR-181,epirubicin,0,train
+124,55,miR-144,Prednisolone,0,train
+217,33,miR-20a-5p,Glucocorticoid,0,train
+535,95,miR-598,SIOP treatment protocol,0,train
+492,113,miR-519d,Dihydrotestosterone,0,train
+228,48,miR-214*,Epirubicin,0,train
+499,71,miR-520d*,Cytarabine,0,train
+339,108,miR-365,Tomudex,0,train
+394,78,miR-4428,Valproate,0,train
+159,96,miR-182*,Epirubicin hydrochloride,0,train
+492,91,miR-519d,Fludarabine,0,train
+2,51,CASC11,platinum-based doublet chemotherapy ,0,train
+360,29,miR-378a,Verapamil,0,train
+122,41,miR-143,Ibrutinib,0,train
+556,58,miR-649,Fluoropyrimidine,0,train
+472,103,miR-505,Carmustine,0,train
+225,46,miR-212,Vinblastine,0,train
+440,88,miR-4716,Selumetinib,0,train
+122,119,miR-143,chemotherapy,0,train
+617,93,miR-99a,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+276,55,miR-302b,Prednisolone,0,train
+557,110,miR-651,Pemetrexed,0,train
+607,83,miR-92b,Interferon-alpha,0,train
+140,9,miR-154*,Fluorouracil,0,train
+24,101,TUG1,Arsenic Trioxide,0,train
+573,119,miR-7,chemotherapy,0,train
+594,83,miR-877,Interferon-alpha,0,train
+67,103,miR-1237,Carmustine,0,train
+478,23,miR-514,Sirolimus,0,train
+390,112,miR-4288,AGRO100,0,train
+483,63,miR-518b,Cyclosporin A,0,train
+168,26,miR-187*,Bortezomib,0,train
+613,29,miR-942,Verapamil,0,train
+212,53,miR-204,Daunorubicin,0,train
+461,6,miR-495,Gefitinib,0,train
+152,11,miR-181,Propofol,0,train
+28,9,linc-VLDLR,Fluorouracil,0,train
+210,25,miR-202,"1,25(OH)2D3",0,train
+518,119,miR-571,chemotherapy,0,train
+161,39,miR-1826,Taxol,0,train
+575,7,miR-7-5p,Tamoxifen,0,train
+45,110,miR-103,Pemetrexed,0,train
+535,102,miR-598,Betulinic acid,0,train
+429,69,miR-4674,Retinoic Acid,0,train
+95,102,miR-1290,Betulinic acid,0,train
+494,75,miR-520,Sunitinib,0,train
+176,15,miR-191,Tetraplatin,0,train
+492,60,miR-519d,Crizotinib,0,train
+139,4,miR-153,Nilotinib,0,train
+47,55,miR-106a,Prednisolone,0,train
+273,91,miR-301a,Fludarabine,0,train
+446,77,miR-4739,Levetiracetam,0,train
+366,59,miR-378i,Vemurafenib,0,train
+47,116,miR-106a,5-fluorouracil,0,train
+159,8,miR-182*,Trastuzumab,0,train
+390,38,miR-4288,Cetuximab,0,train
+163,15,miR-184,Tetraplatin,0,train
+570,25,miR-6825-5p,"1,25(OH)2D3",0,train
+349,65,miR-371,Prednisone,0,train
+468,2,miR-501,Dasatinib,0,train
+310,111,miR-320a,10-hydroxycamptothecin,0,train
+431,62,miR-468,Colchicine,0,train
+429,71,miR-4674,Cytarabine,0,train
+310,27,miR-320a,Methotrexate,0,train
+160,71,miR-1825,Cytarabine,0,train
+198,23,miR-199a-3p,Sirolimus,0,train
+214,94,miR-205,Epirubicin HCl,0,train
+355,87,miR-374b,Irinotecan,0,train
+505,107,miR-532,Raltitrexed,0,train
+466,7,miR-500a,Tamoxifen,0,train
+485,70,miR-518e*,Rituximab,0,train
+339,42,miR-365,Erlotinib,0,train
+613,4,miR-942,Nilotinib,0,train
+567,106,miR-671,Pingyangmycin,0,train
+17,40,MEG3,Dexamethasone,0,train
+106,115,miR-133b,modified ALLIC BFM 2002 protocol,0,train
+223,84,miR-210,Mitomycin C,0,train
+161,9,miR-1826,Fluorouracil,0,train
+147,89,miR-16,Staurosporine,0,train
+456,24,miR-487b,Temsirolimus,0,train
+551,67,miR-638,Cyclophosphamide,0,train
+235,32,miR-219,TRAIL therapy,0,train
+107,80,miR-134,pegIFN/RBV therapy,0,train
+176,68,miR-191,Mafosfamide,0,train
+5,98,CUDR,Leucovorin,0,train
+256,77,miR-26b,Levetiracetam,0,train
+273,72,miR-301a,Anastrozole,0,train
+387,71,miR-4279,Cytarabine,0,train
+448,97,miR-4749,Fulvestrant,0,train
+57,94,miR-1202,Epirubicin HCl,0,train
+580,119,miR-758,chemotherapy,0,train
+230,47,miR-216,Interferon-gamma,0,train
+166,94,miR-186*,Epirubicin HCl,0,train
+325,111,miR-345,10-hydroxycamptothecin,0,train
+515,72,miR-563,Anastrozole,0,train
+93,36,miR-129,Oxymatrine,0,train
+68,97,miR-124,Fulvestrant,0,train
+479,48,miR-515,Epirubicin,0,train
+454,112,miR-485,AGRO100,0,train
+374,44,miR-410,PCI-24781,0,train
+171,69,miR-18a*,Retinoic Acid,0,train
+242,88,miR-221*,Selumetinib,0,train
+455,14,miR-486,Carboplatin,0,train
+16,31,MALAT1,Chemotherapy,0,train
+285,34,miR-30d,Sorafenib,0,train
+555,0,miR-647,Cisplatin,0,train
+341,66,miR-3653,Paroxetine,0,train
+516,72,miR-568,Anastrozole,0,train
+301,84,miR-3184,Mitomycin C,0,train
+527,25,miR-588,"1,25(OH)2D3",0,train
+513,94,miR-555,Epirubicin HCl,0,train
+388,75,miR-4284,Sunitinib,0,train
+144,66,miR-15a*,Paroxetine,0,train
+187,68,miR-194,Mafosfamide,0,train
+72,37,miR-1258,Temozolomide,0,train
+590,48,miR-873,Epirubicin,0,train
+53,27,miR-10a ,Methotrexate,0,train
+104,86,miR-132,Arsenic trioxide,0,train
+75,8,miR-125b-5p,Trastuzumab,0,train
+290,54,miR-31*,L-asparaginase,0,train
+127,78,miR-1468,Valproate,0,train
+532,8,miR-592,Trastuzumab,0,train
+403,32,miR-448,TRAIL therapy,0,train
+403,9,miR-448,Fluorouracil,0,train
+510,95,miR-545,SIOP treatment protocol,0,train
+208,43,miR-200c,Curcumin,0,train
+471,101,miR-503,Arsenic Trioxide,0,train
+94,39,miR-129*,Taxol,0,train
+58,7,miR-1207,Tamoxifen,0,train
+290,102,miR-31*,Betulinic acid,0,train
+475,113,miR-5096,Dihydrotestosterone,0,train
+189,84,miR-196a,Mitomycin C,0,train
+52,24,miR-10a,Temsirolimus,0,train
+354,68,miR-374a*,Mafosfamide,0,train
+45,71,miR-103,Cytarabine,0,train
+59,86,miR-122,Arsenic trioxide,0,train
+242,104,miR-221*,Dibenziodolium,0,train
+593,63,miR-876,Cyclosporin A,0,train
+559,42,miR-654-5p,Erlotinib,0,train
+367,6,miR-381,Gefitinib,0,train
+210,72,miR-202,Anastrozole,0,train
+400,23,miR-4467,Sirolimus,0,train
+334,112,miR-362,AGRO100,0,train
+106,95,miR-133b,SIOP treatment protocol,0,train
+526,30,miR-587,epirubicin,0,train
+334,58,miR-362,Fluoropyrimidine,0,train
+166,55,miR-186*,Prednisolone,0,train
+490,59,miR-519b,Vemurafenib,0,train
+238,4,miR-22*,Nilotinib,0,train
+254,27,miR-26a,Methotrexate,0,train
+306,86,miR-3196,Arsenic trioxide,0,train
+477,53,miR-513a,Daunorubicin,0,train
+575,102,miR-7-5p,Betulinic acid,0,train
+354,55,miR-374a*,Prednisolone,0,train
+53,105,miR-10a ,Hydrogen Peroxide,0,train
+309,80,miR-3200,pegIFN/RBV therapy,0,train
+133,10,miR-148b,Paclitaxel,0,train
+202,94,miR-19a,Epirubicin HCl,0,train
+28,10,linc-VLDLR,Paclitaxel,0,train
+37,63,let-7f,Cyclosporin A,0,train
+330,102,miR-34c,Betulinic acid,0,train
+160,114,miR-1825,DAPT,0,train
+366,55,miR-378i,Prednisolone,0,train
+259,46,miR-27b,Vinblastine,0,train
+574,58,miR-7-1*,Fluoropyrimidine,0,train
+345,44,miR-3682,PCI-24781,0,train
+40,83,let-7i,Interferon-alpha,0,train
+17,106,MEG3,Pingyangmycin,0,train
+262,30,miR-2861,epirubicin,0,train
+528,10,miR-589*,Paclitaxel,0,train
+333,70,miR-3619,Rituximab,0,train
+154,59,miR-181a*,Vemurafenib,0,train
+386,7,miR-4261,Tamoxifen,0,train
+63,17,miR-1229-5p,Adriamycin,0,train
+40,100,let-7i,Teniposide,0,train
+368,92,miR-382,histone deacetylase inhibitor,0,train
+576,87,miR-708,Irinotecan,0,train
+13,100,LUCAT1,Teniposide,0,train
+233,16,miR-217,Docetaxel,0,train
+164,14,miR-185,Carboplatin,0,train
+426,45,miR-4655,Camptothecin,0,train
+12,15,LOC285194,Tetraplatin,0,train
+39,96,let-7g,Epirubicin hydrochloride,0,train
+118,8,miR-141,Trastuzumab,0,train
+488,60,miR-519,Crizotinib,0,train
+605,117,miR-92a-1,Hydroxyurea,0,train
+473,8,miR-506,Trastuzumab,0,train
+22,102,SLC25A25-AS1,Betulinic acid,0,train
+4,77,CRNDE,Levetiracetam,0,train
+458,37,miR-490,Temozolomide,0,train
+55,98,miR-10b,Leucovorin,0,train
+600,107,miR-9,Raltitrexed,0,train
+533,91,miR-593,Fludarabine,0,train
+431,120,miR-468,AED therapy,0,train
+141,16,miR-155,Docetaxel,0,train
+481,43,miR-517b,Curcumin,0,train
+315,92,miR-330,histone deacetylase inhibitor,0,train
+3,35,CCAT1,Melphalan,0,train
+28,35,linc-VLDLR,Melphalan,0,train
+393,56,miR-433,10-Hydroxycamptothecin,0,train
+269,101,miR-29b-1*,Arsenic Trioxide,0,train
+445,3,miR-4732,Imatinib,0,train
+187,19,miR-194,Etoposide,0,train
+201,64,miR-199b*,Vinorelbine,0,train
+457,10,miR-489,Paclitaxel,0,train
+567,55,miR-671,Prednisolone,0,train
+52,104,miR-10a,Dibenziodolium,0,train
+257,47,miR-275,Interferon-gamma,0,train
+530,79,miR-590-5p,Ribavirin,0,train
+77,49,miR-126*,Capecitabine,0,train
+140,97,miR-154*,Fulvestrant,0,train
+55,41,miR-10b,Ibrutinib,0,train
+520,35,miR-576,Melphalan,0,train
+342,88,miR-3665,Selumetinib,0,train
+432,105,miR-4685,Hydrogen Peroxide,0,train
+216,94,miR-20a,Epirubicin HCl,0,train
+599,109,miR-892b,Lapatinib,0,train
+458,32,miR-490,TRAIL therapy,0,train
+218,26,miR-20b,Bortezomib,0,train
+95,105,miR-1290,Hydrogen Peroxide,0,train
+245,72,miR-223,Anastrozole,0,train
+196,56,miR-198,10-Hydroxycamptothecin,0,train
+480,60,miR-517a,Crizotinib,0,train
+490,8,miR-519b,Trastuzumab,0,train
+82,78,miR-1268,Valproate,0,train
+279,120,miR-3065,AED therapy,0,train
+205,71,miR-200,Cytarabine,0,train
+479,104,miR-515,Dibenziodolium,0,train
+43,14,miR-100-5p,Carboplatin,0,train
+383,41,miR-425*,Ibrutinib,0,train
+543,78,miR-618,Valproate,0,train
+348,74,miR-370,Letrozole,0,train
+434,15,miR-4689,Tetraplatin,0,train
+220,63,miR-21,Cyclosporin A,0,train
+327,4,miR-34a,Nilotinib,0,train
+5,76,CUDR,Platinum,0,train
+514,35,miR-560,Melphalan,0,train
+422,116,miR-455-3p,5-fluorouracil,0,train
+151,52,miR-17-92,5-Fluorouracil,0,train
+302,2,miR-3186,Dasatinib,0,train
+59,91,miR-122,Fludarabine,0,train
+360,92,miR-378a,histone deacetylase inhibitor,0,train
+44,83,miR-101,Interferon-alpha,0,train
+299,14,miR-3178,Carboplatin,0,train
+180,112,miR-1915,AGRO100,0,train
+503,104,miR-523,Dibenziodolium,0,train
+602,47,miR-922,Interferon-gamma,0,train
+332,97,miR-361,Fulvestrant,0,train
+256,110,miR-26b,Pemetrexed,0,train
+421,17,miR-455,Adriamycin,0,train
+77,14,miR-126*,Carboplatin,0,train
+226,45,miR-213,Camptothecin,0,train
+236,17,miR-219-2,Adriamycin,0,train
+520,9,miR-576,Fluorouracil,0,train
+346,104,miR-3687,Dibenziodolium,0,train
+307,18,miR-32,Vincristine,0,train
+104,90,miR-132,Topotecan,0,train
+69,7,miR-1246,Tamoxifen,0,train
+232,117,miR-216b,Hydroxyurea,0,train
+235,59,miR-219,Vemurafenib,0,train
+317,68,miR-335,Mafosfamide,0,train
+519,30,miR-574,epirubicin,0,train
+192,89,miR-197,Staurosporine,0,train
+547,13,miR-628,Oxaliplatin,0,train
+358,75,miR-377,Sunitinib,0,train
+167,47,miR-187,Interferon-gamma,0,train
+194,58,miR-1973,Fluoropyrimidine,0,train
+539,85,miR-6087,Pertuzumab,0,train
+250,51,miR-23b-3p,platinum-based doublet chemotherapy ,0,train
+367,61,miR-381,Lorlatinib,0,train
+224,69,miR-211,Retinoic Acid,0,train
+313,102,miR-324,Betulinic acid,0,train
+104,36,miR-132,Oxymatrine,0,train
+368,112,miR-382,AGRO100,0,train
+499,106,miR-520d*,Pingyangmycin,0,train
+58,57,miR-1207,FOLFOX Chemotherapy,0,train
+174,55,miR-190,Prednisolone,0,train
+376,53,miR-412,Daunorubicin,0,train
+279,95,miR-3065,SIOP treatment protocol,0,train
+561,30,miR-658,epirubicin,0,train
+60,18,miR-1226,Vincristine,0,train
+1,34,BCAR4,Sorafenib,0,train
+480,73,miR-517a,Exemestane,0,train
+399,47,miR-4466,Interferon-gamma,0,train
+369,38,miR-383,Cetuximab,0,train
+486,5,miR-518f,Doxorubicin,0,train
+579,36,miR-744,Oxymatrine,0,train
+397,76,miR-4463,Platinum,0,train
+160,87,miR-1825,Irinotecan,0,train
+176,113,miR-191,Dihydrotestosterone,0,train
+75,102,miR-125b-5p,Betulinic acid,0,train
+596,68,miR-886,Mafosfamide,0,train
+306,61,miR-3196,Lorlatinib,0,train
+173,43,miR-19,Curcumin,0,train
+440,75,miR-4716,Sunitinib,0,train
+261,22,miR-28,Rapamycin,0,train
+52,10,miR-10a,Paclitaxel,0,train
+567,102,miR-671,Betulinic acid,0,train
+539,72,miR-6087,Anastrozole,0,train
+172,85,miR-18b,Pertuzumab,0,train
+476,90,miR-512,Topotecan,0,train
+398,89,miR-4465,Staurosporine,0,train
+478,33,miR-514,Glucocorticoid,0,train
+256,76,miR-26b,Platinum,0,train
+342,73,miR-3665,Exemestane,0,train
+347,73,miR-369,Exemestane,0,train
+292,44,miR-3127,PCI-24781,0,train
+51,56,miR-107,10-Hydroxycamptothecin,0,train
+539,42,miR-6087,Erlotinib,0,train
+308,43,miR-320,Curcumin,0,train
+123,56,miR-143*,10-Hydroxycamptothecin,0,train
+343,118,miR-367,Ethanol,0,train
+304,81,miR-3193,Dichloroacetate,0,train
+349,97,miR-371,Fulvestrant,0,train
+376,94,miR-412,Epirubicin HCl,0,train
+129,61,miR-146a,Lorlatinib,0,train
+112,10,miR-137,Paclitaxel,0,train
+207,57,miR-200b,FOLFOX Chemotherapy,0,train
+531,116,miR-591,5-fluorouracil,0,train
+7,97,GIHCG,Fulvestrant,0,train
+617,101,miR-99a,Arsenic Trioxide,0,train
+0,116,ANRIL,5-fluorouracil,0,train
+308,1,miR-320,Gemcitabine,0,train
+10,46,HULC,Vinblastine,0,train
+388,33,miR-4284,Glucocorticoid,0,train
+364,106,miR-378f,Pingyangmycin,0,train
+102,52,miR-130a-3p,5-Fluorouracil,0,train
+566,54,miR-665,L-asparaginase,0,train
+371,20,miR-3940,Mitoxantrone,0,train
+434,80,miR-4689,pegIFN/RBV therapy,0,train
+37,61,let-7f,Lorlatinib,0,train
+8,9,H19,Fluorouracil,0,train
+22,54,SLC25A25-AS1,L-asparaginase,0,train
+375,32,miR-411,TRAIL therapy,0,train
+174,52,miR-190,5-Fluorouracil,0,train
+214,101,miR-205,Arsenic Trioxide,0,train
+218,70,miR-20b,Rituximab,0,train
+192,1,miR-197,Gemcitabine,0,train
+342,75,miR-3665,Sunitinib,0,train
+561,108,miR-658,Tomudex,0,train
+142,78,miR-155-5p,Valproate,0,train
+446,61,miR-4739,Lorlatinib,0,train
+53,81,miR-10a ,Dichloroacetate,0,train
+577,110,miR-718,Pemetrexed,0,train
+314,53,miR-328,Daunorubicin,0,train
+325,31,miR-345,Chemotherapy,0,train
+242,65,miR-221*,Prednisone,0,train
+156,87,miR-181c,Irinotecan,0,train
+516,65,miR-568,Prednisone,0,train
+607,96,miR-92b,Epirubicin hydrochloride,0,train
+498,54,miR-520d,L-asparaginase,0,train
+115,57,miR-139,FOLFOX Chemotherapy,0,train
+407,95,miR-4492,SIOP treatment protocol,0,train
+197,23,miR-199a,Sirolimus,0,train
+355,82,miR-374b,Cyclopamine,0,train
+284,72,miR-30c,Anastrozole,0,train
+74,104,miR-125b,Dibenziodolium,0,train
+229,20,miR-215,Mitoxantrone,0,train
+152,107,miR-181,Raltitrexed,0,train
+341,49,miR-3653,Capecitabine,0,train
+245,14,miR-223,Carboplatin,0,train
+503,66,miR-523,Paroxetine,0,train
+477,52,miR-513a,5-Fluorouracil,0,train
+368,83,miR-382,Interferon-alpha,0,train
+500,51,miR-520g,platinum-based doublet chemotherapy ,0,train
+88,11,miR-128-2,Propofol,0,train
+279,102,miR-3065,Betulinic acid,0,train
+382,68,miR-425,Mafosfamide,0,train
+408,54,miR-4497,L-asparaginase,0,train
+403,16,miR-448,Docetaxel,0,train
+392,4,miR-431,Nilotinib,0,train
+322,95,miR-33b,SIOP treatment protocol,0,train
+399,26,miR-4466,Bortezomib,0,train
+440,27,miR-4716,Methotrexate,0,train
+270,22,miR-29b-2*,Rapamycin,0,train
+112,85,miR-137,Pertuzumab,0,train
+597,30,miR-887,epirubicin,0,train
+586,13,miR-768,Oxaliplatin,0,train
+444,65,miR-4725,Prednisone,0,train
+420,83,miR-454,Interferon-alpha,0,train
+438,39,miR-4711,Taxol,0,train
+372,104,miR-3960,Dibenziodolium,0,train
+363,26,miR-378e,Bortezomib,0,train
+87,10,miR-128,Paclitaxel,0,train
+148,102,miR-17,Betulinic acid,0,train
+531,45,miR-591,Camptothecin,0,train
+230,118,miR-216,Ethanol,0,train
+23,12,SNHG5,Antioestrogens,0,train
+557,81,miR-651,Dichloroacetate,0,train
+500,28,miR-520g,Pirarubicin,0,train
+320,116,miR-33a,5-fluorouracil,0,train
+119,120,miR-141*,AED therapy,0,train
+18,83,MRUL,Interferon-alpha,0,train
+440,95,miR-4716,SIOP treatment protocol,0,train
+277,2,miR-302c,Dasatinib,0,train
+121,30,miR-142,epirubicin,0,train
+259,95,miR-27b,SIOP treatment protocol,0,train
+343,86,miR-367,Arsenic trioxide,0,train
+463,114,miR-497,DAPT,0,train
+575,93,miR-7-5p,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+311,55,miR-320c,Prednisolone,0,train
+239,68,miR-22-3p,Mafosfamide,0,train
+236,34,miR-219-2,Sorafenib,0,train
+131,36,miR-146b-5p,Oxymatrine,0,train
+278,21,miR-302c*,Nutlin-3a,0,train
+231,89,miR-216a,Staurosporine,0,train
+52,47,miR-10a,Interferon-gamma,0,train
+403,97,miR-448,Fulvestrant,0,train
+322,11,miR-33b,Propofol,0,train
+47,88,miR-106a,Selumetinib,0,train
+462,69,miR-496,Retinoic Acid,0,train
+92,52,miR-128a,5-Fluorouracil,0,train
+13,17,LUCAT1,Adriamycin,0,train
+283,32,miR-30b*,TRAIL therapy,0,train
+524,91,miR-585,Fludarabine,0,train
+369,42,miR-383,Erlotinib,0,train
+279,11,miR-3065,Propofol,0,train
+285,30,miR-30d,epirubicin,0,train
+576,81,miR-708,Dichloroacetate,0,train
+532,88,miR-592,Selumetinib,0,train
+10,49,HULC,Capecitabine,0,train
+34,26,let-7c,Bortezomib,0,train
+533,5,miR-593,Doxorubicin,0,train
+436,119,miR-4707,chemotherapy,0,train
+380,68,miR-424,Mafosfamide,0,train
+551,108,miR-638,Tomudex,0,train
+58,50,miR-1207,PLX4720,0,train
+508,27,miR-542,Methotrexate,0,train
+410,59,miR-4508,Vemurafenib,0,train
+563,44,miR-662,PCI-24781,0,train
+136,118,miR-150,Ethanol,0,train
+95,110,miR-1290,Pemetrexed,0,train
+231,58,miR-216a,Fluoropyrimidine,0,train
+621,71,miR-Plus-A1031,Cytarabine,0,train
+595,22,miR-885,Rapamycin,0,train
+147,65,miR-16,Prednisone,0,train
+20,29,PVT1,Verapamil,0,train
+377,26,miR-421,Bortezomib,0,train
+133,75,miR-148b,Sunitinib,0,train
+398,57,miR-4465,FOLFOX Chemotherapy,0,train
+578,13,miR-720,Oxaliplatin,0,train
+558,30,miR-652,epirubicin,0,train
+190,31,miR-196a-5p,Chemotherapy,0,train
+544,91,miR-624*,Fludarabine,0,train
+126,17,miR-145,Adriamycin,0,train
+518,55,miR-571,Prednisolone,0,train
+78,51,miR-1260,platinum-based doublet chemotherapy ,0,train
+264,101,miR-298,Arsenic Trioxide,0,train
+400,63,miR-4467,Cyclosporin A,0,train
+24,73,TUG1,Exemestane,0,train
+545,20,miR-625,Mitoxantrone,0,train
+327,54,miR-34a,L-asparaginase,0,train
+459,95,miR-491,SIOP treatment protocol,0,train
+132,31,miR-148a,Chemotherapy,0,train
+418,106,miR-4532,Pingyangmycin,0,train
+295,58,miR-3147,Fluoropyrimidine,0,train
+296,41,miR-3154,Ibrutinib,0,train
+533,104,miR-593,Dibenziodolium,0,train
+318,105,miR-338,Hydrogen Peroxide,0,train
+530,13,miR-590-5p,Oxaliplatin,0,train
+514,38,miR-560,Cetuximab,0,train
+202,89,miR-19a,Staurosporine,0,train
+151,31,miR-17-92,Chemotherapy,0,train
+557,111,miR-651,10-hydroxycamptothecin,0,train
+567,119,miR-671,chemotherapy,0,train
+67,19,miR-1237,Etoposide,0,train
+231,88,miR-216a,Selumetinib,0,train
+252,10,miR-25,Paclitaxel,0,train
+534,67,miR-593*,Cyclophosphamide,0,train
+263,104,miR-296,Dibenziodolium,0,train
+508,9,miR-542,Fluorouracil,0,train
+531,70,miR-591,Rituximab,0,train
+505,76,miR-532,Platinum,0,train
+440,91,miR-4716,Fludarabine,0,train
+78,72,miR-1260,Anastrozole,0,train
+464,72,miR-499,Anastrozole,0,train
+456,71,miR-487b,Cytarabine,0,train
+604,85,miR-92a,Pertuzumab,0,train
+510,80,miR-545,pegIFN/RBV therapy,0,train
+90,63,miR-1285,Cyclosporin A,0,train
+608,8,miR-93,Trastuzumab,0,train
+152,74,miR-181,Letrozole,0,train
+147,63,miR-16,Cyclosporin A,0,train
+321,76,miR-33a*,Platinum,0,train
+221,114,miR-21*,DAPT,0,train
+526,102,miR-587,Betulinic acid,0,train
+536,103,miR-601,Carmustine,0,train
+87,55,miR-128,Prednisolone,0,train
+4,73,CRNDE,Exemestane,0,train
+612,83,miR-940,Interferon-alpha,0,train
+606,103,miR-92a-2*,Carmustine,0,train
+416,46,miR-453,Vinblastine,0,train
+430,32,miR-4675,TRAIL therapy,0,train
+523,44,miR-584,PCI-24781,0,train
+10,19,HULC,Etoposide,0,train
+135,103,miR-149*,Carmustine,0,train
+423,8,miR-4638,Trastuzumab,0,train
+299,51,miR-3178,platinum-based doublet chemotherapy ,0,train
+438,83,miR-4711,Interferon-alpha,0,train
+82,24,miR-1268,Temsirolimus,0,train
+518,73,miR-571,Exemestane,0,train
+462,60,miR-496,Crizotinib,0,train
+113,64,miR-138,Vinorelbine,0,train
+614,6,miR-96,Gefitinib,0,train
+360,108,miR-378a,Tomudex,0,train
+453,28,miR-483,Pirarubicin,0,train
+138,108,miR-152,Tomudex,0,train
+558,92,miR-652,histone deacetylase inhibitor,0,train
+131,45,miR-146b-5p,Camptothecin,0,train
+560,107,miR-655,Raltitrexed,0,train
+132,87,miR-148a,Irinotecan,0,train
+107,113,miR-134,Dihydrotestosterone,0,train
+546,120,miR-625*,AED therapy,0,train
+411,32,miR-450a,TRAIL therapy,0,train
+16,63,MALAT1,Cyclosporin A,0,train
+439,95,miR-4713,SIOP treatment protocol,0,train
+376,92,miR-412,histone deacetylase inhibitor,0,train
+57,103,miR-1202,Carmustine,0,train
+541,3,miR-614,Imatinib,0,train
+382,3,miR-425,Imatinib,0,train
+236,86,miR-219-2,Arsenic trioxide,0,train
+372,101,miR-3960,Arsenic Trioxide,0,train
+310,47,miR-320a,Interferon-gamma,0,train
+344,114,miR-3676,DAPT,0,train
+354,61,miR-374a*,Lorlatinib,0,train
+151,91,miR-17-92,Fludarabine,0,train
+350,113,miR-372,Dihydrotestosterone,0,train
+529,103,miR-590,Carmustine,0,train
+314,100,miR-328,Teniposide,0,train
+248,73,miR-23a,Exemestane,0,train
+534,97,miR-593*,Fulvestrant,0,train
+565,11,miR-663a,Propofol,0,train
+84,106,miR-1273g,Pingyangmycin,0,train
+110,14,miR-135b,Carboplatin,0,train
+86,94,miR-1277,Epirubicin HCl,0,train
+499,91,miR-520d*,Fludarabine,0,train
+534,14,miR-593*,Carboplatin,0,train
+495,112,miR-520a,AGRO100,0,train
+517,44,miR-569,PCI-24781,0,train
+197,18,miR-199a,Vincristine,0,train
+367,2,miR-381,Dasatinib,0,train
+63,31,miR-1229-5p,Chemotherapy,0,train
+250,3,miR-23b-3p,Imatinib,0,train
+183,49,miR-193a,Capecitabine,0,train
+340,75,miR-3651,Sunitinib,0,train
+297,97,miR-3173,Fulvestrant,0,train
+322,41,miR-33b,Ibrutinib,0,train
+505,96,miR-532,Epirubicin hydrochloride,0,train
+345,97,miR-3682,Fulvestrant,0,train
+180,104,miR-1915,Dibenziodolium,0,train
+368,110,miR-382,Pemetrexed,0,train
+542,25,miR-615,"1,25(OH)2D3",0,train
+176,97,miR-191,Fulvestrant,0,train
+290,26,miR-31*,Bortezomib,0,train
+348,78,miR-370,Valproate,0,train
+361,22,miR-378c,Rapamycin,0,train
+350,35,miR-372,Melphalan,0,train
+338,0,miR-3647,Cisplatin,0,train
+57,50,miR-1202,PLX4720,0,train
+583,103,miR-765,Carmustine,0,train
+196,22,miR-198,Rapamycin,0,train
+379,95,miR-423,SIOP treatment protocol,0,train
+439,46,miR-4713,Vinblastine,0,train
+191,56,miR-196b,10-Hydroxycamptothecin,0,train
+99,67,miR-130,Cyclophosphamide,0,train
+36,98,let-7e,Leucovorin,0,train
+601,94,miR-920,Epirubicin HCl,0,train
+587,113,miR-769,Dihydrotestosterone,0,train
+586,112,miR-768,AGRO100,0,train
+219,56,miR-20b*,10-Hydroxycamptothecin,0,train
+71,32,miR-1256,TRAIL therapy,0,train
+297,64,miR-3173,Vinorelbine,0,train
+211,80,miR-203,pegIFN/RBV therapy,0,train
+256,50,miR-26b,PLX4720,0,train
+173,13,miR-19,Oxaliplatin,0,train
+96,96,miR-1293,Epirubicin hydrochloride,0,train
+168,108,miR-187*,Tomudex,0,train
+345,76,miR-3682,Platinum,0,train
+621,24,miR-Plus-A1031,Temsirolimus,0,train
+245,89,miR-223,Staurosporine,0,train
+109,59,miR-135a,Vemurafenib,0,train
+117,43,miR-140-3p,Curcumin,0,train
+298,54,miR-3177,L-asparaginase,0,train
+358,115,miR-377,modified ALLIC BFM 2002 protocol,0,train
+324,1,miR-342,Gemcitabine,0,train
+554,89,miR-643,Staurosporine,0,train
+243,78,miR-222,Valproate,0,train
+548,47,miR-629,Interferon-gamma,0,train
+397,97,miR-4463,Fulvestrant,0,train
+456,25,miR-487b,"1,25(OH)2D3",0,train
+176,45,miR-191,Camptothecin,0,train
+214,4,miR-205,Nilotinib,0,train
+433,68,miR-4687,Mafosfamide,0,train
+531,66,miR-591,Paroxetine,0,train
+163,78,miR-184,Valproate,0,train
+100,14,miR-1307,Carboplatin,0,train
+459,17,miR-491,Adriamycin,0,train
+435,54,miR-4695,L-asparaginase,0,train
+95,28,miR-1290,Pirarubicin,0,train
+149,78,miR-17*,Valproate,0,train
+379,114,miR-423,DAPT,0,train
+561,94,miR-658,Epirubicin HCl,0,train
+598,1,miR-888,Gemcitabine,0,train
+203,97,miR-19b,Fulvestrant,0,train
+97,85,miR-1297,Pertuzumab,0,train
+374,38,miR-410,Cetuximab,0,train
+112,34,miR-137,Sorafenib,0,train
+211,57,miR-203,FOLFOX Chemotherapy,0,train
+239,34,miR-22-3p,Sorafenib,0,train
+468,65,miR-501,Prednisone,0,train
+158,84,miR-182,Mitomycin C,0,train
+486,100,miR-518f,Teniposide,0,train
+299,50,miR-3178,PLX4720,0,train
+390,20,miR-4288,Mitoxantrone,0,train
+330,4,miR-34c,Nilotinib,0,train
+420,42,miR-454,Erlotinib,0,train
+157,11,miR-181d,Propofol,0,train
+98,7,miR-1299,Tamoxifen,0,train
+86,50,miR-1277,PLX4720,0,train
+355,119,miR-374b,chemotherapy,0,train
+80,96,miR-1264,Epirubicin hydrochloride,0,train
+64,113,miR-1233,Dihydrotestosterone,0,train
+75,91,miR-125b-5p,Fludarabine,0,train
+560,0,miR-655,Cisplatin,0,train
+64,105,miR-1233,Hydrogen Peroxide,0,train
+553,95,miR-640,SIOP treatment protocol,0,train
+287,49,miR-30e,Capecitabine,0,train
+402,33,miR-4478,Glucocorticoid,0,train
+517,27,miR-569,Methotrexate,0,train
+370,110,miR-3937,Pemetrexed,0,train
+351,118,miR-373,Ethanol,0,train
+405,30,miR-4485,epirubicin,0,train
+242,19,miR-221*,Etoposide,0,train
+164,108,miR-185,Tomudex,0,train
+56,120,miR-1183,AED therapy,0,train
+233,112,miR-217,AGRO100,0,train
+114,61,miR-138-1*,Lorlatinib,0,train
+267,45,miR-29a*,Camptothecin,0,train
+280,102,miR-30a,Betulinic acid,0,train
+438,85,miR-4711,Pertuzumab,0,train
+304,58,miR-3193,Fluoropyrimidine,0,train
+18,88,MRUL,Selumetinib,0,train
+444,0,miR-4725,Cisplatin,0,train
+55,38,miR-10b,Cetuximab,0,train
+556,22,miR-649,Rapamycin,0,train
+451,87,miR-4783,Irinotecan,0,train
+268,22,miR-29b,Rapamycin,0,train
+57,75,miR-1202,Sunitinib,0,train
+81,98,miR-1265,Leucovorin,0,train
+267,87,miR-29a*,Irinotecan,0,train
+226,70,miR-213,Rituximab,0,train
+76,39,miR-126,Taxol,0,train
+243,22,miR-222,Rapamycin,0,train
+457,111,miR-489,10-hydroxycamptothecin,0,train
+438,75,miR-4711,Sunitinib,0,train
+356,44,miR-375,PCI-24781,0,train
+437,63,miR-4710,Cyclosporin A,0,train
+520,30,miR-576,epirubicin,0,train
+518,10,miR-571,Paclitaxel,0,train
+285,18,miR-30d,Vincristine,0,train
+282,120,miR-30b,AED therapy,0,train
+111,48,miR-136,Epirubicin,0,train
+9,116,HOTAIR,5-fluorouracil,0,train
+227,86,miR-214,Arsenic trioxide,0,train
+114,101,miR-138-1*,Arsenic Trioxide,0,train
+400,14,miR-4467,Carboplatin,0,train
+71,94,miR-1256,Epirubicin HCl,0,train
+221,23,miR-21*,Sirolimus,0,train
+236,6,miR-219-2,Gefitinib,0,train
+112,27,miR-137,Methotrexate,0,train
+564,40,miR-663,Dexamethasone,0,train
+22,95,SLC25A25-AS1,SIOP treatment protocol,0,train
+537,70,miR-605,Rituximab,0,train
+271,84,miR-29c,Mitomycin C,0,train
+110,92,miR-135b,histone deacetylase inhibitor,0,train
+373,52,miR-409,5-Fluorouracil,0,train
+342,101,miR-3665,Arsenic Trioxide,0,train
+58,20,miR-1207,Mitoxantrone,0,train
+536,113,miR-601,Dihydrotestosterone,0,train
+298,73,miR-3177,Exemestane,0,train
+5,18,CUDR,Vincristine,0,train
+85,87,miR-1275,Irinotecan,0,train
+143,9,miR-15a,Fluorouracil,0,train
+340,87,miR-3651,Irinotecan,0,train
+202,24,miR-19a,Temsirolimus,0,train
+332,24,miR-361,Temsirolimus,0,train
+416,72,miR-453,Anastrozole,0,train
+332,8,miR-361,Trastuzumab,0,train
+271,66,miR-29c,Paroxetine,0,train
+345,47,miR-3682,Interferon-gamma,0,train
+25,79,UCA1,Ribavirin,0,train
+613,25,miR-942,"1,25(OH)2D3",0,train
+413,17,miR-4516,Adriamycin,0,train
+69,78,miR-1246,Valproate,0,train
+406,16,miR-4488,Docetaxel,0,train
+281,91,miR-30a*,Fludarabine,0,train
+178,77,miR-1913,Levetiracetam,0,train
+492,22,miR-519d,Rapamycin,0,train
+516,10,miR-568,Paclitaxel,0,train
+383,0,miR-425*,Cisplatin,0,train
+568,24,miR-675,Temsirolimus,0,train
+596,63,miR-886,Cyclosporin A,0,train
+399,88,miR-4466,Selumetinib,0,train
+75,90,miR-125b-5p,Topotecan,0,train
+524,58,miR-585,Fluoropyrimidine,0,train
+190,48,miR-196a-5p,Epirubicin,0,train
+461,105,miR-495,Hydrogen Peroxide,0,train
+162,97,miR-183,Fulvestrant,0,train
+242,74,miR-221*,Letrozole,0,train
+494,66,miR-520,Paroxetine,0,train
+532,63,miR-592,Cyclosporin A,0,train
+222,53,miR-21-5p,Daunorubicin,0,train
+540,105,miR-613,Hydrogen Peroxide,0,train
+296,22,miR-3154,Rapamycin,0,train
+618,92,miR-99a-5p,histone deacetylase inhibitor,0,train
+180,66,miR-1915,Paroxetine,0,train
+239,53,miR-22-3p,Daunorubicin,0,train
+55,50,miR-10b,PLX4720,0,train
+260,107,miR-27b ,Raltitrexed,0,train
+254,18,miR-26a,Vincristine,0,train
+177,100,miR-191*,Teniposide,0,train
+42,62,miR-100,Colchicine,0,train
+315,87,miR-330,Irinotecan,0,train
+558,87,miR-652,Irinotecan,0,train
+170,31,miR-18a,Chemotherapy,0,train
+453,69,miR-483,Retinoic Acid,0,train
+54,79,miR-10a*,Ribavirin,0,train
+48,109,miR-106b,Lapatinib,0,train
+291,85,miR-3126,Pertuzumab,0,train
+597,95,miR-887,SIOP treatment protocol,0,train
+324,4,miR-342,Nilotinib,0,train
+521,98,miR-578,Leucovorin,0,train
+66,61,miR-1236,Lorlatinib,0,train
+396,120,miR-4454,AED therapy,0,train
+483,86,miR-518b,Arsenic trioxide,0,train
+21,89,ROR1-AS1,Staurosporine,0,train
+190,47,miR-196a-5p,Interferon-gamma,0,train
+419,105,miR-4535,Hydrogen Peroxide,0,train
+66,10,miR-1236,Paclitaxel,0,train
+513,109,miR-555,Lapatinib,0,train
+72,11,miR-1258,Propofol,0,train
+596,42,miR-886,Erlotinib,0,train
+570,92,miR-6825-5p,histone deacetylase inhibitor,0,train
+581,66,miR-760,Paroxetine,0,train
+506,73,miR-539,Exemestane,0,train
+417,77,miR-4530,Levetiracetam,0,train
+130,100,miR-146b,Teniposide,0,train
+285,33,miR-30d,Glucocorticoid,0,train
+429,111,miR-4674,10-hydroxycamptothecin,0,train
+352,111,miR-373*,10-hydroxycamptothecin,0,train
+171,62,miR-18a*,Colchicine,0,train
+606,55,miR-92a-2*,Prednisolone,0,train
+360,90,miR-378a,Topotecan,0,train
+380,75,miR-424,Sunitinib,0,train
+575,106,miR-7-5p,Pingyangmycin,0,train
+552,83,miR-639,Interferon-alpha,0,train
+54,82,miR-10a*,Cyclopamine,0,train
+368,43,miR-382,Curcumin,0,train
+375,116,miR-411,5-fluorouracil,0,train
+324,62,miR-342,Colchicine,0,train
+203,76,miR-19b,Platinum,0,train
+572,32,miR-6886-3p,TRAIL therapy,0,train
+566,77,miR-665,Levetiracetam,0,train
+22,64,SLC25A25-AS1,Vinorelbine,0,train
+585,26,miR-767,Bortezomib,0,train
+252,108,miR-25,Tomudex,0,train
+487,53,miR-518f*,Daunorubicin,0,train
+573,54,miR-7,L-asparaginase,0,train
+84,77,miR-1273g,Levetiracetam,0,train
+177,47,miR-191*,Interferon-gamma,0,train
+397,59,miR-4463,Vemurafenib,0,train
+178,79,miR-1913,Ribavirin,0,train
+583,31,miR-765,Chemotherapy,0,train
+16,89,MALAT1,Staurosporine,0,train
+238,43,miR-22*,Curcumin,0,train
+129,106,miR-146a,Pingyangmycin,0,train
+450,84,miR-4758,Mitomycin C,0,train
+131,38,miR-146b-5p,Cetuximab,0,train
+534,53,miR-593*,Daunorubicin,0,train
+336,91,miR-363,Fludarabine,0,train
+592,116,miR-875,5-fluorouracil,0,train
+158,100,miR-182,Teniposide,0,train
+268,94,miR-29b,Epirubicin HCl,0,train
+283,19,miR-30b*,Etoposide,0,train
+31,28,hsa-1274A,Pirarubicin,0,train
+521,118,miR-578,Ethanol,0,train
+181,51,miR-192,platinum-based doublet chemotherapy ,0,train
+263,46,miR-296,Vinblastine,0,train
+10,69,HULC,Retinoic Acid,0,train
+228,46,miR-214*,Vinblastine,0,train
+525,62,miR-586,Colchicine,0,train
+474,100,miR-509,Teniposide,0,train
+219,21,miR-20b*,Nutlin-3a,0,train
+498,120,miR-520d,AED therapy,0,train
+586,101,miR-768,Arsenic Trioxide,0,train
+593,12,miR-876,Antioestrogens,0,train
+3,64,CCAT1,Vinorelbine,0,train
+48,82,miR-106b,Cyclopamine,0,train
+295,68,miR-3147,Mafosfamide,0,train
+432,84,miR-4685,Mitomycin C,0,train
+177,46,miR-191*,Vinblastine,0,train
+197,62,miR-199a,Colchicine,0,train
+154,33,miR-181a*,Glucocorticoid,0,train
+405,72,miR-4485,Anastrozole,0,train
+620,98,miR-99b*,Leucovorin,0,train
+510,82,miR-545,Cyclopamine,0,train
+519,37,miR-574,Temozolomide,0,train
+506,43,miR-539,Curcumin,0,train
+155,119,miR-181b,chemotherapy,0,train
+562,110,miR-660,Pemetrexed,0,train
+457,20,miR-489,Mitoxantrone,0,train
+238,49,miR-22*,Capecitabine,0,train
+460,52,miR-494,5-Fluorouracil,0,train
+561,8,miR-658,Trastuzumab,0,train
+510,51,miR-545,platinum-based doublet chemotherapy ,0,train
+367,74,miR-381,Letrozole,0,train
+461,54,miR-495,L-asparaginase,0,train
+130,85,miR-146b,Pertuzumab,0,train
+327,66,miR-34a,Paroxetine,0,train
+461,51,miR-495,platinum-based doublet chemotherapy ,0,train
+310,88,miR-320a,Selumetinib,0,train
+491,32,miR-519c,TRAIL therapy,0,train
+539,89,miR-6087,Staurosporine,0,train
+137,20,miR-151,Mitoxantrone,0,train
+401,56,miR-4476,10-Hydroxycamptothecin,0,train
+471,92,miR-503,histone deacetylase inhibitor,0,train
+514,109,miR-560,Lapatinib,0,train
+596,57,miR-886,FOLFOX Chemotherapy,0,train
+293,96,miR-3130,Epirubicin hydrochloride,0,train
+427,116,miR-4665,5-fluorouracil,0,train
+141,74,miR-155,Letrozole,0,train
+58,17,miR-1207,Adriamycin,0,train
+392,61,miR-431,Lorlatinib,0,train
+590,96,miR-873,Epirubicin hydrochloride,0,train
+171,29,miR-18a*,Verapamil,0,train
+208,115,miR-200c,modified ALLIC BFM 2002 protocol,0,train
+564,96,miR-663,Epirubicin hydrochloride,0,train
+87,43,miR-128,Curcumin,0,train
+385,9,miR-4258,Fluorouracil,0,train
+396,25,miR-4454,"1,25(OH)2D3",0,train
+115,60,miR-139,Crizotinib,0,train
+215,21,miR-206,Nutlin-3a,0,train
+437,89,miR-4710,Staurosporine,0,train
+380,63,miR-424,Cyclosporin A,0,train
+45,100,miR-103,Teniposide,0,train
+492,74,miR-519d,Letrozole,0,train
+172,113,miR-18b,Dihydrotestosterone,0,train
+314,69,miR-328,Retinoic Acid,0,train
+466,50,miR-500a,PLX4720,0,train
+391,44,miR-429,PCI-24781,0,train
+400,51,miR-4467,platinum-based doublet chemotherapy ,0,train
+148,51,miR-17,platinum-based doublet chemotherapy ,0,train
+145,70,miR-15b,Rituximab,0,train
+573,40,miR-7,Dexamethasone,0,train
+103,21,miR-130b,Nutlin-3a,0,train
+158,74,miR-182,Letrozole,0,train
+516,43,miR-568,Curcumin,0,train
+336,112,miR-363,AGRO100,0,train
+371,34,miR-3940,Sorafenib,0,train
+457,62,miR-489,Colchicine,0,train
+187,48,miR-194,Epirubicin,0,train
+487,82,miR-518f*,Cyclopamine,0,train
+511,79,miR-548a,Ribavirin,0,train
+32,86,let-7a,Arsenic trioxide,0,train
+357,85,miR-376c,Pertuzumab,0,train
+265,41,miR-299,Ibrutinib,0,train
+133,51,miR-148b,platinum-based doublet chemotherapy ,0,train
+375,95,miR-411,SIOP treatment protocol,0,train
+274,93,miR-301b,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+289,62,miR-31,Colchicine,0,train
+290,68,miR-31*,Mafosfamide,0,train
+366,99,miR-378i,Euthyrox,0,train
+275,100,miR-302a,Teniposide,0,train
+597,80,miR-887,pegIFN/RBV therapy,0,train
+581,112,miR-760,AGRO100,0,train
+414,116,miR-452,5-fluorouracil,0,train
+83,74,miR-127,Letrozole,0,train
+318,39,miR-338,Taxol,0,train
+322,35,miR-33b,Melphalan,0,train
+311,20,miR-320c,Mitoxantrone,0,train
+617,11,miR-99a,Propofol,0,train
+37,20,let-7f,Mitoxantrone,0,train
+247,58,miR-2277,Fluoropyrimidine,0,train
+460,80,miR-494,pegIFN/RBV therapy,0,train
+211,23,miR-203,Sirolimus,0,train
+565,58,miR-663a,Fluoropyrimidine,0,train
+241,47,miR-221,Interferon-gamma,0,train
+613,90,miR-942,Topotecan,0,train
+250,42,miR-23b-3p,Erlotinib,0,train
+57,19,miR-1202,Etoposide,0,train
+145,9,miR-15b,Fluorouracil,0,train
+567,71,miR-671,Cytarabine,0,train
+594,64,miR-877,Vinorelbine,0,train
+44,94,miR-101,Epirubicin HCl,0,train
+341,68,miR-3653,Mafosfamide,0,train
+305,70,miR-3195,Rituximab,0,train
+444,47,miR-4725,Interferon-gamma,0,train
+488,25,miR-519,"1,25(OH)2D3",0,train
+379,29,miR-423,Verapamil,0,train
+205,54,miR-200,L-asparaginase,0,train
+291,62,miR-3126,Colchicine,0,train
+596,47,miR-886,Interferon-gamma,0,train
+417,17,miR-4530,Adriamycin,0,train
+266,59,miR-29a,Vemurafenib,0,train
+388,47,miR-4284,Interferon-gamma,0,train
+61,41,miR-1228,Ibrutinib,0,train
+452,91,miR-4787,Fludarabine,0,train
+602,93,miR-922,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+59,58,miR-122,Fluoropyrimidine,0,train
+368,119,miR-382,chemotherapy,0,train
+238,98,miR-22*,Leucovorin,0,train
+240,60,miR-220,Crizotinib,0,train
+395,109,miR-4430,Lapatinib,0,train
+507,50,miR-541*,PLX4720,0,train
+312,60,miR-320d,Crizotinib,0,train
+587,31,miR-769,Chemotherapy,0,train
+305,38,miR-3195,Cetuximab,0,train
+615,114,miR-96-5p,DAPT,0,train
+63,41,miR-1229-5p,Ibrutinib,0,train
+495,27,miR-520a,Methotrexate,0,train
+413,6,miR-4516,Gefitinib,0,train
+287,116,miR-30e,5-fluorouracil,0,train
+266,70,miR-29a,Rituximab,0,train
+548,56,miR-629,10-Hydroxycamptothecin,0,train
+43,1,miR-100-5p,Gemcitabine,0,train
+536,20,miR-601,Mitoxantrone,0,train
+116,107,miR-140,Raltitrexed,0,train
+134,65,miR-149,Prednisone,0,train
+263,67,miR-296,Cyclophosphamide,0,train
+488,30,miR-519,epirubicin,0,train
+79,58,miR-1260b,Fluoropyrimidine,0,train
+172,6,miR-18b,Gefitinib,0,train
+489,1,miR-519a,Gemcitabine,0,train
+165,40,miR-186,Dexamethasone,0,train
+279,59,miR-3065,Vemurafenib,0,train
+196,71,miR-198,Cytarabine,0,train
+538,115,miR-606,modified ALLIC BFM 2002 protocol,0,train
+291,70,miR-3126,Rituximab,0,train
+329,27,miR-34b,Methotrexate,0,train
+443,57,miR-4723,FOLFOX Chemotherapy,0,train
+594,112,miR-877,AGRO100,0,train
+480,16,miR-517a,Docetaxel,0,train
+60,111,miR-1226,10-hydroxycamptothecin,0,train
+60,33,miR-1226,Glucocorticoid,0,train
+96,14,miR-1293,Carboplatin,0,train
+543,44,miR-618,PCI-24781,0,train
+498,70,miR-520d,Rituximab,0,train
+179,41,miR-1914*,Ibrutinib,0,train
+607,88,miR-92b,Selumetinib,0,train
+543,24,miR-618,Temsirolimus,0,train
+55,87,miR-10b,Irinotecan,0,train
+583,87,miR-765,Irinotecan,0,train
+520,77,miR-576,Levetiracetam,0,train
+7,80,GIHCG,pegIFN/RBV therapy,0,train
+127,75,miR-1468,Sunitinib,0,train
+25,65,UCA1,Prednisone,0,train
+567,19,miR-671,Etoposide,0,train
+568,46,miR-675,Vinblastine,0,train
+439,67,miR-4713,Cyclophosphamide,0,train
+279,47,miR-3065,Interferon-gamma,0,train
+614,115,miR-96,modified ALLIC BFM 2002 protocol,0,train
+554,114,miR-643,DAPT,0,train
+31,111,hsa-1274A,10-hydroxycamptothecin,0,train
+540,1,miR-613,Gemcitabine,0,train
+520,58,miR-576,Fluoropyrimidine,0,train
+571,44,miR-6845-5p,PCI-24781,0,train
+380,62,miR-424,Colchicine,0,train
+59,21,miR-122,Nutlin-3a,0,train
+380,8,miR-424,Trastuzumab,0,train
+261,35,miR-28,Melphalan,0,train
+345,22,miR-3682,Rapamycin,0,train
+618,100,miR-99a-5p,Teniposide,0,train
+161,32,miR-1826,TRAIL therapy,0,train
+85,75,miR-1275,Sunitinib,0,train
+62,77,miR-1228*,Levetiracetam,0,train
+223,45,miR-210,Camptothecin,0,train
+570,11,miR-6825-5p,Propofol,0,train
+514,20,miR-560,Mitoxantrone,0,train
+122,50,miR-143,PLX4720,0,train
+390,24,miR-4288,Temsirolimus,0,train
+539,75,miR-6087,Sunitinib,0,train
+136,38,miR-150,Cetuximab,0,train
+581,83,miR-760,Interferon-alpha,0,train
+278,13,miR-302c*,Oxaliplatin,0,train
+82,51,miR-1268,platinum-based doublet chemotherapy ,0,train
+548,94,miR-629,Epirubicin HCl,0,train
+492,94,miR-519d,Epirubicin HCl,0,train
+356,37,miR-375,Temozolomide,0,train
+576,72,miR-708,Anastrozole,0,train
+238,0,miR-22*,Cisplatin,0,train
+605,20,miR-92a-1,Mitoxantrone,0,train
+555,11,miR-647,Propofol,0,train
+466,24,miR-500a,Temsirolimus,0,train
+378,60,miR-422a,Crizotinib,0,train
+216,78,miR-20a,Valproate,0,train
+478,8,miR-514,Trastuzumab,0,train
+323,7,miR-340,Tamoxifen,0,train
+36,81,let-7e,Dichloroacetate,0,train
+598,119,miR-888,chemotherapy,0,train
+84,93,miR-1273g,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+36,75,let-7e,Sunitinib,0,train
+426,55,miR-4655,Prednisolone,0,train
+182,95,miR-192*,SIOP treatment protocol,0,train
+91,0,miR-1288,Cisplatin,0,train
+367,120,miR-381,AED therapy,0,train
+547,64,miR-628,Vinorelbine,0,train
+448,38,miR-4749,Cetuximab,0,train
+347,103,miR-369,Carmustine,0,train
+416,67,miR-453,Cyclophosphamide,0,train
+44,31,miR-101,Chemotherapy,0,train
+477,80,miR-513a,pegIFN/RBV therapy,0,train
+149,73,miR-17*,Exemestane,0,train
+187,61,miR-194,Lorlatinib,0,train
+418,76,miR-4532,Platinum,0,train
+227,60,miR-214,Crizotinib,0,train
+261,101,miR-28,Arsenic Trioxide,0,train
+536,94,miR-601,Epirubicin HCl,0,train
+110,63,miR-135b,Cyclosporin A,0,train
+158,81,miR-182,Dichloroacetate,0,train
+400,113,miR-4467,Dihydrotestosterone,0,train
+536,46,miR-601,Vinblastine,0,train
+456,13,miR-487b,Oxaliplatin,0,train
+125,43,miR-144-3p,Curcumin,0,train
+494,82,miR-520,Cyclopamine,0,train
+98,41,miR-1299,Ibrutinib,0,train
+491,24,miR-519c,Temsirolimus,0,train
+219,67,miR-20b*,Cyclophosphamide,0,train
+298,106,miR-3177,Pingyangmycin,0,train
+422,102,miR-455-3p,Betulinic acid,0,train
+281,17,miR-30a*,Adriamycin,0,train
+385,4,miR-4258,Nilotinib,0,train
+601,90,miR-920,Topotecan,0,train
+171,99,miR-18a*,Euthyrox,0,train
+352,85,miR-373*,Pertuzumab,0,train
+454,28,miR-485,Pirarubicin,0,train
+164,45,miR-185,Camptothecin,0,train
+157,63,miR-181d,Cyclosporin A,0,train
+194,19,miR-1973,Etoposide,0,train
+243,58,miR-222,Fluoropyrimidine,0,train
+218,64,miR-20b,Vinorelbine,0,train
+95,119,miR-1290,chemotherapy,0,train
+548,75,miR-629,Sunitinib,0,train
+359,102,miR-378,Betulinic acid,0,train
+332,113,miR-361,Dihydrotestosterone,0,train
+7,34,GIHCG,Sorafenib,0,train
+57,21,miR-1202,Nutlin-3a,0,train
+58,89,miR-1207,Staurosporine,0,train
+105,8,miR-133a,Trastuzumab,0,train
+430,71,miR-4675,Cytarabine,0,train
+185,11,miR-193b,Propofol,0,train
+531,49,miR-591,Capecitabine,0,train
+421,23,miR-455,Sirolimus,0,train
+31,96,hsa-1274A,Epirubicin hydrochloride,0,train
+87,76,miR-128,Platinum,0,train
+329,69,miR-34b,Retinoic Acid,0,train
+510,100,miR-545,Teniposide,0,train
+138,100,miR-152,Teniposide,0,train
+553,46,miR-640,Vinblastine,0,train
+112,107,miR-137,Raltitrexed,0,train
+207,102,miR-200b,Betulinic acid,0,train
+295,19,miR-3147,Etoposide,0,train
+565,14,miR-663a,Carboplatin,0,train
+532,107,miR-592,Raltitrexed,0,train
+457,95,miR-489,SIOP treatment protocol,0,train
+169,32,miR-188,TRAIL therapy,0,train
+299,23,miR-3178,Sirolimus,0,train
+151,104,miR-17-92,Dibenziodolium,0,train
+301,69,miR-3184,Retinoic Acid,0,train
+584,109,miR-766,Lapatinib,0,train
+337,97,miR-363*,Fulvestrant,0,train
+21,66,ROR1-AS1,Paroxetine,0,train
+621,61,miR-Plus-A1031,Lorlatinib,0,train
+548,108,miR-629,Tomudex,0,train
+283,84,miR-30b*,Mitomycin C,0,train
+456,94,miR-487b,Epirubicin HCl,0,train
+479,78,miR-515,Valproate,0,train
+185,20,miR-193b,Mitoxantrone,0,train
+357,26,miR-376c,Bortezomib,0,train
+153,67,miR-181a,Cyclophosphamide,0,train
+383,24,miR-425*,Temsirolimus,0,train
+181,86,miR-192,Arsenic trioxide,0,train
+372,50,miR-3960,PLX4720,0,train
+563,33,miR-662,Glucocorticoid,0,train
+88,1,miR-128-2,Gemcitabine,0,train
+352,36,miR-373*,Oxymatrine,0,train
+518,27,miR-571,Methotrexate,0,train
+31,116,hsa-1274A,5-fluorouracil,0,train
+571,14,miR-6845-5p,Carboplatin,0,train
+587,89,miR-769,Staurosporine,0,train
+302,14,miR-3186,Carboplatin,0,train
+505,46,miR-532,Vinblastine,0,train
+195,112,miR-1976,AGRO100,0,train
+93,46,miR-129,Vinblastine,0,train
+457,13,miR-489,Oxaliplatin,0,train
+352,57,miR-373*,FOLFOX Chemotherapy,0,train
+124,54,miR-144,L-asparaginase,0,train
+323,94,miR-340,Epirubicin HCl,0,train
+319,34,miR-339,Sorafenib,0,train
+410,86,miR-4508,Arsenic trioxide,0,train
+23,105,SNHG5,Hydrogen Peroxide,0,train
+5,77,CUDR,Levetiracetam,0,train
+45,5,miR-103,Doxorubicin,0,train
+350,20,miR-372,Mitoxantrone,0,train
+323,22,miR-340,Rapamycin,0,train
+589,84,miR-802,Mitomycin C,0,train
+120,50,miR-141-3p,PLX4720,0,train
+28,119,linc-VLDLR,chemotherapy,0,train
+446,59,miR-4739,Vemurafenib,0,train
+569,21,miR-675*,Nutlin-3a,0,train
+447,56,miR-4745,10-Hydroxycamptothecin,0,train
+34,15,let-7c,Tetraplatin,0,train
+185,75,miR-193b,Sunitinib,0,train
+562,86,miR-660,Arsenic trioxide,0,train
+414,117,miR-452,Hydroxyurea,0,train
+614,85,miR-96,Pertuzumab,0,train
+613,56,miR-942,10-Hydroxycamptothecin,0,train
+479,86,miR-515,Arsenic trioxide,0,train
+338,91,miR-3647,Fludarabine,0,train
+181,96,miR-192,Epirubicin hydrochloride,0,train
+564,44,miR-663,PCI-24781,0,train
+473,108,miR-506,Tomudex,0,train
+127,30,miR-1468,epirubicin,0,train
+64,77,miR-1233,Levetiracetam,0,train
+529,18,miR-590,Vincristine,0,train
+589,112,miR-802,AGRO100,0,train
+576,40,miR-708,Dexamethasone,0,train
+117,68,miR-140-3p,Mafosfamide,0,train
+309,32,miR-3200,TRAIL therapy,0,train
+424,12,miR-4640,Antioestrogens,0,train
+251,21,miR-24,Nutlin-3a,0,train
+390,78,miR-4288,Valproate,0,train
+58,16,miR-1207,Docetaxel,0,train
+615,84,miR-96-5p,Mitomycin C,0,train
+218,78,miR-20b,Valproate,0,train
+475,85,miR-5096,Pertuzumab,0,train
+583,91,miR-765,Fludarabine,0,train
+308,66,miR-320,Paroxetine,0,train
+1,20,BCAR4,Mitoxantrone,0,train
+472,4,miR-505,Nilotinib,0,train
+184,107,miR-193a-3p,Raltitrexed,0,train
+326,93,miR-346,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+128,81,miR-1469,Dichloroacetate,0,train
+3,100,CCAT1,Teniposide,0,train
+236,95,miR-219-2,SIOP treatment protocol,0,train
+336,61,miR-363,Lorlatinib,0,train
+289,1,miR-31,Gemcitabine,0,train
+500,60,miR-520g,Crizotinib,0,train
+142,88,miR-155-5p,Selumetinib,0,train
+329,23,miR-34b,Sirolimus,0,train
+291,114,miR-3126,DAPT,0,train
+86,3,miR-1277,Imatinib,0,train
+208,50,miR-200c,PLX4720,0,train
+538,4,miR-606,Nilotinib,0,train
+557,50,miR-651,PLX4720,0,train
+343,58,miR-367,Fluoropyrimidine,0,train
+314,103,miR-328,Carmustine,0,train
+18,36,MRUL,Oxymatrine,0,train
+411,93,miR-450a,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+391,12,miR-429,Antioestrogens,0,train
+274,8,miR-301b,Trastuzumab,0,train
+35,67,let-7d,Cyclophosphamide,0,train
+7,47,GIHCG,Interferon-gamma,0,train
+472,28,miR-505,Pirarubicin,0,train
+573,60,miR-7,Crizotinib,0,train
+223,61,miR-210,Lorlatinib,0,train
+258,107,miR-27a,Raltitrexed,0,train
+399,19,miR-4466,Etoposide,0,train
+355,90,miR-374b,Topotecan,0,train
+514,22,miR-560,Rapamycin,0,train
+436,32,miR-4707,TRAIL therapy,0,train
+588,54,miR-801,L-asparaginase,0,train
+0,56,ANRIL,10-Hydroxycamptothecin,0,train
+475,57,miR-5096,FOLFOX Chemotherapy,0,train
+451,39,miR-4783,Taxol,0,train
+536,14,miR-601,Carboplatin,0,train
+252,73,miR-25,Exemestane,0,train
+475,110,miR-5096,Pemetrexed,0,train
+390,87,miR-4288,Irinotecan,0,train
+517,18,miR-569,Vincristine,0,train
+618,105,miR-99a-5p,Hydrogen Peroxide,0,train
+485,63,miR-518e*,Cyclosporin A,0,train
+576,116,miR-708,5-fluorouracil,0,train
+557,108,miR-651,Tomudex,0,train
+43,116,miR-100-5p,5-fluorouracil,0,train
+522,96,miR-582,Epirubicin hydrochloride,0,train
+530,69,miR-590-5p,Retinoic Acid,0,train
+605,101,miR-92a-1,Arsenic Trioxide,0,train
+571,35,miR-6845-5p,Melphalan,0,train
+156,77,miR-181c,Levetiracetam,0,train
+72,39,miR-1258,Taxol,0,train
+259,56,miR-27b,10-Hydroxycamptothecin,0,train
+31,60,hsa-1274A,Crizotinib,0,train
+454,96,miR-485,Epirubicin hydrochloride,0,train
+167,81,miR-187,Dichloroacetate,0,train
+246,105,miR-224,Hydrogen Peroxide,0,train
+247,57,miR-2277,FOLFOX Chemotherapy,0,train
+453,73,miR-483,Exemestane,0,train
+306,28,miR-3196,Pirarubicin,0,train
+554,23,miR-643,Sirolimus,0,train
+254,32,miR-26a,TRAIL therapy,0,train
+178,58,miR-1913,Fluoropyrimidine,0,train
+343,0,miR-367,Cisplatin,0,train
+132,58,miR-148a,Fluoropyrimidine,0,train
+254,11,miR-26a,Propofol,0,train
+521,15,miR-578,Tetraplatin,0,train
+571,73,miR-6845-5p,Exemestane,0,train
+269,100,miR-29b-1*,Teniposide,0,train
+371,28,miR-3940,Pirarubicin,0,train
+430,115,miR-4675,modified ALLIC BFM 2002 protocol,0,train
+547,61,miR-628,Lorlatinib,0,train
+532,55,miR-592,Prednisolone,0,train
+412,37,miR-451,Temozolomide,0,train
+207,67,miR-200b,Cyclophosphamide,0,train
+480,78,miR-517a,Valproate,0,train
+213,57,miR-204-5p,FOLFOX Chemotherapy,0,train
+283,74,miR-30b*,Letrozole,0,train
+92,68,miR-128a,Mafosfamide,0,train
+318,111,miR-338,10-hydroxycamptothecin,0,train
+419,99,miR-4535,Euthyrox,0,train
+381,72,miR-424*,Anastrozole,0,train
+100,77,miR-1307,Levetiracetam,0,train
+576,79,miR-708,Ribavirin,0,train
+149,13,miR-17*,Oxaliplatin,0,train
+376,75,miR-412,Sunitinib,0,train
+343,115,miR-367,modified ALLIC BFM 2002 protocol,0,train
+215,76,miR-206,Platinum,0,train
+430,105,miR-4675,Hydrogen Peroxide,0,train
+266,40,miR-29a,Dexamethasone,0,train
+350,75,miR-372,Sunitinib,0,train
+164,84,miR-185,Mitomycin C,0,train
+37,96,let-7f,Epirubicin hydrochloride,0,train
+284,108,miR-30c,Tomudex,0,train
+6,61,GAS5,Lorlatinib,0,train
+562,76,miR-660,Platinum,0,train
+512,35,miR-550,Melphalan,0,train
+151,69,miR-17-92,Retinoic Acid,0,train
+562,33,miR-660,Glucocorticoid,0,train
+118,86,miR-141,Arsenic trioxide,0,train
+312,116,miR-320d,5-fluorouracil,0,train
+572,20,miR-6886-3p,Mitoxantrone,0,train
+620,87,miR-99b*,Irinotecan,0,train
+388,23,miR-4284,Sirolimus,0,train
+376,31,miR-412,Chemotherapy,0,train
+161,18,miR-1826,Vincristine,0,train
+413,2,miR-4516,Dasatinib,0,train
+170,100,miR-18a,Teniposide,0,train
+237,97,miR-22,Fulvestrant,0,train
+163,17,miR-184,Adriamycin,0,train
+496,36,miR-520b,Oxymatrine,0,train
+616,70,miR-98,Rituximab,0,train
+15,40,MACC1-AS1,Dexamethasone,0,train
+212,62,miR-204,Colchicine,0,train
+347,31,miR-369,Chemotherapy,0,train
+586,60,miR-768,Crizotinib,0,train
+192,6,miR-197,Gefitinib,0,train
+191,57,miR-196b,FOLFOX Chemotherapy,0,train
+539,108,miR-6087,Tomudex,0,train
+42,102,miR-100,Betulinic acid,0,train
+582,62,miR-762,Colchicine,0,train
+273,37,miR-301a,Temozolomide,0,train
+425,54,miR-4646,L-asparaginase,0,train
+285,97,miR-30d,Fulvestrant,0,train
+254,74,miR-26a,Letrozole,0,train
+579,92,miR-744,histone deacetylase inhibitor,0,train
+161,31,miR-1826,Chemotherapy,0,train
+170,87,miR-18a,Irinotecan,0,train
+484,119,miR-518c,chemotherapy,0,train
+396,26,miR-4454,Bortezomib,0,train
+224,86,miR-211,Arsenic trioxide,0,train
+209,47,miR-200c*,Interferon-gamma,0,train
+15,73,MACC1-AS1,Exemestane,0,train
+533,67,miR-593,Cyclophosphamide,0,train
+216,91,miR-20a,Fludarabine,0,train
+128,13,miR-1469,Oxaliplatin,0,train
+30,117,Let-7a,Hydroxyurea,0,train
+409,35,miR-449a,Melphalan,0,train
+119,39,miR-141*,Taxol,0,train
+174,113,miR-190,Dihydrotestosterone,0,train
+548,16,miR-629,Docetaxel,0,train
+580,38,miR-758,Cetuximab,0,train
+450,67,miR-4758,Cyclophosphamide,0,train
+336,43,miR-363,Curcumin,0,train
+235,69,miR-219,Retinoic Acid,0,train
+281,117,miR-30a*,Hydroxyurea,0,train
+501,53,miR-520h,Daunorubicin,0,train
+274,87,miR-301b,Irinotecan,0,train
+570,68,miR-6825-5p,Mafosfamide,0,train
+283,108,miR-30b*,Tomudex,0,train
+22,38,SLC25A25-AS1,Cetuximab,0,train
+421,31,miR-455,Chemotherapy,0,train
+462,75,miR-496,Sunitinib,0,train
+431,82,miR-468,Cyclopamine,0,train
+378,30,miR-422a,epirubicin,0,train
+19,8,NEAT1,Trastuzumab,0,train
+88,51,miR-128-2,platinum-based doublet chemotherapy ,0,train
+560,90,miR-655,Topotecan,0,train
+61,107,miR-1228,Raltitrexed,0,train
+565,88,miR-663a,Selumetinib,0,train
+215,65,miR-206,Prednisone,0,train
+435,98,miR-4695,Leucovorin,0,train
+483,2,miR-518b,Dasatinib,0,train
+258,81,miR-27a,Dichloroacetate,0,train
+175,71,miR-1908,Cytarabine,0,train
+384,32,miR-4257,TRAIL therapy,0,train
+505,9,miR-532,Fluorouracil,0,train
+187,78,miR-194,Valproate,0,train
+31,8,hsa-1274A,Trastuzumab,0,train
+414,9,miR-452,Fluorouracil,0,train
+182,14,miR-192*,Carboplatin,0,train
+590,10,miR-873,Paclitaxel,0,train
+277,89,miR-302c,Staurosporine,0,train
+385,89,miR-4258,Staurosporine,0,train
+316,38,miR-331,Cetuximab,0,train
+323,57,miR-340,FOLFOX Chemotherapy,0,train
+266,80,miR-29a,pegIFN/RBV therapy,0,train
+105,9,miR-133a,Fluorouracil,0,train
+277,20,miR-302c,Mitoxantrone,0,train
+574,116,miR-7-1*,5-fluorouracil,0,train
+497,117,miR-520c,Hydroxyurea,0,train
+216,34,miR-20a,Sorafenib,0,train
+137,30,miR-151,epirubicin,0,train
+483,83,miR-518b,Interferon-alpha,0,train
+621,111,miR-Plus-A1031,10-hydroxycamptothecin,0,train
+47,85,miR-106a,Pertuzumab,0,train
+319,102,miR-339,Betulinic acid,0,train
+173,54,miR-19,L-asparaginase,0,train
+108,35,miR-1343,Melphalan,0,train
+26,89,XIST,Staurosporine,0,train
+507,93,miR-541*,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+366,103,miR-378i,Carmustine,0,train
+1,80,BCAR4,pegIFN/RBV therapy,0,train
+505,4,miR-532,Nilotinib,0,train
+493,55,miR-519e*,Prednisolone,0,train
+237,58,miR-22,Fluoropyrimidine,0,train
+192,18,miR-197,Vincristine,0,train
+393,36,miR-433,Oxymatrine,0,train
+364,105,miR-378f,Hydrogen Peroxide,0,train
+225,6,miR-212,Gefitinib,0,train
+127,120,miR-1468,AED therapy,0,train
+9,96,HOTAIR,Epirubicin hydrochloride,0,train
+430,70,miR-4675,Rituximab,0,train
+601,16,miR-920,Docetaxel,0,train
+345,49,miR-3682,Capecitabine,0,train
+166,4,miR-186*,Nilotinib,0,train
+31,82,hsa-1274A,Cyclopamine,0,train
+156,119,miR-181c,chemotherapy,0,train
+520,21,miR-576,Nutlin-3a,0,train
+504,62,miR-526b*,Colchicine,0,train
+494,120,miR-520,AED therapy,0,train
+285,25,miR-30d,"1,25(OH)2D3",0,train
+221,41,miR-21*,Ibrutinib,0,train
+432,34,miR-4685,Sorafenib,0,train
+516,32,miR-568,TRAIL therapy,0,train
+227,97,miR-214,Fulvestrant,0,train
+63,66,miR-1229-5p,Paroxetine,0,train
+293,81,miR-3130,Dichloroacetate,0,train
+92,111,miR-128a,10-hydroxycamptothecin,0,train
+468,62,miR-501,Colchicine,0,train
+432,114,miR-4685,DAPT,0,train
+598,57,miR-888,FOLFOX Chemotherapy,0,train
+297,66,miR-3173,Paroxetine,0,train
+575,88,miR-7-5p,Selumetinib,0,train
+598,34,miR-888,Sorafenib,0,train
+476,55,miR-512,Prednisolone,0,train
+545,26,miR-625,Bortezomib,0,train
+607,46,miR-92b,Vinblastine,0,train
+165,0,miR-186,Cisplatin,0,train
+84,65,miR-1273g,Prednisone,0,train
+428,49,miR-4669,Capecitabine,0,train
+479,96,miR-515,Epirubicin hydrochloride,0,train
+427,102,miR-4665,Betulinic acid,0,train
+597,94,miR-887,Epirubicin HCl,0,train
+500,93,miR-520g,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+297,104,miR-3173,Dibenziodolium,0,train
+257,83,miR-275,Interferon-alpha,0,train
+13,58,LUCAT1,Fluoropyrimidine,0,train
+4,43,CRNDE,Curcumin,0,train
+308,4,miR-320,Nilotinib,0,train
+78,54,miR-1260,L-asparaginase,0,train
+4,64,CRNDE,Vinorelbine,0,train
+551,9,miR-638,Fluorouracil,0,train
+490,114,miR-519b,DAPT,0,train
+129,78,miR-146a,Valproate,0,train
+173,116,miR-19,5-fluorouracil,0,train
+316,103,miR-331,Carmustine,0,train
+457,108,miR-489,Tomudex,0,train
+166,40,miR-186*,Dexamethasone,0,train
+65,116,miR-1234,5-fluorouracil,0,train
+281,60,miR-30a*,Crizotinib,0,train
+249,44,miR-23b,PCI-24781,0,train
+567,5,miR-671,Doxorubicin,0,train
+278,42,miR-302c*,Erlotinib,0,train
+397,94,miR-4463,Epirubicin HCl,0,train
+263,41,miR-296,Ibrutinib,0,train
+582,36,miR-762,Oxymatrine,0,train
+421,104,miR-455,Dibenziodolium,0,train
+614,40,miR-96,Dexamethasone,0,train
+186,54,miR-193b*,L-asparaginase,0,train
+182,107,miR-192*,Raltitrexed,0,train
+205,98,miR-200,Leucovorin,0,train
+387,6,miR-4279,Gefitinib,0,train
+457,12,miR-489,Antioestrogens,0,train
+408,64,miR-4497,Vinorelbine,0,train
+231,97,miR-216a,Fulvestrant,0,train
+145,97,miR-15b,Fulvestrant,0,train
+244,96,miR-222*,Epirubicin hydrochloride,0,train
+71,39,miR-1256,Taxol,0,train
+115,46,miR-139,Vinblastine,0,train
+609,42,miR-933,Erlotinib,0,train
+256,113,miR-26b,Dihydrotestosterone,0,train
+87,89,miR-128,Staurosporine,0,train
+381,21,miR-424*,Nutlin-3a,0,train
+264,63,miR-298,Cyclosporin A,0,train
+215,115,miR-206,modified ALLIC BFM 2002 protocol,0,train
+39,82,let-7g,Cyclopamine,0,train
+590,83,miR-873,Interferon-alpha,0,train
+462,101,miR-496,Arsenic Trioxide,0,train
+365,113,miR-378g,Dihydrotestosterone,0,train
+92,87,miR-128a,Irinotecan,0,train
+484,1,miR-518c,Gemcitabine,0,train
+542,46,miR-615,Vinblastine,0,train
+339,77,miR-365,Levetiracetam,0,train
+516,53,miR-568,Daunorubicin,0,train
+560,110,miR-655,Pemetrexed,0,train
+231,90,miR-216a,Topotecan,0,train
+208,95,miR-200c,SIOP treatment protocol,0,train
+182,23,miR-192*,Sirolimus,0,train
+329,109,miR-34b,Lapatinib,0,train
+385,113,miR-4258,Dihydrotestosterone,0,train
+357,58,miR-376c,Fluoropyrimidine,0,train
+10,15,HULC,Tetraplatin,0,train
+546,10,miR-625*,Paclitaxel,0,train
+146,104,miR-15b*,Dibenziodolium,0,train
+6,84,GAS5,Mitomycin C,0,train
+227,116,miR-214,5-fluorouracil,0,train
+393,80,miR-433,pegIFN/RBV therapy,0,train
+423,6,miR-4638,Gefitinib,0,train
+554,65,miR-643,Prednisone,0,train
+620,34,miR-99b*,Sorafenib,0,train
+531,31,miR-591,Chemotherapy,0,train
+39,11,let-7g,Propofol,0,train
+264,66,miR-298,Paroxetine,0,train
+404,99,miR-4484,Euthyrox,0,train
+155,39,miR-181b,Taxol,0,train
+404,47,miR-4484,Interferon-gamma,0,train
+348,111,miR-370,10-hydroxycamptothecin,0,train
+71,43,miR-1256,Curcumin,0,train
+352,50,miR-373*,PLX4720,0,train
+22,78,SLC25A25-AS1,Valproate,0,train
+217,105,miR-20a-5p,Hydrogen Peroxide,0,train
+488,77,miR-519,Levetiracetam,0,train
+510,118,miR-545,Ethanol,0,train
+453,83,miR-483,Interferon-alpha,0,train
+165,81,miR-186,Dichloroacetate,0,train
+539,9,miR-6087,Fluorouracil,0,train
+452,72,miR-4787,Anastrozole,0,train
+166,91,miR-186*,Fludarabine,0,train
+525,27,miR-586,Methotrexate,0,train
+251,57,miR-24,FOLFOX Chemotherapy,0,train
+383,62,miR-425*,Colchicine,0,train
+572,72,miR-6886-3p,Anastrozole,0,train
+387,113,miR-4279,Dihydrotestosterone,0,train
+221,8,miR-21*,Trastuzumab,0,train
+486,97,miR-518f,Fulvestrant,0,train
+111,106,miR-136,Pingyangmycin,0,train
+352,39,miR-373*,Taxol,0,train
+213,113,miR-204-5p,Dihydrotestosterone,0,train
+92,116,miR-128a,5-fluorouracil,0,train
+226,82,miR-213,Cyclopamine,0,train
+10,106,HULC,Pingyangmycin,0,train
+69,40,miR-1246,Dexamethasone,0,train
+243,70,miR-222,Rituximab,0,train
+52,89,miR-10a,Staurosporine,0,train
+376,71,miR-412,Cytarabine,0,train
+365,67,miR-378g,Cyclophosphamide,0,train
+449,74,miR-4750,Letrozole,0,train
+308,34,miR-320,Sorafenib,0,train
+316,68,miR-331,Mafosfamide,0,train
+556,8,miR-649,Trastuzumab,0,train
+318,59,miR-338,Vemurafenib,0,train
+124,56,miR-144,10-Hydroxycamptothecin,0,train
+366,74,miR-378i,Letrozole,0,train
+358,62,miR-377,Colchicine,0,train
+470,51,miR-502,platinum-based doublet chemotherapy ,0,train
+249,43,miR-23b,Curcumin,0,train
+88,43,miR-128-2,Curcumin,0,train
+20,65,PVT1,Prednisone,0,train
+524,98,miR-585,Leucovorin,0,train
+368,102,miR-382,Betulinic acid,0,train
+615,14,miR-96-5p,Carboplatin,0,train
+208,21,miR-200c,Nutlin-3a,0,train
+250,83,miR-23b-3p,Interferon-alpha,0,train
+348,61,miR-370,Lorlatinib,0,train
+294,79,miR-3141,Ribavirin,0,train
+215,51,miR-206,platinum-based doublet chemotherapy ,0,train
+525,18,miR-586,Vincristine,0,train
+339,109,miR-365,Lapatinib,0,train
+407,58,miR-4492,Fluoropyrimidine,0,train
+526,22,miR-587,Rapamycin,0,train
+416,9,miR-453,Fluorouracil,0,train
+450,88,miR-4758,Selumetinib,0,train
+146,115,miR-15b*,modified ALLIC BFM 2002 protocol,0,train
+446,22,miR-4739,Rapamycin,0,train
+373,22,miR-409,Rapamycin,0,train
+372,6,miR-3960,Gefitinib,0,train
+599,117,miR-892b,Hydroxyurea,0,train
+100,93,miR-1307,intensive induction chemotherapy based on cytarabine and idarubicine,0,train
+599,111,miR-892b,10-hydroxycamptothecin,0,train
+3,69,CCAT1,Retinoic Acid,0,train
+306,6,miR-3196,Gefitinib,0,train
+92,95,miR-128a,SIOP treatment protocol,0,train
+404,55,miR-4484,Prednisolone,0,train
+438,2,miR-4711,Dasatinib,0,train
+4,46,CRNDE,Vinblastine,0,train
+46,53,miR-105,Daunorubicin,0,train
+351,110,miR-373,Pemetrexed,0,train
+537,61,miR-605,Lorlatinib,0,train
+441,44,miR-4721,PCI-24781,0,train
+464,71,miR-499,Cytarabine,0,train
+255,23,miR-26a-MM1,Sirolimus,0,train
+310,37,miR-320a,Temozolomide,0,train
+219,65,miR-20b*,Prednisone,0,train
+409,106,miR-449a,Pingyangmycin,0,train
+413,32,miR-4516,TRAIL therapy,0,train
+311,5,miR-320c,Doxorubicin,0,train
+289,41,miR-31,Ibrutinib,0,train
+427,31,miR-4665,Chemotherapy,0,train
+49,113,miR-106b-25,Dihydrotestosterone,0,train
+297,108,miR-3173,Tomudex,0,train
+24,99,TUG1,Euthyrox,0,train
+152,101,miR-181,Arsenic Trioxide,0,train
+559,88,miR-654-5p,Selumetinib,0,train
+224,106,miR-211,Pingyangmycin,0,train
+12,20,LOC285194,Mitoxantrone,0,train
+199,58,miR-199a-5p,Fluoropyrimidine,0,train
+73,110,miR-125a,Pemetrexed,0,train
+4,100,CRNDE,Teniposide,0,train
+472,50,miR-505,PLX4720,0,train
+263,91,miR-296,Fludarabine,0,train
+529,54,miR-590,L-asparaginase,0,train
+204,105,miR-19b-1*,Hydrogen Peroxide,0,train
+80,57,miR-1264,FOLFOX Chemotherapy,0,train
+59,87,miR-122,Irinotecan,0,train
+477,22,miR-513a,Rapamycin,0,train
+455,34,miR-486,Sorafenib,0,train
+287,102,miR-30e,Betulinic acid,0,train
+246,70,miR-224,Rituximab,0,train
+427,101,miR-4665,Arsenic Trioxide,0,train
+269,65,miR-29b-1*,Prednisone,0,train
+340,55,miR-3651,Prednisolone,0,train
+486,87,miR-518f,Irinotecan,0,train
+568,41,miR-675,Ibrutinib,0,train
+398,16,miR-4465,Docetaxel,0,train
+128,60,miR-1469,Crizotinib,0,train
+7,89,GIHCG,Staurosporine,0,train
+519,47,miR-574,Interferon-gamma,0,train
+368,47,miR-382,Interferon-gamma,0,train
+340,63,miR-3651,Cyclosporin A,0,train
+252,49,miR-25,Capecitabine,0,train
+346,82,miR-3687,Cyclopamine,0,train
+143,30,miR-15a,epirubicin,0,train
+52,65,miR-10a,Prednisone,0,train
+586,70,miR-768,Rituximab,0,train
+215,94,miR-206,Epirubicin HCl,0,train
+300,82,miR-3180,Cyclopamine,0,train
+425,27,miR-4646,Methotrexate,0,train
+534,45,miR-593*,Camptothecin,0,train
+38,60,let-7f-1*,Crizotinib,0,train
+467,87,miR-500b,Irinotecan,0,train
+542,7,miR-615,Tamoxifen,0,train
+100,4,miR-1307,Nilotinib,0,train
+70,58,miR-1247,Fluoropyrimidine,0,train
+514,92,miR-560,histone deacetylase inhibitor,0,train
+340,54,miR-3651,L-asparaginase,0,train
+261,99,miR-28,Euthyrox,0,train
+414,50,miR-452,PLX4720,0,train
+591,45,miR-874,Camptothecin,0,train
+244,87,miR-222*,Irinotecan,0,train
+378,73,miR-422a,Exemestane,0,train
+72,87,miR-1258,Irinotecan,0,train
+304,63,miR-3193,Cyclosporin A,0,train
+563,94,miR-662,Epirubicin HCl,0,train
+4,6,CRNDE,Gefitinib,0,train
+583,75,miR-765,Sunitinib,0,train
+26,97,XIST,Fulvestrant,0,train
+541,91,miR-614,Fludarabine,0,train
+264,18,miR-298,Vincristine,0,train
+297,85,miR-3173,Pertuzumab,0,train
+9,32,HOTAIR,TRAIL therapy,1,test
+21,41,ROR1-AS1,Ibrutinib,1,test
+29,46,Let-7,Vinblastine,1,test
+31,48,hsa-1274A,Epirubicin,1,test
+32,50,let-7a,PLX4720,1,test
+33,50,let-7b,PLX4720,1,test
+34,50,let-7c,PLX4720,1,test
+34,54,let-7c,L-asparaginase,1,test
+36,50,let-7e,PLX4720,1,test
+39,57,let-7g,FOLFOX Chemotherapy,1,test
+40,57,let-7i,FOLFOX Chemotherapy,1,test
+41,58,miR-1,Fluoropyrimidine,1,test
+42,32,miR-100,TRAIL therapy,1,test
+42,50,miR-100,PLX4720,1,test
+42,54,miR-100,L-asparaginase,1,test
+42,59,miR-100,Vemurafenib,1,test
+43,61,miR-100-5p,Lorlatinib,1,test
+44,57,miR-101,FOLFOX Chemotherapy,1,test
+47,57,miR-106a,FOLFOX Chemotherapy,1,test
+49,63,miR-106b-25,Cyclosporin A,1,test
+50,63,miR-106~25,Cyclosporin A,1,test
+51,57,miR-107,FOLFOX Chemotherapy,1,test
+52,57,miR-10a,FOLFOX Chemotherapy,1,test
+55,57,miR-10b,FOLFOX Chemotherapy,1,test
+59,57,miR-122,FOLFOX Chemotherapy,1,test
+74,32,miR-125b,TRAIL therapy,1,test
+74,48,miR-125b,Epirubicin,1,test
+74,54,miR-125b,L-asparaginase,1,test
+74,57,miR-125b,FOLFOX Chemotherapy,1,test
+74,59,miR-125b,Vemurafenib,1,test
+76,54,miR-126,L-asparaginase,1,test
+77,54,miR-126*,L-asparaginase,1,test
+87,50,miR-128,PLX4720,1,test
+95,48,miR-1290,Epirubicin,1,test
+96,50,miR-1293,PLX4720,1,test
+103,75,miR-130b,Sunitinib,1,test
+104,50,miR-132,PLX4720,1,test
+105,75,miR-133a,Sunitinib,1,test
+106,57,miR-133b,FOLFOX Chemotherapy,1,test
+115,75,miR-139,Sunitinib,1,test
+118,75,miR-141,Sunitinib,1,test
+121,57,miR-142,FOLFOX Chemotherapy,1,test
+121,77,miR-142,Levetiracetam,1,test
+122,79,miR-143,Ribavirin,1,test
+122,80,miR-143,pegIFN/RBV therapy,1,test
+124,57,miR-144,FOLFOX Chemotherapy,1,test
+124,81,miR-144,Dichloroacetate,1,test
+125,75,miR-144-3p,Sunitinib,1,test
+126,75,miR-145,Sunitinib,1,test
+126,79,miR-145,Ribavirin,1,test
+126,80,miR-145,pegIFN/RBV therapy,1,test
+129,50,miR-146a,PLX4720,1,test
+129,57,miR-146a,FOLFOX Chemotherapy,1,test
+132,57,miR-148a,FOLFOX Chemotherapy,1,test
+133,57,miR-148b,FOLFOX Chemotherapy,1,test
+136,75,miR-150,Sunitinib,1,test
+141,50,miR-155,PLX4720,1,test
+141,75,miR-155,Sunitinib,1,test
+143,57,miR-15a,FOLFOX Chemotherapy,1,test
+145,32,miR-15b,TRAIL therapy,1,test
+148,88,miR-17,Selumetinib,1,test
+153,57,miR-181a,FOLFOX Chemotherapy,1,test
+154,75,miR-181a*,Sunitinib,1,test
+160,75,miR-1825,Sunitinib,1,test
+164,57,miR-185,FOLFOX Chemotherapy,1,test
+170,57,miR-18a,FOLFOX Chemotherapy,1,test
+170,79,miR-18a,Ribavirin,1,test
+170,80,miR-18a,pegIFN/RBV therapy,1,test
+171,57,miR-18a*,FOLFOX Chemotherapy,1,test
+181,50,miR-192,PLX4720,1,test
+181,57,miR-192,FOLFOX Chemotherapy,1,test
+181,75,miR-192,Sunitinib,1,test
+183,75,miR-193a,Sunitinib,1,test
+183,94,miR-193a,Epirubicin HCl,1,test
+183,95,miR-193a,SIOP treatment protocol,1,test
+185,57,miR-193b,FOLFOX Chemotherapy,1,test
+197,57,miR-199a,FOLFOX Chemotherapy,1,test
+197,75,miR-199a,Sunitinib,1,test
+201,54,miR-199b*,L-asparaginase,1,test
+202,48,miR-19a,Epirubicin,1,test
+202,57,miR-19a,FOLFOX Chemotherapy,1,test
+203,57,miR-19b,FOLFOX Chemotherapy,1,test
+211,54,miR-203,L-asparaginase,1,test
+212,48,miR-204,Epirubicin,1,test
+213,59,miR-204-5p,Vemurafenib,1,test
+214,48,miR-205,Epirubicin,1,test
+214,57,miR-205,FOLFOX Chemotherapy,1,test
+216,57,miR-20a,FOLFOX Chemotherapy,1,test
+216,100,miR-20a,Teniposide,1,test
+218,57,miR-20b,FOLFOX Chemotherapy,1,test
+220,32,miR-21,TRAIL therapy,1,test
+220,50,miR-21,PLX4720,1,test
+220,57,miR-21,FOLFOX Chemotherapy,1,test
+220,100,miR-21,Teniposide,1,test
+220,105,miR-21,Hydrogen Peroxide,1,test
+223,57,miR-210,FOLFOX Chemotherapy,1,test
+229,57,miR-215,FOLFOX Chemotherapy,1,test
+237,57,miR-22,FOLFOX Chemotherapy,1,test
+241,32,miR-221,TRAIL therapy,1,test
+241,57,miR-221,FOLFOX Chemotherapy,1,test
+241,112,miR-221,AGRO100,1,test
+241,113,miR-221,Dihydrotestosterone,1,test
+243,32,miR-222,TRAIL therapy,1,test
+243,57,miR-222,FOLFOX Chemotherapy,1,test
+243,112,miR-222,AGRO100,1,test
+243,113,miR-222,Dihydrotestosterone,1,test
+248,50,miR-23a,PLX4720,1,test
+249,50,miR-23b,PLX4720,1,test
+252,48,miR-25,Epirubicin,1,test
+256,57,miR-26b,FOLFOX Chemotherapy,1,test
+258,46,miR-27a,Vinblastine,1,test
+258,50,miR-27a,PLX4720,1,test
+258,58,miR-27a,Fluoropyrimidine,1,test
+258,95,miR-27a,SIOP treatment protocol,1,test
+258,117,miR-27a,Hydroxyurea,1,test
+259,50,miR-27b,PLX4720,1,test
+261,48,miR-28,Epirubicin,1,test
+263,75,miR-296,Sunitinib,1,test
+266,57,miR-29a,FOLFOX Chemotherapy,1,test
+266,75,miR-29a,Sunitinib,1,test
+268,57,miR-29b,FOLFOX Chemotherapy,1,test
+271,57,miR-29c,FOLFOX Chemotherapy,1,test
+280,57,miR-30a,FOLFOX Chemotherapy,1,test
+282,50,miR-30b,PLX4720,1,test
+283,75,miR-30b*,Sunitinib,1,test
+284,32,miR-30c,TRAIL therapy,1,test
+287,57,miR-30e,FOLFOX Chemotherapy,1,test
+289,75,miR-31,Sunitinib,1,test
+307,57,miR-32,FOLFOX Chemotherapy,1,test
+310,50,miR-320a,PLX4720,1,test
+313,57,miR-324,FOLFOX Chemotherapy,1,test
+316,50,miR-331,PLX4720,1,test
+316,57,miR-331,FOLFOX Chemotherapy,1,test
+317,50,miR-335,PLX4720,1,test
+317,54,miR-335,L-asparaginase,1,test
+317,57,miR-335,FOLFOX Chemotherapy,1,test
+319,57,miR-339,FOLFOX Chemotherapy,1,test
+323,50,miR-340,PLX4720,1,test
+327,57,miR-34a,FOLFOX Chemotherapy,1,test
+327,59,miR-34a,Vemurafenib,1,test
+327,75,miR-34a,Sunitinib,1,test
+329,79,miR-34b,Ribavirin,1,test
+329,80,miR-34b,pegIFN/RBV therapy,1,test
+331,50,miR-3607,PLX4720,1,test
+332,50,miR-361,PLX4720,1,test
+334,75,miR-362,Sunitinib,1,test
+336,50,miR-363,PLX4720,1,test
+339,57,miR-365,FOLFOX Chemotherapy,1,test
+340,50,miR-3651,PLX4720,1,test
+341,50,miR-3653,PLX4720,1,test
+356,48,miR-375,Epirubicin,1,test
+359,48,miR-378,Epirubicin,1,test
+369,54,miR-383,L-asparaginase,1,test
+373,50,miR-409,PLX4720,1,test
+373,57,miR-409,FOLFOX Chemotherapy,1,test
+379,57,miR-423,FOLFOX Chemotherapy,1,test
+382,50,miR-425,PLX4720,1,test
+412,46,miR-451,Vinblastine,1,test
+412,48,miR-451,Epirubicin,1,test
+412,57,miR-451,FOLFOX Chemotherapy,1,test
+412,117,miR-451,Hydroxyurea,1,test
+431,77,miR-468,Levetiracetam,1,test
+458,50,miR-490,PLX4720,1,test
+468,57,miR-501,FOLFOX Chemotherapy,1,test
+470,57,miR-502,FOLFOX Chemotherapy,1,test
+509,50,miR-543,PLX4720,1,test
+509,57,miR-543,FOLFOX Chemotherapy,1,test
+547,75,miR-628,Sunitinib,1,test
+548,54,miR-629,L-asparaginase,1,test
+558,57,miR-652,FOLFOX Chemotherapy,1,test
+558,79,miR-652,Ribavirin,1,test
+558,80,miR-652,pegIFN/RBV therapy,1,test
+562,50,miR-660,PLX4720,1,test
+562,57,miR-660,FOLFOX Chemotherapy,1,test
+578,57,miR-720,FOLFOX Chemotherapy,1,test
+600,54,miR-9,L-asparaginase,1,test
+605,50,miR-92a-1,PLX4720,1,test
+613,32,miR-942,TRAIL therapy,1,test
+613,75,miR-942,Sunitinib,1,test
+614,50,miR-96,PLX4720,1,test
+617,50,miR-99a,PLX4720,1,test
+617,54,miR-99a,L-asparaginase,1,test
+617,57,miR-99a,FOLFOX Chemotherapy,1,test
+213,22,miR-204-5p,Rapamycin,0,test
+33,116,let-7b,5-fluorouracil,0,test
+193,75,miR-197-3p,Sunitinib,0,test
+213,19,miR-204-5p,Etoposide,0,test
+214,34,miR-205,Sorafenib,0,test
+213,16,miR-204-5p,Docetaxel,0,test
+34,42,let-7c,Erlotinib,0,test
+250,75,miR-23b-3p,Sunitinib,0,test
+170,3,miR-18a,Imatinib,0,test
+132,52,miR-148a,5-Fluorouracil,0,test
+36,116,let-7e,5-fluorouracil,0,test
+213,3,miR-204-5p,Imatinib,0,test
+125,116,miR-144-3p,5-fluorouracil,0,test
+213,67,miR-204-5p,Cyclophosphamide,0,test
+213,27,miR-204-5p,Methotrexate,0,test
+36,9,let-7e,Fluorouracil,0,test
+43,29,miR-100-5p,Verapamil,0,test
+39,10,let-7g,Paclitaxel,0,test
+190,59,miR-196a-5p,Vemurafenib,0,test
+9,13,HOTAIR,Oxaliplatin,0,test
+36,17,let-7e,Adriamycin,0,test
+132,9,miR-148a,Fluorouracil,0,test
+499,75,miR-520d*,Sunitinib,0,test
+125,37,miR-144-3p,Temozolomide,0,test
+43,27,miR-100-5p,Methotrexate,0,test
+198,59,miR-199a-3p,Vemurafenib,0,test
+422,59,miR-455-3p,Vemurafenib,0,test
+618,59,miR-99a-5p,Vemurafenib,0,test
+33,7,let-7b,Tamoxifen,0,test
+40,13,let-7i,Oxaliplatin,0,test
+43,39,miR-100-5p,Taxol,0,test
+217,59,miR-20a-5p,Vemurafenib,0,test
+213,75,miR-204-5p,Sunitinib,0,test
+313,17,miR-324,Adriamycin,0,test
+171,59,miR-18a*,Vemurafenib,0,test
+125,17,miR-144-3p,Adriamycin,0,test
+213,30,miR-204-5p,epirubicin,0,test
+34,39,let-7c,Taxol,0,test
+213,10,miR-204-5p,Paclitaxel,0,test
+213,38,miR-204-5p,Cetuximab,0,test
+33,39,let-7b,Taxol,0,test
+287,7,miR-30e,Tamoxifen,0,test
+77,1,miR-126*,Gemcitabine,0,test
+34,13,let-7c,Oxaliplatin,0,test
+39,17,let-7g,Adriamycin,0,test
+102,94,miR-130a-3p,Epirubicin HCl,0,test
+336,66,miR-363,Paroxetine,0,test
+115,0,miR-139,Cisplatin,0,test
+40,10,let-7i,Paclitaxel,0,test
+575,59,miR-7-5p,Vemurafenib,0,test
+43,16,miR-100-5p,Docetaxel,0,test
+125,39,miR-144-3p,Taxol,0,test
+43,10,miR-100-5p,Paclitaxel,0,test
+33,3,let-7b,Imatinib,0,test
+33,94,let-7b,Epirubicin HCl,0,test
+328,59,miR-34a-5p,Vemurafenib,0,test
+328,48,miR-34a-5p,Epirubicin,0,test
+213,5,miR-204-5p,Doxorubicin,0,test
+106,34,miR-133b,Sorafenib,0,test
+43,6,miR-100-5p,Gefitinib,0,test
+125,52,miR-144-3p,5-Fluorouracil,0,test
+33,17,let-7b,Adriamycin,0,test
+36,59,let-7e,Vemurafenib,0,test
+359,116,miR-378,5-fluorouracil,0,test
+213,13,miR-204-5p,Oxaliplatin,0,test
+126,3,miR-145,Imatinib,0,test
+43,20,miR-100-5p,Mitoxantrone,0,test
+150,59,miR-17-5p,Vemurafenib,0,test
+77,7,miR-126*,Tamoxifen,0,test
+213,17,miR-204-5p,Adriamycin,0,test
+132,116,miR-148a,5-fluorouracil,0,test
+36,29,let-7e,Verapamil,0,test
+142,75,miR-155-5p,Sunitinib,0,test
+213,48,miR-204-5p,Epirubicin,0,test
+39,39,let-7g,Taxol,0,test
+36,6,let-7e,Gefitinib,0,test
+181,7,miR-192,Tamoxifen,0,test
+33,97,let-7b,Fulvestrant,0,test
+34,66,let-7c,Paroxetine,0,test
+33,5,let-7b,Doxorubicin,0,test
+39,13,let-7g,Oxaliplatin,0,test
+40,29,let-7i,Verapamil,0,test
+125,10,miR-144-3p,Paclitaxel,0,test
+606,59,miR-92a-2*,Vemurafenib,0,test
+289,7,miR-31,Tamoxifen,0,test
+332,0,miR-361,Cisplatin,0,test
+33,37,let-7b,Temozolomide,0,test
+323,3,miR-340,Imatinib,0,test
+339,5,miR-365,Doxorubicin,0,test
+33,1,let-7b,Gemcitabine,0,test
+102,48,miR-130a-3p,Epirubicin,0,test
+125,13,miR-144-3p,Oxaliplatin,0,test
+213,39,miR-204-5p,Taxol,0,test
+36,10,let-7e,Paclitaxel,0,test
+213,94,miR-204-5p,Epirubicin HCl,0,test
+33,48,let-7b,Epirubicin,0,test
+339,17,miR-365,Adriamycin,0,test
+39,29,let-7g,Verapamil,0,test
+43,40,miR-100-5p,Dexamethasone,0,test
+36,18,let-7e,Vincristine,0,test
+33,30,let-7b,epirubicin,0,test
+34,6,let-7c,Gefitinib,0,test
+339,13,miR-365,Oxaliplatin,0,test
+125,3,miR-144-3p,Imatinib,0,test
+359,9,miR-378,Fluorouracil,0,test
+125,1,miR-144-3p,Gemcitabine,0,test
+34,37,let-7c,Temozolomide,0,test
+39,6,let-7g,Gefitinib,0,test
+40,6,let-7i,Gefitinib,0,test
+34,16,let-7c,Docetaxel,0,test
+328,94,miR-34a-5p,Epirubicin HCl,0,test
+33,96,let-7b,Epirubicin hydrochloride,0,test
+313,5,miR-324,Doxorubicin,0,test
+43,7,miR-100-5p,Tamoxifen,0,test
+213,96,miR-204-5p,Epirubicin hydrochloride,0,test
+213,52,miR-204-5p,5-Fluorouracil,0,test
+213,23,miR-204-5p,Sirolimus,0,test
+213,34,miR-204-5p,Sorafenib,0,test
+33,18,let-7b,Vincristine,0,test
+319,3,miR-339,Imatinib,0,test
+149,59,miR-17*,Vemurafenib,0,test
+125,5,miR-144-3p,Doxorubicin,0,test
+102,59,miR-130a-3p,Vemurafenib,0,test
+33,9,let-7b,Fluorouracil,0,test
+213,116,miR-204-5p,5-fluorouracil,0,test
+125,9,miR-144-3p,Fluorouracil,0,test
+184,59,miR-193a-3p,Vemurafenib,0,test
+34,10,let-7c,Paclitaxel,0,test
+213,0,miR-204-5p,Cisplatin,0,test
+359,34,miR-378,Sorafenib,0,test
+40,7,let-7i,Tamoxifen,0,test
+33,66,let-7b,Paroxetine,0,test
+36,39,let-7e,Taxol,0,test
+40,39,let-7i,Taxol,0,test
+43,64,miR-100-5p,Vinorelbine,0,test
+34,1,let-7c,Gemcitabine,0,test
+33,10,let-7b,Paclitaxel,0,test
+577,81,miR-718,Dichloroacetate,0,test
+383,88,miR-425*,Selumetinib,0,test
+41,97,miR-1,Fulvestrant,0,test
+547,15,miR-628,Tetraplatin,0,test
+197,13,miR-199a,Oxaliplatin,0,test
+243,104,miR-222,Dibenziodolium,0,test
+54,94,miR-10a*,Epirubicin HCl,0,test
+293,50,miR-3130,PLX4720,0,test
+351,54,miR-373,L-asparaginase,0,test
+476,81,miR-512,Dichloroacetate,0,test
+369,78,miR-383,Valproate,0,test
+268,24,miR-29b,Temsirolimus,0,test
+227,48,miR-214,Epirubicin,0,test
+14,113,Lnc-VLDLR,Dihydrotestosterone,0,test
+211,62,miR-203,Colchicine,0,test
+201,105,miR-199b*,Hydrogen Peroxide,0,test
+602,61,miR-922,Lorlatinib,0,test
+201,0,miR-199b*,Cisplatin,0,test
+74,11,miR-125b,Propofol,0,test
+435,48,miR-4695,Epirubicin,0,test
+18,105,MRUL,Hydrogen Peroxide,0,test
+39,110,let-7g,Pemetrexed,0,test
+118,60,miR-141,Crizotinib,0,test
+516,50,miR-568,PLX4720,0,test
+538,58,miR-606,Fluoropyrimidine,0,test
+537,112,miR-605,AGRO100,0,test
+282,8,miR-30b,Trastuzumab,0,test
+620,105,miR-99b*,Hydrogen Peroxide,0,test
+313,74,miR-324,Letrozole,0,test
+313,92,miR-324,histone deacetylase inhibitor,0,test
+340,47,miR-3651,Interferon-gamma,0,test
+358,46,miR-377,Vinblastine,0,test
+154,97,miR-181a*,Fulvestrant,0,test
+356,93,miR-375,intensive induction chemotherapy based on cytarabine and idarubicine,0,test
+319,106,miR-339,Pingyangmycin,0,test
+118,105,miR-141,Hydrogen Peroxide,0,test
+133,119,miR-148b,chemotherapy,0,test
+247,95,miR-2277,SIOP treatment protocol,0,test
+154,106,miR-181a*,Pingyangmycin,0,test
+530,113,miR-590-5p,Dihydrotestosterone,0,test
+308,117,miR-320,Hydroxyurea,0,test
+336,21,miR-363,Nutlin-3a,0,test
+375,41,miR-411,Ibrutinib,0,test
+507,41,miR-541*,Ibrutinib,0,test
+102,105,miR-130a-3p,Hydrogen Peroxide,0,test
+363,81,miR-378e,Dichloroacetate,0,test
