@@ -162,21 +162,38 @@ def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='o
     np.random.shuffle(train_val_pos)
 
     # 6. 为测试集和训练验证集分别选取平衡的负样本
+    # 关键修复：负样本必须至少一端节点来自正样本涉及的节点（师兄要求）
     np.random.shuffle(sensitive_list)
     np.random.shuffle(unknown_list)
 
-    def select_negative_samples(n_needed, sensitive_pool, unknown_pool, used_set):
+    def get_nodes_from_edges(edges):
+        """从边列表中提取涉及的节点"""
+        drugs = set()
+        rnas = set()
+        for drug_idx, rna_idx in edges:
+            drugs.add(drug_idx)
+            rnas.add(rna_idx)
+        return drugs, rnas
+
+    def select_negative_samples_with_node_constraint(n_needed, sensitive_pool, unknown_pool,
+                                                      used_set, valid_drugs, valid_rnas):
         """
         选取 n_needed 个负样本
         优先使用 sensitive，不够从 unknown 补充
+        关键约束：负样本的至少一端节点必须来自正样本涉及的节点
         """
         selected = []
+
+        def is_valid(drug_idx, rna_idx):
+            """检查负样本是否满足节点约束（至少一端来自正样本节点）"""
+            return drug_idx in valid_drugs or rna_idx in valid_rnas
 
         # 先从 sensitive 中选
         for sample in sensitive_pool:
             if len(selected) >= n_needed:
                 break
-            if sample not in used_set:
+            drug_idx, rna_idx = sample
+            if sample not in used_set and is_valid(drug_idx, rna_idx):
                 selected.append(sample)
                 used_set.add(sample)
 
@@ -185,9 +202,13 @@ def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='o
             for sample in unknown_pool:
                 if len(selected) >= n_needed:
                     break
-                if sample not in used_set:
+                drug_idx, rna_idx = sample
+                if sample not in used_set and is_valid(drug_idx, rna_idx):
                     selected.append(sample)
                     used_set.add(sample)
+
+        if len(selected) < n_needed:
+            print(f"  警告: 只能找到 {len(selected)}/{n_needed} 个满足节点约束的负样本")
 
         return selected, used_set
 
@@ -198,14 +219,23 @@ def load_or_create_split(split_dir='balanced_splits', seed=42, overlap_source='o
     else:
         used_negative = set()
 
-    # 测试集负样本
-    test_neg, used_negative = select_negative_samples(
-        len(test_pos), sensitive_list, unknown_list, used_negative
+    # 获取测试集和训练集正样本涉及的节点
+    test_drugs, test_rnas = get_nodes_from_edges(test_pos)
+    train_val_drugs, train_val_rnas = get_nodes_from_edges(train_val_pos)
+
+    print(f"\n测试集正样本涉及节点: {len(test_drugs)} drugs, {len(test_rnas)} RNAs")
+    print(f"训练集正样本涉及节点: {len(train_val_drugs)} drugs, {len(train_val_rnas)} RNAs")
+
+    # 测试集负样本（限制节点来自测试集正样本涉及的节点）
+    test_neg, used_negative = select_negative_samples_with_node_constraint(
+        len(test_pos), sensitive_list, unknown_list, used_negative,
+        test_drugs, test_rnas
     )
 
-    # 训练验证集负样本
-    train_val_neg, used_negative = select_negative_samples(
-        len(train_val_pos), sensitive_list, unknown_list, used_negative
+    # 训练验证集负样本（限制节点来自训练集正样本涉及的节点）
+    train_val_neg, used_negative = select_negative_samples_with_node_constraint(
+        len(train_val_pos), sensitive_list, unknown_list, used_negative,
+        train_val_drugs, train_val_rnas
     )
 
     print(f"\n测试集负样本数: {len(test_neg)}")

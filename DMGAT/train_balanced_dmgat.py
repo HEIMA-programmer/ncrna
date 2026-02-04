@@ -213,17 +213,37 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
         print(f"  训练集正样本 (Non-Overlap): {len(train_pos)}")
 
     # 6. 采样负样本 (保持与正样本数量一致，优先sensitive，不足从unknown补充)
+    # 关键修复：负样本必须至少一端节点来自正样本涉及的节点（师兄要求）
     random.seed(42)
     random.shuffle(sensitive_indices)
     random.shuffle(unknown_indices)
 
-    def sample_neg(count, used_set):
+    def get_nodes_from_edges(edges):
+        """从边列表中提取涉及的节点 (DMGAT格式: rna_idx, drug_idx)"""
+        rnas = set()
+        drugs = set()
+        for rna_idx, drug_idx in edges:
+            rnas.add(rna_idx)
+            drugs.add(drug_idx)
+        return rnas, drugs
+
+    def sample_neg_with_node_constraint(count, used_set, valid_rnas, valid_drugs):
+        """
+        选取负样本，限制至少一端节点来自正样本涉及的节点
+        DMGAT坐标格式: (rna_idx, drug_idx)
+        """
         selected = []
+
+        def is_valid(rna_idx, drug_idx):
+            """检查负样本是否满足节点约束（至少一端来自正样本节点）"""
+            return rna_idx in valid_rnas or drug_idx in valid_drugs
+
         # 优先从 sensitive 中选
         for x in sensitive_indices:
             if len(selected) >= count:
                 break
-            if x not in used_set:
+            rna_idx, drug_idx = x
+            if x not in used_set and is_valid(rna_idx, drug_idx):
                 selected.append(x)
                 used_set.add(x)
         # 不足从 unknown 中补充
@@ -231,9 +251,14 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
             for x in unknown_indices:
                 if len(selected) >= count:
                     break
-                if x not in used_set:
+                rna_idx, drug_idx = x
+                if x not in used_set and is_valid(rna_idx, drug_idx):
                     selected.append(x)
                     used_set.add(x)
+
+        if len(selected) < count:
+            print(f"  警告: 只能找到 {len(selected)}/{count} 个满足节点约束的负样本")
+
         return selected, used_set
 
     # 初始化已使用负样本集合
@@ -243,8 +268,21 @@ def get_balanced_split_masks(adj_df, adj_with_sens_df, overlap_source='overlap')
     else:
         used_neg = set()
 
-    test_neg, used_neg = sample_neg(len(test_pos), used_neg)
-    train_neg, used_neg = sample_neg(len(train_pos), used_neg)
+    # 获取测试集和训练集正样本涉及的节点
+    test_rnas, test_drugs = get_nodes_from_edges(test_pos)
+    train_rnas, train_drugs = get_nodes_from_edges(train_pos)
+
+    print(f"  测试集正样本涉及节点: {len(test_rnas)} RNAs, {len(test_drugs)} Drugs")
+    print(f"  训练集正样本涉及节点: {len(train_rnas)} RNAs, {len(train_drugs)} Drugs")
+
+    # 测试集负样本（限制节点来自测试集正样本涉及的节点）
+    test_neg, used_neg = sample_neg_with_node_constraint(
+        len(test_pos), used_neg, test_rnas, test_drugs
+    )
+    # 训练集负样本（限制节点来自训练集正样本涉及的节点）
+    train_neg, used_neg = sample_neg_with_node_constraint(
+        len(train_pos), used_neg, train_rnas, train_drugs
+    )
 
     print(f"  测试集负样本: {len(test_neg)}")
     print(f"  训练集负样本: {len(train_neg)}")
