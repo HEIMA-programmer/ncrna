@@ -458,7 +458,7 @@ class ColdStartSplitter:
 
 
 def save_cold_start_splits(splits, cold_start_type, output_dir='cold_start_splits'):
-    """保存冷启动划分文件"""
+    """保存冷启动划分文件（统一格式）"""
     os.makedirs(output_dir, exist_ok=True)
 
     # 保存 pickle 文件
@@ -467,30 +467,31 @@ def save_cold_start_splits(splits, cold_start_type, output_dir='cold_start_split
         pickle.dump(splits, f)
     print(f"\n划分已保存到: {pkl_path}")
 
-    # 保存 CSV 文件（方便查看）
-    for fold_idx, split in enumerate(splits):
-        csv_path = os.path.join(output_dir, f'{cold_start_type}_fold{fold_idx + 1}.csv')
+    # 保存单个 CSV 文件（包含所有 fold）
+    csv_path = os.path.join(output_dir, f'{cold_start_type}_all_folds.csv')
+    all_data = []
 
-        data = []
+    for fold_idx, split in enumerate(splits):
         for (rna_idx, drug_idx), label in zip(split['train_edges'], split['train_labels']):
-            data.append({
+            all_data.append({
+                'fold': fold_idx + 1,
                 'rna_idx': int(rna_idx),
                 'drug_idx': int(drug_idx),
                 'label': int(label),
                 'split': 'train'
             })
         for (rna_idx, drug_idx), label in zip(split['test_edges'], split['test_labels']):
-            data.append({
+            all_data.append({
+                'fold': fold_idx + 1,
                 'rna_idx': int(rna_idx),
                 'drug_idx': int(drug_idx),
                 'label': int(label),
                 'split': 'test'
             })
 
-        df = pd.DataFrame(data)
-        df.to_csv(csv_path, index=False)
-
-    print(f"CSV 文件已保存到: {output_dir}/")
+    df = pd.DataFrame(all_data)
+    df.to_csv(csv_path, index=False)
+    print(f"统一 CSV 文件已保存到: {csv_path}")
 
 
 @torch.no_grad()
@@ -849,6 +850,74 @@ def run_cold_start_experiment(cold_start_type, config):
     return all_metrics
 
 
+def merge_all_cold_start_files(output_dir='cold_start_splits'):
+    """
+    合并所有冷启动划分文件为统一格式
+    生成一个包含所有类型和所有 fold 的统一 CSV 和 PKL 文件
+    """
+    print("=" * 60)
+    print("合并所有冷启动划分文件")
+    print("=" * 60)
+
+    all_splits = {}
+    all_data = []
+
+    for cs_type in ['rna', 'drug', 'both']:
+        pkl_path = os.path.join(output_dir, f'{cs_type}_splits.pkl')
+        if os.path.exists(pkl_path):
+            print(f"加载 {cs_type} 划分...")
+            with open(pkl_path, 'rb') as f:
+                splits = pickle.load(f)
+            all_splits[cs_type] = splits
+
+            for fold_idx, split in enumerate(splits):
+                for (rna_idx, drug_idx), label in zip(split['train_edges'], split['train_labels']):
+                    all_data.append({
+                        'type': cs_type,
+                        'fold': fold_idx + 1,
+                        'rna_idx': int(rna_idx),
+                        'drug_idx': int(drug_idx),
+                        'label': int(label),
+                        'split': 'train'
+                    })
+                for (rna_idx, drug_idx), label in zip(split['test_edges'], split['test_labels']):
+                    all_data.append({
+                        'type': cs_type,
+                        'fold': fold_idx + 1,
+                        'rna_idx': int(rna_idx),
+                        'drug_idx': int(drug_idx),
+                        'label': int(label),
+                        'split': 'test'
+                    })
+        else:
+            print(f"警告: {pkl_path} 不存在，跳过")
+
+    if all_splits:
+        # 保存统一 PKL
+        unified_pkl = os.path.join(output_dir, 'all_cold_start_splits.pkl')
+        with open(unified_pkl, 'wb') as f:
+            pickle.dump(all_splits, f)
+        print(f"\n统一 PKL 已保存到: {unified_pkl}")
+
+        # 保存统一 CSV
+        unified_csv = os.path.join(output_dir, 'all_cold_start_splits.csv')
+        df = pd.DataFrame(all_data)
+        df.to_csv(unified_csv, index=False)
+        print(f"统一 CSV 已保存到: {unified_csv}")
+        print(f"总样本数: {len(df)}")
+
+        # 打印统计
+        print("\n统计:")
+        for cs_type in all_splits:
+            type_data = df[df['type'] == cs_type]
+            print(f"  {cs_type}: {len(type_data)} 条记录, {len(type_data[type_data['split']=='train'])} 训练, "
+                  f"{len(type_data[type_data['split']=='test'])} 测试")
+    else:
+        print("没有找到任何冷启动划分文件")
+
+    return all_splits
+
+
 def main():
     parser = argparse.ArgumentParser(description='冷启动实验')
     parser.add_argument('--type', type=str, default='all',
@@ -860,6 +929,8 @@ def main():
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--patience', type=int, default=50,
                         help='早停耐心值')
+    parser.add_argument('--merge', action='store_true',
+                        help='仅合并已存在的划分文件，不运行训练')
     args = parser.parse_args()
 
     # 随机种子
@@ -884,10 +955,18 @@ def main():
         'rna_feature_dim': 256,
     }
 
+    # 如果只是合并文件
+    if args.merge:
+        merge_all_cold_start_files()
+        return
+
     # 运行实验
     if args.type == 'all':
         for cs_type in ['rna', 'drug', 'both']:
             run_cold_start_experiment(cs_type, config)
+        # 实验完成后自动合并文件
+        print("\n自动合并所有冷启动划分文件...")
+        merge_all_cold_start_files()
     else:
         run_cold_start_experiment(args.type, config)
 
