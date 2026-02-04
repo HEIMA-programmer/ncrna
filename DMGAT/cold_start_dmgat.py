@@ -567,7 +567,7 @@ def train_one_fold(fold_idx, split_data, lnc_dmap_np, mi_dmap_np, drug_dmap_np,
     contrastive_loss_fn = ContrastiveLoss(temperature=0.07)
 
     lambda_contrastive = 1.0
-    pretrain_epochs = 0  # 不使用预训练阶段
+    pretrain_epochs = 50
 
     # 用于评估的标签（从 split_data 获取，而不是从 adj 读取）
     test_pos_indices = [(int(e[0]), int(e[1])) for e, l in zip(test_edges, test_labels) if l == 1]
@@ -615,8 +615,6 @@ def train_one_fold(fold_idx, split_data, lnc_dmap_np, mi_dmap_np, drug_dmap_np,
     best_test_f2 = 0
     best_metrics = None
     best_epoch = 0
-    patience_counter = 0
-    patience = config.get('patience', 50)
 
     for epoch in range(config['num_epochs']):
         model.train()
@@ -657,16 +655,6 @@ def train_one_fold(fold_idx, split_data, lnc_dmap_np, mi_dmap_np, drug_dmap_np,
             best_test_f2 = test_metrics['f2']
             best_metrics = test_metrics.copy()
             best_epoch = epoch + 1
-            patience_counter = 0
-            # 保存最佳模型
-            model_path = os.path.join(COLD_START_SPLITS_DIR,
-                                       f'best_model_cold_start_{cold_start_type}_fold{fold_idx}.pth')
-            torch.save(model.state_dict(), model_path)
-        else:
-            patience_counter += 1
-            if patience_counter >= patience:
-                print(f"  [早停] Epoch {epoch + 1}: 过去 {patience} 个 epoch F2 未提升")
-                break
 
     print(f"  最佳结果 (Epoch {best_epoch}): AUC={best_metrics['auc']:.4f}, AUPR={best_metrics['aupr']:.4f}, "
           f"F1={best_metrics['f1']:.4f}, F2={best_metrics['f2']:.4f}, Recall={best_metrics['recall']:.4f}")
@@ -772,16 +760,14 @@ if __name__ == "__main__":
                         choices=['rna', 'drug', 'both', 'all'],
                         help='冷启动类型: rna, drug, both, 或 all（运行所有）')
     parser.add_argument('--epochs', type=int, default=200,
-                        help='最大训练轮数（有早停机制）')
+                        help='训练轮数')
     parser.add_argument('--lr', type=float, default=1e-4)
-    parser.add_argument('--patience', type=int, default=50,
-                        help='早停耐心值')
+
     args = parser.parse_args()
 
     config = {
         'num_epochs': args.epochs,
         'lr': args.lr,
-        'patience': args.patience,
     }
 
     # 运行实验

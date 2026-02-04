@@ -463,7 +463,7 @@ def train(overlap_source='overlap'):
     lambda_contrastive = 1.0  # 对比损失权重
     # 注意：移除预训练阶段，从一开始就同时使用BCE和对比学习
     # 原因：预训练阶段只做对比学习会导致预测层权重未被训练，初始AUC=0.5
-    pretrain_epochs = 0  # 不使用预训练阶段
+    pretrain_epochs = 50
 
     # pred_logits scaling 因子（解决点积值过大问题）
     # 特征维度为 pred_hid_size=1024，点积后值的标准差约 sqrt(1024)=32
